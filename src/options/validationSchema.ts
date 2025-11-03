@@ -4,6 +4,8 @@ import { isHexColor } from "../utils/schemaValidator";
 import {
   Border,
   borders,
+  IconStyle,
+  iconStyles,
   Position,
   positions,
   ruleTypes,
@@ -34,4 +36,6 @@ export const validationSchema: Schema<Label> = {
   border: (val) => typeof val === "string" && borders.includes(val as Border),
   borderColor: (val) => typeof val === "string" && isHexColor(val),
   borderWidth: (val) => typeof val === "number" && val >= 0 && val <= 5,
+  iconStyle: (val) =>
+    typeof val === "string" && iconStyles.includes(val as IconStyle),
 };
