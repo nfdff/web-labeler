@@ -2,9 +2,24 @@ import { Button, Flex, Select, Stack, TextInput } from "@mantine/core";
 import { ruleTypes } from "../../../../options/constants.ts";
 import { IconPlus, IconTrash } from "@tabler/icons-react";
 import { useLabelEditFormContext } from "../formContext.ts";
+import { LabelEditFormValues } from "../types.ts";
+import { UseFormReturnType } from "@mantine/form";
 
 function LabelEditFormRules() {
   const form = useLabelEditFormContext();
+
+  const handlePaste = (
+    event: React.ClipboardEvent<HTMLInputElement>,
+    path: string,
+    form: UseFormReturnType<LabelEditFormValues>,
+  ) => {
+    const paste = event.clipboardData.getData("text");
+    const cleaned = paste
+      .replace(/^https?:\/\//, "") // remove http/https
+      .replace(/\/.*$/, ""); // remove path and trailing slash
+    event.preventDefault();
+    form.setFieldValue(path, cleaned);
+  };
 
   return (
     <Stack gap="xs">
@@ -22,6 +37,9 @@ function LabelEditFormRules() {
             key={form.key(`rules.${index}.value`)}
             {...form.getInputProps(`rules.${index}.value`)}
             style={{ flexGrow: 1 }}
+            onPaste={(event) =>
+              handlePaste(event, `rules.${index}.value`, form)
+            }
           />
           <Button
             color="gray"
