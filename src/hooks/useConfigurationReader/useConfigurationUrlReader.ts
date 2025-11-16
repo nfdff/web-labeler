@@ -1,22 +1,27 @@
 import { useState } from "react";
-import { UseConfigurationFileReader } from "./types.ts";
-import { readJsonFile } from "../../utils/fileReader";
+import { readJsonFromUrl } from "../../utils/fileReader";
 import { validationSchema } from "../../options/validationSchema.ts";
 import validate from "../../utils/schemaValidator";
 import { Label } from "../../options/types.ts";
 
-export const useConfigurationFileReader: UseConfigurationFileReader = () => {
+export type UseConfigurationUrlReader = () => {
+  readAndValidate: (url: string) => Promise<Label[] | undefined>;
+  isLoading: boolean;
+  errorMessage: string | undefined;
+};
+
+export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<undefined | string>(
     undefined,
   );
 
-  const readAndValidate = (file: File) =>
+  const readAndValidate = (url: string) =>
     new Promise<undefined | Label[]>((resolve) => {
       setIsLoading(true);
       setErrorMessage(undefined);
 
-      readJsonFile(file)
+      readJsonFromUrl(url)
         .then((result) => {
           try {
             if (Array.isArray(result)) {
@@ -30,7 +35,7 @@ export const useConfigurationFileReader: UseConfigurationFileReader = () => {
                 }
               }
             } else {
-              throw new Error("The file doesn't contain valid labels");
+              throw new Error("The URL doesn't return valid labels");
             }
             setIsLoading(false);
             resolve(result as Label[]);
@@ -55,5 +60,3 @@ export const useConfigurationFileReader: UseConfigurationFileReader = () => {
     errorMessage,
   };
 };
-
-export { useConfigurationUrlReader } from "./useConfigurationUrlReader.ts";

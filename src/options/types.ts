@@ -27,9 +27,18 @@ export interface Rule {
   value: string;
 }
 
+export interface UrlSyncSettings {
+  enabled: boolean;
+  url: string;
+  updateFrequency: number; // in minutes: 0 = disabled, 15, 30, 60, 360, 1440
+  lastUpdate?: number | null; // timestamp
+  lastError?: string | null; // last sync error message
+}
+
 export interface Options {
   labels: Label[];
   isActive: boolean;
+  urlSync?: UrlSyncSettings;
 }
 
 export type OptionsAction =
@@ -70,4 +79,8 @@ export type OptionsAction =
   | {
       type: "initialize";
       payload: Options;
+    }
+  | {
+      type: "updateUrlSync";
+      payload: Partial<UrlSyncSettings>;
     };

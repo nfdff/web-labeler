@@ -5,4 +5,5 @@ import { Label } from "../../../../options/types.ts";
 export interface ConfigurationImportFromFilesProps {
   dispatch: Dispatch<OptionsAction>;
   labels: Label[];
+  closeConfigurationManager?: () => void;
 }

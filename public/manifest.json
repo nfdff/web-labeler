@@ -27,6 +27,10 @@
     }
   ],
   "permissions": [
-    "storage"
-  ]
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
 }

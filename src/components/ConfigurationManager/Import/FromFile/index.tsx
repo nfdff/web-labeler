@@ -10,6 +10,7 @@ import ConfirmationModal from "../../../ConfirmationModal";
 function ConfigurationImportFromFile({
   labels,
   dispatch,
+  closeConfigurationManager,
 }: ConfigurationImportFromFilesProps) {
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationFileReader();
@@ -53,6 +54,9 @@ function ConfigurationImportFromFile({
                 type: "mergeLabels",
                 payload: { labels: labelsForImport },
               });
+              if (closeConfigurationManager) {
+                closeConfigurationManager();
+              }
               modals.closeAll();
             }}
             onClose={() => modals.closeAll()}
