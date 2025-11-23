@@ -75,7 +75,7 @@ function ConfigurationImportFromUrl({
     });
     form.resetDirty();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [urlSync]);
+  }, [urlSync?.url, urlSync?.updateFrequency, urlSync?.enabled]);
 
   const handleClear = () => {
     form.setValues({ url: "", updateFrequency: "0", enabled: false });
