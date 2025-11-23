@@ -13,7 +13,7 @@ function ConfigurationManager({
     <Group>
       <ConfigurationExport labels={labels} />
       <ConfigurationImport labels={labels} dispatch={dispatch} urlSync={urlSync} />
-      <AutoSyncStatus urlSync={urlSync} dispatch={dispatch} />
+      <AutoSyncStatus urlSync={urlSync} dispatch={dispatch} labels={labels} />
     </Group>
   );
 }

@@ -30,6 +30,9 @@
     "storage",
     "alarms"
   ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ],
   "background": {
     "service_worker": "service-worker.js"
   }

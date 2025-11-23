@@ -1,30 +1,30 @@
 import {
-  TextInput,
-  Select,
+  Alert,
   Button,
-  Stack,
+  CloseButton,
   Group,
+  List,
+  Select,
+  Stack,
   Switch,
   Text,
-  List,
-  CloseButton,
+  TextInput,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
-import { IconRefresh, IconWorldUpload } from "@tabler/icons-react";
+import { IconLock, IconRefresh, IconWorldUpload } from "@tabler/icons-react";
 import { ConfigurationImportFromUrlProps } from "./types.ts";
 import ErrorMessage from "../ErrorMessage";
 import { useConfigurationUrlReader } from "../../../../hooks/useConfigurationReader";
 import { modals } from "@mantine/modals";
 import ConfirmationModal from "../../../ConfirmationModal";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
 import { isValidHttpUrl } from "../../../../utils/common.ts";
+import { getOriginPattern, requestUrlPermission } from "../../../../utils/urlPermissions.ts";
 
 //todo:
 // 1. google drive support
-// 2. reuse fetch file method from the background script
 // 3. check on start if alarm was missed (diff between last import and current datetime comparing with sync frequency)
-// 4. sync now icon button in AutoSyncStatus component
 
 function ConfigurationImportFromUrl({
   labels,
@@ -34,6 +34,7 @@ function ConfigurationImportFromUrl({
 }: ConfigurationImportFromUrlProps) {
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationUrlReader();
+  const [permissionError, setPermissionError] = useState<string | undefined>();
 
   const form = useForm({
     initialValues: {
@@ -87,7 +88,19 @@ function ConfigurationImportFromUrl({
       return;
     }
 
-    const labelsForImport = await readAndValidate(form.values.url.trim());
+    setPermissionError(undefined);
+    const url = form.values.url.trim();
+
+    // Request permission before fetching
+    const hasPermission = await requestUrlPermission(url);
+    if (!hasPermission) {
+      setPermissionError(
+        `Permission denied to access ${getOriginPattern(url)}. Please grant permission to fetch labels from this URL.`,
+      );
+      return;
+    }
+
+    const labelsForImport = await readAndValidate(url);
 
     if (labelsForImport) {
       const updatingLabelCount = labelsForImport.filter(
@@ -138,24 +151,39 @@ function ConfigurationImportFromUrl({
     }
   };
 
-  const handleSaveSettings = () => {
-    if (!form.validate().hasErrors) {
-      const { url, updateFrequency, enabled } = form.values;
+  const handleSaveSettings = async () => {
+    if (form.validate().hasErrors) {
+      return;
+    }
 
-      dispatch({
-        type: "updateUrlSync",
-        payload: {
-          enabled,
-          url: url.trim(),
-          updateFrequency: parseInt(updateFrequency),
-        },
-      });
+    setPermissionError(undefined);
+    const { url, updateFrequency, enabled } = form.values;
+    const trimmedUrl = url.trim();
 
-      form.resetDirty();
-      modals.closeAll();
-      if (closeConfigurationManager) {
-        closeConfigurationManager();
+    // Request permission if auto-sync is enabled and URL is set
+    if (enabled && trimmedUrl && parseInt(updateFrequency) > 0) {
+      const hasPermission = await requestUrlPermission(trimmedUrl);
+      if (!hasPermission) {
+        setPermissionError(
+          `Permission denied to access ${getOriginPattern(trimmedUrl)}. Auto-sync requires permission to fetch from this URL.`,
+        );
+        return;
       }
+    }
+
+    dispatch({
+      type: "updateUrlSync",
+      payload: {
+        enabled,
+        url: trimmedUrl,
+        updateFrequency: parseInt(updateFrequency),
+      },
+    });
+
+    form.resetDirty();
+    modals.closeAll();
+    if (closeConfigurationManager) {
+      closeConfigurationManager();
     }
   };
 
@@ -218,6 +246,16 @@ function ConfigurationImportFromUrl({
           Save Settings
         </Button>
       </Group>
+
+      {!!permissionError && (
+        <Alert
+          color="orange"
+          title="Permission Required"
+          icon={<IconLock size={16} />}
+        >
+          {permissionError}
+        </Alert>
+      )}
 
       {!!errorMessage && (
         <ErrorMessage

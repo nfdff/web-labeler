@@ -6,8 +6,12 @@ import { logger } from "../utils/logger";
 const ALARM_NAME = "urlSyncAlarm";
 const STORAGE_KEY = "options";
 
+//todo: refactor - split to separate modules
+
 // Fetch and validate labels from URL
-async function fetchLabelsFromUrl(url: string): Promise<{ labels: Label[] | null; error?: string }> {
+async function fetchLabelsFromUrl(
+  url: string,
+): Promise<{ labels: Label[] | null; error?: string }> {
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -37,7 +41,8 @@ async function fetchLabelsFromUrl(url: string): Promise<{ labels: Label[] | null
     logger.info(`Successfully fetched ${result.length} labels from URL`);
     return { labels: result as Label[], error: undefined };
   } catch (error) {
-    const errorMsg = error instanceof Error ? error.message : "Unknown error fetching labels";
+    const errorMsg =
+      error instanceof Error ? error.message : "Unknown error fetching labels";
     logger.error("Error fetching labels from URL:", errorMsg);
     return { labels: null, error: errorMsg };
   }
@@ -63,6 +68,7 @@ async function syncLabelsFromUrl() {
       let newCount = 0;
       let updatedCount = 0;
 
+      //todo: think to reuse mergeLabels action in Store
       labels.forEach((importingLabel) => {
         const indexToUpdate = updatedLabels.findIndex(
           (label) => label.id === importingLabel.id,
@@ -88,7 +94,9 @@ async function syncLabelsFromUrl() {
       };
 
       await chrome.storage.sync.set({ [STORAGE_KEY]: updatedOptions });
-      logger.info(`Labels synced successfully: ${newCount} new, ${updatedCount} updated`);
+      logger.info(
+        `Labels synced successfully: ${newCount} new, ${updatedCount} updated`,
+      );
     } else {
       // Update storage with error
       const updatedOptions: Options = {
@@ -149,7 +157,10 @@ chrome.runtime.onStartup.addListener(async () => {
     const options = storage[STORAGE_KEY] as Options | undefined;
 
     if (options?.urlSync) {
-      await updateAlarm(options.urlSync.enabled, options.urlSync.updateFrequency);
+      await updateAlarm(
+        options.urlSync.enabled,
+        options.urlSync.updateFrequency,
+      );
     }
   } catch (error) {
     logger.error("Error on startup:", error);
@@ -164,7 +175,10 @@ chrome.runtime.onInstalled.addListener(async () => {
     const options = storage[STORAGE_KEY] as Options | undefined;
 
     if (options?.urlSync) {
-      await updateAlarm(options.urlSync.enabled, options.urlSync.updateFrequency);
+      await updateAlarm(
+        options.urlSync.enabled,
+        options.urlSync.updateFrequency,
+      );
     }
   } catch (error) {
     logger.error("Error on install:", error);
@@ -190,7 +204,8 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 
     // Check if the alarm-relevant fields actually changed
     const enabledChanged = oldSync?.enabled !== newSync?.enabled;
-    const frequencyChanged = oldSync?.updateFrequency !== newSync?.updateFrequency;
+    const frequencyChanged =
+      oldSync?.updateFrequency !== newSync?.updateFrequency;
 
     // Only update alarm if settings that affect it changed
     if (enabledChanged || frequencyChanged) {
@@ -204,4 +219,29 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
     }
     // Ignore changes to url, lastUpdate, lastError, or other unrelated fields
   }
+});
+
+// Listen for messages from UI components
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  // Handle fetch labels from URL request (for manual sync with user confirmation)
+  if (message.type === "FETCH_LABELS_FROM_URL") {
+    logger.info("Received FETCH_LABELS_FROM_URL message:", message.url);
+
+    fetchLabelsFromUrl(message.url)
+      .then((result) => {
+        logger.info("Fetch completed, sending response");
+        sendResponse(result);
+      })
+      .catch((error) => {
+        logger.error("Fetch error:", error);
+        sendResponse({
+          labels: null,
+          error: error instanceof Error ? error.message : "Unknown error",
+        });
+      });
+
+    return true; // Keep message channel open for async response
+  }
+
+  return false; // Not handled, close channel
 });

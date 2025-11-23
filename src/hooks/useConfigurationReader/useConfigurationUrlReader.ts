@@ -1,7 +1,4 @@
 import { useState } from "react";
-import { readJsonFromUrl } from "../../utils/fileReader";
-import { validationSchema } from "../../options/validationSchema.ts";
-import validate from "../../utils/schemaValidator";
 import { Label } from "../../options/types.ts";
 
 export type UseConfigurationUrlReader = () => {
@@ -21,37 +18,28 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
       setIsLoading(true);
       setErrorMessage(undefined);
 
-      readJsonFromUrl(url)
-        .then((result) => {
-          try {
-            if (Array.isArray(result)) {
-              for (const item of result) {
-                const { result: isValid, messages } = validate(
-                  item,
-                  validationSchema,
-                );
-                if (!isValid) {
-                  throw new Error(messages?.join("; "));
-                }
-              }
-            } else {
-              throw new Error("The URL doesn't return valid labels");
-            }
-            setIsLoading(false);
-            resolve(result as Label[]);
-          } catch (err) {
-            setErrorMessage(
-              err instanceof Error ? err.message : "unknown error",
-            );
-            setIsLoading(false);
-          }
-          resolve(undefined);
-        })
-        .catch((err) => {
-          setErrorMessage(err instanceof Error ? err.message : "unknown error");
+      chrome.runtime.sendMessage(
+        { type: "FETCH_LABELS_FROM_URL", url },
+        (response: { labels: Label[] | null; error?: string }) => {
           setIsLoading(false);
-          resolve(undefined);
-        });
+
+          if (chrome.runtime.lastError) {
+            const error =
+              chrome.runtime.lastError.message ||
+              "Communication error with background script";
+            setErrorMessage(error);
+            resolve(undefined);
+            return;
+          }
+
+          if (response.labels) {
+            resolve(response.labels);
+          } else {
+            setErrorMessage(response.error || "Unknown error");
+            resolve(undefined);
+          }
+        },
+      );
     });
 
   return {

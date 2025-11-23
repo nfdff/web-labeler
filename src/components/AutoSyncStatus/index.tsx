@@ -1,9 +1,28 @@
-import { Group, Switch, Text, HoverCard, Badge, Stack } from "@mantine/core";
-import { IconWorldUpload, IconAlertCircle } from "@tabler/icons-react";
+import {
+  Group,
+  Switch,
+  Text,
+  HoverCard,
+  Badge,
+  Stack,
+  ActionIcon,
+  Tooltip,
+  List,
+} from "@mantine/core";
+import {
+  IconWorldUpload,
+  IconAlertCircle,
+  IconRefresh,
+} from "@tabler/icons-react";
 import { AutoSyncStatusProps } from "./types";
 import { getRelativeTime, formatUpdateFrequency } from "../../utils/timeFormat";
+import { modals } from "@mantine/modals";
+import ConfirmationModal from "../ConfirmationModal";
+import { requestUrlPermission } from "../../utils/urlPermissions";
+import { useConfigurationUrlReader } from "../../hooks/useConfigurationReader";
 
-function AutoSyncStatus({ urlSync, dispatch }: AutoSyncStatusProps) {
+function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
+  const { readAndValidate, isLoading } = useConfigurationUrlReader();
   // Hide widget if frequency is 0 (disabled) or not configured
   if (!urlSync || urlSync.updateFrequency === 0) {
     return null;
@@ -16,6 +35,70 @@ function AutoSyncStatus({ urlSync, dispatch }: AutoSyncStatusProps) {
     });
 
     // Service worker will react to storage changes automatically
+  };
+
+  const handleManualSync = async () => {
+    if (!urlSync.url || isLoading) {
+      return;
+    }
+
+    // Request permission before fetching
+    const hasPermission = await requestUrlPermission(urlSync.url);
+    if (!hasPermission) {
+      console.error("Permission denied for", urlSync.url);
+      return;
+    }
+
+    // Use the hook to fetch and validate labels
+    const labelsForImport = await readAndValidate(urlSync.url);
+
+    if (labelsForImport) {
+      const updatingLabelCount = labelsForImport.filter(
+        (labelForImport) =>
+          !!labels.find((label) => label.id === labelForImport.id),
+      ).length;
+      const newLabelsCount = labelsForImport.length - updatingLabelCount;
+
+      modals.open({
+        title: "Import labels from URL",
+        size: "auto",
+        children: (
+          <ConfirmationModal
+            message={
+              <>
+                From the URL:
+                <List size="sm" mt={5} mb={5} withPadding>
+                  <List.Item>
+                    {newLabelsCount}
+                    {" new " + (newLabelsCount === 1 ? " label " : "labels ")}
+                    will be added;
+                  </List.Item>
+                  <List.Item>
+                    {updatingLabelCount}
+                    {" existing " +
+                      (updatingLabelCount === 1 ? "label " : "labels ")}
+                    will be updated.
+                  </List.Item>
+                </List>
+              </>
+            }
+            onConfirm={() => {
+              dispatch({
+                type: "mergeLabels",
+                payload: { labels: labelsForImport },
+              });
+              // Update last sync time and clear error
+              dispatch({
+                type: "updateUrlSync",
+                payload: { lastUpdate: Date.now(), lastError: undefined },
+              });
+              modals.closeAll();
+            }}
+            onClose={() => modals.closeAll()}
+          ></ConfirmationModal>
+        ),
+      });
+    }
   };
 
   const hasError = !!urlSync.lastError;
@@ -91,6 +174,19 @@ function AutoSyncStatus({ urlSync, dispatch }: AutoSyncStatusProps) {
           {lastSyncText}
         </Text>
       )}
+
+      <Tooltip label="Sync now" position="bottom">
+        <ActionIcon
+          variant="subtle"
+          size="sm"
+          onClick={handleManualSync}
+          loading={isLoading}
+          disabled={isLoading}
+          color="gray"
+        >
+          <IconRefresh size={14} />
+        </ActionIcon>
+      </Tooltip>
     </Group>
   );
 }
