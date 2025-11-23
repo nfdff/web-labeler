@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { Label } from "../../options/types.ts";
+import { validationSchema } from "../../options/validationSchema.ts";
+import validate from "../../utils/schemaValidator";
+import {
+  FetchJsonFromUrlMessage,
+  MessageResponse,
+} from "../../background/types.ts";
 
 export type UseConfigurationUrlReader = () => {
   readAndValidate: (url: string) => Promise<Label[] | undefined>;
@@ -18,9 +24,16 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
       setIsLoading(true);
       setErrorMessage(undefined);
 
+      // Create type-safe message
+      const message: FetchJsonFromUrlMessage = {
+        type: "FETCH_JSON_FROM_URL",
+        url,
+      };
+
+      // Fetch data from background script (without validation)
       chrome.runtime.sendMessage(
-        { type: "FETCH_LABELS_FROM_URL", url },
-        (response: { labels: Label[] | null; error?: string }) => {
+        message,
+        (response: MessageResponse<"FETCH_JSON_FROM_URL">) => {
           setIsLoading(false);
 
           if (chrome.runtime.lastError) {
@@ -32,10 +45,32 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
             return;
           }
 
-          if (response.labels) {
-            resolve(response.labels);
-          } else {
-            setErrorMessage(response.error || "Unknown error");
+          if (!response.data) {
+            setErrorMessage(response.error || "Failed to fetch data");
+            resolve(undefined);
+            return;
+          }
+
+          try {
+            if (!Array.isArray(response.data)) {
+              throw new Error("The URL doesn't return valid labels array");
+            }
+
+            for (const item of response.data) {
+              const { result: isValid, messages } = validate(
+                item,
+                validationSchema,
+              );
+              if (!isValid) {
+                throw new Error(messages?.join("; "));
+              }
+            }
+
+            resolve(response.data as Label[]);
+          } catch (err) {
+            setErrorMessage(
+              err instanceof Error ? err.message : "Validation error",
+            );
             resolve(undefined);
           }
         },

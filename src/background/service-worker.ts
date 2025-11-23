@@ -2,50 +2,56 @@ import { Label, Options } from "../options/types";
 import { validationSchema } from "../options/validationSchema";
 import validate from "../utils/schemaValidator";
 import { logger } from "../utils/logger";
+import type { ExtensionMessage, MessageResponse } from "./types.ts";
 
 const ALARM_NAME = "urlSyncAlarm";
 const STORAGE_KEY = "options";
 
 //todo: refactor - split to separate modules
 
-// Fetch and validate labels from URL
-async function fetchLabelsFromUrl(
+async function fetchJsonFromUrl(
   url: string,
-): Promise<{ labels: Label[] | null; error?: string }> {
+): Promise<{ data: unknown | null; error?: string }> {
   try {
     const response = await fetch(url);
     if (!response.ok) {
       const errorMsg = `HTTP error! status: ${response.status}`;
       logger.error(errorMsg);
-      return { labels: null, error: errorMsg };
+      return { data: null, error: errorMsg };
     }
 
-    const result = await response.json();
-
-    if (!Array.isArray(result)) {
-      const errorMsg = "The URL doesn't return valid labels array";
-      logger.error(errorMsg);
-      return { labels: null, error: errorMsg };
-    }
-
-    // Validate each label
-    for (const item of result) {
-      const { result: isValid, messages } = validate(item, validationSchema);
-      if (!isValid) {
-        const errorMsg = `Validation error: ${messages?.join("; ")}`;
-        logger.error(errorMsg);
-        return { labels: null, error: errorMsg };
-      }
-    }
-
-    logger.info(`Successfully fetched ${result.length} labels from URL`);
-    return { labels: result as Label[], error: undefined };
+    const data = await response.json();
+    logger.info(`Successfully fetched data from URL`);
+    return { data, error: undefined };
   } catch (error) {
     const errorMsg =
       error instanceof Error ? error.message : "Unknown error fetching labels";
     logger.error("Error fetching labels from URL:", errorMsg);
+    return { data: null, error: errorMsg };
+  }
+}
+
+function validateLabels(data: unknown): {
+  labels: Label[] | null;
+  error?: string;
+} {
+  if (!Array.isArray(data)) {
+    const errorMsg = "The data doesn't contain valid labels array";
+    logger.error(errorMsg);
     return { labels: null, error: errorMsg };
   }
+
+  for (const item of data) {
+    const { result: isValid, messages } = validate(item, validationSchema);
+    if (!isValid) {
+      const errorMsg = `Validation error: ${messages?.join("; ")}`;
+      logger.error(errorMsg);
+      return { labels: null, error: errorMsg };
+    }
+  }
+
+  logger.info(`Successfully validated ${data.length} labels`);
+  return { labels: data as Label[], error: undefined };
 }
 
 // Sync labels from URL
@@ -55,60 +61,78 @@ async function syncLabelsFromUrl() {
     const options = storage[STORAGE_KEY] as Options | undefined;
 
     if (!options?.urlSync?.enabled || !options.urlSync.url) {
-      logger.info("URL sync is disabled or URL is not set");
       return;
     }
 
-    logger.info("Starting URL sync from:", options.urlSync.url);
-    const { labels, error } = await fetchLabelsFromUrl(options.urlSync.url);
+    const { data, error: fetchError } = await fetchJsonFromUrl(
+      options.urlSync.url,
+    );
 
-    if (labels) {
-      // Merge labels (same logic as in the UI)
-      const updatedLabels = [...options.labels];
-      let newCount = 0;
-      let updatedCount = 0;
-
-      //todo: think to reuse mergeLabels action in Store
-      labels.forEach((importingLabel) => {
-        const indexToUpdate = updatedLabels.findIndex(
-          (label) => label.id === importingLabel.id,
-        );
-        if (indexToUpdate !== -1) {
-          updatedLabels[indexToUpdate] = importingLabel;
-          updatedCount++;
-        } else {
-          updatedLabels.push(importingLabel);
-          newCount++;
-        }
-      });
-
-      // Update storage with merged labels, last update time, and clear any error
-      const updatedOptions: Options = {
-        ...options,
-        labels: updatedLabels,
-        urlSync: {
-          ...options.urlSync,
-          lastUpdate: Date.now(),
-          lastError: undefined,
-        },
-      };
-
-      await chrome.storage.sync.set({ [STORAGE_KEY]: updatedOptions });
-      logger.info(
-        `Labels synced successfully: ${newCount} new, ${updatedCount} updated`,
-      );
-    } else {
-      // Update storage with error
+    if (!data) {
+      // Update storage with fetch error
       const updatedOptions: Options = {
         ...options,
         urlSync: {
           ...options.urlSync,
-          lastError: error || "Unknown error",
+          lastError: fetchError || "Unknown error",
         },
       };
       await chrome.storage.sync.set({ [STORAGE_KEY]: updatedOptions });
-      logger.error("Failed to sync labels:", error);
+      logger.error("Failed to fetch labels:", fetchError);
+      return;
     }
+
+    // Validate data
+    const { labels, error: validationError } = validateLabels(data);
+
+    if (!labels) {
+      // Update storage with validation error
+      const updatedOptions: Options = {
+        ...options,
+        urlSync: {
+          ...options.urlSync,
+          lastError: validationError || "Validation failed",
+        },
+      };
+      await chrome.storage.sync.set({ [STORAGE_KEY]: updatedOptions });
+      logger.error("Failed to validate labels:", validationError);
+      return;
+    }
+
+    // Merge labels (same logic as in the UI)
+    const updatedLabels = [...options.labels];
+    let newCount = 0;
+    let updatedCount = 0;
+
+    //todo: think to reuse mergeLabels action in Store
+    labels.forEach((importingLabel) => {
+      const indexToUpdate = updatedLabels.findIndex(
+        (label) => label.id === importingLabel.id,
+      );
+      if (indexToUpdate !== -1) {
+        updatedLabels[indexToUpdate] = importingLabel;
+        updatedCount++;
+      } else {
+        updatedLabels.push(importingLabel);
+        newCount++;
+      }
+    });
+
+    // Update storage with merged labels, last update time, and clear any error
+    const updatedOptions: Options = {
+      ...options,
+      labels: updatedLabels,
+      urlSync: {
+        ...options.urlSync,
+        lastUpdate: Date.now(),
+        lastError: undefined,
+      },
+    };
+
+    await chrome.storage.sync.set({ [STORAGE_KEY]: updatedOptions });
+    logger.info(
+      `Labels synced successfully: ${newCount} new, ${updatedCount} updated`,
+    );
   } catch (error) {
     const errorMsg = error instanceof Error ? error.message : "Unknown error";
     logger.error("Error syncing labels:", errorMsg);
@@ -217,31 +241,28 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
         newSync?.updateFrequency || 0,
       );
     }
-    // Ignore changes to url, lastUpdate, lastError, or other unrelated fields
   }
 });
 
-// Listen for messages from UI components
-chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  // Handle fetch labels from URL request (for manual sync with user confirmation)
-  if (message.type === "FETCH_LABELS_FROM_URL") {
-    logger.info("Received FETCH_LABELS_FROM_URL message:", message.url);
-
-    fetchLabelsFromUrl(message.url)
-      .then((result) => {
-        logger.info("Fetch completed, sending response");
-        sendResponse(result);
-      })
-      .catch((error) => {
-        logger.error("Fetch error:", error);
-        sendResponse({
-          labels: null,
-          error: error instanceof Error ? error.message : "Unknown error",
+// Listen for messages from UI components (type-safe)
+chrome.runtime.onMessage.addListener(
+  (message: ExtensionMessage, _sender, sendResponse) => {
+    if (message.type === "FETCH_JSON_FROM_URL") {
+      fetchJsonFromUrl(message.url)
+        .then((result: MessageResponse<"FETCH_JSON_FROM_URL">) => {
+          sendResponse(result);
+        })
+        .catch((error) => {
+          const errorResponse: MessageResponse<"FETCH_JSON_FROM_URL"> = {
+            data: null,
+            error: error instanceof Error ? error.message : "Unknown error",
+          };
+          sendResponse(errorResponse);
         });
-      });
 
-    return true; // Keep message channel open for async response
-  }
+      return true; // Keep message channel open for async response
+    }
 
-  return false; // Not handled, close channel
-});
+    return false; // Not handled, close channel
+  },
+);

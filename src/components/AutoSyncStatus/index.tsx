@@ -23,6 +23,7 @@ import { useConfigurationUrlReader } from "../../hooks/useConfigurationReader";
 
 function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
   const { readAndValidate, isLoading } = useConfigurationUrlReader();
+
   // Hide widget if frequency is 0 (disabled) or not configured
   if (!urlSync || urlSync.updateFrequency === 0) {
     return null;
@@ -33,8 +34,6 @@ function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
       type: "updateUrlSync",
       payload: { enabled: checked },
     });
-
-    // Service worker will react to storage changes automatically
   };
 
   const handleManualSync = async () => {
