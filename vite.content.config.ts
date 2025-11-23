@@ -12,13 +12,9 @@ export default defineConfig({
       },
       output: {
         manualChunks: undefined,
-        // //TODO: replace non-hashed-filenames with creating manifest.json
-        // // https://rollupjs.org/plugin-development/#build-hooks
-        entryFileNames: (chunkInfo) => {
-          // Service worker goes to root, others go to assets
-          if (chunkInfo.name === "service-worker") {
-            return "[name].js";
-          }
+        //TODO: replace non-hashed-filenames with creating manifest.json
+        // https://rollupjs.org/plugin-development/#build-hooks
+        entryFileNames: () => {
           return "assets/[name].js";
         },
         assetFileNames: "assets/[name][extname]",
