@@ -14,8 +14,10 @@ import {
   initializeAlarm,
   setupAlarmListener,
   updateAlarm,
+  checkAndRunMissedSync,
 } from "./alarms/alarmManager";
 import { setupMessageListener } from "./messages/handlers";
+import { getOptions, setOptions } from "./storage/storageManager";
 import type { Options } from "../options/types";
 
 // ============================================================================
@@ -24,8 +26,8 @@ import type { Options } from "../options/types";
 
 chrome.runtime.onStartup.addListener(async () => {
   try {
-    logger.info("Extension started, initializing URL sync alarm");
     await initializeAlarm();
+    await checkAndRunMissedSync();
   } catch (error) {
     logger.error("Error on startup:", error);
   }
@@ -33,8 +35,8 @@ chrome.runtime.onStartup.addListener(async () => {
 
 chrome.runtime.onInstalled.addListener(async () => {
   try {
-    logger.info("Extension installed, initializing URL sync alarm");
     await initializeAlarm();
+    await checkAndRunMissedSync();
   } catch (error) {
     logger.error("Error on install:", error);
   }
@@ -60,13 +62,24 @@ chrome.storage.onChanged.addListener(async (changes, areaName) => {
     // Only update alarm if settings that affect it changed
     if (enabledChanged || frequencyChanged) {
       try {
-        logger.info(
-          `URL sync alarm settings changed: enabled=${newSync?.enabled}, frequency=${newSync?.updateFrequency}`,
-        );
         await updateAlarm(
           newSync?.enabled || false,
           newSync?.updateFrequency || 0,
         );
+
+        // Clear lastUpdate when sync is disabled to avoid false "missed sync" detection
+        if (!newSync?.enabled && newSync?.lastUpdate) {
+          const options = await getOptions();
+          if (options?.urlSync) {
+            await setOptions({
+              ...options,
+              urlSync: {
+                ...options.urlSync,
+                lastUpdate: null,
+              },
+            });
+          }
+        }
       } catch (error) {
         logger.error("Error updating alarm from storage change:", error);
       }

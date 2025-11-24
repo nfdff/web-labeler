@@ -20,11 +20,13 @@ import ConfirmationModal from "../../../ConfirmationModal";
 import { useEffect, useState } from "react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
 import { isValidHttpUrl } from "../../../../utils/common.ts";
-import { getOriginPattern, requestUrlPermission } from "../../../../utils/urlPermissions.ts";
+import {
+  getOriginPattern,
+  requestUrlPermission,
+} from "../../../../utils/urlPermissions.ts";
 
 //todo:
 // 1. google drive support
-// 3. check on start if alarm was missed (diff between last import and current datetime comparing with sync frequency)
 
 function ConfigurationImportFromUrl({
   labels,
