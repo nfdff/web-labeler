@@ -122,7 +122,17 @@ function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
                 Sync URL
               </Text>
             </Group>
-            <Text size="xs" c="dimmed" style={{ wordBreak: "break-all" }}>
+            <Text
+              size="xs"
+              c="dimmed"
+              style={{
+                wordBreak: "break-all",
+                maxWidth: "350px",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+              }}
+            >
               {urlSync.url}
             </Text>
             <Text size="xs" c="dimmed" style={{ wordBreak: "break-all" }}>
