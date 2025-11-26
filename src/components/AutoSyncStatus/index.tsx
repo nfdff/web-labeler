@@ -7,7 +7,6 @@ import {
   Stack,
   ActionIcon,
   Tooltip,
-  List,
 } from "@mantine/core";
 import {
   IconWorldUpload,
@@ -16,13 +15,17 @@ import {
 } from "@tabler/icons-react";
 import { AutoSyncStatusProps } from "./types";
 import { getRelativeTime, formatUpdateFrequency } from "../../utils/timeFormat";
-import { modals } from "@mantine/modals";
-import ConfirmationModal from "../ConfirmationModal";
 import { requestUrlPermission } from "../../utils/urlPermissions";
 import { useConfigurationUrlReader } from "../../hooks/useConfigurationReader";
+import { useImportLabels } from "../../hooks/useImportLabels";
 
 function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
   const { readAndValidate, isLoading } = useConfigurationUrlReader();
+  const { confirmAndImport } = useImportLabels({
+    labels,
+    dispatch,
+    updateSyncSettings: true,
+  });
 
   // Hide widget if frequency is 0 (disabled) or not configured
   if (!urlSync || urlSync.updateFrequency === 0) {
@@ -52,50 +55,9 @@ function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
     const labelsForImport = await readAndValidate(urlSync.url);
 
     if (labelsForImport) {
-      const updatingLabelCount = labelsForImport.filter(
-        (labelForImport) =>
-          !!labels.find((label) => label.id === labelForImport.id),
-      ).length;
-      const newLabelsCount = labelsForImport.length - updatingLabelCount;
-
-      modals.open({
+      confirmAndImport(labelsForImport, {
         title: "Import labels from URL",
-        size: "auto",
-        children: (
-          <ConfirmationModal
-            message={
-              <>
-                From the URL:
-                <List size="sm" mt={5} mb={5} withPadding>
-                  <List.Item>
-                    {newLabelsCount}
-                    {" new " + (newLabelsCount === 1 ? " label " : "labels ")}
-                    will be added;
-                  </List.Item>
-                  <List.Item>
-                    {updatingLabelCount}
-                    {" existing " +
-                      (updatingLabelCount === 1 ? "label " : "labels ")}
-                    will be updated.
-                  </List.Item>
-                </List>
-              </>
-            }
-            onConfirm={() => {
-              dispatch({
-                type: "mergeLabels",
-                payload: { labels: labelsForImport },
-              });
-              // Update last sync time and clear error
-              dispatch({
-                type: "updateUrlSync",
-                payload: { lastUpdate: Date.now(), lastError: undefined },
-              });
-              modals.closeAll();
-            }}
-            onClose={() => modals.closeAll()}
-          ></ConfirmationModal>
-        ),
+        messagePrefix: "From the URL:",
       });
     }
   };

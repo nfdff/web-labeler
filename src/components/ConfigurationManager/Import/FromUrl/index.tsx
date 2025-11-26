@@ -3,7 +3,6 @@ import {
   Button,
   CloseButton,
   Group,
-  List,
   Select,
   Stack,
   Switch,
@@ -16,7 +15,6 @@ import { ConfigurationImportFromUrlProps } from "./types.ts";
 import ErrorMessage from "../ErrorMessage";
 import { useConfigurationUrlReader } from "../../../../hooks/useConfigurationReader";
 import { modals } from "@mantine/modals";
-import ConfirmationModal from "../../../ConfirmationModal";
 import { useEffect, useState } from "react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
 import { isValidHttpUrl } from "../../../../utils/common.ts";
@@ -24,6 +22,7 @@ import {
   getOriginPattern,
   requestUrlPermission,
 } from "../../../../utils/urlPermissions.ts";
+import { useImportLabels } from "../../../../hooks/useImportLabels";
 
 //todo:
 // 1. google drive support
@@ -36,6 +35,11 @@ function ConfigurationImportFromUrl({
 }: ConfigurationImportFromUrlProps) {
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationUrlReader();
+  const { confirmAndImport } = useImportLabels({
+    labels,
+    dispatch,
+    updateSyncSettings: true,
+  });
   const [permissionError, setPermissionError] = useState<string | undefined>();
 
   const form = useForm({
@@ -105,50 +109,9 @@ function ConfigurationImportFromUrl({
     const labelsForImport = await readAndValidate(url);
 
     if (labelsForImport) {
-      const updatingLabelCount = labelsForImport.filter(
-        (labelForImport) =>
-          !!labels.find((label) => label.id === labelForImport.id),
-      ).length;
-      const newLabelsCount = labelsForImport.length - updatingLabelCount;
-
-      modals.open({
+      confirmAndImport(labelsForImport, {
         title: "Import labels from URL",
-        size: "auto",
-        children: (
-          <ConfirmationModal
-            message={
-              <>
-                From the URL:
-                <List size="sm" mt={5} mb={5} withPadding>
-                  <List.Item>
-                    {newLabelsCount}
-                    {" new " + (newLabelsCount === 1 ? " label " : "labels ")}
-                    will be added;
-                  </List.Item>
-                  <List.Item>
-                    {updatingLabelCount}
-                    {" existing " +
-                      (updatingLabelCount === 1 ? "label " : "labels ")}
-                    will be updated.
-                  </List.Item>
-                </List>
-              </>
-            }
-            onConfirm={() => {
-              dispatch({
-                type: "mergeLabels",
-                payload: { labels: labelsForImport },
-              });
-              // Update last sync time and clear error
-              dispatch({
-                type: "updateUrlSync",
-                payload: { lastUpdate: Date.now(), lastError: undefined },
-              });
-              modals.closeAll();
-            }}
-            onClose={() => modals.closeAll()}
-          ></ConfirmationModal>
-        ),
+        messagePrefix: "From the URL:",
       });
     }
   };
