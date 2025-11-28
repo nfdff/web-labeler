@@ -10,7 +10,7 @@ const defaultLabels: Label[] = [
     opacity: 0.75,
     shape: "triangle",
     position: "left-top",
-    rules: [{ type: "contains", value: "yourProduction.com" }],
+    rules: [{ type: "contains", value: "yourProduction.com", source: "hostname" }],
     isActive: true,
   },
   {
@@ -21,7 +21,7 @@ const defaultLabels: Label[] = [
     opacity: 0.75,
     shape: "triangle",
     position: "left-top",
-    rules: [{ type: "contains", value: "yourStaging.com" }],
+    rules: [{ type: "contains", value: "yourStaging.com", source: "hostname" }],
     isActive: true,
   },
   {
@@ -32,7 +32,7 @@ const defaultLabels: Label[] = [
     opacity: 0.75,
     shape: "triangle",
     position: "left-top",
-    rules: [{ type: "contains", value: "yourDevelopment.com" }],
+    rules: [{ type: "contains", value: "yourDevelopment.com", source: "hostname" }],
     isActive: true,
   },
 ];

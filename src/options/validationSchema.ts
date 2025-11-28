@@ -26,7 +26,11 @@ export const validationSchema: Schema<Label> = {
     Array.isArray(val) &&
     val.filter(
       (item) =>
-        ruleTypes.includes(item?.type) && typeof item?.value === "string",
+        ruleTypes.includes(item?.type) &&
+        typeof item?.value === "string" &&
+        (item?.source === undefined ||
+          item?.source === "hostname" ||
+          item?.source === "fullUrl"),
     ).length === val.length,
   opacity: (val) => typeof val === "number" && val > 0 && val < 1,
   isActive: (val) => typeof val === "boolean",

@@ -25,6 +25,7 @@ export interface Label {
 export interface Rule {
   type: (typeof ruleTypes)[number];
   value: string;
+  source?: "hostname" | "fullUrl";
 }
 
 export interface Options {

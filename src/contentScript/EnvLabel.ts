@@ -42,12 +42,26 @@ export default class EnvLabel {
         continue;
       }
       for (const rule of label.rules) {
-        if (this.checkRule(rule.type, rule.value, window.location.hostname)) {
+        // Get the comparison string based on source (default to hostname for backward compatibility)
+        const comparisonString = this.getComparisonString(rule.source);
+        if (this.checkRule(rule.type, rule.value, comparisonString)) {
           return label;
         }
       }
     }
     return null;
+  };
+
+  private getComparisonString = (
+    source?: "hostname" | "fullUrl",
+  ): string => {
+    // Default to hostname for backward compatibility when source is undefined
+    if (!source || source === "hostname") {
+      return window.location.hostname;
+    }
+
+    // fullUrl: URL without protocol (http:// or https://)
+    return window.location.href.replace(/^https?:\/\//, "");
   };
 
   private checkRule = (
@@ -64,6 +78,14 @@ export default class EnvLabel {
         return str.endsWith(ruleValue);
       case "contains":
         return str.includes(ruleValue);
+      case "regexp":
+        try {
+          const regex = new RegExp(ruleValue);
+          return regex.test(str);
+        } catch (e) {
+          console.error("Invalid regexp pattern:", ruleValue, e);
+          return false;
+        }
       default:
         return false;
     }

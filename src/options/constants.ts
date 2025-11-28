@@ -1,9 +1,50 @@
-export const ruleTypes: string[] = [
+export const ruleTypes = [
   "contains",
   "startsWith",
   "endsWith",
   "matches",
+  "regexp",
 ] as const;
+
+export type RuleType = (typeof ruleTypes)[number];
+
+export interface RuleTypeSettings {
+  label: string;
+}
+
+export const ruleTypeSettings = {
+  contains: {
+    label: "Contains",
+  },
+  startsWith: {
+    label: "Starts with",
+  },
+  endsWith: {
+    label: "Ends With",
+  },
+  matches: {
+    label: "Matches",
+  },
+  regexp: {
+    label: "Matches RegExp",
+  },
+} as const satisfies Record<RuleType, RuleTypeSettings>;
+
+export const sourceTypes = ["hostname", "fullUrl"] as const;
+export type SourceType = (typeof sourceTypes)[number];
+
+export interface SourceTypeSettings {
+  label: string;
+}
+
+export const sourceTypeSettings = {
+  hostname: {
+    label: "Domain",
+  },
+  fullUrl: {
+    label: "Full URL",
+  },
+} as const satisfies Record<SourceType, SourceTypeSettings>;
 
 export const shapes = ["triangle", "ribbon", "banner", "frame"] as const;
 
