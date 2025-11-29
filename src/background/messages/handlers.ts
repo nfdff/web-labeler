@@ -22,11 +22,8 @@ export function setupMessageListener(): void {
   chrome.runtime.onMessage.addListener(
     (message: ExtensionMessage, _sender, sendResponse) => {
       if (message.type === "FETCH_JSON_FROM_URL") {
-        logger.info("Received FETCH_JSON_FROM_URL message:", message.url);
-
         // Handle async response
         handleFetchJsonFromUrl(message.url, sendResponse);
-
         return true; // Keep message channel open for async response
       }
 
