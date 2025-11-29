@@ -19,6 +19,7 @@ function LabelEditForm({ label, onSave, section }: LabelEditFormProps) {
   const { dispatch } = useOptionsContext();
 
   useEffect(() => {
+    //todo: normalize form values (set default values for all optional fields)
     form.initialize({ ...form.values, ...label });
   }, [label]);
 

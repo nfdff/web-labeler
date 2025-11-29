@@ -57,9 +57,9 @@ function LabelEditFormRules() {
             data={sourceTypeOptions}
             key={form.key(`rules.${index}.source`)}
             {...form.getInputProps(`rules.${index}.source`)}
+            value={form.values.rules[index].source ?? sourceTypes[0]}
             style={{ maxWidth: "120px" }}
             allowDeselect={false}
-            placeholder="hostname"
           />
           <Select
             data={ruleTypeOptions}
@@ -103,7 +103,7 @@ function LabelEditFormRules() {
           form.insertListItem("rules", {
             type: ruleTypes[0],
             value: "",
-            source: "hostname",
+            source: sourceTypes[0],
           });
         }}
       >
