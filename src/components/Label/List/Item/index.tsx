@@ -4,6 +4,10 @@ import { LabelListItemProps } from "./types.ts";
 import LabelListItemActions from "../ItemActions";
 import { Draggable } from "@hello-pangea/dnd";
 import LabelListItemSettings from "../ItemSettings";
+import {
+  ruleTypeSettings,
+  sourceTypeSettings,
+} from "../../../../options/constants.ts";
 
 function LabelListItem({ label, index, isAllActive }: LabelListItemProps) {
   return (
@@ -35,9 +39,11 @@ function LabelListItem({ label, index, isAllActive }: LabelListItemProps) {
               {!!label.rules.length && (
                 <HoverCard.Dropdown>
                   <List size="xs" icon={<IconTag size={14} />} center>
-                    {label.rules.map((rule) => (
-                      <List.Item>
-                        {rule.type}: {rule.value}
+                    {label.rules.map((rule, idx) => (
+                      <List.Item key={idx}>
+                        {sourceTypeSettings[rule.source || "hostname"].label}{" "}
+                        {ruleTypeSettings[rule.type].label}:{" "}
+                        <strong>{rule.value}</strong>
                       </List.Item>
                     ))}
                   </List>

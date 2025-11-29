@@ -17,7 +17,7 @@ export const ruleTypeSettings = {
     label: "Contains",
   },
   startsWith: {
-    label: "Starts with",
+    label: "Starts With",
   },
   endsWith: {
     label: "Ends With",
