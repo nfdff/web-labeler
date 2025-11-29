@@ -8,13 +8,15 @@ export default defineConfig({
     rollupOptions: {
       input: {
         contentScript: "./src/contentScript/index.ts",
+        "service-worker": "./src/background/service-worker.ts",
       },
       output: {
-        inlineDynamicImports: true,
         manualChunks: undefined,
-        // //TODO: replace non-hashed-filenames with creating manifest.json
-        // // https://rollupjs.org/plugin-development/#build-hooks
-        entryFileNames: `assets/[name].js`,
+        //TODO: replace non-hashed-filenames with creating manifest.json
+        // https://rollupjs.org/plugin-development/#build-hooks
+        entryFileNames: () => {
+          return "assets/[name].js";
+        },
         assetFileNames: "assets/[name][extname]",
       },
     },

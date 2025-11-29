@@ -84,5 +84,22 @@ export const optionsReducer = (options: Options, action: OptionsAction) => {
       };
     case "initialize":
       return action.payload;
+    case "updateUrlSync":
+      return {
+        ...options,
+        urlSync: {
+          enabled: false,
+          url: "",
+          updateFrequency: 0,
+          ...options.urlSync,
+          ...action.payload,
+          // Clear sync metadata if URL changed
+          ...(action.payload.url !== undefined &&
+            action.payload.url !== options.urlSync?.url && {
+              lastUpdate: null,
+              lastError: null,
+            }),
+        },
+      };
   }
 };

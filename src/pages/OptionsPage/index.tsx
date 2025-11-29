@@ -43,7 +43,11 @@ function OptionsPage() {
         <Paper shadow="xs" p="xl" className={classes.labelListContainer}>
           <LabelList />
         </Paper>
-        <ConfigurationManager labels={options.labels} dispatch={dispatch} />
+        <ConfigurationManager
+          labels={options.labels}
+          dispatch={dispatch}
+          urlSync={options.urlSync}
+        />
         <Footer />
       </Stack>
     </Container>

@@ -1,63 +1,36 @@
-import { Text, Stack, Group, List } from "@mantine/core";
+import { Text, Stack, Group } from "@mantine/core";
 import { IconUpload, IconX, IconFileCode } from "@tabler/icons-react";
 import { Dropzone, FileWithPath } from "@mantine/dropzone";
 import { ConfigurationImportFromFilesProps } from "./types.ts";
 import ErrorMessage from "../ErrorMessage";
 import { useConfigurationFileReader } from "../../../../hooks/useConfigurationReader";
-import { modals } from "@mantine/modals";
-import ConfirmationModal from "../../../ConfirmationModal";
+import { useImportLabels } from "../../../../hooks/useImportLabels";
 
 function ConfigurationImportFromFile({
   labels,
   dispatch,
+  closeConfigurationManager,
 }: ConfigurationImportFromFilesProps) {
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationFileReader();
+  const { confirmAndImport } = useImportLabels({
+    labels,
+    dispatch,
+    updateSyncSettings: false,
+  });
 
   const onFileDrop = async (files: FileWithPath[]) => {
     const labelsForImport = await readAndValidate(files[0]);
 
     if (labelsForImport) {
-      const updatingLabelCount = labelsForImport.filter(
-        (labelForImport) =>
-          !!labels.find((label) => label.id === labelForImport.id),
-      ).length;
-      const newLabelsCount = labelsForImport.length - updatingLabelCount;
-
-      modals.open({
+      confirmAndImport(labelsForImport, {
         title: "Import labels",
-        size: "auto",
-        children: (
-          <ConfirmationModal
-            message={
-              <>
-                From the imported file:
-                <List size="sm" mt={5} mb={5} withPadding>
-                  <List.Item>
-                    {newLabelsCount}
-                    {" new " + (newLabelsCount === 1 ? " label " : "labels ")}
-                    will be added;
-                  </List.Item>
-                  <List.Item>
-                    {updatingLabelCount}
-                    {" existing " +
-                      (updatingLabelCount === 1 ? "label " : "labels ")}
-                    will be updated.
-                  </List.Item>
-                </List>
-                Do you want to proceed?
-              </>
-            }
-            onConfirm={() => {
-              dispatch({
-                type: "mergeLabels",
-                payload: { labels: labelsForImport },
-              });
-              modals.closeAll();
-            }}
-            onClose={() => modals.closeAll()}
-          />
-        ),
+        messagePrefix: "From the imported file:",
+        onSuccess: () => {
+          if (closeConfigurationManager) {
+            closeConfigurationManager();
+          }
+        },
       });
     }
   };
