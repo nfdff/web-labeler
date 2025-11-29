@@ -5,10 +5,12 @@ import {
   sourceTypes,
   sourceTypeSettings,
 } from "../../../../options/constants.ts";
+import { ClipboardEvent } from "react";
 import { IconPlus, IconTrash } from "@tabler/icons-react";
 import { useLabelEditFormContext } from "../formContext.ts";
 import { LabelEditFormValues } from "../types.ts";
 import { UseFormReturnType } from "@mantine/form";
+import { getRuleValuePlaceholder } from "./utils.ts";
 
 const sourceTypeOptions = sourceTypes.map((source) => ({
   value: source,
@@ -24,7 +26,7 @@ function LabelEditFormRules() {
   const form = useLabelEditFormContext();
 
   const handlePaste = (
-    event: React.ClipboardEvent<HTMLInputElement>,
+    event: ClipboardEvent<HTMLInputElement>,
     path: string,
     form: UseFormReturnType<LabelEditFormValues>,
   ) => {
@@ -69,11 +71,10 @@ function LabelEditFormRules() {
             allowDeselect={false}
           />
           <TextInput
-            placeholder={
-              form.values.rules[index]?.source === "fullUrl"
-                ? "URL (without protocol)"
-                : "Domain or part (without protocol)"
-            }
+            placeholder={getRuleValuePlaceholder(
+              form.values.rules[index]?.type,
+              form.values.rules[index]?.source,
+            )}
             key={form.key(`rules.${index}.value`)}
             {...form.getInputProps(`rules.${index}.value`)}
             style={{ flexGrow: 1 }}

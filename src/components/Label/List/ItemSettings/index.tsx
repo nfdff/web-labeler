@@ -1,9 +1,10 @@
-import { Button, Group, Text } from "@mantine/core";
+import { Button, Group, Text, Tooltip, ActionIcon } from "@mantine/core";
 import {
   IconFlask,
   IconForms,
   IconLabel,
   IconPhotoCircle,
+  IconQuestionMark,
 } from "@tabler/icons-react";
 import { modals } from "@mantine/modals";
 import LabelEditForm from "../../EditForm";
@@ -82,8 +83,25 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         leftSection={<IconForms size={14} />}
         onClick={() => {
           modals.open({
-            title: "Rules",
-            size: "lg",
+            title: (
+              <Group gap="xs">
+                Rules
+                <Tooltip
+                  label="The label is shown when any single rule matches (OR logic between rows)"
+                  position="right"
+                >
+                  <ActionIcon
+                    variant="light"
+                    color="gray"
+                    size="xs"
+                    radius="xl"
+                  >
+                    <IconQuestionMark size={12} />
+                  </ActionIcon>
+                </Tooltip>
+              </Group>
+            ),
+            size: "750px",
             children: (
               <LabelEditForm
                 label={label}
