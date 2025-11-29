@@ -4,4 +4,6 @@ export interface LabelListItemProps {
   label: Label;
   index: number;
   isAllActive?: boolean;
+  isSelected: boolean;
+  onSelect: (checked: boolean) => void;
 }

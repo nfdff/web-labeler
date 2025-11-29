@@ -9,7 +9,7 @@ import {
 } from "@mantine/core";
 import { IconSettings } from "@tabler/icons-react";
 import { LabelListCompact } from "../../components/Label/List";
-import { useOptionsContext } from "../../hooks/useOptionsContext";
+import { useOptionsContext } from "../../contexts";
 
 function Popup() {
   const { options, dispatch } = useOptionsContext();

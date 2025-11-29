@@ -5,7 +5,7 @@ import OptionsPage from "./pages/OptionsPage";
 import "@mantine/core/styles.css";
 import "@mantine/dropzone/styles.css";
 import "./style.scss";
-import { OptionsProvider } from "./options/context.tsx";
+import { OptionsProvider } from "./contexts";
 
 //TODO:
 // ☑️ 1. Opacity and isActive props for Labels

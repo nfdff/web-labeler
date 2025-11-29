@@ -1,5 +1,5 @@
 import { Badge, Group, Stack, Switch } from "@mantine/core";
-import { useOptionsContext } from "../../../../hooks/useOptionsContext";
+import { useOptionsContext } from "../../../../contexts";
 
 function LabelListCompact() {
   const { options, dispatch } = useOptionsContext();

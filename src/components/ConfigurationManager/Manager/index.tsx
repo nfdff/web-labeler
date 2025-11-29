@@ -6,7 +6,7 @@ import { ConfigurationManagerProps } from "./types.ts";
 function ConfigurationManager({ labels, dispatch }: ConfigurationManagerProps) {
   return (
     <Group>
-      <ConfigurationExport labels={labels} />
+      <ConfigurationExport />
       <ConfigurationImport labels={labels} dispatch={dispatch} />
     </Group>
   );
