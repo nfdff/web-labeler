@@ -3,7 +3,7 @@ import { IconTrash } from "@tabler/icons-react";
 import { modals } from "@mantine/modals";
 import ConfirmationModal from "../../../ConfirmationModal";
 import { LabelListItemActionsProps } from "./types.ts";
-import { useOptionsContext } from "../../../../hooks/useOptionsContext";
+import { useOptionsContext } from "../../../../contexts";
 
 function LabelListItemActions({
   label,
@@ -16,7 +16,8 @@ function LabelListItemActions({
       <Switch
         disabled={!isAllActive}
         checked={label.isActive}
-        onChange={() => {
+        onChange={(e) => {
+          e.stopPropagation();
           dispatch({
             type: "toggleLabelStatus",
             payload: { id: label.id },
@@ -27,7 +28,8 @@ function LabelListItemActions({
         size="md"
         radius="xl"
         variant="light"
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           modals.open({
             title: "Delete Label",
             size: "lg",

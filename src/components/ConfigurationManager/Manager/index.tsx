@@ -11,7 +11,7 @@ function ConfigurationManager({
 }: ConfigurationManagerProps) {
   return (
     <Group>
-      <ConfigurationExport labels={labels} />
+      <ConfigurationExport />
       <ConfigurationImport labels={labels} dispatch={dispatch} urlSync={urlSync} />
       <AutoSyncStatus urlSync={urlSync} dispatch={dispatch} labels={labels} />
     </Group>

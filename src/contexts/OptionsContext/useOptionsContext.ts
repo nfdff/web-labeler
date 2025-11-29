@@ -1,5 +1,5 @@
-import { OptionsContext } from "../../options/context.tsx";
 import { useContext } from "react";
+import { OptionsContext } from "./OptionsContext.tsx";
 
 export const useOptionsContext = () => {
   const optionsContext = useContext(OptionsContext);

@@ -3,11 +3,26 @@ import { IconSquareRoundedPlus, IconTrash } from "@tabler/icons-react";
 import { modals } from "@mantine/modals";
 import LabelEditForm from "../../EditForm";
 import ConfirmationModal from "../../../ConfirmationModal";
-import { useOptionsContext } from "../../../../hooks/useOptionsContext";
 import { LabelEditFormSection } from "../../EditForm/types.ts";
+import { useOptionsContext, useSelectionContext } from "../../../../contexts";
 
 function LabelListActions() {
-  const { options, dispatch } = useOptionsContext();
+  const { dispatch } = useOptionsContext();
+  const { selectedIds, clearSelection, hasSelection } = useSelectionContext();
+
+  const handleDelete = () => {
+    if (hasSelection) {
+      // Delete selected labels
+      selectedIds.forEach((id) => {
+        dispatch({ type: "deleteLabel", payload: { id } });
+      });
+      clearSelection();
+    } else {
+      // Delete all labels
+      dispatch({ type: "deleteAllLabels" });
+    }
+    modals.closeAll();
+  };
 
   return (
     <Group gap="xs" mt="10">
@@ -30,29 +45,26 @@ function LabelListActions() {
       >
         Add Label
       </Button>
-      {options.labels.length > 1 && (
+      {hasSelection && (
         <Button
           size="xs"
           variant="light"
           leftSection={<IconTrash size={14} />}
           onClick={() => {
             modals.open({
-              title: "Delete All Labels",
+              title: "Delete Labels",
               size: "auto",
               children: (
                 <ConfirmationModal
-                  message={`Are you sure you want to delete all labels?`}
-                  onConfirm={() => {
-                    dispatch({ type: "deleteAllLabels" });
-                    modals.closeAll();
-                  }}
+                  message={`Are you sure you want to delete ${selectedIds.size} selected label${selectedIds.size > 1 ? "s" : ""}?`}
+                  onConfirm={handleDelete}
                   onClose={() => modals.closeAll()}
                 />
               ),
             });
           }}
         >
-          Delete All
+          Delete Selected
         </Button>
       )}
     </Group>

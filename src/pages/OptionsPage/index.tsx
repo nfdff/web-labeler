@@ -11,8 +11,8 @@ import LabelList from "../../components/Label";
 import ConfigurationManager from "../../components/ConfigurationManager";
 import ThemeSwitcher from "../../components/ThemeSwitcher";
 import classes from "./style.module.scss";
-import { useOptionsContext } from "../../hooks/useOptionsContext";
 import Footer from "../../components/Footer";
+import { useOptionsContext, SelectionProvider } from "../../contexts";
 
 function OptionsPage() {
   const { options, dispatch } = useOptionsContext();
@@ -40,14 +40,15 @@ function OptionsPage() {
             <ThemeSwitcher />
           </Group>
         </Group>
-        <Paper shadow="xs" p="xl" className={classes.labelListContainer}>
-          <LabelList />
-        </Paper>
-        <ConfigurationManager
-          labels={options.labels}
-          dispatch={dispatch}
-          urlSync={options.urlSync}
-        />
+        <SelectionProvider>
+          <Paper shadow="xs" p="xl" className={classes.labelListContainer}>
+            <LabelList />
+          </Paper>
+          <ConfigurationManager labels={options.labels}
+                                dispatch={dispatch}
+                                urlSync={options.urlSync}
+          />
+        </SelectionProvider>
         <Footer />
       </Stack>
     </Container>

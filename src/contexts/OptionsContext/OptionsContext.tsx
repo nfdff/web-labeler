@@ -1,10 +1,10 @@
 import { createContext, Dispatch, ReactNode } from "react";
-import { Options, OptionsAction } from "./types.ts";
-import { usePersistentReducer } from "../hooks/usePersistedReducer";
-import { optionsReducer } from "./options.ts";
-import defaultLabels from "./defaulLabels.ts";
+import { Options, OptionsAction } from "../../options/types.ts";
+import { usePersistentReducer } from "../../hooks/usePersistedReducer";
+import { optionsReducer } from "../../options/options.ts";
+import defaultLabels from "../../options/defaulLabels.ts";
 
-export const OptionsContext = createContext<
+const OptionsContext = createContext<
   | {
       options: Options;
       isInitialized: boolean;
@@ -12,6 +12,8 @@ export const OptionsContext = createContext<
     }
   | undefined
 >(undefined);
+
+export { OptionsContext };
 
 export const OptionsProvider = ({ children }: { children: ReactNode }) => {
   const { state, isInitialized, dispatch } = usePersistentReducer<

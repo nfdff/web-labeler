@@ -1,11 +1,20 @@
 import { Button } from "@mantine/core";
 import { IconDownload } from "@tabler/icons-react";
-import { ConfigurationExportProps } from "./types.ts";
+import { useSelectionContext, useOptionsContext } from "../../../contexts";
 
-function ConfigurationExport({ labels }: ConfigurationExportProps) {
+function ConfigurationExport() {
+  const { selectedIds, hasSelection } = useSelectionContext();
+  const { options } = useOptionsContext();
+
+  const labelsToExport = hasSelection
+    ? options.labels.filter((label) => selectedIds.has(label.id))
+    : options.labels;
+
+  const buttonText = hasSelection ? "Export Selected" : "Export Labels";
+
   const exportLabels = () => {
     const file = new File(
-      [JSON.stringify(labels)],
+      [JSON.stringify(labelsToExport)],
       `Labels-${new Date().toISOString().split("T")[0]}.json`,
       {
         type: "text/json",
@@ -26,13 +35,14 @@ function ConfigurationExport({ labels }: ConfigurationExportProps) {
 
   return (
     <Button
-      disabled={!labels.length}
+      disabled={!labelsToExport.length}
       onClick={exportLabels}
       variant="default"
       size="xs"
       leftSection={<IconDownload size={16} />}
+      style={{ minWidth: "146px" }}
     >
-      Export Labels
+      {buttonText}
     </Button>
   );
 }

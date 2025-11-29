@@ -1,4 +1,4 @@
-import { Badge, HoverCard, List, Table } from "@mantine/core";
+import { Badge, HoverCard, List, Table, Checkbox } from "@mantine/core";
 import { IconGripVertical, IconTag } from "@tabler/icons-react";
 import { LabelListItemProps } from "./types.ts";
 import LabelListItemActions from "../ItemActions";
@@ -9,11 +9,29 @@ import {
   sourceTypeSettings,
 } from "../../../../options/constants.ts";
 
-function LabelListItem({ label, index, isAllActive }: LabelListItemProps) {
+function LabelListItem({
+  label,
+  index,
+  isAllActive,
+  isSelected,
+  onSelect,
+}: LabelListItemProps) {
   return (
     <Draggable key={label.id} index={index} draggableId={label.id}>
       {(provided) => (
-        <Table.Tr ref={provided.innerRef} {...provided.draggableProps}>
+        <Table.Tr
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          onClick={() => {
+            onSelect(isSelected);
+          }}
+        >
+          <Table.Td>
+            <Checkbox
+              checked={isSelected}
+              onChange={(e) => onSelect(e.currentTarget.checked)}
+            />
+          </Table.Td>
           <Table.Td>
             <div {...provided.dragHandleProps}>
               <IconGripVertical size={14} />

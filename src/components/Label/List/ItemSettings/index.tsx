@@ -19,7 +19,8 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         size="xs"
         variant="light"
         leftSection={<IconLabel size={14} />}
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           modals.open({
             title: "Badge",
             size: "auto",
@@ -39,7 +40,8 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         size="xs"
         variant="light"
         leftSection={<IconPhotoCircle size={14} />}
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           modals.open({
             title: (
               <Group gap="md">
@@ -81,7 +83,8 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         size="xs"
         variant="light"
         leftSection={<IconForms size={14} />}
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           modals.open({
             title: (
               <Group gap="xs">

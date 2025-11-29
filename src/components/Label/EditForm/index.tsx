@@ -10,7 +10,7 @@ import LabelEditFormBadge from "./EditFormBadge";
 import LabelEditFormRules from "./EditFormRules";
 import { useCallback, useEffect } from "react";
 import { editLabelFormInput } from "./formConfig.ts";
-import { useOptionsContext } from "../../../hooks/useOptionsContext";
+import { useOptionsContext } from "../../../contexts";
 import LabelEditFormIcon from "./EditFormIcon";
 
 function LabelEditForm({ label, onSave, section }: LabelEditFormProps) {
