@@ -1,4 +1,4 @@
-import { Table, Stack } from "@mantine/core";
+import { Table, Stack, Tooltip } from "@mantine/core";
 import { IconArrowsSort } from "@tabler/icons-react";
 import LabelListActions from "../ListActions";
 import LabelListItem from "../Item";
@@ -27,7 +27,12 @@ function LabelList() {
           <Table.Thead>
             <Table.Tr>
               <Table.Th>
-                <IconArrowsSort size={14} />
+                <Tooltip
+                  label="Drag items to reorder. Labels are checked top-down; the first match is shown"
+                  position="top-start"
+                >
+                  <IconArrowsSort size={14} />
+                </Tooltip>
               </Table.Th>
               <Table.Th>Label Name</Table.Th>
               <Table.Th>Rules</Table.Th>
