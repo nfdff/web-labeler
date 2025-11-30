@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { readJsonFile } from "../../utils/fileReader";
-import { validationSchema } from "../../options/validationSchema.ts";
-import validate from "../../utils/schemaValidator";
+import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
 import { Label } from "../../options/types.ts";
 
 export type UseConfigurationFileReader = () => {
@@ -25,15 +24,7 @@ export const useConfigurationFileReader: UseConfigurationFileReader = () => {
         .then((result) => {
           try {
             if (Array.isArray(result)) {
-              for (const item of result) {
-                const { result: isValid, messages } = validate(
-                  item,
-                  validationSchema,
-                );
-                if (!isValid) {
-                  throw new Error(messages?.join("; "));
-                }
-              }
+              validateLabelsArray(result);
             } else {
               throw new Error("The file doesn't contain valid labels");
             }

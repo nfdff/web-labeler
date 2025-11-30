@@ -13,54 +13,17 @@ import {
   IconAlertCircle,
   IconRefresh,
 } from "@tabler/icons-react";
-import { AutoSyncStatusProps } from "./types";
 import { getRelativeTime, formatUpdateFrequency } from "../../utils/timeFormat";
-import { requestUrlPermission } from "../../utils/urlPermissions";
-import { useConfigurationUrlReader } from "../../hooks/useConfigurationReader";
-import { useImportLabels } from "../../hooks/useImportLabels";
+import { useAutoSyncStatus } from "./useAutoSyncStatus";
 
-function AutoSyncStatus({ urlSync, dispatch, labels }: AutoSyncStatusProps) {
-  const { readAndValidate, isLoading } = useConfigurationUrlReader();
-  const { confirmAndImport } = useImportLabels({
-    labels,
-    dispatch,
-    updateSyncSettings: true,
-  });
+function AutoSyncStatus() {
+  const { urlSync, handleToggle, handleManualSync, isLoading } =
+    useAutoSyncStatus();
 
   // Hide widget if frequency is 0 (disabled) or not configured
   if (!urlSync || urlSync.updateFrequency === 0) {
     return null;
   }
-
-  const handleToggle = (checked: boolean) => {
-    dispatch({
-      type: "updateUrlSync",
-      payload: { enabled: checked },
-    });
-  };
-
-  const handleManualSync = async () => {
-    if (!urlSync.url || isLoading) {
-      return;
-    }
-
-    // Request permission before fetching
-    const hasPermission = await requestUrlPermission(urlSync.url);
-    if (!hasPermission) {
-      console.error("Permission denied for", urlSync.url);
-      return;
-    }
-
-    // Use the hook to fetch and validate labels
-    const labelsForImport = await readAndValidate(urlSync.url);
-
-    if (labelsForImport) {
-      confirmAndImport(labelsForImport, {
-        title: "Import labels from URL",
-        messagePrefix: "From the URL:",
-      });
-    }
-  };
 
   const hasError = !!urlSync.lastError;
   const formattedFrequency = formatUpdateFrequency(urlSync.updateFrequency);

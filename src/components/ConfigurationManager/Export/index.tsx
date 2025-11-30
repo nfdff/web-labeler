@@ -1,6 +1,7 @@
 import { Button } from "@mantine/core";
 import { IconDownload } from "@tabler/icons-react";
 import { useSelectionContext, useOptionsContext } from "../../../contexts";
+import { downloadJsonFile } from "../../../utils/downloadJsonFile";
 
 function ConfigurationExport() {
   const { selectedIds, hasSelection } = useSelectionContext();
@@ -13,24 +14,8 @@ function ConfigurationExport() {
   const buttonText = hasSelection ? "Export Selected" : "Export Labels";
 
   const exportLabels = () => {
-    const file = new File(
-      [JSON.stringify(labelsToExport)],
-      `Labels-${new Date().toISOString().split("T")[0]}.json`,
-      {
-        type: "text/json",
-      },
-    );
-
-    const link = document.createElement("a");
-    const url = URL.createObjectURL(file);
-
-    link.href = url;
-    link.download = file.name;
-    document.body.appendChild(link);
-    link.click();
-
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
+    const filename = `Labels-${new Date().toISOString().split("T")[0]}.json`;
+    downloadJsonFile(labelsToExport, filename);
   };
 
   return (

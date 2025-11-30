@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Label } from "../../options/types.ts";
-import { validationSchema } from "../../options/validationSchema.ts";
-import validate from "../../utils/schemaValidator";
+import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
 import {
   FetchJsonFromUrlMessage,
   MessageResponse,
@@ -56,15 +55,7 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
               throw new Error("The URL doesn't return valid labels array");
             }
 
-            for (const item of response.data) {
-              const { result: isValid, messages } = validate(
-                item,
-                validationSchema,
-              );
-              if (!isValid) {
-                throw new Error(messages?.join("; "));
-              }
-            }
+            validateLabelsArray(response.data);
 
             resolve(response.data as Label[]);
           } catch (err) {

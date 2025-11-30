@@ -1,37 +1,27 @@
-import { Text, Stack, Group } from "@mantine/core";
-import { IconUpload, IconX, IconFileCode } from "@tabler/icons-react";
+import { Text, Stack, Group, Alert } from "@mantine/core";
+import {
+  IconUpload,
+  IconX,
+  IconFileCode,
+  IconAlertCircle,
+} from "@tabler/icons-react";
 import { Dropzone, FileWithPath } from "@mantine/dropzone";
-import { ConfigurationImportFromFilesProps } from "./types.ts";
-import ErrorMessage from "../ErrorMessage";
-import { useConfigurationFileReader } from "../../../../hooks/useConfigurationReader";
-import { useImportLabels } from "../../../../hooks/useImportLabels";
+import { useSyncFromFile } from "../../../../hooks/useSyncFromFile";
 
 function ConfigurationImportFromFile({
-  labels,
-  dispatch,
   closeConfigurationManager,
-}: ConfigurationImportFromFilesProps) {
-  const { readAndValidate, isLoading, errorMessage } =
-    useConfigurationFileReader();
-  const { confirmAndImport } = useImportLabels({
-    labels,
-    dispatch,
-    updateSyncSettings: false,
-  });
+}: {
+  closeConfigurationManager?: () => void;
+}) {
+  const { syncFromFile, isLoading, errorMessage } = useSyncFromFile();
 
   const onFileDrop = async (files: FileWithPath[]) => {
-    const labelsForImport = await readAndValidate(files[0]);
+    const file = files[0];
+    if (!file) return;
 
-    if (labelsForImport) {
-      confirmAndImport(labelsForImport, {
-        title: "Import labels",
-        messagePrefix: "From the imported file:",
-        onSuccess: () => {
-          if (closeConfigurationManager) {
-            closeConfigurationManager();
-          }
-        },
-      });
+    const result = await syncFromFile(file);
+    if (result.success && closeConfigurationManager) {
+      closeConfigurationManager();
     }
   };
 
@@ -67,10 +57,13 @@ function ConfigurationImportFromFile({
         </Group>
       </Dropzone>
       {!!errorMessage && (
-        <ErrorMessage
-          title="The imported file has syntax errors:"
-          message={errorMessage}
-        />
+        <Alert
+          color="red"
+          title="Failed to read file"
+          icon={<IconAlertCircle size={16} />}
+        >
+          {errorMessage}
+        </Alert>
       )}
     </>
   );

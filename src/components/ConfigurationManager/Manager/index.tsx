@@ -2,18 +2,13 @@ import { Group } from "@mantine/core";
 import ConfigurationImport from "../Import";
 import ConfigurationExport from "../Export";
 import AutoSyncStatus from "../../AutoSyncStatus";
-import { ConfigurationManagerProps } from "./types.ts";
 
-function ConfigurationManager({
-  labels,
-  dispatch,
-  urlSync,
-}: ConfigurationManagerProps) {
+function ConfigurationManager() {
   return (
     <Group>
       <ConfigurationExport />
-      <ConfigurationImport labels={labels} dispatch={dispatch} urlSync={urlSync} />
-      <AutoSyncStatus urlSync={urlSync} dispatch={dispatch} labels={labels} />
+      <ConfigurationImport />
+      <AutoSyncStatus />
     </Group>
   );
 }
