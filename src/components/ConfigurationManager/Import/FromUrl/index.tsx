@@ -8,14 +8,54 @@ import {
   Switch,
   Text,
   TextInput,
+  Tooltip,
 } from "@mantine/core";
-import { IconLock, IconRefresh, IconWorldUpload } from "@tabler/icons-react";
+import {
+  IconLock,
+  IconRefresh,
+  IconWorldUpload,
+  IconBrandGoogleDrive,
+  IconBrandOnedrive,
+  IconCloud,
+  IconAlertCircle,
+} from "@tabler/icons-react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
 import { useImportFromUrlForm } from "./useImportFromUrlForm.ts";
 import { useOptionsContext } from "../../../../contexts";
+import { useCloudUrl } from "./useCloudUrl.ts";
+import { CloudService } from "../../../../utils/cloudUrlTransformer.ts";
 
-//todo:
-// 1. google drive support
+function getCloudIcon(service: CloudService) {
+  switch (service) {
+    case "google-drive":
+      return <IconBrandGoogleDrive size={16} />;
+    case "onedrive":
+      return <IconBrandOnedrive size={16} />;
+    case "dropbox":
+      return <IconCloud size={16} />;
+    default:
+      return <IconWorldUpload size={16} />;
+  }
+}
+
+function getTooltipText(
+  service: CloudService,
+  hasTransformation: boolean,
+): string {
+  if (!service) return "URL to JSON file";
+
+  const serviceName =
+    service === "google-drive"
+      ? "Google Drive"
+      : service === "onedrive"
+        ? "OneDrive"
+        : "Dropbox";
+
+  if (hasTransformation) {
+    return `${serviceName} URL detected. Will be transformed to direct download link.`;
+  }
+  return `${serviceName} direct download link detected.`;
+}
 
 function ConfigurationImportFromUrl({
   closeConfigurationManager,
@@ -28,6 +68,7 @@ function ConfigurationImportFromUrl({
   const {
     form,
     permissionError,
+    errorMessage,
     handleClear,
     handleSync,
     handleSaveSettings,
@@ -38,6 +79,8 @@ function ConfigurationImportFromUrl({
     closeConfigurationManager,
   });
 
+  const { cloudService, hasTransformation } = useCloudUrl(form.values.url);
+
   return (
     <Stack gap="md">
       <TextInput
@@ -45,7 +88,11 @@ function ConfigurationImportFromUrl({
         placeholder="https://example.com/labels.json"
         description="URL to a JSON file containing label configurations"
         {...form.getInputProps("url")}
-        leftSection={<IconWorldUpload size={16} />}
+        leftSection={
+          <Tooltip label={getTooltipText(cloudService, hasTransformation)}>
+            <div>{getCloudIcon(cloudService)}</div>
+          </Tooltip>
+        }
         rightSection={
           <CloseButton
             aria-label="Clear input"
@@ -105,6 +152,16 @@ function ConfigurationImportFromUrl({
           icon={<IconLock size={16} />}
         >
           {permissionError}
+        </Alert>
+      )}
+
+      {!!errorMessage && (
+        <Alert
+          color="red"
+          title="Failed to sync"
+          icon={<IconAlertCircle size={16} />}
+        >
+          {errorMessage}
         </Alert>
       )}
     </Stack>

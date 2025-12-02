@@ -13,16 +13,17 @@ export function useSyncFromFile() {
   });
 
   const syncFromFile = async (file: File) => {
-    const labelsForImport = await readAndValidate(file);
+    const result = await readAndValidate(file);
 
-    if (labelsForImport) {
-      confirmAndImport(labelsForImport, {
+    if (result.success) {
+      confirmAndImport(result.data, {
         title: "Import labels from file",
         messagePrefix: "From the file:",
       });
       return { success: true };
     }
 
+    // Error is already in state (errorMessage), no need to dispatch to store
     return { success: false };
   };
 

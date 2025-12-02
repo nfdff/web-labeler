@@ -12,6 +12,7 @@ import {
   ImportFromUrlFormValues,
 } from "./importFromUrlFormConfig.ts";
 import { useSyncFromUrl } from "../../../../hooks/useSyncFromUrl";
+import { transformCloudUrl } from "../../../../utils/cloudUrlTransformer.ts";
 
 interface UseImportFromUrlFormParams {
   urlSync: UrlSyncSettings | undefined;
@@ -25,7 +26,7 @@ export function useImportFromUrlForm({
   closeConfigurationManager,
 }: UseImportFromUrlFormParams) {
   const [permissionError, setPermissionError] = useState<string | undefined>();
-  const { syncFromUrl, isLoading } = useSyncFromUrl();
+  const { syncFromUrl, isLoading, errorMessage } = useSyncFromUrl();
 
   const form = useForm<ImportFromUrlFormValues>(
     createFormConfig(urlSync),
@@ -65,12 +66,15 @@ export function useImportFromUrlForm({
       return;
     }
 
+    // Transform cloud URL if needed
+    const transformedUrl = transformCloudUrl(url);
+
     setPermissionError(undefined);
-    const result = await syncFromUrl(url);
+    const result = await syncFromUrl(transformedUrl);
 
     if (!result.success && result.error === "Permission denied") {
       setPermissionError(
-        `Permission denied to access ${getOriginPattern(url)}. Please grant permission to fetch labels from this URL.`,
+        `Permission denied to access ${getOriginPattern(transformedUrl)}. Please grant permission to fetch labels from this URL.`,
       );
     }
   };
@@ -84,12 +88,15 @@ export function useImportFromUrlForm({
     const { url, updateFrequency, enabled } = form.values;
     const trimmedUrl = url.trim();
 
+    // Transform cloud URL if needed
+    const transformedUrl = transformCloudUrl(trimmedUrl);
+
     // Request permission if auto-sync is enabled and URL is set
-    if (enabled && trimmedUrl && parseInt(updateFrequency) > 0) {
-      const hasPermission = await requestUrlPermission(trimmedUrl);
+    if (enabled && transformedUrl && parseInt(updateFrequency) > 0) {
+      const hasPermission = await requestUrlPermission(transformedUrl);
       if (!hasPermission) {
         setPermissionError(
-          `Permission denied to access ${getOriginPattern(trimmedUrl)}. Auto-sync requires permission to fetch from this URL.`,
+          `Permission denied to access ${getOriginPattern(transformedUrl)}. Auto-sync requires permission to fetch from this URL.`,
         );
         return;
       }
@@ -99,7 +106,7 @@ export function useImportFromUrlForm({
       type: "updateUrlSync",
       payload: {
         enabled,
-        url: trimmedUrl,
+        url: transformedUrl,
         updateFrequency: parseInt(updateFrequency),
       },
     });
@@ -114,6 +121,7 @@ export function useImportFromUrlForm({
   return {
     form,
     permissionError,
+    errorMessage,
     handleClear,
     handleSync,
     handleSaveSettings,

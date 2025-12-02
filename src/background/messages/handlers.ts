@@ -8,6 +8,7 @@ async function handleFetchJsonFromUrl(
 ): Promise<void> {
   try {
     const result = await fetchJsonFromUrl(url);
+
     sendResponse(result);
   } catch (error) {
     const errorResponse: MessageResponse<"FETCH_JSON_FROM_URL"> = {

@@ -3,7 +3,7 @@ import { useSyncFromUrl } from "../../hooks/useSyncFromUrl";
 
 export function useAutoSyncStatus() {
   const { options, dispatch } = useOptionsContext();
-  const { syncFromUrl, isLoading } = useSyncFromUrl();
+  const { syncFromUrl, isLoading, errorMessage } = useSyncFromUrl();
 
   const urlSync = options.urlSync;
 
@@ -24,5 +24,6 @@ export function useAutoSyncStatus() {
     handleToggle,
     handleManualSync,
     isLoading,
+    errorMessage,
   };
 }

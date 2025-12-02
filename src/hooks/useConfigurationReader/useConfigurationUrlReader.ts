@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Label } from "../../options/types.ts";
 import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
 import {
   FetchJsonFromUrlMessage,
   MessageResponse,
 } from "../../background/types.ts";
+import { ReadAndValidateResult } from "./types.ts";
 
 export type UseConfigurationUrlReader = () => {
-  readAndValidate: (url: string) => Promise<Label[] | undefined>;
+  readAndValidate: (url: string) => Promise<ReadAndValidateResult>;
   isLoading: boolean;
   errorMessage: string | undefined;
 };
@@ -19,7 +19,7 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
   );
 
   const readAndValidate = (url: string) =>
-    new Promise<undefined | Label[]>((resolve) => {
+    new Promise<ReadAndValidateResult>((resolve) => {
       setIsLoading(true);
       setErrorMessage(undefined);
 
@@ -39,14 +39,16 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
             const error =
               chrome.runtime.lastError.message ||
               "Communication error with background script";
+
             setErrorMessage(error);
-            resolve(undefined);
+            resolve({ success: false, error });
             return;
           }
 
           if (!response.data) {
-            setErrorMessage(response.error || "Failed to fetch data");
-            resolve(undefined);
+            const error = response.error || "Failed to fetch data";
+            setErrorMessage(error);
+            resolve({ success: false, error });
             return;
           }
 
@@ -57,12 +59,12 @@ export const useConfigurationUrlReader: UseConfigurationUrlReader = () => {
 
             validateLabelsArray(response.data);
 
-            resolve(response.data as Label[]);
+            resolve({ success: true, data: response.data });
           } catch (err) {
-            setErrorMessage(
-              err instanceof Error ? err.message : "Validation error",
-            );
-            resolve(undefined);
+            const error =
+              err instanceof Error ? err.message : "Validation error";
+            setErrorMessage(error);
+            resolve({ success: false, error });
           }
         },
       );

@@ -5,7 +5,8 @@ import { useOptionsContext } from "../../contexts";
 
 export function useSyncFromUrl() {
   const { options, dispatch } = useOptionsContext();
-  const { readAndValidate, isLoading } = useConfigurationUrlReader();
+  const { readAndValidate, isLoading, errorMessage } =
+    useConfigurationUrlReader();
   const { confirmAndImport } = useImportLabels({
     labels: options.labels,
     dispatch,
@@ -24,18 +25,24 @@ export function useSyncFromUrl() {
     }
 
     // Fetch and validate labels
-    const labelsForImport = await readAndValidate(url);
+    const result = await readAndValidate(url);
 
-    if (labelsForImport) {
-      confirmAndImport(labelsForImport, {
+    if (result.success) {
+      confirmAndImport(result.data, {
         title: "Import labels from URL",
         messagePrefix: "From the URL:",
       });
       return { success: true };
     }
 
-    return { success: false, error: "Failed to fetch or validate labels" };
+    // Set error in urlSync settings if fetch/validation failed
+    dispatch({
+      type: "updateUrlSync",
+      payload: { lastError: result.error },
+    });
+
+    return { success: false, error: result.error };
   };
 
-  return { syncFromUrl, isLoading };
+  return { syncFromUrl, isLoading, errorMessage };
 }

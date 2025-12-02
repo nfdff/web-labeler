@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { readJsonFile } from "../../utils/fileReader";
 import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
-import { Label } from "../../options/types.ts";
+import { ReadAndValidateResult } from "./types.ts";
 
 export type UseConfigurationFileReader = () => {
-  readAndValidate: (file: File) => Promise<Label[] | undefined>;
+  readAndValidate: (file: File) => Promise<ReadAndValidateResult>;
   isLoading: boolean;
   errorMessage: string | undefined;
 };
@@ -16,7 +16,7 @@ export const useConfigurationFileReader: UseConfigurationFileReader = () => {
   );
 
   const readAndValidate = (file: File) =>
-    new Promise<undefined | Label[]>((resolve) => {
+    new Promise<ReadAndValidateResult>((resolve) => {
       setIsLoading(true);
       setErrorMessage(undefined);
 
@@ -29,19 +29,19 @@ export const useConfigurationFileReader: UseConfigurationFileReader = () => {
               throw new Error("The file doesn't contain valid labels");
             }
             setIsLoading(false);
-            resolve(result as Label[]);
+            resolve({ success: true, data: result });
           } catch (err) {
-            setErrorMessage(
-              err instanceof Error ? err.message : "unknown error",
-            );
+            const error = err instanceof Error ? err.message : "unknown error";
+            setErrorMessage(error);
             setIsLoading(false);
+            resolve({ success: false, error });
           }
-          resolve(undefined);
         })
         .catch((err) => {
-          setErrorMessage(err instanceof Error ? err.message : "unknown error");
+          const error = err instanceof Error ? err.message : "unknown error";
+          setErrorMessage(error);
           setIsLoading(false);
-          resolve(undefined);
+          resolve({ success: false, error });
         });
     });
 
