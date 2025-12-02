@@ -16,7 +16,7 @@ import {
   IconWorldUpload,
   IconBrandGoogleDrive,
   IconBrandOnedrive,
-  IconCloud,
+  IconBrandDropbox,
   IconAlertCircle,
 } from "@tabler/icons-react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
@@ -32,7 +32,7 @@ function getCloudIcon(service: CloudService) {
     case "onedrive":
       return <IconBrandOnedrive size={16} />;
     case "dropbox":
-      return <IconCloud size={16} />;
+      return <IconBrandDropbox size={16} />;
     default:
       return <IconWorldUpload size={16} />;
   }
