@@ -2,29 +2,30 @@ import {
   Button,
   CloseButton,
   Group,
+  Input,
   Select,
   Stack,
   Switch,
   Text,
   TextInput,
   Tooltip,
-} from "@mantine/core";
-import { IconRefresh } from "@tabler/icons-react";
-import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
-import { useImportFromUrlForm } from "./useImportFromUrlForm.ts";
-import { useOptionsContext } from "../../../../contexts";
-import { useCloudUrl } from "./useCloudUrl.ts";
-import { getCloudIcon, getTooltipText } from "./cloudServiceHelpers.tsx";
-import { SyncAlerts } from "./SyncAlerts.tsx";
-import { ICON_SIZE } from "./constants.ts";
+} from "@mantine/core"
+import { IconRefresh } from "@tabler/icons-react"
+import { useOptionsContext } from "../../../../contexts"
+import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts"
+import { SyncAlerts } from "./SyncAlerts.tsx"
+import { getCloudIcon, getTooltipText } from "./cloudServiceHelpers.tsx"
+import { ICON_SIZE } from "./constants.ts"
+import { useCloudUrl } from "./useCloudUrl.ts"
+import { useImportFromUrlForm } from "./useImportFromUrlForm.ts"
 
 function ConfigurationImportFromUrl({
   closeConfigurationManager,
 }: {
-  closeConfigurationManager?: () => void;
+  closeConfigurationManager?: () => void
 }) {
-  const { options, dispatch } = useOptionsContext();
-  const urlSync = options.urlSync;
+  const { options, dispatch } = useOptionsContext()
+  const urlSync = options.urlSync
 
   const {
     form,
@@ -38,19 +39,22 @@ function ConfigurationImportFromUrl({
     urlSync,
     dispatch,
     closeConfigurationManager,
-  });
+  })
 
-  const { cloudService, hasTransformation } = useCloudUrl(form.values.url);
+  const { cloudService, hasTransformation } = useCloudUrl(form.values.url)
 
   return (
     <Stack gap="md">
       <TextInput
         label="URL"
-        placeholder="https://example.com/labels.json"
         description="URL to a JSON file containing label configurations"
+        placeholder="https://example.com/labels.json"
         {...form.getInputProps("url")}
         leftSection={
-          <Tooltip label={getTooltipText(cloudService, hasTransformation)}>
+          <Tooltip
+            label={getTooltipText(cloudService, hasTransformation)}
+            position="right"
+          >
             {getCloudIcon(cloudService)}
           </Tooltip>
         }
@@ -63,20 +67,23 @@ function ConfigurationImportFromUrl({
         }
       />
 
-      <Select
-        label="Frequency"
-        description="How often to automatically sync labels from the URL"
-        data={UPDATE_FREQUENCIES}
-        {...form.getInputProps("updateFrequency")}
-        allowDeselect={false}
-      />
-
-      <Switch
-        label="Enable auto-sync"
+      <Input.Wrapper
+        label="Auto-Sync"
         description="Automatically update labels from URL at the specified frequency"
-        labelPosition="left"
-        {...form.getInputProps("enabled", { type: "checkbox" })}
-      />
+        styles={{
+          description: { marginBottom: 4 },
+        }}
+      >
+        <Group gap="sm">
+          <Select
+            data={UPDATE_FREQUENCIES}
+            {...form.getInputProps("updateFrequency")}
+            allowDeselect={false}
+            style={{ flexGrow: 1 }}
+          />
+          <Switch {...form.getInputProps("enabled", { type: "checkbox" })} />
+        </Group>
+      </Input.Wrapper>
 
       {urlSync?.lastUpdate && (
         <Text size="xs" c="dimmed">
@@ -111,7 +118,7 @@ function ConfigurationImportFromUrl({
         errorMessage={errorMessage}
       />
     </Stack>
-  );
+  )
 }
 
-export default ConfigurationImportFromUrl;
+export default ConfigurationImportFromUrl

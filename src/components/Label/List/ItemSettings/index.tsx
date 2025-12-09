@@ -1,16 +1,16 @@
-import { Button, Group, Text, Tooltip, ActionIcon } from "@mantine/core";
+import { Button, Group, Text } from "@mantine/core"
 import {
   IconFlask,
   IconForms,
   IconLabel,
   IconPhotoCircle,
-  IconQuestionMark,
-} from "@tabler/icons-react";
-import { modals } from "@mantine/modals";
-import LabelEditForm from "../../EditForm";
-import { LabelListItemSettingsProps } from "./types.ts";
-import { LabelEditFormSection } from "../../EditForm/types.ts";
-import FeatureBadge from "../../../FeatureBadge";
+} from "@tabler/icons-react"
+import { modals } from "@mantine/modals"
+import LabelEditForm from "../../EditForm"
+import { LabelListItemSettingsProps } from "./types.ts"
+import { LabelEditFormSection } from "../../EditForm/types.ts"
+import FeatureBadge from "../../../FeatureBadge"
+import InfoTooltipIcon from "../../../InfoTooltipIcon"
 
 function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
   return (
@@ -20,7 +20,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         variant="light"
         leftSection={<IconLabel size={14} />}
         onClick={(e) => {
-          e.stopPropagation();
+          e.stopPropagation()
           modals.open({
             title: "Badge",
             size: "auto",
@@ -31,7 +31,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
                 onSave={() => modals.closeAll()}
               />
             ),
-          });
+          })
         }}
       >
         Badge
@@ -41,7 +41,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         variant="light"
         leftSection={<IconPhotoCircle size={14} />}
         onClick={(e) => {
-          e.stopPropagation();
+          e.stopPropagation()
           modals.open({
             title: (
               <Group gap="md">
@@ -74,7 +74,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
                 onSave={() => modals.closeAll()}
               />
             ),
-          });
+          })
         }}
       >
         Icon
@@ -84,24 +84,12 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         variant="light"
         leftSection={<IconForms size={14} />}
         onClick={(e) => {
-          e.stopPropagation();
+          e.stopPropagation()
           modals.open({
             title: (
               <Group gap="xs">
                 Rules
-                <Tooltip
-                  label="The label is shown when any single rule matches (OR logic between rows)"
-                  position="right"
-                >
-                  <ActionIcon
-                    variant="light"
-                    color="gray"
-                    size="xs"
-                    radius="xl"
-                  >
-                    <IconQuestionMark size={12} />
-                  </ActionIcon>
-                </Tooltip>
+                <InfoTooltipIcon label="The label is shown when any single rule matches (OR logic between rows)" />
               </Group>
             ),
             size: "750px",
@@ -112,13 +100,13 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
                 onSave={() => modals.closeAll()}
               />
             ),
-          });
+          })
         }}
       >
         Rules
       </Button>
     </Group>
-  );
+  )
 }
 
-export default LabelListItemSettings;
+export default LabelListItemSettings

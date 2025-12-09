@@ -1,23 +1,23 @@
-import { useForm } from "@mantine/form";
-import { useEffect, useState } from "react";
-import { Dispatch } from "react";
+import { useEffect, useRef, useState } from "react"
+import { Dispatch } from "react"
+import { useForm } from "@mantine/form"
+import { modals } from "@mantine/modals"
+import { useSyncFromUrl } from "../../../../hooks/useSyncFromUrl"
+import { OptionsAction, UrlSyncSettings } from "../../../../options/types.ts"
+import { transformCloudUrl } from "../../../../utils/cloudUrlTransformer.ts"
 import {
   getOriginPattern,
   requestUrlPermission,
-} from "../../../../utils/urlPermissions.ts";
-import { UrlSyncSettings, OptionsAction } from "../../../../options/types.ts";
-import { modals } from "@mantine/modals";
+} from "../../../../utils/urlPermissions.ts"
 import {
-  createFormConfig,
   ImportFromUrlFormValues,
-} from "./importFromUrlFormConfig.ts";
-import { useSyncFromUrl } from "../../../../hooks/useSyncFromUrl";
-import { transformCloudUrl } from "../../../../utils/cloudUrlTransformer.ts";
+  createFormConfig,
+} from "./importFromUrlFormConfig.ts"
 
 interface UseImportFromUrlFormParams {
-  urlSync: UrlSyncSettings | undefined;
-  dispatch: Dispatch<OptionsAction>;
-  closeConfigurationManager?: () => void;
+  urlSync: UrlSyncSettings | undefined
+  dispatch: Dispatch<OptionsAction>
+  closeConfigurationManager?: () => void
 }
 
 export function useImportFromUrlForm({
@@ -25,19 +25,38 @@ export function useImportFromUrlForm({
   dispatch,
   closeConfigurationManager,
 }: UseImportFromUrlFormParams) {
-  const [permissionError, setPermissionError] = useState<string | undefined>();
-  const { syncFromUrl, isLoading, errorMessage } = useSyncFromUrl();
+  const [permissionError, setPermissionError] = useState<string | undefined>()
+  const { syncFromUrl, isLoading, errorMessage } = useSyncFromUrl()
 
-  const form = useForm<ImportFromUrlFormValues>(
-    createFormConfig(urlSync),
-  );
+  const form = useForm<ImportFromUrlFormValues>(createFormConfig(urlSync))
 
-  // Disable auto-sync when frequency is set to "Disabled"
+  const prevValuesRef = useRef({
+    updateFrequency: form.values.updateFrequency,
+    enabled: form.values.enabled,
+  })
+
+  // Bidirectional dependency between frequency and auto-sync switch
   useEffect(() => {
-    if (form.values.updateFrequency === "0") {
-      form.setFieldValue("enabled", false);
+    const prevValues = prevValuesRef.current
+    const currentValues = form.values
+
+    const frequencyChanged =
+      prevValues.updateFrequency !== currentValues.updateFrequency
+
+    if (frequencyChanged) {
+      if (currentValues.updateFrequency === "0") {
+        form.setFieldValue("enabled", false)
+      } else {
+        form.setFieldValue("enabled", true)
+      }
     }
-  }, [form, form.values.updateFrequency]);
+
+    // Update ref for next comparison
+    prevValuesRef.current = {
+      updateFrequency: currentValues.updateFrequency,
+      enabled: currentValues.enabled,
+    }
+  }, [form, form.values.updateFrequency, form.values.enabled])
 
   // Update form when urlSync settings change
   useEffect(() => {
@@ -45,69 +64,69 @@ export function useImportFromUrlForm({
       url: urlSync?.url || "",
       updateFrequency: String(urlSync?.updateFrequency || 0),
       enabled: urlSync?.enabled || false,
-    });
-    form.resetDirty();
+    })
+    form.resetDirty()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [urlSync?.url, urlSync?.updateFrequency, urlSync?.enabled]);
+  }, [urlSync?.url, urlSync?.updateFrequency, urlSync?.enabled])
 
   const handleClear = () => {
-    form.setValues({ url: "", updateFrequency: "0", enabled: false });
+    form.setValues({ url: "", updateFrequency: "0", enabled: false })
     // Mark form as dirty to enable save button
-    form.setFieldValue("url", "");
-  };
+    form.setFieldValue("url", "")
+  }
 
   const getTransformedUrl = () => {
-    const url = form.values.url.trim();
-    return url ? transformCloudUrl(url) : "";
-  };
+    const url = form.values.url.trim()
+    return url ? transformCloudUrl(url) : ""
+  }
 
   const getPermissionErrorMessage = (url: string, context: string) => {
-    return `Permission denied to access ${getOriginPattern(url)}. ${context}`;
-  };
+    return `Permission denied to access ${getOriginPattern(url)}. ${context}`
+  }
 
   const handleSync = async () => {
     if (form.validate().hasErrors) {
-      return;
+      return
     }
 
-    const transformedUrl = getTransformedUrl();
+    const transformedUrl = getTransformedUrl()
     if (!transformedUrl) {
-      return;
+      return
     }
 
-    setPermissionError(undefined);
-    const result = await syncFromUrl(transformedUrl);
+    setPermissionError(undefined)
+    const result = await syncFromUrl(transformedUrl)
 
     if (!result.success && result.error === "Permission denied") {
       setPermissionError(
         getPermissionErrorMessage(
           transformedUrl,
-          "Please grant permission to fetch labels from this URL.",
-        ),
-      );
+          "Please grant permission to fetch labels from this URL."
+        )
+      )
     }
-  };
+  }
 
   const handleSaveSettings = async () => {
     if (form.validate().hasErrors) {
-      return;
+      return
     }
 
-    setPermissionError(undefined);
-    const { updateFrequency, enabled } = form.values;
-    const transformedUrl = getTransformedUrl();
+    setPermissionError(undefined)
+    const { updateFrequency, enabled } = form.values
+    const transformedUrl = getTransformedUrl()
 
     // Request permission if auto-sync is enabled and URL is set
     if (enabled && transformedUrl && parseInt(updateFrequency) > 0) {
-      const hasPermission = await requestUrlPermission(transformedUrl);
+      const hasPermission = await requestUrlPermission(transformedUrl)
       if (!hasPermission) {
         setPermissionError(
           getPermissionErrorMessage(
             transformedUrl,
-            "Auto-sync requires permission to fetch from this URL.",
-          ),
-        );
-        return;
+            "Auto-sync requires permission to fetch from this URL."
+          )
+        )
+        return
       }
     }
 
@@ -118,14 +137,14 @@ export function useImportFromUrlForm({
         url: transformedUrl,
         updateFrequency: parseInt(updateFrequency),
       },
-    });
+    })
 
-    form.resetDirty();
-    modals.closeAll();
+    form.resetDirty()
+    modals.closeAll()
     if (closeConfigurationManager) {
-      closeConfigurationManager();
+      closeConfigurationManager()
     }
-  };
+  }
 
   return {
     form,
@@ -135,5 +154,5 @@ export function useImportFromUrlForm({
     handleSync,
     handleSaveSettings,
     isLoading,
-  };
+  }
 }
