@@ -8,7 +8,11 @@
     "build": "tsc -b && vite build && vite build --config vite.content.config.ts",
     "build-watch": "tsc -b && vite build --watch & vite build --config vite.content.config.ts --watch",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
+    "format:all": "npm run lint:fix && npm run format"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^16.6.0",
@@ -25,6 +29,7 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/chrome": "^0.0.269",
     "@types/node": "^22.1.0",
     "@types/react": "^18.3.3",
@@ -36,6 +41,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-unused-imports": "^4.3.0",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.2.2",
