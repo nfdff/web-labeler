@@ -5,11 +5,15 @@ import ConfigurationImportFromUrl from "../FromUrl";
 
 function ConfigurationImportTabs({
   closeConfigurationManager,
+  activeTab,
+  onTabChange,
 }: {
   closeConfigurationManager?: () => void;
+  activeTab?: string;
+  onTabChange?: (value: string | null) => void;
 }) {
   return (
-    <Tabs defaultValue="fromFile">
+    <Tabs value={activeTab} onChange={onTabChange} defaultValue="fromFile">
       <Tabs.List mb={20}>
         <Tabs.Tab value="fromFile" leftSection={<IconFileImport size={14} />}>
           From File
