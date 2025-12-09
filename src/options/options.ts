@@ -101,5 +101,42 @@ export const optionsReducer = (options: Options, action: OptionsAction) => {
             }),
         },
       };
+    case "combineLabels": {
+      const { targetLabelId, labelIdsToMerge } = action.payload;
+      const targetLabel = options.labels.find(
+        (label) => label.id === targetLabelId,
+      );
+
+      if (!targetLabel) {
+        return options;
+      }
+
+      // Collect all rules from labels to merge (excluding the target)
+      const rulesToAdd = options.labels
+        .filter(
+          (label) =>
+            labelIdsToMerge.includes(label.id) && label.id !== targetLabelId,
+        )
+        .flatMap((label) => label.rules);
+
+      // Update target label with combined rules
+      const updatedLabels = options.labels
+        .map((label) =>
+          label.id === targetLabelId
+            ? { ...label, rules: [...label.rules, ...rulesToAdd] }
+            : label,
+        )
+        .filter((label) => {
+          // Remove labels that were merged (but keep the target)
+          return (
+            label.id === targetLabelId || !labelIdsToMerge.includes(label.id)
+          );
+        });
+
+      return {
+        ...options,
+        labels: updatedLabels,
+      };
+    }
   }
 };

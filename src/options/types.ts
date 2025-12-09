@@ -84,4 +84,11 @@ export type OptionsAction =
   | {
       type: "updateUrlSync";
       payload: Partial<UrlSyncSettings>;
+    }
+  | {
+      type: "combineLabels";
+      payload: {
+        targetLabelId: string;
+        labelIdsToMerge: string[];
+      };
     };
