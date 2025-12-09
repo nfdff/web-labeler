@@ -1,7 +1,7 @@
-export type CloudService = "google-drive" | "onedrive" | "dropbox" | null;
+export type CloudService = "google-drive" | "onedrive" | "dropbox" | "generic";
 
 export function detectCloudService(url: string): CloudService {
-  if (!url) return null;
+  if (!url) return "generic";
 
   try {
     const urlObj = new URL(url);
@@ -19,15 +19,15 @@ export function detectCloudService(url: string): CloudService {
     )
       return "dropbox";
 
-    return null;
+    return "generic";
   } catch {
-    return null;
+    return "generic";
   }
 }
 
 export function transformCloudUrl(url: string): string {
   const service = detectCloudService(url);
-  if (!service) return url;
+  if (service === "generic") return url;
 
   switch (service) {
     case "google-drive":
@@ -98,7 +98,7 @@ export function isDirectDownloadUrl(
   url: string,
   service: CloudService,
 ): boolean {
-  if (!service) return false;
+  if (service === "generic") return false;
 
   switch (service) {
     case "google-drive":

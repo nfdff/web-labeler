@@ -56,25 +56,34 @@ export function useImportFromUrlForm({
     form.setFieldValue("url", "");
   };
 
+  const getTransformedUrl = () => {
+    const url = form.values.url.trim();
+    return url ? transformCloudUrl(url) : "";
+  };
+
+  const getPermissionErrorMessage = (url: string, context: string) => {
+    return `Permission denied to access ${getOriginPattern(url)}. ${context}`;
+  };
+
   const handleSync = async () => {
     if (form.validate().hasErrors) {
       return;
     }
 
-    const url = form.values.url.trim();
-    if (!url) {
+    const transformedUrl = getTransformedUrl();
+    if (!transformedUrl) {
       return;
     }
-
-    // Transform cloud URL if needed
-    const transformedUrl = transformCloudUrl(url);
 
     setPermissionError(undefined);
     const result = await syncFromUrl(transformedUrl);
 
     if (!result.success && result.error === "Permission denied") {
       setPermissionError(
-        `Permission denied to access ${getOriginPattern(transformedUrl)}. Please grant permission to fetch labels from this URL.`,
+        getPermissionErrorMessage(
+          transformedUrl,
+          "Please grant permission to fetch labels from this URL.",
+        ),
       );
     }
   };
@@ -85,18 +94,18 @@ export function useImportFromUrlForm({
     }
 
     setPermissionError(undefined);
-    const { url, updateFrequency, enabled } = form.values;
-    const trimmedUrl = url.trim();
-
-    // Transform cloud URL if needed
-    const transformedUrl = transformCloudUrl(trimmedUrl);
+    const { updateFrequency, enabled } = form.values;
+    const transformedUrl = getTransformedUrl();
 
     // Request permission if auto-sync is enabled and URL is set
     if (enabled && transformedUrl && parseInt(updateFrequency) > 0) {
       const hasPermission = await requestUrlPermission(transformedUrl);
       if (!hasPermission) {
         setPermissionError(
-          `Permission denied to access ${getOriginPattern(transformedUrl)}. Auto-sync requires permission to fetch from this URL.`,
+          getPermissionErrorMessage(
+            transformedUrl,
+            "Auto-sync requires permission to fetch from this URL.",
+          ),
         );
         return;
       }

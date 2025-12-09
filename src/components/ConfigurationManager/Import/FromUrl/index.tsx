@@ -1,5 +1,4 @@
 import {
-  Alert,
   Button,
   CloseButton,
   Group,
@@ -10,52 +9,14 @@ import {
   TextInput,
   Tooltip,
 } from "@mantine/core";
-import {
-  IconLock,
-  IconRefresh,
-  IconWorldUpload,
-  IconBrandGoogleDrive,
-  IconBrandOnedrive,
-  IconBrandDropbox,
-  IconAlertCircle,
-} from "@tabler/icons-react";
+import { IconRefresh } from "@tabler/icons-react";
 import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts";
 import { useImportFromUrlForm } from "./useImportFromUrlForm.ts";
 import { useOptionsContext } from "../../../../contexts";
 import { useCloudUrl } from "./useCloudUrl.ts";
-import { CloudService } from "../../../../utils/cloudUrlTransformer.ts";
-
-function getCloudIcon(service: CloudService) {
-  switch (service) {
-    case "google-drive":
-      return <IconBrandGoogleDrive size={16} />;
-    case "onedrive":
-      return <IconBrandOnedrive size={16} />;
-    case "dropbox":
-      return <IconBrandDropbox size={16} />;
-    default:
-      return <IconWorldUpload size={16} />;
-  }
-}
-
-function getTooltipText(
-  service: CloudService,
-  hasTransformation: boolean,
-): string {
-  if (!service) return "URL to JSON file";
-
-  const serviceName =
-    service === "google-drive"
-      ? "Google Drive"
-      : service === "onedrive"
-        ? "OneDrive"
-        : "Dropbox";
-
-  if (hasTransformation) {
-    return `${serviceName} URL detected. Will be transformed to direct download link.`;
-  }
-  return `${serviceName} direct download link detected.`;
-}
+import { getCloudIcon, getTooltipText } from "./cloudServiceHelpers.tsx";
+import { SyncAlerts } from "./SyncAlerts.tsx";
+import { ICON_SIZE } from "./constants.ts";
 
 function ConfigurationImportFromUrl({
   closeConfigurationManager,
@@ -90,7 +51,7 @@ function ConfigurationImportFromUrl({
         {...form.getInputProps("url")}
         leftSection={
           <Tooltip label={getTooltipText(cloudService, hasTransformation)}>
-            <div>{getCloudIcon(cloudService)}</div>
+            {getCloudIcon(cloudService)}
           </Tooltip>
         }
         rightSection={
@@ -127,7 +88,7 @@ function ConfigurationImportFromUrl({
         <Button
           variant="light"
           size="sm"
-          leftSection={<IconRefresh size={16} />}
+          leftSection={<IconRefresh size={ICON_SIZE} />}
           onClick={handleSync}
           disabled={!form.values.url.trim() || isLoading}
           loading={isLoading}
@@ -145,25 +106,10 @@ function ConfigurationImportFromUrl({
         </Button>
       </Group>
 
-      {!!permissionError && (
-        <Alert
-          color="orange"
-          title="Permission Required"
-          icon={<IconLock size={16} />}
-        >
-          {permissionError}
-        </Alert>
-      )}
-
-      {!!errorMessage && (
-        <Alert
-          color="red"
-          title="Failed to sync"
-          icon={<IconAlertCircle size={16} />}
-        >
-          {errorMessage}
-        </Alert>
-      )}
+      <SyncAlerts
+        permissionError={permissionError}
+        errorMessage={errorMessage}
+      />
     </Stack>
   );
 }

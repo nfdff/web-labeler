@@ -16,16 +16,18 @@ export interface UseCloudUrlResult {
 export function useCloudUrl(url: string): UseCloudUrlResult {
   return useMemo(() => {
     const cloudService = detectCloudService(url);
-    const transformedUrl = cloudService ? transformCloudUrl(url) : url;
-    const isAlreadyDirect = cloudService
-      ? isDirectDownloadUrl(url, cloudService)
-      : false;
+    const transformedUrl =
+      cloudService !== "generic" ? transformCloudUrl(url) : url;
+    const isAlreadyDirect =
+      cloudService !== "generic"
+        ? isDirectDownloadUrl(url, cloudService)
+        : false;
 
     return {
       cloudService,
       transformedUrl,
       isAlreadyDirect,
-      hasTransformation: cloudService !== null && !isAlreadyDirect,
+      hasTransformation: cloudService !== "generic" && !isAlreadyDirect,
     };
   }, [url]);
 }
