@@ -1,10 +1,16 @@
 .button {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+  &:focus-visible{
+    z-index: 1;
+  }
 }
 
 .menuControl {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-left: 1px solid var(--ai-bg) !important;
+  &:focus-visible{
+    z-index: 1;
+  }
 }
