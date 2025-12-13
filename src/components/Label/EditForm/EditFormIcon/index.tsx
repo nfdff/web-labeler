@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import { Stack, Fieldset, Flex, Text } from "@mantine/core";
 import IconStyleSwitcher from "./IconStyleSwitcher";
+import IconOnlyToggle from "./IconOnlyToggle";
 import IconPreview from "../../IconPreview";
 import { useLabelEditFormContext } from "../formContext.ts";
 
 function LabelEditFormIcon() {
   const form = useLabelEditFormContext();
+
+  // Automatically turn off icon-only mode when favicon styling is set to "none"
+  useEffect(() => {
+    if (form.values.iconStyle === "none" && form.values.iconOnly) {
+      form.setFieldValue("iconOnly", false);
+    }
+  }, [form.values.iconStyle]);
 
   return (
     <Flex gap="sm" wrap="wrap">
@@ -23,6 +32,7 @@ function LabelEditFormIcon() {
             </Text>
             <IconStyleSwitcher />
           </Stack>
+          <IconOnlyToggle />
         </Stack>
       </Fieldset>
       <Fieldset legend="Preview" style={{ flexGrow: 1 }}>

@@ -1,16 +1,17 @@
 import { Button, Group, Text } from "@mantine/core"
+import { modals } from "@mantine/modals"
 import {
+  IconEyeOff,
   IconFlask,
   IconForms,
   IconLabel,
   IconPhotoCircle,
 } from "@tabler/icons-react"
-import { modals } from "@mantine/modals"
-import LabelEditForm from "../../EditForm"
-import { LabelListItemSettingsProps } from "./types.ts"
-import { LabelEditFormSection } from "../../EditForm/types.ts"
 import FeatureBadge from "../../../FeatureBadge"
 import InfoTooltipIcon from "../../../InfoTooltipIcon"
+import LabelEditForm from "../../EditForm"
+import { LabelEditFormSection } from "../../EditForm/types.ts"
+import { LabelListItemSettingsProps } from "./types.ts"
 
 function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
   return (
@@ -18,11 +19,13 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
       <Button
         size="xs"
         variant="light"
-        leftSection={<IconLabel size={14} />}
+        leftSection={
+          label.iconOnly ? <IconEyeOff size={14} /> : <IconLabel size={14} />
+        }
         onClick={(e) => {
           e.stopPropagation()
           modals.open({
-            title: "Badge",
+            title: label.iconOnly ? "Badge (Icon-Only Mode)" : "Badge",
             size: "auto",
             children: (
               <LabelEditForm

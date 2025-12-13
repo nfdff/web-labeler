@@ -42,4 +42,5 @@ export const validationSchema: Schema<Label> = {
   borderWidth: (val) => typeof val === "number" && val >= 0 && val <= 5,
   iconStyle: (val) =>
     typeof val === "string" && iconStyles.includes(val as IconStyle),
+  iconOnly: (val) => val === undefined || typeof val === "boolean",
 };

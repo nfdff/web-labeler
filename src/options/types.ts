@@ -20,6 +20,7 @@ export interface Label {
   borderWidth?: number;
 
   iconStyle?: IconStyle;
+  iconOnly?: boolean;
 }
 
 export interface Rule {

@@ -1,34 +1,36 @@
+import { useEffect } from "react"
 import {
+  Collapse,
   ColorInput,
+  Fieldset,
+  Flex,
   Group,
   Input,
   Slider,
   Stack,
-  Fieldset,
-  Textarea,
-  Flex,
   Text,
-  Collapse,
-} from "@mantine/core";
-import { colorSwatches } from "../../../../options/constants.ts";
-import BadgePreview from "../../BadgePreview";
-import { useLabelEditFormContext } from "../formContext.ts";
-import PositionControls from "./PositionControls";
-import ShapeSwitcher from "./ShapeSwitcher";
-import BorderSwitcher from "./BorderSwitcher";
-import { useDisclosure } from "@mantine/hooks";
-import CollapseButton from "./CollapseButton";
-import { useEffect } from "react";
+  Textarea,
+} from "@mantine/core"
+import { useDisclosure } from "@mantine/hooks"
+import { colorSwatches } from "../../../../options/constants.ts"
+import BadgePreview from "../../BadgePreview"
+import { useLabelEditFormContext } from "../formContext.ts"
+import BorderSwitcher from "./BorderSwitcher"
+import CollapseButton from "./CollapseButton"
+import IconOnlyAlert from "./IconOnlyAlert"
+import PositionControls from "./PositionControls"
+import ShapeSwitcher from "./ShapeSwitcher"
+import { EditFormBadgeProps } from "./types.ts"
 
-function LabelEditFormBadge() {
-  const form = useLabelEditFormContext();
-  const [expanded, { toggle, open }] = useDisclosure(false);
+function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
+  const form = useLabelEditFormContext()
+  const [expanded, { toggle, open }] = useDisclosure(false)
 
   useEffect(() => {
     if (form.values.border !== "none" && form.values.shape !== "frame") {
-      open();
+      open()
     }
-  }, [form.values.border, open]);
+  }, [form.values.border, open])
 
   return (
     <Flex gap="sm" wrap="wrap">
@@ -41,6 +43,7 @@ function LabelEditFormBadge() {
         }}
       >
         <Stack gap="sm">
+          {withIconOnlyAlert && <IconOnlyAlert />}
           <Textarea
             label="Name"
             placeholder="Name"
@@ -165,7 +168,7 @@ function LabelEditFormBadge() {
         </BadgePreview>
       </Fieldset>
     </Flex>
-  );
+  )
 }
 
-export default LabelEditFormBadge;
+export default LabelEditFormBadge
