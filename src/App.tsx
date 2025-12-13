@@ -1,11 +1,11 @@
-import { MantineProvider } from "@mantine/core";
-import { ModalsProvider } from "@mantine/modals";
-import Popup from "./pages/Popup";
-import OptionsPage from "./pages/OptionsPage";
-import "@mantine/core/styles.css";
-import "@mantine/dropzone/styles.css";
-import "./style.scss";
-import { OptionsProvider } from "./contexts";
+import { MantineProvider } from "@mantine/core"
+import "@mantine/core/styles.css"
+import "@mantine/dropzone/styles.css"
+import { ModalsProvider } from "@mantine/modals"
+import { OptionsProvider } from "./contexts"
+import OptionsPage from "./pages/OptionsPage"
+import Popup from "./pages/Popup"
+import "./style.scss"
 
 //TODO:
 // ☑️ 1. Opacity and isActive props for Labels
@@ -13,9 +13,9 @@ import { OptionsProvider } from "./contexts";
 // ☑️ 3. Default labels (for the first launch)
 // ☑️ 4. Label preview in edit form
 // ☑️ 5. Import/export setting from/to file
-// 6. Import setting from url
-// 6.1 By user action (sync button)
-// 6.2 By timer (autoupdate)
+// ☑️ 6. Import setting from url
+// ☑️ 6.1 By user action (sync button)
+// ☑️ 6.2 By timer (autoupdate)
 // ☑️ 7. Draggable labels in the list
 // ☑️ 8. UI improvements:
 // ☑️ 8.1 user-friendly position selector in the edit form,
@@ -23,7 +23,7 @@ import { OptionsProvider } from "./contexts";
 // ☑️ 8.3 confirmation dialog on delete label and delete all actions
 // ☑️ 8.4 add on/off control for each label into the popup
 // ☑️ 8.5 Split appearance and rules label settings into 2 different dialogs
-// 9. Support regexp or special symbols like *
+// ☑️ 9. Support regexp or special symbols like *
 // ☑️ 10. Dark mode
 // 11. Tooltip features:
 // 11.1 UI control for switching between label positions
@@ -44,7 +44,7 @@ function App() {
         </ModalsProvider>
       </OptionsProvider>
     </MantineProvider>
-  );
+  )
 }
 
-export default App;
+export default App
