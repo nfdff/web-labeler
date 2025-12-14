@@ -50,7 +50,7 @@ function ConfigurationImportFromAnotherExtension({
         data={SupportedExtensions}
         value={selectedExtension}
         onChange={(value) => setSelectedExtension(value)}
-        clearable={false}
+        allowDeselect={false}
       />
 
       <Switch
