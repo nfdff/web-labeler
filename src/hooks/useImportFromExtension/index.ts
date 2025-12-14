@@ -76,10 +76,13 @@ export function useImportFromExtension(): UseImportFromExtensionReturn {
         title: "Import labels from Environment Marker",
         messagePrefix: message,
       })
+
+      return { success: true }
     } catch (error) {
       const errorMsg =
         error instanceof Error ? error.message : "Failed to import labels"
       setErrorMessage(errorMsg)
+      return { success: false }
     } finally {
       setIsLoading(false)
     }

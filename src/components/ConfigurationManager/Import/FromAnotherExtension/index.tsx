@@ -26,9 +26,9 @@ function ConfigurationImportFromAnotherExtension({
     const file = files[0]
     if (!file) return
 
-    await importFromExtension(file, combineMode)
+    const result = await importFromExtension(file, combineMode)
 
-    if (!errorMessage && closeConfigurationManager) {
+    if (result.success && closeConfigurationManager) {
       closeConfigurationManager()
     }
   }
