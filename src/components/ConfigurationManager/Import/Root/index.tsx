@@ -2,6 +2,7 @@ import { useState } from "react"
 import { ActionIcon, Button, Group, Menu, Modal } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import {
+  IconBrandChrome,
   IconChevronDown,
   IconFileImport,
   IconUpload,
@@ -59,6 +60,12 @@ function ConfigurationImport() {
               onClick={() => handleOpenModal("fromUrl")}
             >
               From URL
+            </Menu.Item>
+            <Menu.Item
+              leftSection={<IconBrandChrome size={16} stroke={1.5} />}
+              onClick={() => handleOpenModal("fromExtension")}
+            >
+              From Another Extension
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
