@@ -6,7 +6,8 @@ import {
   IconAlertCircle,
 } from "@tabler/icons-react";
 import { Dropzone, FileWithPath } from "@mantine/dropzone";
-import { useSyncFromFile } from "../../../../hooks/useSyncFromFile";
+import { useSyncFromFile } from "@/hooks/useSyncFromFile";
+import { useTranslation } from "@/contexts";
 
 function ConfigurationImportFromFile({
   closeConfigurationManager,
@@ -14,6 +15,7 @@ function ConfigurationImportFromFile({
   closeConfigurationManager?: () => void;
 }) {
   const { syncFromFile, isLoading, errorMessage } = useSyncFromFile();
+  const { t } = useTranslation();
 
   const onFileDrop = async (files: FileWithPath[]) => {
     const file = files[0];
@@ -49,9 +51,9 @@ function ConfigurationImportFromFile({
             <IconFileCode size={44} />
           </Dropzone.Idle>
           <Stack gap={0}>
-            <Text size="l">Drag file here or click to select</Text>
+            <Text size="l">{t("importFromFile_dropzone")}</Text>
             <Text size="xs" c="dimmed">
-              Use exported configuration file in JSON format
+              {t("importFromFile_dropzone_description")}
             </Text>
           </Stack>
         </Group>
@@ -59,7 +61,7 @@ function ConfigurationImportFromFile({
       {!!errorMessage && (
         <Alert
           color="red"
-          title="Failed to read file"
+          title={t("importFromFile_error_title")}
           icon={<IconAlertCircle size={16} />}
         >
           {errorMessage}

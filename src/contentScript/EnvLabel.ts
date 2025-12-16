@@ -1,5 +1,5 @@
-import { Label, Options } from "./../options/types";
-import { ruleTypes } from "../options/constants";
+import { Label, Options } from "@/options/types";
+import { ruleTypes } from "@/options/constants";
 import StorageChange = chrome.storage.StorageChange;
 
 type subscriberCb = (label: Label | null) => void;

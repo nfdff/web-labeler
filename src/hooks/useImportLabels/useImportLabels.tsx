@@ -1,19 +1,22 @@
 import { modals } from "@mantine/modals";
 import { List } from "@mantine/core";
-import ConfirmationModal from "../../components/ConfirmationModal";
+import ConfirmationModal from "@/components/ConfirmationModal";
 import {
   UseImportLabelsParams,
   UseImportLabelsReturn,
   ImportLabelCounts,
   ConfirmAndImportOptions,
 } from "./types";
-import { Label } from "../../options/types";
+import { Label } from "@/options/types";
+import { useTranslation } from "@/contexts";
 
 export const useImportLabels = ({
   labels,
   dispatch,
   updateSyncSettings = false,
 }: UseImportLabelsParams): UseImportLabelsReturn => {
+  const { t } = useTranslation();
+
   const calculateCounts = (labelsForImport: Label[]): ImportLabelCounts => {
     const updatingLabelCount = labelsForImport.filter((labelForImport) =>
       labels.some((label) => label.id === labelForImport.id)
@@ -30,8 +33,15 @@ export const useImportLabels = ({
   ) => {
     const { newLabelsCount, updatingLabelCount } =
       calculateCounts(labelsForImport);
-    const title = options?.title || "Import labels";
-    const messagePrefix = options?.messagePrefix || "From the imported source:";
+    const title = options?.title || t("importLabels_title_default");
+    const messagePrefix = options?.messagePrefix || t("importLabels_prefix_default");
+
+    const newLabelText = newLabelsCount === 1
+      ? t("importLabels_label_singular")
+      : t("importLabels_label_plural");
+    const updatedLabelText = updatingLabelCount === 1
+      ? t("importLabels_label_singular")
+      : t("importLabels_label_plural");
 
     modals.open({
       title,
@@ -43,15 +53,10 @@ export const useImportLabels = ({
               {messagePrefix}
               <List size="sm" mt={5} mb={5} withPadding>
                 <List.Item>
-                  {newLabelsCount}
-                  {" new " + (newLabelsCount === 1 ? "label" : "labels")}
-                  {" will be added;"}
+                  {t("importLabels_message_new", [String(newLabelsCount), newLabelText])}
                 </List.Item>
                 <List.Item>
-                  {updatingLabelCount}
-                  {" existing " +
-                    (updatingLabelCount === 1 ? "label" : "labels")}
-                  {" will be updated."}
+                  {t("importLabels_message_updated", [String(updatingLabelCount), updatedLabelText])}
                 </List.Item>
               </List>
             </>

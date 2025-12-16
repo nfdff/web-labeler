@@ -138,5 +138,10 @@ export const optionsReducer = (options: Options, action: OptionsAction) => {
         labels: updatedLabels,
       };
     }
+    case "setLocale":
+      return {
+        ...options,
+        locale: action.payload.locale,
+      };
   }
 };

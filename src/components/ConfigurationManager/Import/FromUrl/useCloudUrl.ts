@@ -4,7 +4,7 @@ import {
   transformCloudUrl,
   isDirectDownloadUrl,
   CloudService,
-} from "../../../../utils/cloudUrlTransformer.ts";
+} from "@/utils/cloudUrlTransformer.ts";
 
 export interface UseCloudUrlResult {
   cloudService: CloudService;

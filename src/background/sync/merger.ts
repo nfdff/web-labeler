@@ -1,4 +1,4 @@
-import { Label } from "../../options/types";
+import { Label } from "@/options/types";
 
 export interface MergeResult {
   mergedLabels: Label[];

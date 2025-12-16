@@ -1,13 +1,14 @@
-import { Badge, HoverCard, List, Table, Checkbox } from "@mantine/core";
-import { IconGripVertical, IconTag } from "@tabler/icons-react";
-import { LabelListItemProps } from "./types.ts";
-import LabelListItemActions from "../ItemActions";
-import { Draggable } from "@hello-pangea/dnd";
-import LabelListItemSettings from "../ItemSettings";
+import { Badge, Checkbox, HoverCard, List, Table } from "@mantine/core"
+import { IconGripVertical, IconTag } from "@tabler/icons-react"
+import { Draggable } from "@hello-pangea/dnd"
+import { useTranslation } from "@/contexts"
 import {
   ruleTypeSettings,
   sourceTypeSettings,
-} from "../../../../options/constants.ts";
+} from "@/options/constants.ts"
+import LabelListItemActions from "../ItemActions"
+import LabelListItemSettings from "../ItemSettings"
+import { LabelListItemProps } from "./types.ts"
 
 function LabelListItem({
   label,
@@ -16,6 +17,8 @@ function LabelListItem({
   isSelected,
   onSelect,
 }: LabelListItemProps) {
+  const { t } = useTranslation()
+
   return (
     <Draggable key={label.id} index={index} draggableId={label.id}>
       {(provided) => (
@@ -23,7 +26,7 @@ function LabelListItem({
           ref={provided.innerRef}
           {...provided.draggableProps}
           onClick={() => {
-            onSelect(isSelected);
+            onSelect(isSelected)
           }}
         >
           <Table.Td>
@@ -44,7 +47,7 @@ function LabelListItem({
               color={label.bgColor}
               style={{ "--badge-color": label.textColor }}
             >
-              {label.name || "[noname]"}
+              {label.name || t("common_noname")}
             </Badge>
           </Table.Td>
           <Table.Td>
@@ -59,8 +62,10 @@ function LabelListItem({
                   <List size="xs" icon={<IconTag size={14} />} center>
                     {label.rules.map((rule, idx) => (
                       <List.Item key={idx}>
-                        {sourceTypeSettings[rule.source || "hostname"].label}{" "}
-                        {ruleTypeSettings[rule.type].label}:{" "}
+                        {t(
+                          sourceTypeSettings[rule.source || "hostname"].labelKey
+                        )}{" "}
+                        {t(ruleTypeSettings[rule.type].labelKey)}:{" "}
                         <strong>{rule.value}</strong>
                       </List.Item>
                     ))}
@@ -78,7 +83,7 @@ function LabelListItem({
         </Table.Tr>
       )}
     </Draggable>
-  );
+  )
 }
 
-export default LabelListItem;
+export default LabelListItem

@@ -1,8 +1,9 @@
-import { Label } from "../../../options/types.ts";
+import { Label } from "@/options/types.ts";
+import { useTranslation } from "@/contexts";
 import classes from "./style.module.scss";
 import clsx from "clsx";
 import { Card } from "@mantine/core";
-import { nlToBr } from "../../../utils/common.ts";
+import { nlToBr } from "@/utils/common.ts";
 import { ReactNode } from "react";
 
 interface BadgePreviewProps {
@@ -11,9 +12,11 @@ interface BadgePreviewProps {
 }
 
 function BadgePreview({ label, children }: BadgePreviewProps) {
+  const { t } = useTranslation();
+
   return (
     <Card padding="lg" radius="sm" withBorder className={classes.badgePreview}>
-      <span>Window</span>
+      <span>{t("label_preview_window")}</span>
       <div
         className={clsx(
           classes.label,

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { readJsonFile } from "../../utils/fileReader";
-import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
+import { readJsonFile } from "@/utils/fileReader";
+import { validateLabelsArray } from "@/utils/validateLabelsArray.ts";
 import { ReadAndValidateResult } from "./types.ts";
 
 export type UseConfigurationFileReader = () => {

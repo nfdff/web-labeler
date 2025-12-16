@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react"
 import { Dispatch } from "react"
 import { useForm } from "@mantine/form"
 import { modals } from "@mantine/modals"
-import { useSyncFromUrl } from "../../../../hooks/useSyncFromUrl"
-import { OptionsAction, UrlSyncSettings } from "../../../../options/types.ts"
-import { transformCloudUrl } from "../../../../utils/cloudUrlTransformer.ts"
+import { useSyncFromUrl } from "@/hooks/useSyncFromUrl"
+import { OptionsAction, UrlSyncSettings } from "@/options/types.ts"
+import { transformCloudUrl } from "@/utils/cloudUrlTransformer.ts"
 import {
   getOriginPattern,
   requestUrlPermission,
-} from "../../../../utils/urlPermissions.ts"
+} from "@/utils/urlPermissions.ts"
 import {
   ImportFromUrlFormValues,
   createFormConfig,

@@ -1,3 +1,5 @@
+import { MessageKey } from "@/i18n/types"
+
 export const ruleTypes = [
   "contains",
   "startsWith",
@@ -9,24 +11,24 @@ export const ruleTypes = [
 export type RuleType = (typeof ruleTypes)[number];
 
 export interface RuleTypeSettings {
-  label: string;
+  labelKey: MessageKey;
 }
 
 export const ruleTypeSettings = {
   contains: {
-    label: "Contains",
+    labelKey: "ruleType_contains",
   },
   startsWith: {
-    label: "Starts With",
+    labelKey: "ruleType_startsWith",
   },
   endsWith: {
-    label: "Ends With",
+    labelKey: "ruleType_endsWith",
   },
   matches: {
-    label: "Matches",
+    labelKey: "ruleType_matches",
   },
   regexp: {
-    label: "Matches RegExp",
+    labelKey: "ruleType_regexp",
   },
 } as const satisfies Record<RuleType, RuleTypeSettings>;
 
@@ -34,15 +36,15 @@ export const sourceTypes = ["hostname", "fullUrl"] as const;
 export type SourceType = (typeof sourceTypes)[number];
 
 export interface SourceTypeSettings {
-  label: string;
+  labelKey: MessageKey;
 }
 
 export const sourceTypeSettings = {
   hostname: {
-    label: "Domain",
+    labelKey: "sourceType_hostname",
   },
   fullUrl: {
-    label: "Full URL",
+    labelKey: "sourceType_fullUrl",
   },
 } as const satisfies Record<SourceType, SourceTypeSettings>;
 

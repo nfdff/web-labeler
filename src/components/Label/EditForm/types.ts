@@ -1,4 +1,4 @@
-import { Label } from "../../../options/types.ts";
+import { Label } from "@/options/types.ts";
 
 export interface LabelEditFormProps {
   onSave?: () => void;

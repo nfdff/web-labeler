@@ -7,6 +7,7 @@ import {
 import ConfigurationImportFromAnotherExtension from "../FromAnotherExtension"
 import ConfigurationImportFromFile from "../FromFile"
 import ConfigurationImportFromUrl from "../FromUrl"
+import { useTranslation } from "@/contexts"
 
 function ConfigurationImportTabs({
   closeConfigurationManager,
@@ -17,20 +18,22 @@ function ConfigurationImportTabs({
   activeTab?: string
   onTabChange?: (value: string | null) => void
 }) {
+  const { t } = useTranslation()
+
   return (
     <Tabs value={activeTab} onChange={onTabChange} defaultValue="fromFile">
       <Tabs.List mb={20}>
         <Tabs.Tab value="fromFile" leftSection={<IconFileImport size={16} />}>
-          From File
+          {t("importTab_fromFile")}
         </Tabs.Tab>
         <Tabs.Tab value="fromUrl" leftSection={<IconWorldUpload size={16} />}>
-          From URL
+          {t("importTab_fromUrl")}
         </Tabs.Tab>
         <Tabs.Tab
           value="fromExtension"
           leftSection={<IconBrandChrome size={16} />}
         >
-          From Another Extension
+          {t("importTab_fromExtension")}
         </Tabs.Tab>
       </Tabs.List>
 

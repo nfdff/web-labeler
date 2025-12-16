@@ -1,4 +1,4 @@
-import { Label } from "../options/types"
+import { Label } from "@/options/types"
 import classes from "./style.module.scss"
 
 export class EnvBadge {

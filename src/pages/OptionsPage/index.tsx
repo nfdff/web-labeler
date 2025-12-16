@@ -1,21 +1,24 @@
 import {
   Container,
-  Switch,
-  Paper,
-  Stack,
-  Title,
   Group,
   Image,
-} from "@mantine/core";
-import LabelList from "../../components/Label";
-import ConfigurationManager from "../../components/ConfigurationManager";
-import ThemeSwitcher from "../../components/ThemeSwitcher";
-import classes from "./style.module.scss";
-import Footer from "../../components/Footer";
-import { useOptionsContext, SelectionProvider } from "../../contexts";
+  Paper,
+  Stack,
+  Switch,
+  Title,
+} from "@mantine/core"
+import ConfigurationManager from "@/components/ConfigurationManager"
+import Footer from "@/components/Footer"
+import LabelList from "@/components/Label"
+import LanguageSelector from "@/components/LanguageSelector"
+import ThemeSwitcher from "@/components/ThemeSwitcher"
+import { SelectionProvider, useOptionsContext } from "@/contexts"
+import { useTranslation } from "@/contexts"
+import classes from "./style.module.scss"
 
 function OptionsPage() {
-  const { options, dispatch } = useOptionsContext();
+  const { options, dispatch } = useOptionsContext()
+  const { t } = useTranslation()
 
   return (
     <Container p={20}>
@@ -30,14 +33,15 @@ function OptionsPage() {
           <Group wrap="nowrap" align="center" gap="xs">
             <Switch
               size="lg"
-              onLabel="On"
-              offLabel="Off"
+              onLabel={t("optionsPage_switchOn")}
+              offLabel={t("optionsPage_switchOff")}
               checked={options.isActive}
               onChange={() => {
-                dispatch({ type: "toggleActive" });
+                dispatch({ type: "toggleActive" })
               }}
             />
             <ThemeSwitcher />
+            <LanguageSelector />
           </Group>
         </Group>
         <SelectionProvider>
@@ -49,7 +53,7 @@ function OptionsPage() {
         <Footer />
       </Stack>
     </Container>
-  );
+  )
 }
 
-export default OptionsPage;
+export default OptionsPage

@@ -2,7 +2,7 @@ import { MantineProvider } from "@mantine/core"
 import "@mantine/core/styles.css"
 import "@mantine/dropzone/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import { OptionsProvider } from "./contexts"
+import { OptionsProvider, TranslationProvider } from "./contexts"
 import OptionsPage from "./pages/OptionsPage"
 import Popup from "./pages/Popup"
 import "./style.scss"
@@ -39,9 +39,11 @@ function App() {
   return (
     <MantineProvider defaultColorScheme="auto">
       <OptionsProvider>
-        <ModalsProvider>
-          {window.location.hash === "#popup" ? <Popup /> : <OptionsPage />}
-        </ModalsProvider>
+        <TranslationProvider>
+          <ModalsProvider>
+            {window.location.hash === "#popup" ? <Popup /> : <OptionsPage />}
+          </ModalsProvider>
+        </TranslationProvider>
       </OptionsProvider>
     </MantineProvider>
   )

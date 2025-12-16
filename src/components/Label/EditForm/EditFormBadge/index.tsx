@@ -12,7 +12,8 @@ import {
   Textarea,
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
-import { colorSwatches } from "../../../../options/constants.ts"
+import { useTranslation } from "@/contexts"
+import { colorSwatches } from "@/options/constants.ts"
 import BadgePreview from "../../BadgePreview"
 import { useLabelEditFormContext } from "../formContext.ts"
 import BorderSwitcher from "./BorderSwitcher"
@@ -24,6 +25,7 @@ import { EditFormBadgeProps } from "./types.ts"
 
 function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
   const form = useLabelEditFormContext()
+  const { t } = useTranslation()
   const [expanded, { toggle, open }] = useDisclosure(false)
 
   useEffect(() => {
@@ -35,7 +37,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
   return (
     <Flex gap="sm" wrap="wrap">
       <Fieldset
-        legend="Settings"
+        legend={t("label_settings")}
         style={{
           flexGrow: 1,
           position: "relative",
@@ -45,8 +47,8 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
         <Stack gap="sm">
           {withIconOnlyAlert && <IconOnlyAlert />}
           <Textarea
-            label="Name"
-            placeholder="Name"
+            label={t("label_name")}
+            placeholder={t("label_name_placeholder")}
             key={form.key("name")}
             {...form.getInputProps("name")}
             minRows={1}
@@ -55,23 +57,23 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
 
           <Stack style={{ flexGrow: 1, gap: 0 }}>
             <Text size="sm" fw={500}>
-              Shape
+              {t("label_shape")}
             </Text>
             <ShapeSwitcher />
           </Stack>
 
           <Group gap="xs" grow wrap="nowrap">
             <ColorInput
-              label="Background color"
-              placeholder="Background color"
+              label={t("label_backgroundColor")}
+              placeholder={t("label_backgroundColor_placeholder")}
               swatchesPerRow={colorSwatches.length}
               swatches={[...colorSwatches]}
               key={form.key("bgColor")}
               {...form.getInputProps("bgColor")}
             />
             <ColorInput
-              label="Text color"
-              placeholder="Text color"
+              label={t("label_textColor")}
+              placeholder={t("label_textColor_placeholder")}
               swatchesPerRow={colorSwatches.length}
               swatches={[...colorSwatches]}
               key={form.key("textColor")}
@@ -80,7 +82,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
           </Group>
 
           <Group gap="xs" grow>
-            <Input.Wrapper label="Opacity">
+            <Input.Wrapper label={t("label_opacity")}>
               <Slider
                 color="gray"
                 label={(value) => `${Math.round(value * 100)}%`}
@@ -91,7 +93,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
                 {...form.getInputProps("opacity")}
               />
             </Input.Wrapper>
-            <Input.Wrapper label="Hovered Opacity">
+            <Input.Wrapper label={t("label_hoveredOpacity")}>
               <Slider
                 color="gray"
                 label={(value) => `${Math.round(value * 100)}%`}
@@ -105,7 +107,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
           </Group>
 
           <Group gap="xs" grow>
-            <Input.Wrapper label="Scale">
+            <Input.Wrapper label={t("label_scale")}>
               <Slider
                 color="gray"
                 min={0.5}
@@ -115,7 +117,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
                 {...form.getInputProps("scale")}
               />
             </Input.Wrapper>
-            <Input.Wrapper label="Font Size">
+            <Input.Wrapper label={t("label_fontSize")}>
               <Slider
                 color="gray"
                 label={(value) => `${value.toFixed(1)}px`}
@@ -131,21 +133,21 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
           <Collapse in={expanded}>
             <Stack style={{ flexGrow: 1, gap: 0 }}>
               <Text size="sm" fw={500}>
-                Border
+                {t("label_border")}
               </Text>
               <BorderSwitcher />
             </Stack>
 
             <Group gap="xs" grow>
               <ColorInput
-                label="Border color"
-                placeholder="Border color"
+                label={t("label_borderColor")}
+                placeholder={t("label_borderColor_placeholder")}
                 swatchesPerRow={colorSwatches.length}
                 swatches={[...colorSwatches]}
                 key={form.key("borderColor")}
                 {...form.getInputProps("borderColor")}
               />
-              <Input.Wrapper label="Border Width">
+              <Input.Wrapper label={t("label_borderWidth")}>
                 <Slider
                   color="gray"
                   min={0.5}
@@ -160,7 +162,7 @@ function LabelEditFormBadge({ withIconOnlyAlert }: EditFormBadgeProps) {
         </Stack>
         <CollapseButton expanded={expanded} toggle={toggle} />
       </Fieldset>
-      <Fieldset legend="Preview" style={{ flexGrow: 1 }}>
+      <Fieldset legend={t("label_preview")} style={{ flexGrow: 1 }}>
         <BadgePreview label={{ ...form.getValues() }}>
           <PositionControls
             mode={form.values.shape === "banner" ? "sides" : "corners"}

@@ -1,0 +1,759 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Label your projects easily and avoid confusing production with test or development environments",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Save",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Confirm",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Delete",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[noname]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "On",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Off",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "ON",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "OFF",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Manage Labels",
+    "description": "Manage labels button"
+  },
+
+  "label_name": {
+    "message": "Name",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Name",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Shape",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Background color",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Background color",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Text color",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Text color",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacity",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Hovered Opacity",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Scale",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Font Size",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Border",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Border color",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Border color",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Border Width",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Settings",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Preview",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Window",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Your Tab",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "triangle",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "ribbon",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "frame",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "none",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "solid",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "dashed",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "dotted",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Favicon Styling",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Icon-Only Mode",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Hide the on-page badge and show only the icon",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Icon-Only Mode",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "The on-page badge is hidden. Only the badged favicon is shown.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "None",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Use badge style",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Less",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "More",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Add Rule",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp pattern (e.g., /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL or part (without protocol)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domain or part (without protocol)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "The rule value can't be empty",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Invalid regular expression pattern",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Contains",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Starts With",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Ends With",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Matches",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Matches RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domain",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Full URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Add Label",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "New Label",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Delete Labels",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Delete Label",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Are you sure you want to delete $1 selected label$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Are you sure you want to delete the label \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Combine",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Combine Selected Labels Into",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Label Name",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Rules",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Settings",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Actions",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "no labels",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Drag items to reorder. Labels are checked top-down; the first match is shown",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Badge",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Badge (Icon-Only Mode)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Icon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Rules",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "The label is shown when any single rule matches (OR logic between rows)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Experimental",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "This feature is experimental and may not work as expected. If you encounter any issues or have suggestions, please let the developer know.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "And if you actually enjoy using it — please tell him too, it might just make his day 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Select target label",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "All rules from the selected labels will be moved into the target label. The other selected labels will be deleted.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Are you sure you want to continue?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Are you sure?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Place label to $1 position",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Export Selected",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Export Labels",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Import Labels",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Import Labels",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "From file",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "From URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "From Another Extension",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "From File",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "From URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "From Another Extension",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Drag file here or click to select",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Use exported configuration file in JSON format",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Failed to read file",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL to a JSON file containing label configurations",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Clear input",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Auto-Sync",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Automatically update labels from URL at the specified frequency",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Last synced: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sync Now",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Save Settings",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL to JSON file",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL detected. Will be transformed to direct download link.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 direct download link detected.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Permission Required",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Failed to sync",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "This feature helps you migrate your existing labels from other extensions.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "We respect the work of other extension developers and provide this option purely as a convenience for users who want to try WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Import From",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Combine labels with matching properties",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Labels with the same name, color, font size, and position will be merged into one label with combined rules. You can also combine labels manually after import.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Drag file here or click to select",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Use exported labels file from Environment Marker extension in JSON format",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Failed to import labels",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Import labels",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Import labels from file",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Import labels from URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Import labels from Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "From the imported source:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "From the file:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "From the URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "From the file:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "From the file ($1 labels combined into $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 new $2 will be added",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 existing $2 will be updated",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "label",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "labels",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Invalid URL or sync in progress",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Permission denied",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "The file doesn't contain a valid array",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "The file is empty",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Invalid item at index $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Missing required field \"$1\" at index $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "The file doesn't contain valid labels",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "The URL doesn't return valid labels array",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Communication error with background script",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Failed to fetch data",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Validation error",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "unknown error",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Disabled",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Every 15 minutes",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Every 30 minutes",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Every hour",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Every 6 hours",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Once a day",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Auto-Sync",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sync URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Last: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Error",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Sync Error",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sync now",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "just now",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min ago",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 mins ago",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 hour ago",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 hours ago",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 day ago",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 days ago",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Find this extension helpful?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Rate It On The Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Contact Developer",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Rate",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Toggle color scheme",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Select Language",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Use Browser Language",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Select language",
+    "description": "Language selector aria label"
+  }
+}

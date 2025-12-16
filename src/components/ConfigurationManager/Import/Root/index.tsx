@@ -10,10 +10,12 @@ import {
 } from "@tabler/icons-react"
 import ConfigurationImportTabs from "../Tabs"
 import classes from "./styles.module.scss"
+import { useTranslation } from "@/contexts"
 
 function ConfigurationImport() {
   const [opened, { open, close }] = useDisclosure(false)
   const [activeTab, setActiveTab] = useState<string>("fromFile")
+  const { t } = useTranslation()
 
   const handleOpenModal = (tab?: string) => {
     if (tab) {
@@ -32,7 +34,7 @@ function ConfigurationImport() {
           onClick={() => handleOpenModal()}
           className={classes.button}
         >
-          Import Labels
+          {t("import_button")}
         </Button>
         <Menu
           transitionProps={{ transition: "pop-top-right" }}
@@ -53,24 +55,24 @@ function ConfigurationImport() {
               leftSection={<IconFileImport size={16} stroke={1.5} />}
               onClick={() => handleOpenModal("fromFile")}
             >
-              From file
+              {t("import_fromFile")}
             </Menu.Item>
             <Menu.Item
               leftSection={<IconWorldUpload size={16} stroke={1.5} />}
               onClick={() => handleOpenModal("fromUrl")}
             >
-              From URL
+              {t("import_fromUrl")}
             </Menu.Item>
             <Menu.Item
               leftSection={<IconBrandChrome size={16} stroke={1.5} />}
               onClick={() => handleOpenModal("fromExtension")}
             >
-              From Another Extension
+              {t("import_fromExtension")}
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </Group>
-      <Modal opened={opened} onClose={close} title="Import Labels" size="lg">
+      <Modal opened={opened} onClose={close} title={t("import_title")} size="lg">
         <ConfigurationImportTabs
           closeConfigurationManager={close}
           activeTab={activeTab}

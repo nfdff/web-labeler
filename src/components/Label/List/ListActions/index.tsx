@@ -5,13 +5,15 @@ import {
   IconSquareRoundedPlus,
   IconTrash,
 } from "@tabler/icons-react"
-import { useOptionsContext, useSelectionContext } from "../../../../contexts"
+import { useOptionsContext, useSelectionContext } from "@/contexts"
+import { useTranslation } from "@/contexts"
 import ConfirmationModal from "../../../ConfirmationModal"
 import CombineLabelsModal from "../../CombineLabelsModal"
 import LabelEditForm from "../../EditForm"
 import { LabelEditFormSection } from "../../EditForm/types.ts"
 
 function LabelListActions() {
+  const { t } = useTranslation()
   const { options, dispatch } = useOptionsContext()
   const { selectedIds, clearSelection, hasSelection } = useSelectionContext()
 
@@ -53,7 +55,7 @@ function LabelListActions() {
         leftSection={<IconSquareRoundedPlus size={16} />}
         onClick={() => {
           modals.open({
-            title: "New Label",
+            title: t("labelList_newLabel"),
             size: "auto",
             children: (
               <LabelEditForm
@@ -64,7 +66,7 @@ function LabelListActions() {
           })
         }}
       >
-        Add Label
+        {t("labelList_addLabel")}
       </Button>
       {hasSelection && (
         <>
@@ -74,11 +76,14 @@ function LabelListActions() {
             leftSection={<IconTrash size={14} />}
             onClick={() => {
               modals.open({
-                title: "Delete Labels",
-                size: "sm",
+                title: t("labelList_deleteLabels"),
+                size: "auto",
                 children: (
                   <ConfirmationModal
-                    message={`Are you sure you want to delete ${selectedIds.size} selected label${selectedIds.size > 1 ? "s" : ""}?`}
+                    message={t("labelList_deleteConfirm_multiple", [
+                      selectedIds.size.toString(),
+                      selectedIds.size > 1 ? "s" : "",
+                    ])}
                     onConfirm={handleDelete}
                     onClose={() => modals.closeAll()}
                   />
@@ -86,7 +91,7 @@ function LabelListActions() {
               })
             }}
           >
-            Delete
+            {t("common_delete")}
           </Button>
           {selectedIds.size >= 2 && (
             <Button
@@ -95,7 +100,7 @@ function LabelListActions() {
               leftSection={<IconLayersIntersect size={14} />}
               onClick={() => {
                 modals.open({
-                  title: "Combine Selected Labels Into",
+                  title: t("labelList_combineTitle"),
                   size: "sm",
                   children: (
                     <CombineLabelsModal
@@ -107,7 +112,7 @@ function LabelListActions() {
                 })
               }}
             >
-              Combine
+              {t("labelList_combine")}
             </Button>
           )}
         </>

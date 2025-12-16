@@ -1,14 +1,16 @@
 import { Stack, Switch } from "@mantine/core"
 import { useLabelEditFormContext } from "../../formContext"
+import { useTranslation } from "@/contexts"
 
 function IconOnlyToggle() {
   const form = useLabelEditFormContext()
+  const { t } = useTranslation()
 
   return (
     <Stack gap="xs">
       <Switch
-        label="Icon-Only Mode"
-        description="Hide the on-page badge and show only the icon"
+        label={t("label_iconOnlyMode")}
+        description={t("label_iconOnlyMode_description")}
         disabled={form.values.iconStyle === "none"}
         checked={form.values.iconOnly || false}
         onChange={(event) =>

@@ -1,7 +1,7 @@
-import { Label } from "../../options/types";
-import { validationSchema } from "../../options/validationSchema";
-import validate from "../../utils/schemaValidator";
-import { logger } from "../../utils/logger";
+import { Label } from "@/options/types";
+import { validationSchema } from "@/options/validationSchema";
+import validate from "@/utils/schemaValidator";
+import { logger } from "@/utils/logger";
 
 export interface ValidationResult {
   labels: Label[] | null;

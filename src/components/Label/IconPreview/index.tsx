@@ -1,7 +1,8 @@
 import classes from "./style.module.scss";
 import photoCircleUrl from "./photo-circle.svg";
 import { useComputedColorScheme } from "@mantine/core";
-import { EnvIcon } from "../../../contentScript/EnvIcon";
+import { useTranslation } from "@/contexts";
+import { EnvIcon } from "@/contentScript/EnvIcon";
 import { useEffect, useMemo, useRef } from "react";
 import { IconPreviewProps } from "./types";
 
@@ -9,6 +10,7 @@ function IconPreview({ label }: IconPreviewProps) {
   const computedColorScheme = useComputedColorScheme("light", {
     getInitialValueInEffect: false,
   });
+  const { t } = useTranslation();
   const iconRef = useRef<HTMLImageElement>(null);
 
   const envIcon = useMemo(() => {
@@ -40,7 +42,7 @@ function IconPreview({ label }: IconPreviewProps) {
           <div className={classes.favicon}>
             <img src={photoCircleThemedUrl} alt="Tab Favicon" ref={iconRef} />
           </div>
-          <div className={classes.title}>Your Tab</div>
+          <div className={classes.title}>{t("label_preview_yourTab")}</div>
         </div>
       </div>
     </div>

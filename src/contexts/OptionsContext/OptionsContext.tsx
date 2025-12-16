@@ -1,8 +1,8 @@
 import { createContext, Dispatch, ReactNode } from "react";
-import { Options, OptionsAction } from "../../options/types.ts";
-import { usePersistentReducer } from "../../hooks/usePersistedReducer";
-import { optionsReducer } from "../../options/options.ts";
-import defaultLabels from "../../options/defaulLabels.ts";
+import { Options, OptionsAction } from "@/options/types.ts";
+import { usePersistentReducer } from "@/hooks/usePersistedReducer";
+import { optionsReducer } from "@/options/options.ts";
+import defaultLabels from "@/options/defaulLabels.ts";
 
 const OptionsContext = createContext<
   | {

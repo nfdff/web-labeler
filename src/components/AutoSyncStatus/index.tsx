@@ -13,12 +13,14 @@ import {
   IconAlertCircle,
   IconRefresh,
 } from "@tabler/icons-react";
-import { getRelativeTime, formatUpdateFrequency } from "../../utils/timeFormat";
+import { getRelativeTime, formatUpdateFrequency } from "@/utils/timeFormat";
 import { useAutoSyncStatus } from "./useAutoSyncStatus";
+import { useTranslation } from "@/contexts";
 
 function AutoSyncStatus() {
   const { urlSync, handleToggle, handleManualSync, isLoading } =
     useAutoSyncStatus();
+  const { t } = useTranslation();
 
   // Hide widget if frequency is 0 (disabled) or not configured
   if (!urlSync || urlSync.updateFrequency === 0) {
@@ -26,9 +28,9 @@ function AutoSyncStatus() {
   }
 
   const hasError = !!urlSync.lastError;
-  const formattedFrequency = formatUpdateFrequency(urlSync.updateFrequency);
+  const formattedFrequency = formatUpdateFrequency(urlSync.updateFrequency, t);
   const lastSyncText = urlSync.lastUpdate
-    ? getRelativeTime(urlSync.lastUpdate)
+    ? getRelativeTime(urlSync.lastUpdate, t)
     : "Never";
 
   return (
@@ -36,7 +38,7 @@ function AutoSyncStatus() {
       <HoverCard shadow="md" position="bottom-start" withArrow>
         <HoverCard.Target>
           <Text size="sm" c="dimmed" style={{ cursor: "help" }}>
-            Auto-Sync
+            {t("autoSync_label")}
           </Text>
         </HoverCard.Target>
         <HoverCard.Dropdown>
@@ -44,7 +46,7 @@ function AutoSyncStatus() {
             <Group gap="xs">
               <IconWorldUpload size={16} />
               <Text size="sm" fw={500}>
-                Sync URL
+                {t("autoSync_syncUrl")}
               </Text>
             </Group>
             <Text
@@ -74,7 +76,7 @@ function AutoSyncStatus() {
       />
 
       <Text size="sm" c="dimmed">
-        Last:{" "}
+        {t("autoSync_lastPrefix")}
       </Text>
       {hasError ? (
         <HoverCard shadow="md" position="bottom-start" withArrow>
@@ -86,7 +88,7 @@ function AutoSyncStatus() {
               leftSection={<IconAlertCircle size={12} />}
               style={{ cursor: "help" }}
             >
-              Error
+              {t("autoSync_error")}
             </Badge>
           </HoverCard.Target>
           <HoverCard.Dropdown>
@@ -94,7 +96,7 @@ function AutoSyncStatus() {
               <Group gap="xs">
                 <IconAlertCircle size={16} color="red" />
                 <Text size="sm" fw={500}>
-                  Sync Error
+                  {t("autoSync_syncError")}
                 </Text>
               </Group>
               <Text size="xs" c="red">
@@ -109,7 +111,7 @@ function AutoSyncStatus() {
         </Text>
       )}
 
-      <Tooltip label="Sync now" position="bottom">
+      <Tooltip label={t("autoSync_syncNow")} position="bottom">
         <ActionIcon
           variant="subtle"
           size="sm"

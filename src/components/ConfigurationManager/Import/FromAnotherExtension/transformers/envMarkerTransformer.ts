@@ -1,16 +1,11 @@
-import {
-  Position,
-  Shape,
-  colorSwatches,
-} from "../../../../../options/constants.ts"
-import { Label, Rule } from "../../../../../options/types.ts"
+import { TransformerFunction } from "@/components/ConfigurationManager/Import/FromAnotherExtension/transformers/types.ts"
+import { Position, Shape, colorSwatches } from "@/options/constants.ts"
+import { Label, Rule } from "@/options/types.ts"
 import { EnvMarkerLabel } from "../types.ts"
 
-export function transformEnvMarkerToLabels(
-  envMarkerData: EnvMarkerLabel[]
-): Label[] {
-  return envMarkerData.map(transformSingleLabel)
-}
+export const transformEnvMarkerToLabels: TransformerFunction = (
+  envMarkerData
+) => envMarkerData.map(transformSingleLabel)
 
 function transformSingleLabel(envMarker: EnvMarkerLabel): Label {
   return {

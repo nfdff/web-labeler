@@ -1,6 +1,6 @@
-import { Options } from "../../options/types";
+import { Options } from "@/options/types";
 import { STORAGE_KEY } from "../config";
-import { logger } from "../../utils/logger";
+import { logger } from "@/utils/logger";
 
 export async function getOptions(): Promise<Options | undefined> {
   try {

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { validateLabelsArray } from "../../utils/validateLabelsArray.ts";
+import { validateLabelsArray } from "@/utils/validateLabelsArray.ts";
 import {
   FetchJsonFromUrlMessage,
   MessageResponse,
-} from "../../background/types.ts";
+} from "@/background/types.ts";
 import { ReadAndValidateResult } from "./types.ts";
 
 export type UseConfigurationUrlReader = () => {

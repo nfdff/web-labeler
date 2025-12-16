@@ -1,6 +1,6 @@
 import { validate } from "./schemaValidator/validators.ts";
-import { validationSchema } from "../options/validationSchema.ts";
-import { Label } from "../options/types.ts";
+import { validationSchema } from "@/options/validationSchema.ts";
+import { Label } from "@/options/types.ts";
 
 export function validateLabelsArray(labels: Label[]): void {
   for (const item of labels) {

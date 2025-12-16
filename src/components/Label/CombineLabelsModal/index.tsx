@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Button, Group, Select, Stack, Text } from "@mantine/core"
 import { IconCheck, IconX } from "@tabler/icons-react"
-import { Label } from "../../../options/types"
+import { Label } from "@/options/types"
+import { useTranslation } from "@/contexts"
 
 interface CombineLabelsModalProps {
   selectedLabels: Label[]
@@ -15,6 +16,7 @@ function CombineLabelsModal({
   onClose,
 }: CombineLabelsModalProps) {
   const [targetLabelId, setTargetLabelId] = useState<string | null>(null)
+  const { t } = useTranslation()
 
   const handleConfirm = () => {
     if (targetLabelId) {
@@ -25,7 +27,7 @@ function CombineLabelsModal({
   return (
     <Stack gap="md">
       <Select
-        placeholder="Select target label"
+        placeholder={t("combineModal_selectTarget")}
         value={targetLabelId}
         onChange={setTargetLabelId}
         data={selectedLabels.map((label) => ({
@@ -37,10 +39,9 @@ function CombineLabelsModal({
       />
 
       <Text size="sm">
-        All rules from the selected labels will be moved into the target label.
-        The other selected labels will be deleted.
+        {t("combineModal_explanation")}
       </Text>
-      <Text size="sm">Are you sure you want to continue?</Text>
+      <Text size="sm">{t("combineModal_confirmQuestion")}</Text>
 
       <Group gap="xs" justify="end">
         <Button
@@ -49,7 +50,7 @@ function CombineLabelsModal({
           leftSection={<IconCheck size={14} />}
           disabled={targetLabelId === null}
         >
-          Confirm
+          {t("common_confirm")}
         </Button>
         <Button
           size="xs"
@@ -57,7 +58,7 @@ function CombineLabelsModal({
           onClick={onClose}
           leftSection={<IconX size={14} />}
         >
-          Cancel
+          {t("common_cancel")}
         </Button>
       </Group>
     </Stack>

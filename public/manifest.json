@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "WebLabeler: Environment Marker & Indicator",
-  "description": "Label your projects easily and avoid confusing production with test or development environments",
+  "default_locale": "en",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
   "version": "1.4",
   "icons": {
     "16": "/icon/icon-16.png",

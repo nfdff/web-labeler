@@ -3,7 +3,7 @@ import {
   positions,
   ruleTypes,
   shapes,
-} from "../../../options/constants.ts";
+} from "@/options/constants.ts";
 import { UseFormInput } from "@mantine/form";
 import { LabelEditFormValues } from "./types.ts";
 

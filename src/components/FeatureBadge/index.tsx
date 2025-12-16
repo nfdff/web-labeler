@@ -1,10 +1,13 @@
 import { Alert, Badge, Button, Group, HoverCard, Stack } from "@mantine/core";
 import { FeatureBadgeProps } from "./types.ts";
 import { IconHeartFilled, IconMessage } from "@tabler/icons-react";
-import { URLS } from "../../utils/constants.ts";
+import { URLS } from "@/utils/constants.ts";
 import classes from "./styles.module.scss";
+import { useTranslation } from "@/contexts";
 
 const Index = ({ title, text, color, icon }: FeatureBadgeProps) => {
+  const { t } = useTranslation();
+
   return (
     <HoverCard shadow="md" width={450} position="bottom-start">
       <HoverCard.Target>
@@ -32,7 +35,7 @@ const Index = ({ title, text, color, icon }: FeatureBadgeProps) => {
               leftSection={<IconMessage size={14} />}
               className={classes.feedbackButton}
             >
-              Contact Developer
+              {t("featureBadge_contactDeveloper")}
             </Button>
             <Button
               component="a"
@@ -45,7 +48,7 @@ const Index = ({ title, text, color, icon }: FeatureBadgeProps) => {
               leftSection={<IconHeartFilled size={16} />}
               className={classes.feedbackButton}
             >
-              Rate
+              {t("featureBadge_rate")}
             </Button>
           </Group>
         </Alert>

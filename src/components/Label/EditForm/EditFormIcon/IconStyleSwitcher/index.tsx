@@ -1,11 +1,13 @@
 import { SegmentedControl } from "@mantine/core";
-import { iconStyles, IconStyle } from "../../../../../options/constants.ts";
+import { iconStyles, IconStyle } from "@/options/constants.ts";
+import { useTranslation } from "@/contexts";
 import { useLabelEditFormContext } from "../../formContext.ts";
 import { iconStyleSettings } from "./settings.tsx";
 import classes from "./style.module.scss";
 
 const Index = () => {
   const form = useLabelEditFormContext();
+  const { t } = useTranslation();
 
   return (
     <SegmentedControl
@@ -16,7 +18,7 @@ const Index = () => {
           label: (
             <div className={classes.shapeControlOption}>
               {iconStyleSettings?.[iconStyleTyped].icon}
-              <span>{iconStyleSettings?.[iconStyleTyped].label}</span>
+              <span>{t(iconStyleSettings?.[iconStyleTyped].labelKey)}</span>
             </div>
           ),
         };

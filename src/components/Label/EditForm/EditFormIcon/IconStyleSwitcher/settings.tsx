@@ -1,19 +1,20 @@
-import { ReactNode } from "react";
-import { IconStyle } from "../../../../../options/constants.ts";
-import { IconLabel } from "@tabler/icons-react";
+import { ReactNode } from "react"
+import { IconLabel } from "@tabler/icons-react"
+import { MessageKey } from "@/i18n"
+import { IconStyle } from "@/options/constants.ts"
 
 export const iconStyleSettings = {
   none: {
     icon: "",
-    label: "None",
+    labelKey: "label_iconStyle_none" as MessageKey,
   },
   badge: {
     icon: <IconLabel />,
-    label: "Use badge style",
+    labelKey: "label_iconStyle_badge" as MessageKey,
   },
-} as const satisfies Record<IconStyle, IconStyleSettings>;
+} as const satisfies Record<IconStyle, IconStyleSettings>
 
 export interface IconStyleSettings {
-  icon: ReactNode;
-  label: string;
+  icon: ReactNode
+  labelKey: MessageKey
 }

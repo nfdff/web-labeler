@@ -1,0 +1,30 @@
+.flag {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.option {
+  padding: 6px 12px;
+}
+
+.optionSelected {
+  background-color: var(--mantine-color-blue-light);
+}
+
+.optionContent {
+  flex: 1;
+}
+
+.languageName {
+  white-space: nowrap;
+}
+
+.nativeName {
+  white-space: nowrap;
+}
+
+.browserOption {
+  white-space: nowrap;
+  text-align: center;
+}

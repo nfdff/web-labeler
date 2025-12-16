@@ -1,6 +1,7 @@
 import { Alert } from "@mantine/core";
 import { IconAlertCircle, IconLock } from "@tabler/icons-react";
 import { ICON_SIZE } from "./constants.ts";
+import { useTranslation } from "@/contexts";
 
 interface SyncAlertsProps {
   permissionError?: string;
@@ -8,6 +9,8 @@ interface SyncAlertsProps {
 }
 
 export function SyncAlerts({ permissionError, errorMessage }: SyncAlertsProps) {
+  const { t } = useTranslation();
+
   if (!permissionError && !errorMessage) return null;
 
   return (
@@ -15,7 +18,7 @@ export function SyncAlerts({ permissionError, errorMessage }: SyncAlertsProps) {
       {permissionError && (
         <Alert
           color="orange"
-          title="Permission Required"
+          title={t("importFromUrl_permissionRequired")}
           icon={<IconLock size={ICON_SIZE} />}
         >
           {permissionError}
@@ -24,7 +27,7 @@ export function SyncAlerts({ permissionError, errorMessage }: SyncAlertsProps) {
       {errorMessage && (
         <Alert
           color="red"
-          title="Failed to sync"
+          title={t("importFromUrl_syncFailed")}
           icon={<IconAlertCircle size={ICON_SIZE} />}
         >
           {errorMessage}

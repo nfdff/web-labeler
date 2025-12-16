@@ -1,7 +1,8 @@
 import { useCallback, useEffect } from "react"
 import { Button } from "@mantine/core"
 import { IconDeviceFloppy } from "@tabler/icons-react"
-import { useOptionsContext } from "../../../contexts"
+import { useOptionsContext } from "@/contexts"
+import { useTranslation } from "@/contexts"
 import LabelEditFormBadge from "./EditFormBadge"
 import LabelEditFormIcon from "./EditFormIcon"
 import LabelEditFormRules from "./EditFormRules"
@@ -17,6 +18,7 @@ function LabelEditForm({ label, onSave, section }: LabelEditFormProps) {
   const isNew = !label?.rules.length
   const form = useLabelEditForm(editLabelFormInput(isNew))
   const { dispatch } = useOptionsContext()
+  const { t } = useTranslation()
 
   useEffect(() => {
     //todo: normalize form values (set default values for all optional fields)
@@ -58,7 +60,7 @@ function LabelEditForm({ label, onSave, section }: LabelEditFormProps) {
           type="submit"
           leftSection={<IconDeviceFloppy size={14} />}
         >
-          Save
+          {t("common_save")}
         </Button>
       </form>
     </LabelEditFormProvider>

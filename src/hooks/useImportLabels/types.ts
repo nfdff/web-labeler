@@ -1,6 +1,6 @@
-import { Label } from "../../options/types";
+import { Label } from "@/options/types";
 import { Dispatch } from "react";
-import { OptionsAction } from "../../options/types";
+import { OptionsAction } from "@/options/types";
 
 export interface UseImportLabelsParams {
   labels: Label[];

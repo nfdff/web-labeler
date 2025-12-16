@@ -1,4 +1,4 @@
-import { Position } from "../../../../../options/constants.ts";
+import { Position } from "@/options/constants.ts";
 import {
   PositionSettings,
   cornerPositionSettings,

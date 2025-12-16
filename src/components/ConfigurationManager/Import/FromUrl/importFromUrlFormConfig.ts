@@ -1,5 +1,5 @@
-import { UrlSyncSettings } from "../../../../options/types.ts";
-import { isValidHttpUrl } from "../../../../utils/common.ts";
+import { UrlSyncSettings } from "@/options/types.ts";
+import { isValidHttpUrl } from "@/utils/common.ts";
 import { UseFormReturnType } from "@mantine/form";
 
 export interface ImportFromUrlFormValues {

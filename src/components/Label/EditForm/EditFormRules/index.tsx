@@ -1,55 +1,57 @@
-import { Button, Flex, Select, Stack, TextInput } from "@mantine/core";
+import { ClipboardEvent } from "react"
+import { Button, Flex, Select, Stack, TextInput } from "@mantine/core"
+import { UseFormReturnType } from "@mantine/form"
+import { IconPlus, IconTrash } from "@tabler/icons-react"
+import { useTranslation } from "@/contexts"
 import {
-  ruleTypes,
   ruleTypeSettings,
-  sourceTypes,
+  ruleTypes,
   sourceTypeSettings,
-} from "../../../../options/constants.ts";
-import { ClipboardEvent } from "react";
-import { IconPlus, IconTrash } from "@tabler/icons-react";
-import { useLabelEditFormContext } from "../formContext.ts";
-import { LabelEditFormValues } from "../types.ts";
-import { UseFormReturnType } from "@mantine/form";
-import { getRuleValuePlaceholder } from "./utils.ts";
-
-const sourceTypeOptions = sourceTypes.map((source) => ({
-  value: source,
-  label: sourceTypeSettings[source].label,
-}));
-
-const ruleTypeOptions = ruleTypes.map((type) => ({
-  value: type,
-  label: ruleTypeSettings[type].label,
-}));
+  sourceTypes,
+} from "@/options/constants.ts"
+import { useLabelEditFormContext } from "../formContext.ts"
+import { LabelEditFormValues } from "../types.ts"
+import { getRuleValuePlaceholder } from "./utils.ts"
 
 function LabelEditFormRules() {
-  const form = useLabelEditFormContext();
+  const form = useLabelEditFormContext()
+  const { t } = useTranslation()
+
+  const sourceTypeOptions = sourceTypes.map((source) => ({
+    value: source,
+    label: t(sourceTypeSettings[source].labelKey),
+  }))
+
+  const ruleTypeOptions = ruleTypes.map((type) => ({
+    value: type,
+    label: t(ruleTypeSettings[type].labelKey),
+  }))
 
   const handlePaste = (
     event: ClipboardEvent<HTMLInputElement>,
     path: string,
-    form: UseFormReturnType<LabelEditFormValues>,
+    form: UseFormReturnType<LabelEditFormValues>
   ) => {
-    const paste = event.clipboardData.getData("text");
-    const withoutProtocol = paste.replace(/^https?:\/\//, ""); // remove http/https
+    const paste = event.clipboardData.getData("text")
+    const withoutProtocol = paste.replace(/^https?:\/\//, "") // remove http/https
 
     // Detect if there's a meaningful path (not just "/" or empty)
     // Matches: "domain/path" or "/path" (but not "domain/" or "/")
-    const hasPath = /^(\/\S+|[^/]*\/.+)/.test(withoutProtocol);
+    const hasPath = /^(\/\S+|[^/]*\/.+)/.test(withoutProtocol)
 
     if (hasPath) {
       // Keep full URL and auto-switch to fullUrl source
-      const index = path.split(".")[1];
-      form.setFieldValue(path, withoutProtocol);
-      form.setFieldValue(`rules.${index}.source`, "fullUrl");
+      const index = path.split(".")[1]
+      form.setFieldValue(path, withoutProtocol)
+      form.setFieldValue(`rules.${index}.source`, "fullUrl")
     } else {
       // Keep domain only, leave source unchanged
-      const cleaned = withoutProtocol.replace(/\/.*$/, "");
-      form.setFieldValue(path, cleaned);
+      const cleaned = withoutProtocol.replace(/\/.*$/, "")
+      form.setFieldValue(path, cleaned)
     }
 
-    event.preventDefault();
-  };
+    event.preventDefault()
+  }
 
   return (
     <Stack gap="xs">
@@ -73,7 +75,7 @@ function LabelEditFormRules() {
           <TextInput
             placeholder={getRuleValuePlaceholder(
               form.values.rules[index]?.type,
-              form.values.rules[index]?.source,
+              form.values.rules[index]?.source
             )}
             key={form.key(`rules.${index}.value`)}
             {...form.getInputProps(`rules.${index}.value`)}
@@ -87,7 +89,7 @@ function LabelEditFormRules() {
             variant="light"
             p="xs"
             onClick={() => {
-              form.removeListItem("rules", index);
+              form.removeListItem("rules", index)
             }}
           >
             <IconTrash size={14}></IconTrash>
@@ -105,13 +107,13 @@ function LabelEditFormRules() {
             type: ruleTypes[0],
             value: "",
             source: sourceTypes[0],
-          });
+          })
         }}
       >
-        Add Rule
+        {t("rules_addRule")}
       </Button>
     </Stack>
-  );
+  )
 }
 
-export default LabelEditFormRules;
+export default LabelEditFormRules

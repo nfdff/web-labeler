@@ -4,7 +4,7 @@ import {
   IconBrandOnedrive,
   IconWorldUpload,
 } from "@tabler/icons-react";
-import { CloudService } from "../../../../utils/cloudUrlTransformer.ts";
+import { CloudService } from "@/utils/cloudUrlTransformer.ts";
 import { CLOUD_SERVICE_METADATA, ICON_SIZE } from "./constants.ts";
 
 export function getCloudIcon(service: CloudService) {

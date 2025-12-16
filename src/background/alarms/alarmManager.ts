@@ -1,4 +1,4 @@
-import { logger } from "../../utils/logger";
+import { logger } from "@/utils/logger";
 import { ALARM_NAME } from "../config";
 import { getOptions } from "../storage/storageManager";
 import { syncLabelsFromUrl } from "../sync/synchronizer";

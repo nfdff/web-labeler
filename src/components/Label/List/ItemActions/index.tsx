@@ -3,13 +3,15 @@ import { IconTrash } from "@tabler/icons-react";
 import { modals } from "@mantine/modals";
 import ConfirmationModal from "../../../ConfirmationModal";
 import { LabelListItemActionsProps } from "./types.ts";
-import { useOptionsContext } from "../../../../contexts";
+import { useOptionsContext } from "@/contexts";
+import { useTranslation } from "@/contexts";
 
 function LabelListItemActions({
   label,
   isAllActive,
 }: LabelListItemActionsProps) {
   const { dispatch } = useOptionsContext();
+  const { t } = useTranslation();
 
   return (
     <Group gap="xs">
@@ -31,11 +33,11 @@ function LabelListItemActions({
         onClick={(e) => {
           e.stopPropagation();
           modals.open({
-            title: "Delete Label",
+            title: t("labelList_deleteLabel"),
             size: "lg",
             children: (
               <ConfirmationModal
-                message={`Are you sure you want to delete the label "${label.name || "[noname]"}"?`}
+                message={t("labelList_deleteConfirm_single", [label.name || t("common_noname")])}
                 onConfirm={() => {
                   dispatch({
                     type: "deleteLabel",

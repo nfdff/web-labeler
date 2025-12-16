@@ -1,9 +1,11 @@
-import { useConfigurationFileReader } from "../useConfigurationReader";
-import { useImportLabels } from "../useImportLabels";
-import { useOptionsContext } from "../../contexts";
+import { useConfigurationFileReader } from "@/hooks/useConfigurationReader";
+import { useImportLabels } from "@/hooks/useImportLabels";
+import { useOptionsContext } from "@/contexts";
+import { useTranslation } from "@/contexts";
 
 export function useSyncFromFile() {
   const { options, dispatch } = useOptionsContext();
+  const { t } = useTranslation();
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationFileReader();
   const { confirmAndImport } = useImportLabels({
@@ -17,8 +19,8 @@ export function useSyncFromFile() {
 
     if (result.success) {
       confirmAndImport(result.data, {
-        title: "Import labels from file",
-        messagePrefix: "From the file:",
+        title: t("importLabels_title_fromFile"),
+        messagePrefix: t("importLabels_prefix_file"),
       });
       return { success: true };
     }

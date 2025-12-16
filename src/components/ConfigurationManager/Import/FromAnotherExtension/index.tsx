@@ -8,8 +8,9 @@ import {
   IconUpload,
   IconX,
 } from "@tabler/icons-react"
-import { useImportFromExtension } from "../../../../hooks/useImportFromExtension"
+import { useImportFromExtension } from "@/hooks/useImportFromExtension"
 import { ExtensionType, SupportedExtensions } from "./types.ts"
+import { useTranslation } from "@/contexts"
 
 function ConfigurationImportFromAnotherExtension({
   closeConfigurationManager,
@@ -21,6 +22,7 @@ function ConfigurationImportFromAnotherExtension({
     useState<ExtensionType | null>(SupportedExtensions[0])
   const { importFromExtension, isLoading, errorMessage } =
     useImportFromExtension()
+  const { t } = useTranslation()
 
   const onFileDrop = async (files: FileWithPath[]) => {
     const file = files[0]
@@ -39,14 +41,13 @@ function ConfigurationImportFromAnotherExtension({
         color="blue"
         icon={<IconHeartHandshake size={20} stroke={1.25} />}
         variant="light"
-        title="This feature helps you migrate your existing labels from other extensions."
+        title={t("importFromExtension_alert_title")}
       >
-        We respect the work of other extension developers and provide this
-        option purely as a convenience for users who want to try WebLabeler.
+        {t("importFromExtension_alert_message")}
       </Alert>
 
       <Select
-        label="Import From"
+        label={t("importFromExtension_selectLabel")}
         data={SupportedExtensions}
         value={selectedExtension}
         onChange={(value) => setSelectedExtension(value)}
@@ -54,8 +55,8 @@ function ConfigurationImportFromAnotherExtension({
       />
 
       <Switch
-        label="Combine labels with matching properties"
-        description="Labels with the same name, color, font size, and position will be merged into one label with combined rules. You can also combine labels manually after import."
+        label={t("importFromExtension_combineMode")}
+        description={t("importFromExtension_combineMode_description")}
         checked={combineMode}
         onChange={(event) => setCombineMode(event.currentTarget.checked)}
       />
@@ -82,10 +83,9 @@ function ConfigurationImportFromAnotherExtension({
             <IconFileCode size={44} />
           </Dropzone.Idle>
           <Stack gap={0}>
-            <Text size="l">Drag file here or click to select</Text>
+            <Text size="l">{t("importFromExtension_dropzone")}</Text>
             <Text size="xs" c="dimmed">
-              Use exported labels file from Environment Marker extension in JSON
-              format
+              {t("importFromExtension_dropzone_description")}
             </Text>
           </Stack>
         </Group>
@@ -94,7 +94,7 @@ function ConfigurationImportFromAnotherExtension({
       {!!errorMessage && (
         <Alert
           color="red"
-          title="Failed to import labels"
+          title={t("importFromExtension_error_title")}
           icon={<IconAlertCircle size={16} />}
         >
           {errorMessage}

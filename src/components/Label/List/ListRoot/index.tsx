@@ -3,9 +3,11 @@ import { IconArrowsSort } from "@tabler/icons-react";
 import LabelListActions from "../ListActions";
 import LabelListItem from "../Item";
 import { DragDropContext, Droppable } from "@hello-pangea/dnd";
-import { useOptionsContext, useSelectionContext } from "../../../../contexts";
+import { useOptionsContext, useSelectionContext } from "@/contexts";
+import { useTranslation } from "@/contexts";
 
 function LabelList() {
+  const { t } = useTranslation();
   const { options, dispatch } = useOptionsContext();
   const selection = useSelectionContext();
 
@@ -49,16 +51,16 @@ function LabelList() {
               </Table.Th>
               <Table.Th>
                 <Tooltip
-                  label="Drag items to reorder. Labels are checked top-down; the first match is shown"
+                  label={t("labelList_tooltip_reorder")}
                   position="top-start"
                 >
                   <IconArrowsSort size={14} />
                 </Tooltip>
               </Table.Th>
-              <Table.Th>Label Name</Table.Th>
-              <Table.Th>Rules</Table.Th>
-              <Table.Th>Settings</Table.Th>
-              <Table.Th>Actions</Table.Th>
+              <Table.Th>{t("labelList_header_name")}</Table.Th>
+              <Table.Th>{t("labelList_header_rules")}</Table.Th>
+              <Table.Th>{t("labelList_header_settings")}</Table.Th>
+              <Table.Th>{t("labelList_header_actions")}</Table.Th>
             </Table.Tr>
           </Table.Thead>
           <Droppable droppableId="label-list" direction="vertical">
@@ -67,7 +69,7 @@ function LabelList() {
                 {!options.labels?.length ? (
                   <Table.Tr>
                     <Table.Td colSpan={6} align="center">
-                      no labels
+                      {t("labelList_empty")}
                     </Table.Td>
                   </Table.Tr>
                 ) : (

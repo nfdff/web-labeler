@@ -1,11 +1,12 @@
 import { useState } from "react"
-import { transformEnvMarkerToLabels } from "../../components/ConfigurationManager/Import/FromAnotherExtension/transformers/envMarkerTransformer.ts"
-import { EnvMarkerLabel } from "../../components/ConfigurationManager/Import/FromAnotherExtension/types.ts"
-import { combineLabels } from "../../components/ConfigurationManager/Import/FromAnotherExtension/utils/combineLabels.ts"
-import { useOptionsContext } from "../../contexts"
-import { readJsonFile } from "../../utils/fileReader"
+import { transformEnvMarkerToLabels } from "@/components/ConfigurationManager/Import/FromAnotherExtension/transformers/envMarkerTransformer.ts"
+import { EnvMarkerLabel } from "@/components/ConfigurationManager/Import/FromAnotherExtension/types.ts"
+import { combineLabels } from "@/components/ConfigurationManager/Import/FromAnotherExtension/utils/combineLabels.ts"
+import { useOptionsContext } from "@/contexts"
+import { readJsonFile } from "@/utils/fileReader"
 import { useImportLabels } from "../useImportLabels"
 import { UseImportFromExtensionReturn } from "./types.ts"
+import { useTranslation } from "@/contexts"
 
 function validateEnvMarkerData(
   data: unknown
@@ -43,6 +44,7 @@ export function useImportFromExtension(): UseImportFromExtensionReturn {
   const [isLoading, setIsLoading] = useState(false)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const { options, dispatch } = useOptionsContext()
+  const { t } = useTranslation()
   const { confirmAndImport } = useImportLabels({
     labels: options.labels,
     dispatch,
@@ -61,26 +63,29 @@ export function useImportFromExtension(): UseImportFromExtensionReturn {
       const transformedLabels = transformEnvMarkerToLabels(envMarkerData)
 
       let labelsToImport = transformedLabels
-      let message = "From the file:"
+      let message = t("importLabels_prefix_extension")
 
       if (combineMode) {
         const result = combineLabels(transformedLabels, envMarkerData)
         labelsToImport = result.combined
 
         if (result.originalCount !== result.combinedCount) {
-          message = `From the file (${result.originalCount} labels combined into ${result.combinedCount}):`
+          message = t("importLabels_prefix_extension_combined", [
+            String(result.originalCount),
+            String(result.combinedCount),
+          ])
         }
       }
 
       confirmAndImport(labelsToImport, {
-        title: "Import labels from Environment Marker",
+        title: t("importLabels_title_fromExtension"),
         messagePrefix: message,
       })
 
       return { success: true }
     } catch (error) {
       const errorMsg =
-        error instanceof Error ? error.message : "Failed to import labels"
+        error instanceof Error ? error.message : t("importFromExtension_error_title")
       setErrorMessage(errorMsg)
       return { success: false }
     } finally {

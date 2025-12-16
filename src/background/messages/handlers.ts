@@ -1,6 +1,6 @@
 import type { ExtensionMessage, MessageResponse } from "../types";
 import { fetchJsonFromUrl } from "../sync/fetcher";
-import { logger } from "../../utils/logger";
+import { logger } from "@/utils/logger";
 
 async function handleFetchJsonFromUrl(
   url: string,

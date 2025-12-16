@@ -1,9 +1,12 @@
 import { Button } from "@mantine/core";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
+import { useTranslation } from "@/contexts";
 import { CollapseButtonProps } from "./types.tsx";
 import classes from "./style.module.scss";
 
 const CollapseButton = ({ expanded, toggle }: CollapseButtonProps) => {
+  const { t } = useTranslation();
+
   return (
     <div className={classes.CollapseButton}>
       <Button
@@ -15,7 +18,7 @@ const CollapseButton = ({ expanded, toggle }: CollapseButtonProps) => {
           expanded ? <IconChevronUp size={14} /> : <IconChevronDown size={14} />
         }
       >
-        {expanded ? "Less" : "More"}
+        {expanded ? t("label_collapseButton_less") : t("label_collapseButton_more")}
       </Button>
     </div>
   );

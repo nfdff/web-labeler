@@ -11,8 +11,9 @@ import {
   Tooltip,
 } from "@mantine/core"
 import { IconRefresh } from "@tabler/icons-react"
-import { useOptionsContext } from "../../../../contexts"
-import { UPDATE_FREQUENCIES } from "../../../../utils/constants.ts"
+import { useOptionsContext } from "@/contexts"
+import { useTranslation } from "@/contexts"
+import { UPDATE_FREQUENCIES } from "@/utils/constants.ts"
 import { SyncAlerts } from "./SyncAlerts.tsx"
 import { getCloudIcon, getTooltipText } from "./cloudServiceHelpers.tsx"
 import { ICON_SIZE } from "./constants.ts"
@@ -26,6 +27,12 @@ function ConfigurationImportFromUrl({
 }) {
   const { options, dispatch } = useOptionsContext()
   const urlSync = options.urlSync
+  const { t } = useTranslation()
+
+  const updateFrequencyOptions = UPDATE_FREQUENCIES.map((freq) => ({
+    value: freq.value,
+    label: t(freq.labelKey),
+  }))
 
   const {
     form,
@@ -46,9 +53,9 @@ function ConfigurationImportFromUrl({
   return (
     <Stack gap="md">
       <TextInput
-        label="URL"
-        description="URL to a JSON file containing label configurations"
-        placeholder="https://example.com/labels.json"
+        label={t("importFromUrl_label")}
+        description={t("importFromUrl_description")}
+        placeholder={t("importFromUrl_placeholder")}
         {...form.getInputProps("url")}
         leftSection={
           <Tooltip
@@ -60,7 +67,7 @@ function ConfigurationImportFromUrl({
         }
         rightSection={
           <CloseButton
-            aria-label="Clear input"
+            aria-label={t("importFromUrl_clearInput")}
             onClick={handleClear}
             style={{ display: form.values.url ? undefined : "none" }}
           />
@@ -68,15 +75,15 @@ function ConfigurationImportFromUrl({
       />
 
       <Input.Wrapper
-        label="Auto-Sync"
-        description="Automatically update labels from URL at the specified frequency"
+        label={t("importFromUrl_autoSync")}
+        description={t("importFromUrl_autoSync_description")}
         styles={{
           description: { marginBottom: 4 },
         }}
       >
         <Group gap="sm">
           <Select
-            data={UPDATE_FREQUENCIES}
+            data={updateFrequencyOptions}
             {...form.getInputProps("updateFrequency")}
             allowDeselect={false}
             style={{ flexGrow: 1 }}
@@ -87,7 +94,9 @@ function ConfigurationImportFromUrl({
 
       {urlSync?.lastUpdate && (
         <Text size="xs" c="dimmed">
-          Last synced: {new Date(urlSync.lastUpdate).toLocaleString()}
+          {t("importFromUrl_lastSynced", [
+            new Date(urlSync.lastUpdate).toLocaleString(),
+          ])}
         </Text>
       )}
 
@@ -100,7 +109,7 @@ function ConfigurationImportFromUrl({
           disabled={!form.values.url.trim() || isLoading}
           loading={isLoading}
         >
-          Sync Now
+          {t("importFromUrl_syncNow")}
         </Button>
 
         <Button
@@ -109,7 +118,7 @@ function ConfigurationImportFromUrl({
           onClick={handleSaveSettings}
           disabled={!form.isDirty()}
         >
-          Save Settings
+          {t("importFromUrl_saveSettings")}
         </Button>
       </Group>
 

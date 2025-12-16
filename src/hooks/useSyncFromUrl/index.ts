@@ -1,10 +1,12 @@
-import { requestUrlPermission } from "../../utils/urlPermissions";
-import { useConfigurationUrlReader } from "../useConfigurationReader";
-import { useImportLabels } from "../useImportLabels";
-import { useOptionsContext } from "../../contexts";
+import { requestUrlPermission } from "@/utils/urlPermissions";
+import { useConfigurationUrlReader } from "@/hooks/useConfigurationReader";
+import { useImportLabels } from "@/hooks/useImportLabels";
+import { useOptionsContext } from "@/contexts";
+import { useTranslation } from "@/contexts";
 
 export function useSyncFromUrl() {
   const { options, dispatch } = useOptionsContext();
+  const { t } = useTranslation();
   const { readAndValidate, isLoading, errorMessage } =
     useConfigurationUrlReader();
   const { confirmAndImport } = useImportLabels({
@@ -15,13 +17,13 @@ export function useSyncFromUrl() {
 
   const syncFromUrl = async (url: string) => {
     if (!url || isLoading) {
-      return { success: false, error: "Invalid URL or sync in progress" };
+      return { success: false, error: t("validation_invalidUrl") };
     }
 
     // Request permission before fetching
     const hasPermission = await requestUrlPermission(url);
     if (!hasPermission) {
-      return { success: false, error: "Permission denied" };
+      return { success: false, error: t("validation_permissionDenied") };
     }
 
     // Fetch and validate labels
@@ -29,8 +31,8 @@ export function useSyncFromUrl() {
 
     if (result.success) {
       confirmAndImport(result.data, {
-        title: "Import labels from URL",
-        messagePrefix: "From the URL:",
+        title: t("importLabels_title_fromUrl"),
+        messagePrefix: t("importLabels_prefix_url"),
       });
       return { success: true };
     }

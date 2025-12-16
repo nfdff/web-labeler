@@ -8,7 +8,7 @@
  * - messages/: Message handling from UI components
  */
 
-import { logger } from "../utils/logger";
+import { logger } from "@/utils/logger";
 import { STORAGE_KEY } from "./config";
 import {
   initializeAlarm,
@@ -18,7 +18,7 @@ import {
 } from "./alarms/alarmManager";
 import { setupMessageListener } from "./messages/handlers";
 import { getOptions, setOptions } from "./storage/storageManager";
-import type { Options } from "../options/types";
+import type { Options } from "@/options/types";
 
 // ============================================================================
 // Extension Lifecycle Listeners

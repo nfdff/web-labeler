@@ -12,8 +12,10 @@ import InfoTooltipIcon from "../../../InfoTooltipIcon"
 import LabelEditForm from "../../EditForm"
 import { LabelEditFormSection } from "../../EditForm/types.ts"
 import { LabelListItemSettingsProps } from "./types.ts"
+import { useTranslation } from "@/contexts"
 
 function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
+  const { t } = useTranslation()
   return (
     <Group gap="xs">
       <Button
@@ -25,7 +27,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
         onClick={(e) => {
           e.stopPropagation()
           modals.open({
-            title: label.iconOnly ? "Badge (Icon-Only Mode)" : "Badge",
+            title: label.iconOnly ? t("labelSettings_badge_iconOnly") : t("labelSettings_badge"),
             size: "auto",
             children: (
               <LabelEditForm
@@ -37,7 +39,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
           })
         }}
       >
-        Badge
+        {t("labelSettings_badge")}
       </Button>
       <Button
         size="xs"
@@ -48,19 +50,16 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
           modals.open({
             title: (
               <Group gap="md">
-                Icon
+                {t("labelSettings_icon")}
                 <FeatureBadge
-                  title="Experimental"
+                  title={t("labelSettings_experimental")}
                   text={
                     <>
                       <Text size="sm">
-                        This feature is experimental and may not work as
-                        expected. If you encounter any issues or have
-                        suggestions, please let the developer know.
+                        {t("labelSettings_experimental_message")}
                       </Text>
                       <Text size="sm">
-                        And if you actually enjoy using it — please tell him
-                        too, it might just make his day 😊🙏!
+                        {t("labelSettings_experimental_enjoy")}
                       </Text>
                     </>
                   }
@@ -80,7 +79,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
           })
         }}
       >
-        Icon
+        {t("labelSettings_icon")}
       </Button>
       <Button
         size="xs"
@@ -91,8 +90,8 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
           modals.open({
             title: (
               <Group gap="xs">
-                Rules
-                <InfoTooltipIcon label="The label is shown when any single rule matches (OR logic between rows)" />
+                {t("labelSettings_rules")}
+                <InfoTooltipIcon label={t("labelSettings_rules_tooltip")} />
               </Group>
             ),
             size: "750px",
@@ -106,7 +105,7 @@ function LabelListItemSettings({ label }: LabelListItemSettingsProps) {
           })
         }}
       >
-        Rules
+        {t("labelSettings_rules")}
       </Button>
     </Group>
   )

@@ -1,10 +1,12 @@
 import { Alert, Group, Switch, Text } from "@mantine/core"
 import { IconEyeOff } from "@tabler/icons-react"
+import { useTranslation } from "@/contexts"
 import { useLabelEditFormContext } from "../../formContext"
 import classes from "./styles.module.scss"
 
 function IconOnlyAlert() {
   const form = useLabelEditFormContext()
+  const { t } = useTranslation()
 
   return (
     <Alert
@@ -12,7 +14,7 @@ function IconOnlyAlert() {
       title={
         <Group justify="space-between" wrap="nowrap" gap="md">
           <Text size="sm" fw="700">
-            Icon-Only Mode
+            {t("label_iconOnlyMode_alert_title")}
           </Text>
           <Switch
             size="xs"
@@ -32,7 +34,7 @@ function IconOnlyAlert() {
       }}
     >
       <Text size="sm">
-        The on-page badge is hidden. Only the badged favicon is shown.
+        {t("label_iconOnlyMode_alert_message")}
       </Text>
     </Alert>
   )

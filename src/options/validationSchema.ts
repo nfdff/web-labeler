@@ -1,6 +1,6 @@
 import { Label } from "./types.ts";
 import { validate as uuidValidate } from "uuid";
-import { isHexColor } from "../utils/schemaValidator";
+import { isHexColor } from "@/utils/schemaValidator";
 import {
   Border,
   borders,
@@ -12,7 +12,7 @@ import {
   Shape,
   shapes,
 } from "./constants.ts";
-import { Schema } from "../utils/schemaValidator";
+import { Schema } from "@/utils/schemaValidator";
 
 export const validationSchema: Schema<Label> = {
   id: (val) => typeof val === "string" && uuidValidate(val),

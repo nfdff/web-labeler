@@ -1,8 +1,10 @@
 import { Badge, Group, Stack, Switch } from "@mantine/core";
-import { useOptionsContext } from "../../../../contexts";
+import { useOptionsContext } from "@/contexts";
+import { useTranslation } from "@/contexts";
 
 function LabelListCompact() {
   const { options, dispatch } = useOptionsContext();
+  const { t } = useTranslation();
 
   return (
     !!options.labels.length && (
@@ -15,7 +17,7 @@ function LabelListCompact() {
               color={label.bgColor}
               style={{ "--badge-color": label.textColor }}
             >
-              {label.name || "[noname]"}
+              {label.name || t("common_noname")}
             </Badge>
             <Switch
               size="xs"
