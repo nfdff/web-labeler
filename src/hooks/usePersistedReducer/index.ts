@@ -15,17 +15,26 @@ export function usePersistentReducer<State, Action>(
   const [isInitialized, setIsInitialized] = useState(false);
 
   const initializeStorage = useCallback(async () => {
-    const storage = await chrome.storage.sync.get(storageKey);
+    try {
+      const storage = await chrome.storage.sync.get(storageKey);
 
-    dispatch({
-      type: "initialize",
-      payload:
-        typeof storage?.[storageKey] === "undefined"
-          ? defaultState
-          : (storage[storageKey] as State),
-    });
-
-    setIsInitialized(true);
+      dispatch({
+        type: "initialize",
+        payload:
+          typeof storage?.[storageKey] === "undefined"
+            ? defaultState
+            : (storage[storageKey] as State),
+      });
+    } catch (error) {
+      console.error("Failed to load from storage:", error);
+      // Use default state on error
+      dispatch({
+        type: "initialize",
+        payload: defaultState,
+      });
+    } finally {
+      setIsInitialized(true);
+    }
   }, [storageKey]);
 
   useEffect(() => {

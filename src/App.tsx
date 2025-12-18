@@ -2,7 +2,7 @@ import { MantineProvider } from "@mantine/core"
 import "@mantine/core/styles.css"
 import "@mantine/dropzone/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import { OptionsProvider, TranslationProvider } from "./contexts"
+import { OptionsProvider, TranslationProvider, useOptionsContext, useTranslation } from "./contexts"
 import OptionsPage from "./pages/OptionsPage"
 import Popup from "./pages/Popup"
 import "./style.scss"
@@ -35,15 +35,41 @@ import "./style.scss"
 // 13. Rules:
 // 13.1 Apply label by cookie key/value
 
+function PageContent() {
+  const { isReady } = useTranslation()
+
+  // Wait for translations to load before rendering to prevent flash of untranslated content
+  if (!isReady) {
+    return null
+  }
+
+  return (
+    <ModalsProvider>
+      {window.location.hash === "#popup" ? <Popup /> : <OptionsPage />}
+    </ModalsProvider>
+  )
+}
+
+function AppContent() {
+  const { isInitialized } = useOptionsContext()
+
+  // Wait for options to load before rendering to prevent flash of empty state
+  if (!isInitialized) {
+    return null
+  }
+
+  return (
+    <TranslationProvider>
+      <PageContent />
+    </TranslationProvider>
+  )
+}
+
 function App() {
   return (
     <MantineProvider defaultColorScheme="auto">
       <OptionsProvider>
-        <TranslationProvider>
-          <ModalsProvider>
-            {window.location.hash === "#popup" ? <Popup /> : <OptionsPage />}
-          </ModalsProvider>
-        </TranslationProvider>
+        <AppContent />
       </OptionsProvider>
     </MantineProvider>
   )

@@ -6,9 +6,9 @@ import {
   useMemo,
   useState,
 } from "react"
+import { useOptionsContext } from "@/contexts/OptionsContext"
 import { MessageKey, SupportedLocale, TranslationFunction } from "@/i18n"
 import { DEFAULT_LOCALE } from "@/i18n"
-import { useOptionsContext } from "@/contexts/OptionsContext"
 
 interface MessageEntry {
   message: string
@@ -20,6 +20,7 @@ type MessagesMap = Record<string, MessageEntry>
 export interface TranslationContextValue {
   t: TranslationFunction
   currentLocale: SupportedLocale
+  isReady: boolean
 }
 
 const TranslationContext = createContext<TranslationContextValue | undefined>(
@@ -29,7 +30,7 @@ const TranslationContext = createContext<TranslationContextValue | undefined>(
 const messagesCache = new Map<SupportedLocale, MessagesMap>()
 
 export function TranslationProvider({ children }: { children: ReactNode }) {
-  const { options } = useOptionsContext()
+  const { options, isInitialized } = useOptionsContext()
   const userLocale = options.locale
 
   const browserLocale = chrome.i18n
@@ -38,19 +39,29 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   const effectiveLocale = userLocale || browserLocale || DEFAULT_LOCALE
 
   const [messages, setMessages] = useState<MessagesMap | null>(null)
+  const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
+    // Don't load messages until options are initialized
+    if (!isInitialized) {
+      setIsReady(false)
+      return
+    }
+
     const loadMessages = async () => {
       if (!userLocale) {
         setMessages(null)
+        setIsReady(true) // Ready immediately when using browser default
         return
       }
 
       if (messagesCache.has(effectiveLocale)) {
         setMessages(messagesCache.get(effectiveLocale)!)
+        setIsReady(true) // Ready immediately when cached
         return
       }
 
+      setIsReady(false) // Not ready while fetching
       try {
         const response = await fetch(
           `/_locales/${effectiveLocale}/messages.json`
@@ -58,6 +69,7 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
         const loadedMessages = await response.json()
         messagesCache.set(effectiveLocale, loadedMessages)
         setMessages(loadedMessages)
+        setIsReady(true) // Ready after successful fetch
       } catch (error) {
         console.error(`Failed to load locale ${effectiveLocale}:`, error)
         if (effectiveLocale !== DEFAULT_LOCALE) {
@@ -67,15 +79,19 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
             )
             const fallbackMessages = await response.json()
             setMessages(fallbackMessages)
+            setIsReady(true) // Ready after fallback loads
           } catch (fallbackError) {
             console.error("Failed to load fallback locale:", fallbackError)
+            setIsReady(true) // Ready even if fallback fails (will use key as fallback)
           }
+        } else {
+          setIsReady(true) // Ready even if fetch fails (will use key as fallback)
         }
       }
     }
 
     loadMessages()
-  }, [effectiveLocale, userLocale])
+  }, [effectiveLocale, userLocale, isInitialized])
 
   const t = useCallback<TranslationFunction>(
     (key: MessageKey, substitutions?: string | string[]) => {
@@ -110,9 +126,15 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   )
 
   const value = useMemo(
-    () => ({ t, currentLocale: effectiveLocale }),
-    [t, effectiveLocale]
+    () => ({ t, currentLocale: effectiveLocale, isReady }),
+    [t, effectiveLocale, isReady]
   )
+
+  // Wait for options to initialize before rendering
+  // This prevents flash of browser locale before user locale loads
+  if (!isInitialized) {
+    return null
+  }
 
   return (
     <TranslationContext.Provider value={value}>
