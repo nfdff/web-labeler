@@ -1,0 +1,722 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Anwendungsname"
+  },
+  "appDescription": {
+    "message": "Kennzeichnen Sie Ihre Projekte einfach und vermeiden Sie Verwechslungen zwischen Produktions-, Test- und Entwicklungsumgebungen",
+    "description": "Erweiterungsbeschreibung"
+  },
+  "common_save": {
+    "message": "Speichern",
+    "description": "Schaltfläche Speichern"
+  },
+  "common_confirm": {
+    "message": "Bestätigen",
+    "description": "Schaltfläche Bestätigen"
+  },
+  "common_cancel": {
+    "message": "Abbrechen",
+    "description": "Schaltfläche Abbrechen"
+  },
+  "common_delete": {
+    "message": "Löschen",
+    "description": "Schaltfläche Löschen"
+  },
+  "common_noname": {
+    "message": "[namenlos]",
+    "description": "Platzhalter für unbenannte Elemente"
+  },
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Titel der Optionsseite"
+  },
+  "optionsPage_switchOn": {
+    "message": "Ein",
+    "description": "Schalter Ein-Beschriftung"
+  },
+  "optionsPage_switchOff": {
+    "message": "Aus",
+    "description": "Schalter Aus-Beschriftung"
+  },
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup-Titel"
+  },
+  "popup_switchOn": {
+    "message": "EIN",
+    "description": "Popup-Schalter Ein-Beschriftung"
+  },
+  "popup_switchOff": {
+    "message": "AUS",
+    "description": "Popup-Schalter Aus-Beschriftung"
+  },
+  "popup_manageLabels": {
+    "message": "Labels verwalten",
+    "description": "Schaltfläche Labels verwalten"
+  },
+  "label_name": {
+    "message": "Name",
+    "description": "Label-Namensfeld"
+  },
+  "label_name_placeholder": {
+    "message": "Name",
+    "description": "Label-Namens-Platzhalter"
+  },
+  "label_shape": {
+    "message": "Form",
+    "description": "Formauswahl"
+  },
+  "label_backgroundColor": {
+    "message": "Hintergrundfarbe",
+    "description": "Hintergrundfarbfeld"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Hintergrundfarbe",
+    "description": "Hintergrundfarb-Platzhalter"
+  },
+  "label_textColor": {
+    "message": "Textfarbe",
+    "description": "Textfarbfeld"
+  },
+  "label_textColor_placeholder": {
+    "message": "Textfarbe",
+    "description": "Textfarb-Platzhalter"
+  },
+  "label_opacity": {
+    "message": "Deckkraft",
+    "description": "Deckkraft-Schieberegler"
+  },
+  "label_hoveredOpacity": {
+    "message": "Deckkraft bei Hover",
+    "description": "Hover-Deckkraft-Schieberegler"
+  },
+  "label_scale": {
+    "message": "Skalierung",
+    "description": "Skalierungs-Schieberegler"
+  },
+  "label_fontSize": {
+    "message": "Schriftgröße",
+    "description": "Schriftgrößen-Schieberegler"
+  },
+  "label_border": {
+    "message": "Rahmen",
+    "description": "Rahmenauswahl"
+  },
+  "label_borderColor": {
+    "message": "Rahmenfarbe",
+    "description": "Rahmenfarbfeld"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Rahmenfarbe",
+    "description": "Rahmenfarb-Platzhalter"
+  },
+  "label_borderWidth": {
+    "message": "Rahmenbreite",
+    "description": "Rahmenbreitenfeld"
+  },
+  "label_settings": {
+    "message": "Einstellungen",
+    "description": "Einstellungen-Feldset-Legende"
+  },
+  "label_preview": {
+    "message": "Vorschau",
+    "description": "Vorschau-Feldset-Legende"
+  },
+  "label_preview_window": {
+    "message": "Fenster",
+    "description": "Vorschaufenster-Beschriftung"
+  },
+  "label_preview_yourTab": {
+    "message": "Ihr Tab",
+    "description": "Vorschau-Tab-Titel"
+  },
+  "label_shape_triangle": {
+    "message": "Dreieck",
+    "description": "Dreiecksform"
+  },
+  "label_shape_ribbon": {
+    "message": "Band",
+    "description": "Bandform"
+  },
+  "label_shape_banner": {
+    "message": "Banner",
+    "description": "Bannerform"
+  },
+  "label_shape_frame": {
+    "message": "Rahmen",
+    "description": "Rahmenform"
+  },
+  "label_border_none": {
+    "message": "Keine",
+    "description": "Kein Rahmen"
+  },
+  "label_border_solid": {
+    "message": "durchgezogen",
+    "description": "Durchgezogener Rahmen"
+  },
+  "label_border_dashed": {
+    "message": "gestrichelt",
+    "description": "Gestrichelter Rahmen"
+  },
+  "label_border_dotted": {
+    "message": "gepunktet",
+    "description": "Gepunkteter Rahmen"
+  },
+  "label_faviconStyling": {
+    "message": "Favicon-Gestaltung",
+    "description": "Favicon-Stilbeschriftung"
+  },
+  "label_iconOnlyMode": {
+    "message": "Nur-Icon-Modus",
+    "description": "Nur-Icon-Modus-Umschalter"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Badge auf der Seite ausblenden und nur das Icon anzeigen",
+    "description": "Nur-Icon-Modus-Beschreibung"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Nur-Icon-Modus",
+    "description": "Nur-Icon-Alarm-Titel"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Das Badge auf der Seite ist ausgeblendet. Es wird nur das Favicon mit Badge angezeigt.",
+    "description": "Nur-Icon-Alarm-Nachricht"
+  },
+  "label_iconStyle_none": {
+    "message": "Keine",
+    "description": "Icon-Stiloption - keine"
+  },
+  "label_iconStyle_badge": {
+    "message": "Badge-Stil verwenden",
+    "description": "Icon-Stiloption - Badge"
+  },
+  "label_collapseButton_less": {
+    "message": "Weniger",
+    "description": "Einklappen-Schaltfläche - weniger anzeigen"
+  },
+  "label_collapseButton_more": {
+    "message": "Mehr",
+    "description": "Ausklappen-Schaltfläche - mehr anzeigen"
+  },
+  "rules_addRule": {
+    "message": "Regel hinzufügen",
+    "description": "Schaltfläche Regel hinzufügen"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp-Muster (z.B. /article/.*)",
+    "description": "Regexp-Eingabe-Platzhalter"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL oder Teil (ohne Protokoll)",
+    "description": "Vollständige URL-Eingabe-Platzhalter"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domain oder Teil (ohne Protokoll)",
+    "description": "Domain-Eingabe-Platzhalter"
+  },
+  "rules_validation_empty": {
+    "message": "Der Regelwert darf nicht leer sein",
+    "description": "Leere Regel-Validierungsfehler"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Ungültiges reguläres Ausdrucksmuster",
+    "description": "Ungültige Regexp-Validierungsfehler"
+  },
+  "ruleType_contains": {
+    "message": "Enthält",
+    "description": "Regeltyp - enthält"
+  },
+  "ruleType_startsWith": {
+    "message": "Beginnt mit",
+    "description": "Regeltyp - beginnt mit"
+  },
+  "ruleType_endsWith": {
+    "message": "Endet mit",
+    "description": "Regeltyp - endet mit"
+  },
+  "ruleType_matches": {
+    "message": "Stimmt überein",
+    "description": "Regeltyp - stimmt überein"
+  },
+  "ruleType_regexp": {
+    "message": "Entspricht RegExp",
+    "description": "Regeltyp - Regexp"
+  },
+  "sourceType_hostname": {
+    "message": "Domain",
+    "description": "Quelltyp - Domain"
+  },
+  "sourceType_fullUrl": {
+    "message": "Vollständige URL",
+    "description": "Quelltyp - vollständige URL"
+  },
+  "labelList_addLabel": {
+    "message": "Label hinzufügen",
+    "description": "Schaltfläche Label hinzufügen"
+  },
+  "labelList_newLabel": {
+    "message": "Neues Label",
+    "description": "Titel des Modals für neues Label"
+  },
+  "labelList_deleteLabels": {
+    "message": "Labels löschen",
+    "description": "Titel des Modals zum Löschen von Labels"
+  },
+  "labelList_deleteLabel": {
+    "message": "Label löschen",
+    "description": "Titel des Modals zum Löschen eines einzelnen Labels"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Möchten Sie wirklich $1 ausgewählte$2 Label$2 löschen?",
+    "description": "Bestätigung zum Löschen mehrerer Labels, $1=Anzahl, $2=s oder leer"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Möchten Sie wirklich das Label \"$1\" löschen?",
+    "description": "Bestätigung zum Löschen eines einzelnen Labels, $1=Labelname"
+  },
+  "labelList_combine": {
+    "message": "Kombinieren",
+    "description": "Schaltfläche Kombinieren"
+  },
+  "labelList_combineTitle": {
+    "message": "Ausgewählte Labels kombinieren zu",
+    "description": "Titel des Modals zum Kombinieren"
+  },
+  "labelList_header_name": {
+    "message": "Label-Name",
+    "description": "Tabellenkopf - Name"
+  },
+  "labelList_header_rules": {
+    "message": "Regeln",
+    "description": "Tabellenkopf - Regeln"
+  },
+  "labelList_header_settings": {
+    "message": "Einstellungen",
+    "description": "Tabellenkopf - Einstellungen"
+  },
+  "labelList_header_actions": {
+    "message": "Aktionen",
+    "description": "Tabellenkopf - Aktionen"
+  },
+  "labelList_empty": {
+    "message": "Keine Labels",
+    "description": "Nachricht für leeren Zustand"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Ziehen Sie Elemente, um sie neu zu ordnen. Labels werden von oben nach unten geprüft; die erste Übereinstimmung wird angezeigt",
+    "description": "Tooltip zum Neuordnen"
+  },
+  "labelSettings_badge": {
+    "message": "Badge",
+    "description": "Badge-Schaltfläche/Modaltitel"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Badge (Nur-Icon-Modus)",
+    "description": "Badge-Modaltitel im Nur-Icon-Modus"
+  },
+  "labelSettings_icon": {
+    "message": "Icon",
+    "description": "Icon-Schaltfläche/Modaltitel"
+  },
+  "labelSettings_rules": {
+    "message": "Regeln",
+    "description": "Regeln-Schaltfläche/Modaltitel"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Das Label wird angezeigt, wenn eine einzelne Regel zutrifft (ODER-Logik zwischen Zeilen)",
+    "description": "Regeln-Tooltip"
+  },
+  "labelSettings_experimental": {
+    "message": "Experimentell",
+    "description": "Experimentelles Feature-Badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Diese Funktion ist experimentell und funktioniert möglicherweise nicht wie erwartet. Wenn Sie auf Probleme stoßen oder Vorschläge haben, informieren Sie bitte den Entwickler.",
+    "description": "Experimentelle Feature-Nachricht"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Und wenn es Ihnen tatsächlich Spaß macht, es zu benutzen – sagen Sie es ihm bitte auch, es könnte seinen Tag versüßen 😊🙏!",
+    "description": "Experimentelle Feature-Freude-Nachricht"
+  },
+  "combineModal_selectTarget": {
+    "message": "Ziel-Label auswählen",
+    "description": "Ziel-Label-Auswahl-Platzhalter"
+  },
+  "combineModal_explanation": {
+    "message": "Alle Regeln der ausgewählten Labels werden in das Ziel-Label verschoben. Die anderen ausgewählten Labels werden gelöscht.",
+    "description": "Kombinierungs-Erklärung"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Möchten Sie wirklich fortfahren?",
+    "description": "Kombinierungs-Bestätigungsfrage"
+  },
+  "confirmationModal_defaultMessage": {
+    "message": "Sind Sie sicher?",
+    "description": "Standard-Bestätigungsnachricht"
+  },
+  "positionControl_tooltip": {
+    "message": "Label auf Position $1 platzieren",
+    "description": "Positions-Steuerungs-Tooltip, $1=Positionsname"
+  },
+  "export_selected": {
+    "message": "Ausgewählte exportieren",
+    "description": "Schaltfläche Ausgewählte exportieren"
+  },
+  "export_all": {
+    "message": "Labels exportieren",
+    "description": "Schaltfläche Alle exportieren"
+  },
+  "import_title": {
+    "message": "Labels importieren",
+    "description": "Import-Modaltitel"
+  },
+  "import_button": {
+    "message": "Labels importieren",
+    "description": "Import-Schaltfläche"
+  },
+  "import_fromFile": {
+    "message": "Aus Datei",
+    "description": "Aus Datei importieren-Menüpunkt"
+  },
+  "import_fromUrl": {
+    "message": "Von URL",
+    "description": "Von URL importieren-Menüpunkt"
+  },
+  "import_fromExtension": {
+    "message": "Von anderer Erweiterung",
+    "description": "Von Erweiterung importieren-Menüpunkt"
+  },
+  "importTab_fromFile": {
+    "message": "Aus Datei",
+    "description": "Aus Datei-Tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Von URL",
+    "description": "Von URL-Tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Von anderer Erweiterung",
+    "description": "Von Erweiterung-Tab"
+  },
+  "importFromFile_dropzone": {
+    "message": "Datei hierher ziehen oder klicken zum Auswählen",
+    "description": "Datei-Dropzone-Text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Verwenden Sie die exportierte Konfigurationsdatei im JSON-Format",
+    "description": "Datei-Dropzone-Beschreibung"
+  },
+  "importFromFile_error_title": {
+    "message": "Fehler beim Lesen der Datei",
+    "description": "Dateilesfehler-Titel"
+  },
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL-Eingabebeschriftung"
+  },
+  "importFromUrl_description": {
+    "message": "URL zu einer JSON-Datei mit Label-Konfigurationen",
+    "description": "URL-Eingabebeschreibung"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL-Eingabe-Platzhalter"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Eingabe löschen",
+    "description": "Eingabe löschen Aria-Beschriftung"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Auto-Sync",
+    "description": "Auto-Sync-Beschriftung"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Labels automatisch von URL mit der angegebenen Häufigkeit aktualisieren",
+    "description": "Auto-Sync-Beschreibung"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Zuletzt synchronisiert: $1",
+    "description": "Zuletzt synchronisiert-Text, $1=Zeitstempel"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Jetzt synchronisieren",
+    "description": "Jetzt synchronisieren-Schaltfläche"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Einstellungen speichern",
+    "description": "Einstellungen speichern-Schaltfläche"
+  },
+  "importFromUrl_cloudService_generic": {
+    "message": "URL zur JSON-Datei",
+    "description": "Generischer Cloud-Service-Tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1-URL erkannt. Wird in direkten Download-Link umgewandelt.",
+    "description": "Cloud-Service erkannt-Tooltip, $1=Servicename"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 direkter Download-Link erkannt.",
+    "description": "Direkter Download-Link-Tooltip, $1=Servicename"
+  },
+  "importFromUrl_permissionRequired": {
+    "message": "Berechtigung erforderlich",
+    "description": "Berechtigung erforderlich Alarm-Titel"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Synchronisierung fehlgeschlagen",
+    "description": "Synchronisierung fehlgeschlagen Alarm-Titel"
+  },
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive-Name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive-Name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox-Name"
+  },
+  "importFromExtension_alert_title": {
+    "message": "Diese Funktion hilft Ihnen, Ihre bestehenden Labels von anderen Erweiterungen zu migrieren.",
+    "description": "Von Erweiterung importieren Alarm-Titel"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Wir respektieren die Arbeit anderer Erweiterungsentwickler und bieten diese Option ausschließlich als Komfort für Benutzer an, die WebLabeler ausprobieren möchten.",
+    "description": "Von Erweiterung importieren Alarm-Nachricht"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importieren von",
+    "description": "Importieren von Auswahl-Beschriftung"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Labels mit übereinstimmenden Eigenschaften kombinieren",
+    "description": "Kombinierungsmodus-Schalter-Beschriftung"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Labels mit demselben Namen, derselben Farbe, Schriftgröße und Position werden zu einem Label mit kombinierten Regeln zusammengeführt. Sie können Labels auch manuell nach dem Import kombinieren.",
+    "description": "Kombinierungsmodus-Beschreibung"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Datei hierher ziehen oder klicken zum Auswählen",
+    "description": "Erweiterungsimport-Dropzone-Text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Verwenden Sie die exportierte Labels-Datei von der Environment Marker-Erweiterung im JSON-Format",
+    "description": "Erweiterungsimport-Dropzone-Beschreibung"
+  },
+  "importFromExtension_error_title": {
+    "message": "Fehler beim Importieren der Labels",
+    "description": "Import fehlgeschlagen Fehler-Titel"
+  },
+  "importLabels_title_default": {
+    "message": "Labels importieren",
+    "description": "Standard-Import-Titel"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Labels aus Datei importieren",
+    "description": "Aus Datei importieren-Titel"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Labels von URL importieren",
+    "description": "Von URL importieren-Titel"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Labels von Environment Marker importieren",
+    "description": "Von Erweiterung importieren-Titel"
+  },
+  "importLabels_prefix_default": {
+    "message": "Aus der importierten Quelle:",
+    "description": "Standard-Import-Nachrichtenpräfix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Aus der Datei:",
+    "description": "Aus Datei importieren-Präfix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Von der URL:",
+    "description": "Von URL importieren-Präfix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Aus der Datei:",
+    "description": "Von Erweiterung importieren-Präfix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Aus der Datei ($1 Labels zu $2 kombiniert):",
+    "description": "Import mit Kombinierungsstatistik, $1=ursprüngliche Anzahl, $2=kombinierte Anzahl"
+  },
+  "importLabels_message_new": {
+    "message": "$1 neue $2 wird hinzugefügt",
+    "description": "Neue Labels-Nachricht, $1=Anzahl, $2=Label/Labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 vorhandene$2 $2 wird aktualisiert",
+    "description": "Aktualisierte Labels-Nachricht, $1=Anzahl, $2=Label/Labels"
+  },
+  "importLabels_label_singular": {
+    "message": "Label",
+    "description": "Label Singular"
+  },
+  "importLabels_label_plural": {
+    "message": "Labels",
+    "description": "Label Plural"
+  },
+  "validation_invalidUrl": {
+    "message": "Ungültige URL oder Synchronisierung läuft",
+    "description": "Ungültige URL-Fehler"
+  },
+  "validation_permissionDenied": {
+    "message": "Berechtigung verweigert",
+    "description": "Berechtigung verweigert-Fehler"
+  },
+  "validation_invalidArray": {
+    "message": "Die Datei enthält kein gültiges Array",
+    "description": "Ungültiges Array-Fehler"
+  },
+  "validation_emptyFile": {
+    "message": "Die Datei ist leer",
+    "description": "Leere Datei-Fehler"
+  },
+  "validation_invalidItem": {
+    "message": "Ungültiges Element bei Index $1",
+    "description": "Ungültiges Element-Fehler, $1=Index"
+  },
+  "validation_missingField": {
+    "message": "Fehlendes Pflichtfeld \"$1\" bei Index $2",
+    "description": "Fehlendes Feld-Fehler, $1=Feldname, $2=Index"
+  },
+  "validation_invalidLabels": {
+    "message": "Die Datei enthält keine gültigen Labels",
+    "description": "Ungültige Labels-Fehler"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "Die URL gibt kein gültiges Labels-Array zurück",
+    "description": "Ungültige Labels von URL-Fehler"
+  },
+  "validation_communicationError": {
+    "message": "Kommunikationsfehler mit Hintergrundskript",
+    "description": "Hintergrundskript-Kommunikationsfehler"
+  },
+  "validation_fetchFailed": {
+    "message": "Fehler beim Abrufen der Daten",
+    "description": "Abruf fehlgeschlagen-Fehler"
+  },
+  "validation_error": {
+    "message": "Validierungsfehler",
+    "description": "Generischer Validierungsfehler"
+  },
+  "validation_unknownError": {
+    "message": "unbekannter Fehler",
+    "description": "Unbekannter Fehler-Fallback"
+  },
+  "updateFrequency_disabled": {
+    "message": "Deaktiviert",
+    "description": "Aktualisierungshäufigkeit - deaktiviert"
+  },
+  "updateFrequency_15min": {
+    "message": "Alle 15 Minuten",
+    "description": "Aktualisierungshäufigkeit - 15 Minuten"
+  },
+  "updateFrequency_30min": {
+    "message": "Alle 30 Minuten",
+    "description": "Aktualisierungshäufigkeit - 30 Minuten"
+  },
+  "updateFrequency_1hour": {
+    "message": "Jede Stunde",
+    "description": "Aktualisierungshäufigkeit - 1 Stunde"
+  },
+  "updateFrequency_6hours": {
+    "message": "Alle 6 Stunden",
+    "description": "Aktualisierungshäufigkeit - 6 Stunden"
+  },
+  "updateFrequency_24hours": {
+    "message": "Einmal täglich",
+    "description": "Aktualisierungshäufigkeit - 24 Stunden"
+  },
+  "autoSync_label": {
+    "message": "Auto-Sync",
+    "description": "Auto-Sync-Beschriftung"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sync-URL",
+    "description": "Sync-URL Hover-Card-Titel"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Zuletzt: ",
+    "description": "Letzte Synchronisierung-Präfix"
+  },
+  "autoSync_error": {
+    "message": "Fehler",
+    "description": "Fehler-Badge"
+  },
+  "autoSync_syncError": {
+    "message": "Synchronisierungsfehler",
+    "description": "Sync-Fehler Hover-Card-Titel"
+  },
+  "autoSync_syncNow": {
+    "message": "Jetzt synchronisieren",
+    "description": "Jetzt synchronisieren-Tooltip"
+  },
+  "relativeTime_justNow": {
+    "message": "gerade eben",
+    "description": "Relative Zeit - gerade eben"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "vor $1 Min.",
+    "description": "Relative Zeit - Minuten her, $1=Anzahl"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "vor $1 Min.",
+    "description": "Relative Zeit - Minuten her Plural, $1=Anzahl"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "vor $1 Stunde",
+    "description": "Relative Zeit - Stunden her, $1=Anzahl"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "vor $1 Stunden",
+    "description": "Relative Zeit - Stunden her Plural, $1=Anzahl"
+  },
+  "relativeTime_daysAgo": {
+    "message": "vor $1 Tag",
+    "description": "Relative Zeit - Tage her, $1=Anzahl"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "vor $1 Tagen",
+    "description": "Relative Zeit - Tage her Plural, $1=Anzahl"
+  },
+  "footer_helpful": {
+    "message": "Finden Sie diese Erweiterung hilfreich?",
+    "description": "Footer-Hilfreicher-Text"
+  },
+  "footer_rate": {
+    "message": "Bewerten Sie sie im Chrome Web Store",
+    "description": "Footer-Bewertungs-Schaltfläche"
+  },
+  "featureBadge_contactDeveloper": {
+    "message": "Entwickler kontaktieren",
+    "description": "Entwickler kontaktieren-Schaltfläche"
+  },
+  "featureBadge_rate": {
+    "message": "Bewerten",
+    "description": "Bewertungs-Schaltfläche"
+  },
+  "themeSwitcher_ariaLabel": {
+    "message": "Farbschema umschalten",
+    "description": "Theme-Switcher Aria-Beschriftung"
+  },
+  "language_select": {
+    "message": "Sprache auswählen",
+    "description": "Sprachauswahl-Menübeschriftung"
+  },
+  "language_useBrowser": {
+    "message": "Browsersprache verwenden",
+    "description": "Browsersprache verwenden-Option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Sprache auswählen",
+    "description": "Sprachauswahl Aria-Beschriftung"
+  }
+}
