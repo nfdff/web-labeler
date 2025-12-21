@@ -1,0 +1,722 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Etichetta facilmente i tuoi progetti ed evita di confondere la produzione con gli ambienti di test o sviluppo",
+    "description": "Extension description"
+  },
+  "common_save": {
+    "message": "Salva",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Conferma",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Annulla",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Elimina",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[senza nome]",
+    "description": "Placeholder for unnamed items"
+  },
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Attivo",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Disattivo",
+    "description": "Toggle switch Off label"
+  },
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "ATTIVO",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "DISATTIVO",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Gestisci etichette",
+    "description": "Manage labels button"
+  },
+  "label_name": {
+    "message": "Nome",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nome",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Forma",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Colore di sfondo",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Colore di sfondo",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Colore del testo",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Colore del testo",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacità",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Opacità al passaggio del mouse",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Scala",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Dimensione carattere",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Bordo",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Colore del bordo",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Colore del bordo",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Larghezza del bordo",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Impostazioni",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Anteprima",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Finestra",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "La tua scheda",
+    "description": "Preview tab title"
+  },
+  "label_shape_triangle": {
+    "message": "triangolo",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "nastro",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "cornice",
+    "description": "Frame shape"
+  },
+  "label_border_none": {
+    "message": "nessuno",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "solido",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "tratteggiato",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "punteggiato",
+    "description": "Dotted border"
+  },
+  "label_faviconStyling": {
+    "message": "Stile del favicon",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Modalità solo icona",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Nascondi il badge sulla pagina e mostra solo l'icona",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Modalità solo icona",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Il badge sulla pagina è nascosto. Viene mostrato solo il favicon aggiornato con il badge.",
+    "description": "Icon-only alert message"
+  },
+  "label_iconStyle_none": {
+    "message": "Nessuno",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Usa stile badge",
+    "description": "Icon style option - badge"
+  },
+  "label_collapseButton_less": {
+    "message": "Meno",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Più",
+    "description": "Collapse button - show more"
+  },
+  "rules_addRule": {
+    "message": "Aggiungi regola",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Pattern di espressione regolare (es. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL o parte (senza protocollo)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Dominio o parte (senza protocollo)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Il valore della regola non può essere vuoto",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Pattern di espressione regolare non valido",
+    "description": "Invalid regexp validation error"
+  },
+  "ruleType_contains": {
+    "message": "Contiene",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Inizia con",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Finisce con",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Corrisponde",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Corrisponde a RegExp",
+    "description": "Rule type - regexp"
+  },
+  "sourceType_hostname": {
+    "message": "Dominio",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "URL completo",
+    "description": "Source type - full URL"
+  },
+  "labelList_addLabel": {
+    "message": "Aggiungi etichetta",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Nuova etichetta",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Elimina etichette",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Elimina etichetta",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Sei sicuro di voler eliminare $1 etichetta$2 selezionata$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Sei sicuro di voler eliminare l'etichetta \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Combina",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Combina etichette selezionate in",
+    "description": "Combine modal title"
+  },
+  "labelList_header_name": {
+    "message": "Nome etichetta",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Regole",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Impostazioni",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Azioni",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "nessuna etichetta",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Trascina gli elementi per riordinarli. Le etichette vengono verificate dall'alto verso il basso; viene mostrata la prima corrispondenza",
+    "description": "Reorder tooltip"
+  },
+  "labelSettings_badge": {
+    "message": "Badge",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Badge (Modalità solo icona)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Icona",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Regole",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "L'etichetta viene mostrata quando qualsiasi regola corrisponde (logica OR tra le righe)",
+    "description": "Rules tooltip"
+  },
+  "labelSettings_experimental": {
+    "message": "Sperimentale",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Questa funzionalità è sperimentale e potrebbe non funzionare come previsto. Se riscontri problemi o hai suggerimenti, ti preghiamo di informare lo sviluppatore.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "E se ti piace davvero usarla, diglielo anche, potrebbe rallegrargli la giornata 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+  "combineModal_selectTarget": {
+    "message": "Seleziona etichetta di destinazione",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Tutte le regole delle etichette selezionate verranno spostate nell'etichetta di destinazione. Le altre etichette selezionate verranno eliminate.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Sei sicuro di voler continuare?",
+    "description": "Combine confirmation question"
+  },
+  "confirmationModal_defaultMessage": {
+    "message": "Sei sicuro?",
+    "description": "Default confirmation message"
+  },
+  "positionControl_tooltip": {
+    "message": "Posiziona etichetta nella posizione $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+  "export_selected": {
+    "message": "Esporta selezionate",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Esporta etichette",
+    "description": "Export all button"
+  },
+  "import_title": {
+    "message": "Importa etichette",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importa etichette",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Da file",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Da URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Da un'altra estensione",
+    "description": "Import from extension menu item"
+  },
+  "importTab_fromFile": {
+    "message": "Da file",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Da URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Da un'altra estensione",
+    "description": "From extension tab"
+  },
+  "importFromFile_dropzone": {
+    "message": "Trascina il file qui o clicca per selezionare",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Usa un file di configurazione esportato in formato JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Impossibile leggere il file",
+    "description": "File read error title"
+  },
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL di un file JSON contenente le configurazioni delle etichette",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://esempio.com/etichette.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Cancella input",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Sincronizzazione automatica",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Aggiorna automaticamente le etichette dall'URL alla frequenza specificata",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Ultima sincronizzazione: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sincronizza ora",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Salva impostazioni",
+    "description": "Save settings button"
+  },
+  "importFromUrl_cloudService_generic": {
+    "message": "URL del file JSON",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "URL di $1 rilevato. Verrà trasformato in link di download diretto.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Link di download diretto di $1 rilevato.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+  "importFromUrl_permissionRequired": {
+    "message": "Permesso richiesto",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Sincronizzazione fallita",
+    "description": "Sync failed alert title"
+  },
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+  "importFromExtension_alert_title": {
+    "message": "Questa funzionalità ti aiuta a migrare le tue etichette esistenti da altre estensioni.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Rispettiamo il lavoro degli altri sviluppatori di estensioni e forniamo questa opzione solo per comodità degli utenti che desiderano provare WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importa da",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Combina etichette con proprietà corrispondenti",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Le etichette con lo stesso nome, colore, dimensione del carattere e posizione verranno unite in un'unica etichetta con regole combinate. Puoi anche combinare le etichette manualmente dopo l'importazione.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Trascina il file qui o clicca per selezionare",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Usa il file delle etichette esportato dall'estensione Environment Marker in formato JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Impossibile importare le etichette",
+    "description": "Import failed error title"
+  },
+  "importLabels_title_default": {
+    "message": "Importa etichette",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importa etichette da file",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importa etichette da URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importa etichette da Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Dalla fonte importata:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Dal file:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Dall'URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Dal file:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Dal file ($1 etichette combinate in $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 $2 nuova/e da aggiungere",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 $2 esistente/i da aggiornare",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "etichetta",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "etichette",
+    "description": "Label plural"
+  },
+  "validation_invalidUrl": {
+    "message": "URL non valido o sincronizzazione in corso",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Permesso negato",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Il file non contiene un array valido",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Il file è vuoto",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Elemento non valido all'indice $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Campo obbligatorio \"$1\" mancante all'indice $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Il file non contiene etichette valide",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "L'URL non restituisce un array di etichette valido",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Errore di comunicazione con lo script in background",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Impossibile recuperare i dati",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Errore di validazione",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "errore sconosciuto",
+    "description": "Unknown error fallback"
+  },
+  "updateFrequency_disabled": {
+    "message": "Disattivato",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Ogni 15 minuti",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Ogni 30 minuti",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Ogni ora",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Ogni 6 ore",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Una volta al giorno",
+    "description": "Update frequency - 24 hours"
+  },
+  "autoSync_label": {
+    "message": "Sincronizzazione automatica",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL di sincronizzazione",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Ultima: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Errore",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Errore di sincronizzazione",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sincronizza ora",
+    "description": "Sync now tooltip"
+  },
+  "relativeTime_justNow": {
+    "message": "proprio ora",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min fa",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 min fa",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 ora fa",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 ore fa",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 giorno fa",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 giorni fa",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+  "footer_helpful": {
+    "message": "Questa estensione ti è utile?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Valutala sul Chrome Web Store",
+    "description": "Footer rate button"
+  },
+  "featureBadge_contactDeveloper": {
+    "message": "Contatta lo sviluppatore",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Valuta",
+    "description": "Rate button"
+  },
+  "themeSwitcher_ariaLabel": {
+    "message": "Cambia schema colori",
+    "description": "Theme switcher aria label"
+  },
+  "language_select": {
+    "message": "Seleziona lingua",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Usa lingua del browser",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Seleziona lingua",
+    "description": "Language selector aria label"
+  }
+}
