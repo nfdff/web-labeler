@@ -1,0 +1,759 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "轻松标记您的项目，避免生产环境和测试或开发环境之间的混淆",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "确认",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "取消",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "删除",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[无名称]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "已开启",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "已关闭",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "已开启",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "已关闭",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "管理标签",
+    "description": "Manage labels button"
+  },
+
+  "label_name": {
+    "message": "名称",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "名称",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "形状",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "背景颜色",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "背景颜色",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "文本颜色",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "文本颜色",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "不透明度",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "悬停时不透明度",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "缩放",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "字体大小",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "边框",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "边框颜色",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "边框颜色",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "边框粗细",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "设置",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "预览",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "窗口",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "您的标签页",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "三角形",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "丝带",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "横幅",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "边框",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "无",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "实线",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "虚线",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "点线",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "网站图标样式",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "仅图标模式",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "隐藏页面上的徽章，仅显示图标",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "仅图标模式",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "页面上的徽章已隐藏。仅显示带有徽章的网站图标。",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "无",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "使用徽章样式",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "收起",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "展开",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "添加规则",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "正则表达式模式（例如 /article/.*）",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL 或部分（不含协议）",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "域名或部分（不含协议）",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "规则值不能为空",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "无效的正则表达式模式",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "包含",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "开头是",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "结尾是",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "匹配",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "正则匹配",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "域名",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "完整 URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "添加标签",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "新标签",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "删除标签",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "删除标签",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "您确定要删除 $1 个选中的标签吗？",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "您确定要删除标签"$1"吗？",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "合并",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "将选中的标签合并到",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "标签名称",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "规则",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "设置",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "操作",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "没有标签",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "拖动项目以更改顺序。标签从上到下检查；显示第一个匹配项",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "徽章",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "徽章（仅图标模式）",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "图标",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "规则",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "当任何规则匹配时显示标签（行之间为 OR 逻辑）",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "实验性",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "此功能为实验性，可能无法按预期工作。如果您遇到问题或有建议，请通知开发者。",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "如果您真的喜欢使用它，也请告诉开发者，这可能会让他开心一整天 😊🙏！",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "选择目标标签",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "所有选中标签的规则将被移动到目标标签。其他选中的标签将被删除。",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "您确定要继续吗？",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "您确定吗？",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "将标签放置在 $1 位置",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "导出选中项",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "导出标签",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "导入标签",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "导入标签",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "从文件",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "从 URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "从其他扩展",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "从文件",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "从 URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "从其他扩展",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "将文件拖到此处或点击选择",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "使用导出的 JSON 格式配置文件",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "读取文件失败",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "包含标签配置的 JSON 文件的 URL",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "清除输入",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "自动同步",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "按指定频率从 URL 自动更新标签",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "上次同步：$1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "立即同步",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "保存设置",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "JSON 文件 URL",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "检测到 $1 URL。将转换为直接下载链接。",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "检测到 $1 直接下载链接。",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "需要权限",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "同步失败",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "此功能帮助您从其他扩展转移现有标签。",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "我们尊重其他扩展开发者的工作，仅为想尝试 WebLabeler 的用户提供此选项。",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "导入自",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "合并具有匹配属性的标签",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "具有相同名称、颜色、字体大小和位置的标签将合并为一个标签，其规则也将合并。您也可以在导入后手动合并标签。",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "将文件拖到此处或点击选择",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "使用从 Environment Marker 扩展导出的 JSON 格式标签文件",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "导入标签失败",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "导入标签",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "从文件导入标签",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "从 URL 导入标签",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "从 Environment Marker 导入标签",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "从导入的源：",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "从文件：",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "从 URL：",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "从文件：",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "从文件（$1 个标签合并为 $2 个）：",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "将添加 $1 个新$2",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "将更新 $1 个现有$2",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "标签",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "标签",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "无效的 URL 或正在同步",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "权限被拒绝",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "文件不包含有效的数组",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "文件为空",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "索引 $1 处的项无效",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "索引 $2 处缺少必需字段"$1"",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "文件不包含有效的标签",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL 未返回有效的标签数组",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "与后台脚本通信时出错",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "获取失败",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "验证错误",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "未知错误",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "已禁用",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "每 15 分钟",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "每 30 分钟",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "每小时",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "每 6 小时",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "每天一次",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "自动同步",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "同步 URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "上次：",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "错误",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "同步错误",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "立即同步",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "刚刚",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 分钟前",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 分钟前",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 小时前",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 小时前",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 天前",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 天前",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "此扩展对您有帮助吗？",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "在 Chrome 网上应用店评分",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "联系开发者",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "评分",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "切换配色方案",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "选择语言",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "使用浏览器语言",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "选择语言",
+    "description": "Language selector aria label"
+  }
+}

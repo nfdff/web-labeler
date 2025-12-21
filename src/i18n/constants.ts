@@ -13,6 +13,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
   { code: "pt_BR", name: "Portuguese (Brazil)", nativeName: "Português (Brasil)", flag: "BR" },
   { code: "pt_PT", name: "Portuguese (Portugal)", nativeName: "Português (Portugal)", flag: "PT" },
   { code: "uk", name: "Ukrainian", nativeName: "Українська", flag: "UA" },
+  { code: "zh_CN", name: "Chinese (Simplified)", nativeName: "简体中文", flag: "CN" },
 ]
 
 export const DEFAULT_LOCALE: SupportedLocale = "en"
