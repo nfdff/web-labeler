@@ -1,18 +1,7 @@
 import { useState } from "react"
-import {
-  ActionIcon,
-  Combobox,
-  Divider,
-  Group,
-  Stack,
-  Text,
-  useCombobox,
-} from "@mantine/core"
+import { ActionIcon, Combobox, Divider, Group, Stack, Text, useCombobox } from "@mantine/core"
 import * as flags from "country-flag-icons/react/1x1"
-import {
-  useOptionsContext,
-  useTranslation,
-} from "@/contexts"
+import { useOptionsContext, useTranslation } from "@/contexts"
 import { SUPPORTED_LANGUAGES, SupportedLocale } from "@/i18n"
 import styles from "./styles.module.css"
 
@@ -22,9 +11,7 @@ function LanguageSelector() {
   const combobox = useCombobox()
   const [search, setSearch] = useState("")
 
-  const currentLanguage =
-    SUPPORTED_LANGUAGES.find((lang) => lang.code === currentLocale) ||
-    SUPPORTED_LANGUAGES[0]
+  const currentLanguage = SUPPORTED_LANGUAGES.find((lang) => lang.code === currentLocale) || SUPPORTED_LANGUAGES[0]
 
   const handleLanguageChange = (locale: SupportedLocale) => {
     dispatch({ type: "setLocale", payload: { locale } })
@@ -39,20 +26,17 @@ function LanguageSelector() {
   }
 
   const filteredLanguages = SUPPORTED_LANGUAGES.filter(
-    (language) =>
-      language.name.toLowerCase().includes(search.toLowerCase()) ||
-      language.nativeName.toLowerCase().includes(search.toLowerCase())
+    (language) => language.name.toLowerCase().includes(search.toLowerCase()) || language.nativeName.toLowerCase().includes(search.toLowerCase())
   )
 
-  const CurrentFlag =
-    flags[currentLanguage.flag as keyof typeof flags] || flags.GB
+  const CurrentFlag = flags[currentLanguage.flag as keyof typeof flags] || flags.GB
 
   return (
     <Combobox
       store={combobox}
       position="bottom-end"
       shadow="md"
-      width={240}
+      width="auto"
       onOptionSubmit={(value) => {
         if (value === "browser") {
           clearLanguageOverride()
@@ -86,26 +70,16 @@ function LanguageSelector() {
         <Combobox.Options>
           <Stack gap={0}>
             {filteredLanguages.map((language) => {
-              const Flag =
-                flags[language.flag as keyof typeof flags] || flags.GB
+              const Flag = flags[language.flag as keyof typeof flags] || flags.GB
               return (
                 <Combobox.Option
                   key={language.code}
                   value={language.code}
-                  className={
-                    currentLocale === language.code
-                      ? `${styles.option} ${styles.optionSelected}`
-                      : styles.option
-                  }
+                  className={currentLocale === language.code ? `${styles.option} ${styles.optionSelected}` : styles.option}
                 >
                   <Group gap="xs" wrap="nowrap">
                     <Flag className={styles.flag} />
-                    <Group
-                      justify="space-between"
-                      className={styles.optionContent}
-                      gap="xs"
-                      wrap="nowrap"
-                    >
+                    <Group justify="space-between" className={styles.optionContent} gap="xs" wrap="nowrap">
                       <Text size="sm" className={styles.languageName}>
                         {language.name}
                       </Text>
@@ -120,11 +94,7 @@ function LanguageSelector() {
 
             <Divider my={4} />
 
-            <Combobox.Option
-              value="browser"
-              disabled={!options.locale}
-              className={styles.option}
-            >
+            <Combobox.Option value="browser" disabled={!options.locale} className={styles.option}>
               <Text size="sm" c="dimmed" className={styles.browserOption}>
                 {t("language_useBrowser")}
               </Text>

@@ -1,0 +1,722 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Rotule seus projetos facilmente e evite confundir produção com ambientes de teste ou desenvolvimento",
+    "description": "Extension description"
+  },
+  "common_save": {
+    "message": "Salvar",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Confirmar",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Cancelar",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Excluir",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[sem nome]",
+    "description": "Placeholder for unnamed items"
+  },
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Ativado",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Desativado",
+    "description": "Toggle switch Off label"
+  },
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "ATIVADO",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "DESATIVADO",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Gerenciar Rótulos",
+    "description": "Manage labels button"
+  },
+  "label_name": {
+    "message": "Nome",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nome",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Forma",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Cor de fundo",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Cor de fundo",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Cor do texto",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Cor do texto",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacidade",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Opacidade ao passar o mouse",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Escala",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Tamanho da fonte",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Borda",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Cor da borda",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Cor da borda",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Largura da borda",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Configurações",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Visualização",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Janela",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Sua aba",
+    "description": "Preview tab title"
+  },
+  "label_shape_triangle": {
+    "message": "triângulo",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "fita",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "moldura",
+    "description": "Frame shape"
+  },
+  "label_border_none": {
+    "message": "nenhuma",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "sólida",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "tracejada",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "pontilhada",
+    "description": "Dotted border"
+  },
+  "label_faviconStyling": {
+    "message": "Estilo do favicon",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Modo somente ícone",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Ocultar o emblema na página e mostrar apenas o ícone",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Modo somente ícone",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "O emblema na página está oculto. Apenas o favicon com emblema é exibido.",
+    "description": "Icon-only alert message"
+  },
+  "label_iconStyle_none": {
+    "message": "Nenhum",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Usar estilo de emblema",
+    "description": "Icon style option - badge"
+  },
+  "label_collapseButton_less": {
+    "message": "Menos",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Mais",
+    "description": "Collapse button - show more"
+  },
+  "rules_addRule": {
+    "message": "Adicionar regra",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Padrão de expressão regular (ex.: /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL ou parte (sem protocolo)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domínio ou parte (sem protocolo)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "O valor da regra não pode estar vazio",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Padrão de expressão regular inválido",
+    "description": "Invalid regexp validation error"
+  },
+  "ruleType_contains": {
+    "message": "Contém",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Começa com",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Termina com",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Corresponde",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Corresponde a RegExp",
+    "description": "Rule type - regexp"
+  },
+  "sourceType_hostname": {
+    "message": "Domínio",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "URL completa",
+    "description": "Source type - full URL"
+  },
+  "labelList_addLabel": {
+    "message": "Adicionar rótulo",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Novo rótulo",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Excluir rótulos",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Excluir rótulo",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Tem certeza de que deseja excluir $1 rótulo$2 selecionado$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Tem certeza de que deseja excluir o rótulo \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Combinar",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Combinar rótulos selecionados em",
+    "description": "Combine modal title"
+  },
+  "labelList_header_name": {
+    "message": "Nome do rótulo",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Regras",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Configurações",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Ações",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "nenhum rótulo",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Arraste os itens para reordenar. Os rótulos são verificados de cima para baixo; a primeira correspondência é exibida",
+    "description": "Reorder tooltip"
+  },
+  "labelSettings_badge": {
+    "message": "Emblema",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Emblema (Modo somente ícone)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ícone",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Regras",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "O rótulo é exibido quando qualquer regra corresponde (lógica OU entre linhas)",
+    "description": "Rules tooltip"
+  },
+  "labelSettings_experimental": {
+    "message": "Experimental",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Este recurso é experimental e pode não funcionar como esperado. Se você encontrar problemas ou tiver sugestões, avise o desenvolvedor.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "E se você realmente gostar de usá-lo, diga a ele também, isso pode alegrar o dia dele 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+  "combineModal_selectTarget": {
+    "message": "Selecionar rótulo de destino",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Todas as regras dos rótulos selecionados serão movidas para o rótulo de destino. Os outros rótulos selecionados serão excluídos.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Tem certeza de que deseja continuar?",
+    "description": "Combine confirmation question"
+  },
+  "confirmationModal_defaultMessage": {
+    "message": "Tem certeza?",
+    "description": "Default confirmation message"
+  },
+  "positionControl_tooltip": {
+    "message": "Colocar rótulo na posição $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+  "export_selected": {
+    "message": "Exportar selecionados",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Exportar rótulos",
+    "description": "Export all button"
+  },
+  "import_title": {
+    "message": "Importar rótulos",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importar rótulos",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "De arquivo",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "De URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "De outra extensão",
+    "description": "Import from extension menu item"
+  },
+  "importTab_fromFile": {
+    "message": "De arquivo",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "De URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "De outra extensão",
+    "description": "From extension tab"
+  },
+  "importFromFile_dropzone": {
+    "message": "Arraste o arquivo aqui ou clique para selecionar",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Use um arquivo de configuração exportado em formato JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Falha ao ler o arquivo",
+    "description": "File read error title"
+  },
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL para um arquivo JSON contendo configurações de rótulos",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://exemplo.com/rotulos.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Limpar entrada",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Sincronização automática",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Atualizar automaticamente os rótulos da URL na frequência especificada",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Última sincronização: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sincronizar agora",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Salvar configurações",
+    "description": "Save settings button"
+  },
+  "importFromUrl_cloudService_generic": {
+    "message": "URL para arquivo JSON",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "URL do $1 detectada. Será transformada em link de download direto.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Link de download direto do $1 detectado.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+  "importFromUrl_permissionRequired": {
+    "message": "Permissão necessária",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Falha na sincronização",
+    "description": "Sync failed alert title"
+  },
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+  "importFromExtension_alert_title": {
+    "message": "Este recurso ajuda você a migrar seus rótulos existentes de outras extensões.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Respeitamos o trabalho de outros desenvolvedores de extensões e fornecemos esta opção apenas como conveniência para usuários que desejam experimentar o WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importar de",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Combinar rótulos com propriedades correspondentes",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Rótulos com o mesmo nome, cor, tamanho de fonte e posição serão mesclados em um rótulo com regras combinadas. Você também pode combinar rótulos manualmente após a importação.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Arraste o arquivo aqui ou clique para selecionar",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Use o arquivo de rótulos exportado da extensão Environment Marker em formato JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Falha ao importar rótulos",
+    "description": "Import failed error title"
+  },
+  "importLabels_title_default": {
+    "message": "Importar rótulos",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importar rótulos de arquivo",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importar rótulos de URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importar rótulos do Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Da fonte importada:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Do arquivo:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Da URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Do arquivo:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Do arquivo ($1 rótulos combinados em $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 $2 novo(s) a adicionar",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 $2 existente(s) a atualizar",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "rótulo",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "rótulos",
+    "description": "Label plural"
+  },
+  "validation_invalidUrl": {
+    "message": "URL inválida ou sincronização em andamento",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Permissão negada",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "O arquivo não contém um array válido",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "O arquivo está vazio",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Item inválido no índice $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Campo obrigatório \"$1\" ausente no índice $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "O arquivo não contém rótulos válidos",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "A URL não retorna um array de rótulos válido",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Erro de comunicação com o script em segundo plano",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Falha ao buscar dados",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Erro de validação",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "erro desconhecido",
+    "description": "Unknown error fallback"
+  },
+  "updateFrequency_disabled": {
+    "message": "Desativado",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "A cada 15 minutos",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "A cada 30 minutos",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "A cada hora",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "A cada 6 horas",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Uma vez por dia",
+    "description": "Update frequency - 24 hours"
+  },
+  "autoSync_label": {
+    "message": "Sincronização automática",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL de sincronização",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Última: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Erro",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Erro de sincronização",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sincronizar agora",
+    "description": "Sync now tooltip"
+  },
+  "relativeTime_justNow": {
+    "message": "agora mesmo",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "há $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "há $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "há $1 hora",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "há $1 horas",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "há $1 dia",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "há $1 dias",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+  "footer_helpful": {
+    "message": "Esta extensão é útil para você?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Avalie na Chrome Web Store",
+    "description": "Footer rate button"
+  },
+  "featureBadge_contactDeveloper": {
+    "message": "Contatar o desenvolvedor",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Avaliar",
+    "description": "Rate button"
+  },
+  "themeSwitcher_ariaLabel": {
+    "message": "Alternar esquema de cores",
+    "description": "Theme switcher aria label"
+  },
+  "language_select": {
+    "message": "Selecionar idioma",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Usar idioma do navegador",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Selecionar idioma",
+    "description": "Language selector aria label"
+  }
+}

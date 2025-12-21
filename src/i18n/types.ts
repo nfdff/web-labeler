@@ -1,4 +1,4 @@
-export type SupportedLocale = "en" | "ru" | "de" | "es" | "fr";
+export type SupportedLocale = "en" | "ru" | "de" | "es" | "fr" | "pt_BR" | "pt_PT";
 
 export interface LanguageConfig {
   code: SupportedLocale;
