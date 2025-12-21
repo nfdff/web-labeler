@@ -7,6 +7,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
   { code: "es", name: "Spanish", nativeName: "Español", flag: "ES" },
   { code: "fr", name: "French", nativeName: "Français", flag: "FR" },
   { code: "it", name: "Italian", nativeName: "Italiano", flag: "IT" },
+  { code: "ja", name: "Japanese", nativeName: "日本語", flag: "JP" },
   { code: "pt_BR", name: "Portuguese (Brazil)", nativeName: "Português (Brasil)", flag: "BR" },
   { code: "pt_PT", name: "Portuguese (Portugal)", nativeName: "Português (Portugal)", flag: "PT" },
 ]

@@ -1,0 +1,759 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "プロジェクトに簡単にラベルを付けて、本番環境とテスト環境や開発環境を混同しないようにします",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "確認",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "キャンセル",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "削除",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[無名]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "オン",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "オフ",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "オン",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "オフ",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "ラベルを管理",
+    "description": "Manage labels button"
+  },
+
+  "label_name": {
+    "message": "名前",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "名前",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "形状",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "背景色",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "背景色",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "テキストの色",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "テキストの色",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "不透明度",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "ホバー時の不透明度",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "スケール",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "フォントサイズ",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "ボーダー",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "ボーダーの色",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "ボーダーの色",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "ボーダーの幅",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "設定",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "プレビュー",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "ウィンドウ",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "あなたのタブ",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "三角形",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "リボン",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "バナー",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "フレーム",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "なし",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "実線",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "破線",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "点線",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "ファビコンスタイル",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "アイコンのみモード",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "ページ上のバッジを非表示にし、アイコンのみを表示します",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "アイコンのみモード",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "ページ上のバッジは非表示になっています。バッジ付きファビコンのみが表示されます。",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "なし",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "バッジスタイルを使用",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "簡易表示",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "詳細表示",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "ルールを追加",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "正規表現パターン（例：/article/.*）",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URLまたはその一部（プロトコルを除く）",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "ドメインまたはその一部（プロトコルを除く）",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "ルールの値を空にすることはできません",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "無効な正規表現パターンです",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "含む",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "で始まる",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "で終わる",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "一致する",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "正規表現に一致",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "ドメイン",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "完全なURL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "ラベルを追加",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "新しいラベル",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "ラベルを削除",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "ラベルを削除",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "選択された$1個のラベルを削除してもよろしいですか？",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "ラベル「$1」を削除してもよろしいですか？",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "結合",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "選択されたラベルを結合",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "ラベル名",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "ルール",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "設定",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "アクション",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "ラベルがありません",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "アイテムをドラッグして並べ替えます。ラベルは上から順にチェックされ、最初に一致したものが表示されます",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "バッジ",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "バッジ（アイコンのみモード）",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "アイコン",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "ルール",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "いずれか1つのルールが一致した場合にラベルが表示されます（行間はOR論理）",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "実験的機能",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "この機能は実験的なものであり、期待通りに動作しない可能性があります。問題が発生した場合や提案がある場合は、開発者にお知らせください。",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "そして、もし実際に使ってみて気に入った場合は、開発者にそれも伝えてください。きっと喜びます😊🙏！",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "ターゲットラベルを選択",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "選択されたラベルのすべてのルールがターゲットラベルに移動されます。他の選択されたラベルは削除されます。",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "続行してもよろしいですか？",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "よろしいですか？",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "ラベルを$1の位置に配置",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "選択項目をエクスポート",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "ラベルをエクスポート",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "ラベルをインポート",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "ラベルをインポート",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "ファイルから",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "URLから",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "他の拡張機能から",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "ファイルから",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "URLから",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "他の拡張機能から",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "ファイルをここにドラッグするか、クリックして選択",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "JSON形式でエクスポートされた設定ファイルを使用します",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "ファイルの読み取りに失敗しました",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "ラベル設定を含むJSONファイルへのURL",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "入力をクリア",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "自動同期",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "指定された頻度でURLからラベルを自動的に更新します",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "最終同期：$1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "今すぐ同期",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "設定を保存",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "JSONファイルへのURL",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1のURLが検出されました。直接ダウンロードリンクに変換されます。",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1の直接ダウンロードリンクが検出されました。",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "権限が必要です",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "同期に失敗しました",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google ドライブ",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "この機能は、他の拡張機能から既存のラベルを移行するのに役立ちます。",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "私たちは他の拡張機能開発者の仕事を尊重しており、WebLabelerを試したいユーザーの利便性のためにこのオプションを提供しています。",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "インポート元",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "一致するプロパティを持つラベルを結合",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "同じ名前、色、フォントサイズ、位置を持つラベルは、結合されたルールを持つ1つのラベルにマージされます。インポート後に手動でラベルを結合することもできます。",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "ファイルをここにドラッグするか、クリックして選択",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Environment Marker拡張機能からエクスポートされたJSON形式のラベルファイルを使用します",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "ラベルのインポートに失敗しました",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "ラベルをインポート",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "ファイルからラベルをインポート",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "URLからラベルをインポート",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Environment Markerからラベルをインポート",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "インポート元：",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "ファイルから：",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "URLから：",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "ファイルから：",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "ファイルから（$1個のラベルが$2個に結合されました）：",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1個の新しい$2が追加されます",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1個の既存$2が更新されます",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "ラベル",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "ラベル",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "無効なURLまたは同期中です",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "権限が拒否されました",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "ファイルに有効な配列が含まれていません",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "ファイルが空です",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "インデックス$1に無効なアイテムがあります",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "インデックス$2に必須フィールド「$1」がありません",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "ファイルに有効なラベルが含まれていません",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URLが有効なラベル配列を返しません",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "バックグラウンドスクリプトとの通信エラー",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "データの取得に失敗しました",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "検証エラー",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "不明なエラー",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "無効",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "15分ごと",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "30分ごと",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "1時間ごと",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "6時間ごと",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "1日1回",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "自動同期",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "同期URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "最終：",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "エラー",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "同期エラー",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "今すぐ同期",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "たった今",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1分前",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1分前",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1時間前",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1時間前",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1日前",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1日前",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "この拡張機能は役に立ちましたか？",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Chrome ウェブストアで評価する",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "開発者に連絡",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "評価",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "カラースキームを切り替え",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "言語を選択",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "ブラウザの言語を使用",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "言語を選択",
+    "description": "Language selector aria label"
+  }
+}
