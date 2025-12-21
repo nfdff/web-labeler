@@ -7,7 +7,6 @@
     "message": "轻松标记您的项目，避免生产环境和测试或开发环境之间的混淆",
     "description": "Extension description"
   },
-
   "common_save": {
     "message": "保存",
     "description": "Save button"
@@ -28,7 +27,6 @@
     "message": "[无名称]",
     "description": "Placeholder for unnamed items"
   },
-
   "optionsPage_title": {
     "message": "WebLabeler",
     "description": "Options page title"
@@ -41,7 +39,6 @@
     "message": "已关闭",
     "description": "Toggle switch Off label"
   },
-
   "popup_title": {
     "message": "WebLabeler",
     "description": "Popup title"
@@ -58,7 +55,6 @@
     "message": "管理标签",
     "description": "Manage labels button"
   },
-
   "label_name": {
     "message": "名称",
     "description": "Label name field"
@@ -135,7 +131,6 @@
     "message": "您的标签页",
     "description": "Preview tab title"
   },
-
   "label_shape_triangle": {
     "message": "三角形",
     "description": "Triangle shape"
@@ -152,7 +147,6 @@
     "message": "边框",
     "description": "Frame shape"
   },
-
   "label_border_none": {
     "message": "无",
     "description": "No border"
@@ -169,7 +163,6 @@
     "message": "点线",
     "description": "Dotted border"
   },
-
   "label_faviconStyling": {
     "message": "网站图标样式",
     "description": "Favicon style label"
@@ -190,7 +183,6 @@
     "message": "页面上的徽章已隐藏。仅显示带有徽章的网站图标。",
     "description": "Icon-only alert message"
   },
-
   "label_iconStyle_none": {
     "message": "无",
     "description": "Icon style option - none"
@@ -199,7 +191,6 @@
     "message": "使用徽章样式",
     "description": "Icon style option - badge"
   },
-
   "label_collapseButton_less": {
     "message": "收起",
     "description": "Collapse button - show less"
@@ -208,7 +199,6 @@
     "message": "展开",
     "description": "Collapse button - show more"
   },
-
   "rules_addRule": {
     "message": "添加规则",
     "description": "Add rule button"
@@ -233,7 +223,6 @@
     "message": "无效的正则表达式模式",
     "description": "Invalid regexp validation error"
   },
-
   "ruleType_contains": {
     "message": "包含",
     "description": "Rule type - contains"
@@ -254,7 +243,6 @@
     "message": "正则匹配",
     "description": "Rule type - regexp"
   },
-
   "sourceType_hostname": {
     "message": "域名",
     "description": "Source type - hostname"
@@ -263,7 +251,6 @@
     "message": "完整 URL",
     "description": "Source type - full URL"
   },
-
   "labelList_addLabel": {
     "message": "添加标签",
     "description": "Add label button"
@@ -285,7 +272,7 @@
     "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
   },
   "labelList_deleteConfirm_single": {
-    "message": "您确定要删除标签"$1"吗？",
+    "message": "您确定要删除标签\"$1\"吗？",
     "description": "Delete single label confirmation, $1=label name"
   },
   "labelList_combine": {
@@ -296,7 +283,6 @@
     "message": "将选中的标签合并到",
     "description": "Combine modal title"
   },
-
   "labelList_header_name": {
     "message": "标签名称",
     "description": "Table header - name"
@@ -321,7 +307,6 @@
     "message": "拖动项目以更改顺序。标签从上到下检查；显示第一个匹配项",
     "description": "Reorder tooltip"
   },
-
   "labelSettings_badge": {
     "message": "徽章",
     "description": "Badge button/modal title"
@@ -342,7 +327,6 @@
     "message": "当任何规则匹配时显示标签（行之间为 OR 逻辑）",
     "description": "Rules tooltip"
   },
-
   "labelSettings_experimental": {
     "message": "实验性",
     "description": "Experimental feature badge"
@@ -355,7 +339,6 @@
     "message": "如果您真的喜欢使用它，也请告诉开发者，这可能会让他开心一整天 😊🙏！",
     "description": "Experimental feature enjoy message"
   },
-
   "combineModal_selectTarget": {
     "message": "选择目标标签",
     "description": "Select target label placeholder"
@@ -368,17 +351,14 @@
     "message": "您确定要继续吗？",
     "description": "Combine confirmation question"
   },
-
   "confirmationModal_defaultMessage": {
     "message": "您确定吗？",
     "description": "Default confirmation message"
   },
-
   "positionControl_tooltip": {
     "message": "将标签放置在 $1 位置",
     "description": "Position control tooltip, $1=position name"
   },
-
   "export_selected": {
     "message": "导出选中项",
     "description": "Export selected button"
@@ -387,7 +367,6 @@
     "message": "导出标签",
     "description": "Export all button"
   },
-
   "import_title": {
     "message": "导入标签",
     "description": "Import modal title"
@@ -408,7 +387,6 @@
     "message": "从其他扩展",
     "description": "Import from extension menu item"
   },
-
   "importTab_fromFile": {
     "message": "从文件",
     "description": "From file tab"
@@ -421,7 +399,6 @@
     "message": "从其他扩展",
     "description": "From extension tab"
   },
-
   "importFromFile_dropzone": {
     "message": "将文件拖到此处或点击选择",
     "description": "File dropzone text"
@@ -434,7 +411,6 @@
     "message": "读取文件失败",
     "description": "File read error title"
   },
-
   "importFromUrl_label": {
     "message": "URL",
     "description": "URL input label"
@@ -471,7 +447,6 @@
     "message": "保存设置",
     "description": "Save settings button"
   },
-
   "importFromUrl_cloudService_generic": {
     "message": "JSON 文件 URL",
     "description": "Generic cloud service tooltip"
@@ -484,7 +459,6 @@
     "message": "检测到 $1 直接下载链接。",
     "description": "Direct download link tooltip, $1=service name"
   },
-
   "importFromUrl_permissionRequired": {
     "message": "需要权限",
     "description": "Permission required alert title"
@@ -493,7 +467,6 @@
     "message": "同步失败",
     "description": "Sync failed alert title"
   },
-
   "cloudService_googleDrive": {
     "message": "Google Drive",
     "description": "Google Drive name"
@@ -506,7 +479,6 @@
     "message": "Dropbox",
     "description": "Dropbox name"
   },
-
   "importFromExtension_alert_title": {
     "message": "此功能帮助您从其他扩展转移现有标签。",
     "description": "Import from extension alert title"
@@ -539,7 +511,6 @@
     "message": "导入标签失败",
     "description": "Import failed error title"
   },
-
   "importLabels_title_default": {
     "message": "导入标签",
     "description": "Default import title"
@@ -592,7 +563,6 @@
     "message": "标签",
     "description": "Label plural"
   },
-
   "validation_invalidUrl": {
     "message": "无效的 URL 或正在同步",
     "description": "Invalid URL error"
@@ -614,7 +584,7 @@
     "description": "Invalid item error, $1=index"
   },
   "validation_missingField": {
-    "message": "索引 $2 处缺少必需字段"$1"",
+    "message": "索引 $2 处缺少必需字段\"$1\"",
     "description": "Missing field error, $1=field name, $2=index"
   },
   "validation_invalidLabels": {
@@ -641,7 +611,6 @@
     "message": "未知错误",
     "description": "Unknown error fallback"
   },
-
   "updateFrequency_disabled": {
     "message": "已禁用",
     "description": "Update frequency - disabled"
@@ -666,7 +635,6 @@
     "message": "每天一次",
     "description": "Update frequency - 24 hours"
   },
-
   "autoSync_label": {
     "message": "自动同步",
     "description": "Auto-sync label"
@@ -691,7 +659,6 @@
     "message": "立即同步",
     "description": "Sync now tooltip"
   },
-
   "relativeTime_justNow": {
     "message": "刚刚",
     "description": "Relative time - just now"
@@ -720,7 +687,6 @@
     "message": "$1 天前",
     "description": "Relative time - days ago plural, $1=count"
   },
-
   "footer_helpful": {
     "message": "此扩展对您有帮助吗？",
     "description": "Footer helpful text"
@@ -729,7 +695,6 @@
     "message": "在 Chrome 网上应用店评分",
     "description": "Footer rate button"
   },
-
   "featureBadge_contactDeveloper": {
     "message": "联系开发者",
     "description": "Contact developer button"
@@ -738,12 +703,10 @@
     "message": "评分",
     "description": "Rate button"
   },
-
   "themeSwitcher_ariaLabel": {
     "message": "切换配色方案",
     "description": "Theme switcher aria label"
   },
-
   "language_select": {
     "message": "选择语言",
     "description": "Language selector menu label"
