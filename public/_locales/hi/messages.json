@@ -1,0 +1,722 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "अपनी परियोजनाओं को आसानी से लेबल करें और प्रोडक्शन और टेस्ट या विकास वातावरण के बीच भ्रम से बचें",
+    "description": "Extension description"
+  },
+  "common_save": {
+    "message": "सहेजें",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "पुष्टि करें",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "रद्द करें",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "हटाएं",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[बिना नाम]",
+    "description": "Placeholder for unnamed items"
+  },
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "चालू",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "बंद",
+    "description": "Toggle switch Off label"
+  },
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "चालू",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "बंद",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "लेबल प्रबंधित करें",
+    "description": "Manage labels button"
+  },
+  "label_name": {
+    "message": "नाम",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "नाम",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "आकार",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "पृष्ठभूमि रंग",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "पृष्ठभूमि रंग",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "टेक्स्ट रंग",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "टेक्स्ट रंग",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "अपारदर्शिता",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "होवर करने पर अपारदर्शिता",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "स्केल",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "फ़ॉन्ट आकार",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "बॉर्डर",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "बॉर्डर रंग",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "बॉर्डर रंग",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "बॉर्डर मोटाई",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "सेटिंग्स",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "पूर्वावलोकन",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "विंडो",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "आपका टैब",
+    "description": "Preview tab title"
+  },
+  "label_shape_triangle": {
+    "message": "त्रिकोण",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "रिबन",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "बैनर",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "फ़्रेम",
+    "description": "Frame shape"
+  },
+  "label_border_none": {
+    "message": "कोई नहीं",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "ठोस",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "डैश",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "बिंदीदार",
+    "description": "Dotted border"
+  },
+  "label_faviconStyling": {
+    "message": "फ़ेविकॉन स्टाइल",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "केवल आइकन मोड",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "पेज पर बैज छिपाएं और केवल आइकन दिखाएं",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "केवल आइकन मोड",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "पेज पर बैज छिपा हुआ है। केवल बैज-युक्त फ़ेविकॉन दिखाया जा रहा है।",
+    "description": "Icon-only alert message"
+  },
+  "label_iconStyle_none": {
+    "message": "कोई नहीं",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "बैज स्टाइल उपयोग करें",
+    "description": "Icon style option - badge"
+  },
+  "label_collapseButton_less": {
+    "message": "कम",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "अधिक",
+    "description": "Collapse button - show more"
+  },
+  "rules_addRule": {
+    "message": "नियम जोड़ें",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "नियमित अभिव्यक्ति पैटर्न (जैसे /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL या भाग (प्रोटोकॉल के बिना)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "डोमेन या भाग (प्रोटोकॉल के बिना)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "नियम मान खाली नहीं हो सकता",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "अमान्य नियमित अभिव्यक्ति पैटर्न",
+    "description": "Invalid regexp validation error"
+  },
+  "ruleType_contains": {
+    "message": "शामिल है",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "से शुरू होता है",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "से समाप्त होता है",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "मेल खाता है",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "RegExp मेल खाता है",
+    "description": "Rule type - regexp"
+  },
+  "sourceType_hostname": {
+    "message": "डोमेन",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "पूर्ण URL",
+    "description": "Source type - full URL"
+  },
+  "labelList_addLabel": {
+    "message": "लेबल जोड़ें",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "नया लेबल",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "लेबल हटाएं",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "लेबल हटाएं",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "क्या आप वाकई $1 चयनित लेबल हटाना चाहते हैं?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "क्या आप वाकई लेबल \"$1\" हटाना चाहते हैं?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "संयोजित करें",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "चयनित लेबल को इसमें संयोजित करें",
+    "description": "Combine modal title"
+  },
+  "labelList_header_name": {
+    "message": "लेबल नाम",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "नियम",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "सेटिंग्स",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "क्रियाएं",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "कोई लेबल नहीं",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "क्रम बदलने के लिए आइटम को ड्रैग करें। लेबल ऊपर से नीचे की ओर जांचे जाते हैं; पहला मेल दिखाया जाता है",
+    "description": "Reorder tooltip"
+  },
+  "labelSettings_badge": {
+    "message": "बैज",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "बैज (केवल आइकन मोड)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "आइकन",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "नियम",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "जब कोई भी नियम मेल खाता है तो लेबल दिखाया जाता है (पंक्तियों के बीच OR तर्क)",
+    "description": "Rules tooltip"
+  },
+  "labelSettings_experimental": {
+    "message": "प्रायोगिक",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "यह सुविधा प्रायोगिक है और अपेक्षित रूप से काम नहीं कर सकती। यदि आप समस्याओं का सामना करते हैं या सुझाव हैं, तो कृपया डेवलपर को सूचित करें।",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "और यदि आप वास्तव में इसका उपयोग करने में आनंद ले रहे हैं, तो उन्हें भी बताएं, यह उनका दिन बना सकता है 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+  "combineModal_selectTarget": {
+    "message": "लक्ष्य लेबल चुनें",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "चयनित लेबल से सभी नियम लक्ष्य लेबल में स्थानांतरित कर दिए जाएंगे। अन्य चयनित लेबल हटा दिए जाएंगे।",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "क्या आप जारी रखना चाहते हैं?",
+    "description": "Combine confirmation question"
+  },
+  "confirmationModal_defaultMessage": {
+    "message": "क्या आप सुनिश्चित हैं?",
+    "description": "Default confirmation message"
+  },
+  "positionControl_tooltip": {
+    "message": "लेबल को $1 स्थिति में रखें",
+    "description": "Position control tooltip, $1=position name"
+  },
+  "export_selected": {
+    "message": "चयनित निर्यात करें",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "लेबल निर्यात करें",
+    "description": "Export all button"
+  },
+  "import_title": {
+    "message": "लेबल आयात करें",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "लेबल आयात करें",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "फ़ाइल से",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "URL से",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "अन्य एक्सटेंशन से",
+    "description": "Import from extension menu item"
+  },
+  "importTab_fromFile": {
+    "message": "फ़ाइल से",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "URL से",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "अन्य एक्सटेंशन से",
+    "description": "From extension tab"
+  },
+  "importFromFile_dropzone": {
+    "message": "फ़ाइल यहां खींचें या चुनने के लिए क्लिक करें",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "निर्यात की गई JSON प्रारूप में कॉन्फ़िगरेशन फ़ाइल का उपयोग करें",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "फ़ाइल पढ़ने में विफल",
+    "description": "File read error title"
+  },
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "लेबल कॉन्फ़िगरेशन वाली JSON फ़ाइल का URL",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "इनपुट साफ़ करें",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "स्वचालित सिंक",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "निर्दिष्ट आवृत्ति पर URL से लेबल स्वचालित रूप से अपडेट करें",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "अंतिम सिंक: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "अभी सिंक करें",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "सेटिंग्स सहेजें",
+    "description": "Save settings button"
+  },
+  "importFromUrl_cloudService_generic": {
+    "message": "JSON फ़ाइल URL",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL का पता चला। सीधे डाउनलोड लिंक में परिवर्तित किया जाएगा।",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 सीधे डाउनलोड लिंक का पता चला।",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+  "importFromUrl_permissionRequired": {
+    "message": "अनुमति आवश्यक",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "सिंक विफल रहा",
+    "description": "Sync failed alert title"
+  },
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+  "importFromExtension_alert_title": {
+    "message": "यह सुविधा आपको अन्य एक्सटेंशन से मौजूदा लेबल स्थानांतरित करने में मदद करती है।",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "हम अन्य एक्सटेंशन डेवलपर्स के काम का सम्मान करते हैं और केवल उन उपयोगकर्ताओं की सुविधा के लिए यह विकल्प प्रदान करते हैं जो WebLabeler आज़माना चाहते हैं।",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "से आयात करें",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "मिलते गुणों वाले लेबल संयोजित करें",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "समान नाम, रंग, फ़ॉन्ट आकार और स्थिति वाले लेबल संयोजित नियमों के साथ एक लेबल में संयोजित किए जाएंगे। आप आयात के बाद मैन्युअल रूप से भी लेबल संयोजित कर सकते हैं।",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "फ़ाइल यहां खींचें या चुनने के लिए क्लिक करें",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Environment Marker एक्सटेंशन से निर्यात की गई JSON प्रारूप में लेबल फ़ाइल का उपयोग करें",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "लेबल आयात करने में विफल",
+    "description": "Import failed error title"
+  },
+  "importLabels_title_default": {
+    "message": "लेबल आयात करें",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "फ़ाइल से लेबल आयात करें",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "URL से लेबल आयात करें",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Environment Marker से लेबल आयात करें",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "आयातित स्रोत से:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "फ़ाइल से:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "URL से:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "फ़ाइल से:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "फ़ाइल से ($2 में संयोजित $1 लेबल):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 नए $2 जोड़े जाएंगे",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 मौजूदा $2 अपडेट किए जाएंगे",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "लेबल",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "लेबल",
+    "description": "Label plural"
+  },
+  "validation_invalidUrl": {
+    "message": "अमान्य URL या सिंक प्रगति में है",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "अनुमति अस्वीकृत",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "फ़ाइल में मान्य सरणी नहीं है",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "फ़ाइल खाली है",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "इंडेक्स $1 पर अमान्य आइटम",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "इंडेक्स $2 पर आवश्यक फ़ील्ड \"$1\" गायब है",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "फ़ाइल में मान्य लेबल नहीं हैं",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL मान्य लेबल सरणी वापस नहीं करता है",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "पृष्ठभूमि स्क्रिप्ट के साथ संचार त्रुटि",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "लाने में विफल",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "सत्यापन त्रुटि",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "अज्ञात त्रुटि",
+    "description": "Unknown error fallback"
+  },
+  "updateFrequency_disabled": {
+    "message": "अक्षम",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "हर 15 मिनट",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "हर 30 मिनट",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "हर घंटे",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "हर 6 घंटे",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "दिन में एक बार",
+    "description": "Update frequency - 24 hours"
+  },
+  "autoSync_label": {
+    "message": "स्वचालित सिंक",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "सिंक URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "अंतिम: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "त्रुटि",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "सिंक त्रुटि",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "अभी सिंक करें",
+    "description": "Sync now tooltip"
+  },
+  "relativeTime_justNow": {
+    "message": "अभी-अभी",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 मिनट पहले",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 मिनट पहले",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 घंटे पहले",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 घंटे पहले",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 दिन पहले",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 दिन पहले",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+  "footer_helpful": {
+    "message": "क्या यह एक्सटेंशन आपके लिए मददगार है?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Chrome वेब स्टोर पर रेटिंग दें",
+    "description": "Footer rate button"
+  },
+  "featureBadge_contactDeveloper": {
+    "message": "डेवलपर से संपर्क करें",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "रेटिंग दें",
+    "description": "Rate button"
+  },
+  "themeSwitcher_ariaLabel": {
+    "message": "रंग योजना बदलें",
+    "description": "Theme switcher aria label"
+  },
+  "language_select": {
+    "message": "भाषा चुनें",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "ब्राउज़र की भाषा उपयोग करें",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "भाषा चुनें",
+    "description": "Language selector aria label"
+  }
+}
