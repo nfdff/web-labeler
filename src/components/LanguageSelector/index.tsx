@@ -85,7 +85,7 @@ function LanguageSelector() {
           placeholder={t("language_select")}
         />
 
-        <Combobox.Options>
+        <Combobox.Options className={styles.optionsWrapper}>
           <Stack gap={0}>
             {filteredLanguages.map((language) => {
               const Flag =
@@ -119,8 +119,10 @@ function LanguageSelector() {
                 </Combobox.Option>
               )
             })}
+          </Stack>
+        </Combobox.Options>
 
-            <Divider my={4} />
+        <Divider />
 
         <Combobox.Option
           value="browser"
