@@ -122,17 +122,15 @@ function LanguageSelector() {
 
             <Divider my={4} />
 
-            <Combobox.Option
-              value="browser"
-              disabled={!options.locale}
-              className={styles.option}
-            >
-              <Text size="sm" c="dimmed" className={styles.browserOption}>
-                {t("language_useBrowser")}
-              </Text>
-            </Combobox.Option>
-          </Stack>
-        </Combobox.Options>
+        <Combobox.Option
+          value="browser"
+          disabled={!options.locale}
+          className={styles.option}
+        >
+          <Text size="sm" c="dimmed" className={styles.browserOption}>
+            {chrome.i18n.getMessage("language_useBrowser")}
+          </Text>
+        </Combobox.Option>
       </Combobox.Dropdown>
     </Combobox>
   )
