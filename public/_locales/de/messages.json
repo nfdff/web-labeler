@@ -552,7 +552,7 @@
     "description": "Neue Labels-Nachricht, $1=Anzahl, $2=Label/Labels"
   },
   "importLabels_message_updated": {
-    "message": "$1 vorhandene$2 $2 wird aktualisiert",
+    "message": "$1 vorhandene $2 wird aktualisiert",
     "description": "Aktualisierte Labels-Nachricht, $1=Anzahl, $2=Label/Labels"
   },
   "importLabels_label_singular": {

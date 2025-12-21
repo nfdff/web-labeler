@@ -4,27 +4,27 @@
     "description": "Application name"
   },
   "appDescription": {
-    "message": "Etiqueta tus proyectos fácilmente y evita confundir producción con entornos de prueba o desarrollo",
+    "message": "Étiquetez vos projets facilement et évitez de confondre la production avec les environnements de test ou de développement",
     "description": "Extension description"
   },
   "common_save": {
-    "message": "Guardar",
+    "message": "Enregistrer",
     "description": "Save button"
   },
   "common_confirm": {
-    "message": "Confirmar",
+    "message": "Confirmer",
     "description": "Confirm button"
   },
   "common_cancel": {
-    "message": "Cancelar",
+    "message": "Annuler",
     "description": "Cancel button"
   },
   "common_delete": {
-    "message": "Eliminar",
+    "message": "Supprimer",
     "description": "Delete button"
   },
   "common_noname": {
-    "message": "[sin nombre]",
+    "message": "[sans nom]",
     "description": "Placeholder for unnamed items"
   },
   "optionsPage_title": {
@@ -32,11 +32,11 @@
     "description": "Options page title"
   },
   "optionsPage_switchOn": {
-    "message": "Activado",
+    "message": "Activé",
     "description": "Toggle switch On label"
   },
   "optionsPage_switchOff": {
-    "message": "Desactivado",
+    "message": "Désactivé",
     "description": "Toggle switch Off label"
   },
   "popup_title": {
@@ -44,371 +44,371 @@
     "description": "Popup title"
   },
   "popup_switchOn": {
-    "message": "ACTIVADO",
+    "message": "ACTIVÉ",
     "description": "Popup switch On label"
   },
   "popup_switchOff": {
-    "message": "DESACTIVADO",
+    "message": "DÉSACTIVÉ",
     "description": "Popup switch Off label"
   },
   "popup_manageLabels": {
-    "message": "Gestionar etiquetas",
+    "message": "Gérer les étiquettes",
     "description": "Manage labels button"
   },
   "label_name": {
-    "message": "Nombre",
+    "message": "Nom",
     "description": "Label name field"
   },
   "label_name_placeholder": {
-    "message": "Nombre",
+    "message": "Nom",
     "description": "Label name placeholder"
   },
   "label_shape": {
-    "message": "Forma",
+    "message": "Forme",
     "description": "Shape selector"
   },
   "label_backgroundColor": {
-    "message": "Color de fondo",
+    "message": "Couleur de fond",
     "description": "Background color field"
   },
   "label_backgroundColor_placeholder": {
-    "message": "Color de fondo",
+    "message": "Couleur de fond",
     "description": "Background color placeholder"
   },
   "label_textColor": {
-    "message": "Color de texto",
+    "message": "Couleur du texte",
     "description": "Text color field"
   },
   "label_textColor_placeholder": {
-    "message": "Color de texto",
+    "message": "Couleur du texte",
     "description": "Text color placeholder"
   },
   "label_opacity": {
-    "message": "Opacidad",
+    "message": "Opacité",
     "description": "Opacity slider"
   },
   "label_hoveredOpacity": {
-    "message": "Opacidad al pasar el cursor",
+    "message": "Opacité au survol",
     "description": "Hovered opacity slider"
   },
   "label_scale": {
-    "message": "Escala",
+    "message": "Échelle",
     "description": "Scale slider"
   },
   "label_fontSize": {
-    "message": "Tamaño de fuente",
+    "message": "Taille de police",
     "description": "Font size slider"
   },
   "label_border": {
-    "message": "Borde",
+    "message": "Bordure",
     "description": "Border selector"
   },
   "label_borderColor": {
-    "message": "Color del borde",
+    "message": "Couleur de bordure",
     "description": "Border color field"
   },
   "label_borderColor_placeholder": {
-    "message": "Color del borde",
+    "message": "Couleur de bordure",
     "description": "Border color placeholder"
   },
   "label_borderWidth": {
-    "message": "Ancho del borde",
+    "message": "Largeur de bordure",
     "description": "Border width field"
   },
   "label_settings": {
-    "message": "Configuración",
+    "message": "Paramètres",
     "description": "Settings fieldset legend"
   },
   "label_preview": {
-    "message": "Vista previa",
+    "message": "Aperçu",
     "description": "Preview fieldset legend"
   },
   "label_preview_window": {
-    "message": "Ventana",
+    "message": "Fenêtre",
     "description": "Preview window label"
   },
   "label_preview_yourTab": {
-    "message": "Tu pestaña",
+    "message": "Votre onglet",
     "description": "Preview tab title"
   },
   "label_shape_triangle": {
-    "message": "triángulo",
+    "message": "triangle",
     "description": "Triangle shape"
   },
   "label_shape_ribbon": {
-    "message": "cinta",
+    "message": "ruban",
     "description": "Ribbon shape"
   },
   "label_shape_banner": {
-    "message": "banner",
+    "message": "bannière",
     "description": "Banner shape"
   },
   "label_shape_frame": {
-    "message": "marco",
+    "message": "cadre",
     "description": "Frame shape"
   },
   "label_border_none": {
-    "message": "ninguno",
+    "message": "aucune",
     "description": "No border"
   },
   "label_border_solid": {
-    "message": "sólido",
+    "message": "solide",
     "description": "Solid border"
   },
   "label_border_dashed": {
-    "message": "discontinuo",
+    "message": "tiretée",
     "description": "Dashed border"
   },
   "label_border_dotted": {
-    "message": "punteado",
+    "message": "pointillée",
     "description": "Dotted border"
   },
   "label_faviconStyling": {
-    "message": "Estilo del favicon",
+    "message": "Style du favicon",
     "description": "Favicon style label"
   },
   "label_iconOnlyMode": {
-    "message": "Modo solo icono",
+    "message": "Mode icône uniquement",
     "description": "Icon-only mode toggle"
   },
   "label_iconOnlyMode_description": {
-    "message": "Ocultar la insignia en la página y mostrar solo el icono",
+    "message": "Masquer le badge sur la page et afficher uniquement le favicon avec badge",
     "description": "Icon-only mode description"
   },
   "label_iconOnlyMode_alert_title": {
-    "message": "Modo solo icono",
+    "message": "Mode icône uniquement",
     "description": "Icon-only alert title"
   },
   "label_iconOnlyMode_alert_message": {
-    "message": "La insignia en la página está oculta. Solo se muestra el favicon con insignia.",
+    "message": "Le badge sur la page est masqué. Seul le favicon avec badge est affiché.",
     "description": "Icon-only alert message"
   },
   "label_iconStyle_none": {
-    "message": "Ninguno",
+    "message": "Aucun",
     "description": "Icon style option - none"
   },
   "label_iconStyle_badge": {
-    "message": "Usar estilo de insignia",
+    "message": "Utiliser le style badge",
     "description": "Icon style option - badge"
   },
   "label_collapseButton_less": {
-    "message": "Menos",
+    "message": "Moins",
     "description": "Collapse button - show less"
   },
   "label_collapseButton_more": {
-    "message": "Más",
+    "message": "Plus",
     "description": "Collapse button - show more"
   },
   "rules_addRule": {
-    "message": "Agregar regla",
+    "message": "Ajouter une règle",
     "description": "Add rule button"
   },
   "rules_placeholder_regexp": {
-    "message": "Patrón de expresión regular (ej. /article/.*)",
+    "message": "Motif d'expression régulière (ex. /article/.*)",
     "description": "Regexp input placeholder"
   },
   "rules_placeholder_fullUrl": {
-    "message": "URL o parte (sin protocolo)",
+    "message": "URL ou partie (sans protocole)",
     "description": "Full URL input placeholder"
   },
   "rules_placeholder_hostname": {
-    "message": "Dominio o parte (sin protocolo)",
+    "message": "Domaine ou partie (sans protocole)",
     "description": "Domain input placeholder"
   },
   "rules_validation_empty": {
-    "message": "El valor de la regla no puede estar vacío",
+    "message": "La valeur de la règle ne peut pas être vide",
     "description": "Empty rule validation error"
   },
   "rules_validation_invalidRegexp": {
-    "message": "Patrón de expresión regular inválido",
+    "message": "Motif d'expression régulière invalide",
     "description": "Invalid regexp validation error"
   },
   "ruleType_contains": {
-    "message": "Contiene",
+    "message": "Contient",
     "description": "Rule type - contains"
   },
   "ruleType_startsWith": {
-    "message": "Comienza con",
+    "message": "Commence par",
     "description": "Rule type - starts with"
   },
   "ruleType_endsWith": {
-    "message": "Termina con",
+    "message": "Se termine par",
     "description": "Rule type - ends with"
   },
   "ruleType_matches": {
-    "message": "Coincide",
+    "message": "Correspond",
     "description": "Rule type - matches"
   },
   "ruleType_regexp": {
-    "message": "Coincide con RegExp",
+    "message": "Correspond à RegExp",
     "description": "Rule type - regexp"
   },
   "sourceType_hostname": {
-    "message": "Dominio",
+    "message": "Domaine",
     "description": "Source type - hostname"
   },
   "sourceType_fullUrl": {
-    "message": "URL completa",
+    "message": "URL complète",
     "description": "Source type - full URL"
   },
   "labelList_addLabel": {
-    "message": "Agregar etiqueta",
+    "message": "Ajouter une étiquette",
     "description": "Add label button"
   },
   "labelList_newLabel": {
-    "message": "Nueva etiqueta",
+    "message": "Nouvelle étiquette",
     "description": "New label modal title"
   },
   "labelList_deleteLabels": {
-    "message": "Eliminar etiquetas",
+    "message": "Supprimer les étiquettes",
     "description": "Delete labels modal title"
   },
   "labelList_deleteLabel": {
-    "message": "Eliminar etiqueta",
+    "message": "Supprimer l'étiquette",
     "description": "Delete single label modal title"
   },
   "labelList_deleteConfirm_multiple": {
-    "message": "¿Estás seguro de que quieres eliminar $1 etiqueta$2 seleccionada$2?",
+    "message": "Êtes-vous sûr de vouloir supprimer $1 étiquette$2 sélectionnée$2 ?",
     "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
   },
   "labelList_deleteConfirm_single": {
-    "message": "¿Estás seguro de que quieres eliminar la etiqueta \"$1\"?",
+    "message": "Êtes-vous sûr de vouloir supprimer l'étiquette \"$1\" ?",
     "description": "Delete single label confirmation, $1=label name"
   },
   "labelList_combine": {
-    "message": "Combinar",
+    "message": "Combiner",
     "description": "Combine button"
   },
   "labelList_combineTitle": {
-    "message": "Combinar etiquetas seleccionadas en",
+    "message": "Combiner les étiquettes sélectionnées en",
     "description": "Combine modal title"
   },
   "labelList_header_name": {
-    "message": "Nombre de etiqueta",
+    "message": "Nom de l'étiquette",
     "description": "Table header - name"
   },
   "labelList_header_rules": {
-    "message": "Reglas",
+    "message": "Règles",
     "description": "Table header - rules"
   },
   "labelList_header_settings": {
-    "message": "Configuración",
+    "message": "Paramètres",
     "description": "Table header - settings"
   },
   "labelList_header_actions": {
-    "message": "Acciones",
+    "message": "Actions",
     "description": "Table header - actions"
   },
   "labelList_empty": {
-    "message": "sin etiquetas",
+    "message": "Aucune étiquette",
     "description": "Empty state message"
   },
   "labelList_tooltip_reorder": {
-    "message": "Arrastra los elementos para reordenar. Las etiquetas se verifican de arriba hacia abajo; se muestra la primera coincidencia",
+    "message": "Faites glisser pour réorganiser. Les étiquettes sont vérifiées de haut en bas ; la première correspondance est affichée",
     "description": "Reorder tooltip"
   },
   "labelSettings_badge": {
-    "message": "Insignia",
+    "message": "Badge",
     "description": "Badge button/modal title"
   },
   "labelSettings_badge_iconOnly": {
-    "message": "Insignia (Modo solo icono)",
+    "message": "Badge (Mode icône uniquement)",
     "description": "Badge modal title in icon-only mode"
   },
   "labelSettings_icon": {
-    "message": "Icono",
+    "message": "Icône",
     "description": "Icon button/modal title"
   },
   "labelSettings_rules": {
-    "message": "Reglas",
+    "message": "Règles",
     "description": "Rules button/modal title"
   },
   "labelSettings_rules_tooltip": {
-    "message": "La etiqueta se muestra cuando cualquier regla coincide (lógica OR entre filas)",
+    "message": "L'étiquette est affichée lorsque n'importe quelle règle correspond (logique OU entre les lignes)",
     "description": "Rules tooltip"
   },
   "labelSettings_experimental": {
-    "message": "Experimental",
+    "message": "Expérimental",
     "description": "Experimental feature badge"
   },
   "labelSettings_experimental_message": {
-    "message": "Esta función es experimental y puede no funcionar como se espera. Si encuentras algún problema o tienes sugerencias, por favor avísale al desarrollador.",
+    "message": "Cette fonctionnalité est expérimentale et peut ne pas fonctionner comme prévu. Si vous rencontrez des problèmes ou avez des suggestions, veuillez en informer le développeur.",
     "description": "Experimental feature message"
   },
   "labelSettings_experimental_enjoy": {
-    "message": "Y si realmente disfrutas usándola, ¡por favor díselo también, podría alegrarle el día 😊🙏!",
+    "message": "Et si vous appréciez vraiment l'utiliser, dites-le lui aussi, cela pourrait égayer sa journée 😊🙏 !",
     "description": "Experimental feature enjoy message"
   },
   "combineModal_selectTarget": {
-    "message": "Seleccionar etiqueta de destino",
+    "message": "Sélectionner l'étiquette cible",
     "description": "Select target label placeholder"
   },
   "combineModal_explanation": {
-    "message": "Todas las reglas de las etiquetas seleccionadas se moverán a la etiqueta de destino. Las otras etiquetas seleccionadas serán eliminadas.",
+    "message": "Toutes les règles des étiquettes sélectionnées seront déplacées vers l'étiquette cible. Les autres étiquettes sélectionnées seront supprimées.",
     "description": "Combine explanation"
   },
   "combineModal_confirmQuestion": {
-    "message": "¿Estás seguro de que quieres continuar?",
+    "message": "Êtes-vous sûr de vouloir continuer ?",
     "description": "Combine confirmation question"
   },
   "confirmationModal_defaultMessage": {
-    "message": "¿Estás seguro?",
+    "message": "Êtes-vous sûr ?",
     "description": "Default confirmation message"
   },
   "positionControl_tooltip": {
-    "message": "Colocar etiqueta en posición $1",
+    "message": "Placer l'étiquette en position $1",
     "description": "Position control tooltip, $1=position name"
   },
   "export_selected": {
-    "message": "Exportar seleccionadas",
+    "message": "Exporter la sélection",
     "description": "Export selected button"
   },
   "export_all": {
-    "message": "Exportar etiquetas",
+    "message": "Exporter les étiquettes",
     "description": "Export all button"
   },
   "import_title": {
-    "message": "Importar etiquetas",
+    "message": "Importer les étiquettes",
     "description": "Import modal title"
   },
   "import_button": {
-    "message": "Importar etiquetas",
+    "message": "Importer les étiquettes",
     "description": "Import button"
   },
   "import_fromFile": {
-    "message": "Desde archivo",
+    "message": "Depuis un fichier",
     "description": "Import from file menu item"
   },
   "import_fromUrl": {
-    "message": "Desde URL",
+    "message": "Depuis une URL",
     "description": "Import from URL menu item"
   },
   "import_fromExtension": {
-    "message": "Desde otra extensión",
+    "message": "Depuis une autre extension",
     "description": "Import from extension menu item"
   },
   "importTab_fromFile": {
-    "message": "Desde archivo",
+    "message": "Depuis un fichier",
     "description": "From file tab"
   },
   "importTab_fromUrl": {
-    "message": "Desde URL",
+    "message": "Depuis une URL",
     "description": "From URL tab"
   },
   "importTab_fromExtension": {
-    "message": "Desde otra extensión",
+    "message": "Depuis une autre extension",
     "description": "From extension tab"
   },
   "importFromFile_dropzone": {
-    "message": "Arrastra el archivo aquí o haz clic para seleccionar",
+    "message": "Déposez le fichier ici ou cliquez pour sélectionner",
     "description": "File dropzone text"
   },
   "importFromFile_dropzone_description": {
-    "message": "Usa un archivo de configuración exportado en formato JSON",
+    "message": "Utilisez un fichier de configuration exporté au format JSON",
     "description": "File dropzone description"
   },
   "importFromFile_error_title": {
-    "message": "Error al leer el archivo",
+    "message": "Échec de la lecture du fichier",
     "description": "File read error title"
   },
   "importFromUrl_label": {
@@ -416,55 +416,55 @@
     "description": "URL input label"
   },
   "importFromUrl_description": {
-    "message": "URL a un archivo JSON que contiene configuraciones de etiquetas",
+    "message": "URL vers un fichier JSON contenant les configurations d'étiquettes",
     "description": "URL input description"
   },
   "importFromUrl_placeholder": {
-    "message": "https://ejemplo.com/etiquetas.json",
+    "message": "https://exemple.com/etiquettes.json",
     "description": "URL input placeholder"
   },
   "importFromUrl_clearInput": {
-    "message": "Limpiar entrada",
+    "message": "Effacer la saisie",
     "description": "Clear input aria label"
   },
   "importFromUrl_autoSync": {
-    "message": "Auto-sincronización",
+    "message": "Synchronisation automatique",
     "description": "Auto-sync label"
   },
   "importFromUrl_autoSync_description": {
-    "message": "Actualizar automáticamente las etiquetas desde la URL con la frecuencia especificada",
+    "message": "Mettre à jour automatiquement les étiquettes depuis l'URL à la fréquence spécifiée",
     "description": "Auto-sync description"
   },
   "importFromUrl_lastSynced": {
-    "message": "Última sincronización: $1",
+    "message": "Dernière synchronisation : $1",
     "description": "Last synced text, $1=timestamp"
   },
   "importFromUrl_syncNow": {
-    "message": "Sincronizar ahora",
+    "message": "Synchroniser maintenant",
     "description": "Sync now button"
   },
   "importFromUrl_saveSettings": {
-    "message": "Guardar configuración",
+    "message": "Enregistrer les paramètres",
     "description": "Save settings button"
   },
   "importFromUrl_cloudService_generic": {
-    "message": "URL al archivo JSON",
+    "message": "URL vers le fichier JSON",
     "description": "Generic cloud service tooltip"
   },
   "importFromUrl_cloudService_detected": {
-    "message": "URL de $1 detectada. Se transformará en enlace de descarga directa.",
+    "message": "URL $1 détectée. Sera transformée en lien de téléchargement direct.",
     "description": "Cloud service detected tooltip, $1=service name"
   },
   "importFromUrl_cloudService_direct": {
-    "message": "Enlace de descarga directa de $1 detectado.",
+    "message": "Lien de téléchargement direct $1 détecté.",
     "description": "Direct download link tooltip, $1=service name"
   },
   "importFromUrl_permissionRequired": {
-    "message": "Permiso requerido",
+    "message": "Permission requise",
     "description": "Permission required alert title"
   },
   "importFromUrl_syncFailed": {
-    "message": "Error al sincronizar",
+    "message": "Échec de la synchronisation",
     "description": "Sync failed alert title"
   },
   "cloudService_googleDrive": {
@@ -480,243 +480,243 @@
     "description": "Dropbox name"
   },
   "importFromExtension_alert_title": {
-    "message": "Esta función te ayuda a migrar tus etiquetas existentes desde otras extensiones.",
+    "message": "Cette fonctionnalité vous aide à migrer vos étiquettes existantes depuis d'autres extensions.",
     "description": "Import from extension alert title"
   },
   "importFromExtension_alert_message": {
-    "message": "Respetamos el trabajo de otros desarrolladores de extensiones y proporcionamos esta opción únicamente como conveniencia para usuarios que quieran probar WebLabeler.",
+    "message": "Nous respectons le travail des autres développeurs d'extensions et fournissons cette option uniquement pour la commodité des utilisateurs qui souhaitent essayer WebLabeler.",
     "description": "Import from extension alert message"
   },
   "importFromExtension_selectLabel": {
-    "message": "Importar desde",
+    "message": "Importer depuis",
     "description": "Import from select label"
   },
   "importFromExtension_combineMode": {
-    "message": "Combinar etiquetas con propiedades coincidentes",
+    "message": "Combiner les étiquettes avec des propriétés correspondantes",
     "description": "Combine mode switch label"
   },
   "importFromExtension_combineMode_description": {
-    "message": "Las etiquetas con el mismo nombre, color, tamaño de fuente y posición se fusionarán en una sola etiqueta con reglas combinadas. También puedes combinar etiquetas manualmente después de la importación.",
+    "message": "Les étiquettes avec le même nom, couleur, taille de police et position seront fusionnées en une seule étiquette avec des règles combinées. Vous pouvez également combiner les étiquettes manuellement après l'importation.",
     "description": "Combine mode description"
   },
   "importFromExtension_dropzone": {
-    "message": "Arrastra el archivo aquí o haz clic para seleccionar",
+    "message": "Déposez le fichier ici ou cliquez pour sélectionner",
     "description": "Extension import dropzone text"
   },
   "importFromExtension_dropzone_description": {
-    "message": "Usa el archivo de etiquetas exportado desde la extensión Environment Marker en formato JSON",
+    "message": "Utilisez le fichier d'étiquettes exporté depuis l'extension Environment Marker au format JSON",
     "description": "Extension import dropzone description"
   },
   "importFromExtension_error_title": {
-    "message": "Error al importar etiquetas",
+    "message": "Échec de l'importation des étiquettes",
     "description": "Import failed error title"
   },
   "importLabels_title_default": {
-    "message": "Importar etiquetas",
+    "message": "Importer les étiquettes",
     "description": "Default import title"
   },
   "importLabels_title_fromFile": {
-    "message": "Importar etiquetas desde archivo",
+    "message": "Importer les étiquettes depuis un fichier",
     "description": "Import from file title"
   },
   "importLabels_title_fromUrl": {
-    "message": "Importar etiquetas desde URL",
+    "message": "Importer les étiquettes depuis une URL",
     "description": "Import from URL title"
   },
   "importLabels_title_fromExtension": {
-    "message": "Importar etiquetas desde Environment Marker",
+    "message": "Importer les étiquettes depuis Environment Marker",
     "description": "Import from extension title"
   },
   "importLabels_prefix_default": {
-    "message": "Desde la fuente importada:",
+    "message": "Depuis la source importée :",
     "description": "Default import message prefix"
   },
   "importLabels_prefix_file": {
-    "message": "Desde el archivo:",
+    "message": "Depuis le fichier :",
     "description": "Import from file prefix"
   },
   "importLabels_prefix_url": {
-    "message": "Desde la URL:",
+    "message": "Depuis l'URL :",
     "description": "Import from URL prefix"
   },
   "importLabels_prefix_extension": {
-    "message": "Desde el archivo:",
+    "message": "Depuis le fichier :",
     "description": "Import from extension prefix"
   },
   "importLabels_prefix_extension_combined": {
-    "message": "Desde el archivo ($1 etiquetas combinadas en $2):",
+    "message": "Depuis le fichier ($1 étiquettes combinées en $2) :",
     "description": "Import with combine stats, $1=original count, $2=combined count"
   },
   "importLabels_message_new": {
-    "message": "$1 $2 nueva(s) a añadir",
+    "message": "$1 nouvelle(s) $2 à ajouter",
     "description": "New labels message, $1=count, $2=label/labels"
   },
   "importLabels_message_updated": {
-    "message": "$1 $2 existente(s) a actualizar",
+    "message": "$1 $2 existante(s) à mettre à jour",
     "description": "Updated labels message, $1=count, $2=label/labels"
   },
   "importLabels_label_singular": {
-    "message": "etiqueta",
+    "message": "étiquette",
     "description": "Label singular"
   },
   "importLabels_label_plural": {
-    "message": "etiquetas",
+    "message": "étiquettes",
     "description": "Label plural"
   },
   "validation_invalidUrl": {
-    "message": "URL inválida o sincronización en progreso",
+    "message": "URL invalide ou synchronisation en cours",
     "description": "Invalid URL error"
   },
   "validation_permissionDenied": {
-    "message": "Permiso denegado",
+    "message": "Permission refusée",
     "description": "Permission denied error"
   },
   "validation_invalidArray": {
-    "message": "El archivo no contiene un array válido",
+    "message": "Le fichier ne contient pas un tableau valide",
     "description": "Invalid array error"
   },
   "validation_emptyFile": {
-    "message": "El archivo está vacío",
+    "message": "Le fichier est vide",
     "description": "Empty file error"
   },
   "validation_invalidItem": {
-    "message": "Elemento inválido en el índice $1",
+    "message": "Élément invalide à l'index $1",
     "description": "Invalid item error, $1=index"
   },
   "validation_missingField": {
-    "message": "Falta el campo requerido \"$1\" en el índice $2",
+    "message": "Champ obligatoire \"$1\" manquant à l'index $2",
     "description": "Missing field error, $1=field name, $2=index"
   },
   "validation_invalidLabels": {
-    "message": "El archivo no contiene etiquetas válidas",
+    "message": "Le fichier ne contient pas d'étiquettes valides",
     "description": "Invalid labels error"
   },
   "validation_invalidLabelsUrl": {
-    "message": "La URL no devuelve un array de etiquetas válido",
+    "message": "L'URL ne renvoie pas un tableau d'étiquettes valide",
     "description": "Invalid labels from URL error"
   },
   "validation_communicationError": {
-    "message": "Error de comunicación con el script de fondo",
+    "message": "Erreur de communication avec le script d'arrière-plan",
     "description": "Background script communication error"
   },
   "validation_fetchFailed": {
-    "message": "Error al obtener datos",
+    "message": "Échec de la récupération des données",
     "description": "Fetch failed error"
   },
   "validation_error": {
-    "message": "Error de validación",
+    "message": "Erreur de validation",
     "description": "Generic validation error"
   },
   "validation_unknownError": {
-    "message": "Error desconocido",
+    "message": "erreur inconnue",
     "description": "Unknown error fallback"
   },
   "updateFrequency_disabled": {
-    "message": "Deshabilitado",
+    "message": "Désactivé",
     "description": "Update frequency - disabled"
   },
   "updateFrequency_15min": {
-    "message": "Cada 15 minutos",
+    "message": "Toutes les 15 minutes",
     "description": "Update frequency - 15 minutes"
   },
   "updateFrequency_30min": {
-    "message": "Cada 30 minutos",
+    "message": "Toutes les 30 minutes",
     "description": "Update frequency - 30 minutes"
   },
   "updateFrequency_1hour": {
-    "message": "Cada hora",
+    "message": "Toutes les heures",
     "description": "Update frequency - 1 hour"
   },
   "updateFrequency_6hours": {
-    "message": "Cada 6 horas",
+    "message": "Toutes les 6 heures",
     "description": "Update frequency - 6 hours"
   },
   "updateFrequency_24hours": {
-    "message": "Una vez al día",
+    "message": "Une fois par jour",
     "description": "Update frequency - 24 hours"
   },
   "autoSync_label": {
-    "message": "Auto-sincronización",
+    "message": "Synchronisation automatique",
     "description": "Auto-sync label"
   },
   "autoSync_syncUrl": {
-    "message": "URL de sincronización",
+    "message": "URL de synchronisation",
     "description": "Sync URL hover card title"
   },
   "autoSync_lastPrefix": {
-    "message": "Última: ",
+    "message": "Dernière : ",
     "description": "Last sync prefix"
   },
   "autoSync_error": {
-    "message": "Error",
+    "message": "Erreur",
     "description": "Error badge"
   },
   "autoSync_syncError": {
-    "message": "Error de sincronización",
+    "message": "Erreur de synchronisation",
     "description": "Sync error hover card title"
   },
   "autoSync_syncNow": {
-    "message": "Sincronizar ahora",
+    "message": "Synchroniser maintenant",
     "description": "Sync now tooltip"
   },
   "relativeTime_justNow": {
-    "message": "hace un momento",
+    "message": "à l'instant",
     "description": "Relative time - just now"
   },
   "relativeTime_minutesAgo": {
-    "message": "hace $1 min",
+    "message": "il y a $1 min",
     "description": "Relative time - minutes ago, $1=count"
   },
   "relativeTime_minutesAgo_plural": {
-    "message": "hace $1 min",
+    "message": "il y a $1 min",
     "description": "Relative time - minutes ago plural, $1=count"
   },
   "relativeTime_hoursAgo": {
-    "message": "hace $1 hora",
+    "message": "il y a $1 heure",
     "description": "Relative time - hours ago, $1=count"
   },
   "relativeTime_hoursAgo_plural": {
-    "message": "hace $1 horas",
+    "message": "il y a $1 heures",
     "description": "Relative time - hours ago plural, $1=count"
   },
   "relativeTime_daysAgo": {
-    "message": "hace $1 día",
+    "message": "il y a $1 jour",
     "description": "Relative time - days ago, $1=count"
   },
   "relativeTime_daysAgo_plural": {
-    "message": "hace $1 días",
+    "message": "il y a $1 jours",
     "description": "Relative time - days ago plural, $1=count"
   },
   "footer_helpful": {
-    "message": "¿Te resulta útil esta extensión?",
+    "message": "Cette extension vous est-elle utile ?",
     "description": "Footer helpful text"
   },
   "footer_rate": {
-    "message": "Califícala en Chrome Web Store",
+    "message": "Notez-la sur le Chrome Web Store",
     "description": "Footer rate button"
   },
   "featureBadge_contactDeveloper": {
-    "message": "Contactar al desarrollador",
+    "message": "Contacter le développeur",
     "description": "Contact developer button"
   },
   "featureBadge_rate": {
-    "message": "Calificar",
+    "message": "Noter",
     "description": "Rate button"
   },
   "themeSwitcher_ariaLabel": {
-    "message": "Cambiar esquema de colores",
+    "message": "Changer le jeu de couleurs",
     "description": "Theme switcher aria label"
   },
   "language_select": {
-    "message": "Seleccionar idioma",
+    "message": "Sélectionner la langue",
     "description": "Language selector menu label"
   },
   "language_useBrowser": {
-    "message": "Usar idioma del navegador",
+    "message": "Utiliser la langue du navigateur",
     "description": "Use browser language option"
   },
   "languageSelector_ariaLabel": {
-    "message": "Seleccionar idioma",
+    "message": "Sélectionner la langue",
     "description": "Language selector aria label"
   }
 }

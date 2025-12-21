@@ -5,6 +5,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
   { code: "ru", name: "Russian", nativeName: "Русский", flag: "RU" },
   { code: "de", name: "German", nativeName: "Deutsch", flag: "DE" },
   { code: "es", name: "Spanish", nativeName: "Español", flag: "ES" },
+  { code: "fr", name: "French", nativeName: "Français", flag: "FR" },
 ]
 
 export const DEFAULT_LOCALE: SupportedLocale = "en"
