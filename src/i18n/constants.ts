@@ -10,6 +10,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
   { code: "ja", name: "Japanese", nativeName: "日本語", flag: "JP" },
   { code: "pt_BR", name: "Portuguese (Brazil)", nativeName: "Português (Brasil)", flag: "BR" },
   { code: "pt_PT", name: "Portuguese (Portugal)", nativeName: "Português (Portugal)", flag: "PT" },
+  { code: "uk", name: "Ukrainian", nativeName: "Українська", flag: "UA" },
 ]
 
 export const DEFAULT_LOCALE: SupportedLocale = "en"

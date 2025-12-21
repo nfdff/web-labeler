@@ -1,0 +1,722 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Легко маркуйте свої проєкти та уникайте плутанини між продакшеном і тестовими або розробницькими середовищами",
+    "description": "Extension description"
+  },
+  "common_save": {
+    "message": "Зберегти",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Підтвердити",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Скасувати",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Видалити",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[без назви]",
+    "description": "Placeholder for unnamed items"
+  },
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Увімкнено",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Вимкнено",
+    "description": "Toggle switch Off label"
+  },
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "УВІМКНЕНО",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "ВИМКНЕНО",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Керувати мітками",
+    "description": "Manage labels button"
+  },
+  "label_name": {
+    "message": "Назва",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Назва",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Форма",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Колір фону",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Колір фону",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Колір тексту",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Колір тексту",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Непрозорість",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Непрозорість при наведенні",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Масштаб",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Розмір шрифту",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Рамка",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Колір рамки",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Колір рамки",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Товщина рамки",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Налаштування",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Попередній перегляд",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Вікно",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Ваша вкладка",
+    "description": "Preview tab title"
+  },
+  "label_shape_triangle": {
+    "message": "трикутник",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "стрічка",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "банер",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "рамка",
+    "description": "Frame shape"
+  },
+  "label_border_none": {
+    "message": "немає",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "суцільна",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "штрихова",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "пунктирна",
+    "description": "Dotted border"
+  },
+  "label_faviconStyling": {
+    "message": "Стиль фавікону",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Режим лише іконки",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Приховати бейдж на сторінці та показувати лише іконку",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Режим лише іконки",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Бейдж на сторінці приховано. Показується лише фавікон з бейджем.",
+    "description": "Icon-only alert message"
+  },
+  "label_iconStyle_none": {
+    "message": "Немає",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Використовувати стиль бейджа",
+    "description": "Icon style option - badge"
+  },
+  "label_collapseButton_less": {
+    "message": "Менше",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Більше",
+    "description": "Collapse button - show more"
+  },
+  "rules_addRule": {
+    "message": "Додати правило",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Шаблон регулярного виразу (напр. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL або частина (без протоколу)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Домен або частина (без протоколу)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Значення правила не може бути порожнім",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Недійсний шаблон регулярного виразу",
+    "description": "Invalid regexp validation error"
+  },
+  "ruleType_contains": {
+    "message": "Містить",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Починається з",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Закінчується на",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Відповідає",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Відповідає RegExp",
+    "description": "Rule type - regexp"
+  },
+  "sourceType_hostname": {
+    "message": "Домен",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Повний URL",
+    "description": "Source type - full URL"
+  },
+  "labelList_addLabel": {
+    "message": "Додати мітку",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Нова мітка",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Видалити мітки",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Видалити мітку",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Ви впевнені, що хочете видалити вибрані мітки ($1)",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Ви впевнені, що хочете видалити мітку \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Об'єднати",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Об'єднати вибрані мітки в",
+    "description": "Combine modal title"
+  },
+  "labelList_header_name": {
+    "message": "Назва мітки",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Правила",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Налаштування",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Дії",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "немає міток",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Перетягніть елементи для зміни порядку. Мітки перевіряються зверху вниз; показується перший збіг",
+    "description": "Reorder tooltip"
+  },
+  "labelSettings_badge": {
+    "message": "Бейдж",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Бейдж (Режим лише іконки)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Іконка",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Правила",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Мітка показується, коли будь-яке правило збігається (логіка АБО між рядками)",
+    "description": "Rules tooltip"
+  },
+  "labelSettings_experimental": {
+    "message": "Експериментальне",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Ця функція є експериментальною і може працювати не так, як очікується. Якщо ви зіткнулися з проблемами або маєте пропозиції, будь ласка, повідомте розробника.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "А якщо вам справді подобається це використовувати, скажіть йому також, це може зробити його день 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+  "combineModal_selectTarget": {
+    "message": "Виберіть цільову мітку",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Усі правила з вибраних міток будуть переміщені до цільової мітки. Інші вибрані мітки будуть видалені.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Ви впевнені, що хочете продовжити?",
+    "description": "Combine confirmation question"
+  },
+  "confirmationModal_defaultMessage": {
+    "message": "Ви впевнені?",
+    "description": "Default confirmation message"
+  },
+  "positionControl_tooltip": {
+    "message": "Розмістити мітку в позиції $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+  "export_selected": {
+    "message": "Експортувати вибрані",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Експортувати мітки",
+    "description": "Export all button"
+  },
+  "import_title": {
+    "message": "Імпортувати мітки",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Імпортувати мітки",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "З файлу",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "З URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "З іншого розширення",
+    "description": "Import from extension menu item"
+  },
+  "importTab_fromFile": {
+    "message": "З файлу",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "З URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "З іншого розширення",
+    "description": "From extension tab"
+  },
+  "importFromFile_dropzone": {
+    "message": "Перетягніть файл сюди або клацніть для вибору",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Використовуйте експортований файл конфігурації в форматі JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Не вдалося прочитати файл",
+    "description": "File read error title"
+  },
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL файлу JSON з конфігураціями міток",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://приклад.com/мітки.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Очистити поле",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Автоматична синхронізація",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Автоматично оновлювати мітки з URL із вказаною частотою",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Остання синхронізація: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Синхронізувати зараз",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Зберегти налаштування",
+    "description": "Save settings button"
+  },
+  "importFromUrl_cloudService_generic": {
+    "message": "URL файлу JSON",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "Виявлено URL $1. Буде перетворено на пряме посилання для завантаження.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Виявлено пряме посилання для завантаження $1.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+  "importFromUrl_permissionRequired": {
+    "message": "Потрібен дозвіл",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Не вдалося синхронізувати",
+    "description": "Sync failed alert title"
+  },
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+  "importFromExtension_alert_title": {
+    "message": "Ця функція допомагає вам перенести наявні мітки з інших розширень.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Ми поважаємо роботу інших розробників розширень і надаємо цю опцію лише для зручності користувачів, які хочуть спробувати WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Імпортувати з",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Об'єднати мітки з відповідними властивостями",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Мітки з однаковою назвою, кольором, розміром шрифту та позицією будуть об'єднані в одну мітку з об'єднаними правилами. Ви також можете об'єднати мітки вручну після імпорту.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Перетягніть файл сюди або клацніть для вибору",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Використовуйте експортований файл міток з розширення Environment Marker у форматі JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Не вдалося імпортувати мітки",
+    "description": "Import failed error title"
+  },
+  "importLabels_title_default": {
+    "message": "Імпортувати мітки",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Імпортувати мітки з файлу",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Імпортувати мітки з URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Імпортувати мітки з Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "З імпортованого джерела:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "З файлу:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "З URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "З файлу:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "З файлу ($1 міток об'єднано в $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 нову/-і/-их $2 буде додано",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 наявну/-і/-их $2 буде оновлено",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "мітку",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "міток",
+    "description": "Label plural"
+  },
+  "validation_invalidUrl": {
+    "message": "Недійсний URL або синхронізація в процесі",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Дозвіл відхилено",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Файл не містить дійсного масиву",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Файл порожній",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Недійсний елемент за індексом $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Відсутнє обов'язкове поле \"$1\" за індексом $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Файл не містить дійсних міток",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL не повертає дійсний масив міток",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Помилка зв'язку з фоновим скриптом",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Не вдалося отримати дані",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Помилка валідації",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "невідома помилка",
+    "description": "Unknown error fallback"
+  },
+  "updateFrequency_disabled": {
+    "message": "Вимкнено",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Кожні 15 хвилин",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Кожні 30 хвилин",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Кожну годину",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Кожні 6 годин",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Раз на день",
+    "description": "Update frequency - 24 hours"
+  },
+  "autoSync_label": {
+    "message": "Автоматична синхронізація",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL синхронізації",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Остання: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Помилка",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Помилка синхронізації",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Синхронізувати зараз",
+    "description": "Sync now tooltip"
+  },
+  "relativeTime_justNow": {
+    "message": "щойно",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 хв тому",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 хв тому",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 год тому",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 год тому",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 день тому",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 дні тому",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+  "footer_helpful": {
+    "message": "Це розширення корисне для вас?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Оцініть у Chrome Web Store",
+    "description": "Footer rate button"
+  },
+  "featureBadge_contactDeveloper": {
+    "message": "Зв'язатися з розробником",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Оцінити",
+    "description": "Rate button"
+  },
+  "themeSwitcher_ariaLabel": {
+    "message": "Змінити колірну схему",
+    "description": "Theme switcher aria label"
+  },
+  "language_select": {
+    "message": "Вибрати мову",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Використовувати мову браузера",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Вибрати мову",
+    "description": "Language selector aria label"
+  }
+}
