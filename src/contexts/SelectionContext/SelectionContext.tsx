@@ -9,6 +9,9 @@ export interface SelectionContextValue {
   isSelected: (id: string) => boolean;
   hasSelection: boolean;
   selectedCount: number;
+  selectRange: (ids: string[]) => void;
+  setLastClickedIndex: (index: number | null) => void;
+  lastClickedIndex: number | null;
 }
 
 const SelectionContext = createContext<SelectionContextValue | undefined>(
@@ -19,6 +22,7 @@ export { SelectionContext };
 
 export const SelectionProvider = ({ children }: { children: ReactNode }) => {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [lastClickedIndex, setLastClickedIndexState] = useState<number | null>(null);
 
   const selectAll = (labelIds: string[]) => {
     setSelectedIds(new Set(labelIds));
@@ -26,6 +30,15 @@ export const SelectionProvider = ({ children }: { children: ReactNode }) => {
 
   const clearSelection = () => {
     setSelectedIds(new Set());
+    setLastClickedIndexState(null);
+  };
+
+  const selectRange = (ids: string[]) => {
+    setSelectedIds(new Set(ids));
+  };
+
+  const setLastClickedIndex = (index: number | null) => {
+    setLastClickedIndexState(index);
   };
 
   const toggleSelection = (id: string) => {
@@ -51,6 +64,9 @@ export const SelectionProvider = ({ children }: { children: ReactNode }) => {
     isSelected,
     hasSelection: selectedIds.size > 0,
     selectedCount: selectedIds.size,
+    selectRange,
+    setLastClickedIndex,
+    lastClickedIndex,
   };
 
   return (

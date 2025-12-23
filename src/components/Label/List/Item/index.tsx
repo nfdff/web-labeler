@@ -25,14 +25,18 @@ function LabelListItem({
         <Table.Tr
           ref={provided.innerRef}
           {...provided.draggableProps}
-          onClick={() => {
-            onSelect(isSelected)
+          onClick={(e) => {
+            onSelect(index, e.ctrlKey || e.metaKey, e.shiftKey)
           }}
         >
-          <Table.Td>
+          <Table.Td onClick={(e) => e.stopPropagation()}>
             <Checkbox
               checked={isSelected}
-              onChange={(e) => onSelect(e.currentTarget.checked)}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelect(index, e.ctrlKey || e.metaKey, e.shiftKey);
+              }}
+              onChange={() => {}}
             />
           </Table.Td>
           <Table.Td>
