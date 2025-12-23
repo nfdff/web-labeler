@@ -6,7 +6,9 @@
   "printWidth": 80,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports"
+  ],
   "importOrder": [
     "^react",
     "^@mantine/(.*)$",
@@ -16,5 +18,16 @@
     "^[./]"
   ],
   "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "overrides": [
+    {
+      "files": [
+        "*.md",
+        "*.mdx"
+      ],
+      "options": {
+        "printWidth": 1200
+      }
+    }
+  ]
 }
