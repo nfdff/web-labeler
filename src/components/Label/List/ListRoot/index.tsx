@@ -17,6 +17,30 @@ function LabelList() {
     } else {
       selection.clearSelection();
     }
+    selection.setLastClickedIndex(null);
+  };
+
+  const handleSelect = (clickedIndex: number, ctrlKey: boolean, shiftKey: boolean) => {
+    const labelId = options.labels[clickedIndex].id;
+
+    if (shiftKey && selection.lastClickedIndex !== null) {
+      // Range selection: replace current selection with range
+      const start = Math.min(selection.lastClickedIndex, clickedIndex);
+      const end = Math.max(selection.lastClickedIndex, clickedIndex);
+      const rangeIds = options.labels
+        .slice(start, end + 1)
+        .map(label => label.id);
+      selection.selectRange(rangeIds);
+    } else if (ctrlKey) {
+      // Ctrl/Cmd+click: toggle without clearing others
+      selection.toggleSelection(labelId);
+    } else {
+      // Normal click: toggle single item
+      selection.toggleSelection(labelId);
+    }
+
+    // Update last clicked index for future range selections
+    selection.setLastClickedIndex(clickedIndex);
   };
 
   const allSelected =
@@ -36,6 +60,7 @@ function LabelList() {
                 destinationIndex: destination.index,
               },
             });
+            selection.setLastClickedIndex(null);
           }
         }}
       >
@@ -80,7 +105,7 @@ function LabelList() {
                       index={index}
                       isAllActive={options.isActive}
                       isSelected={selection.isSelected(label.id)}
-                      onSelect={() => selection.toggleSelection(label.id)}
+                      onSelect={handleSelect}
                     />
                   ))
                 )}

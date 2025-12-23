@@ -2,10 +2,7 @@ import { Badge, Checkbox, HoverCard, List, Table } from "@mantine/core"
 import { IconGripVertical, IconTag } from "@tabler/icons-react"
 import { Draggable } from "@hello-pangea/dnd"
 import { useTranslation } from "@/contexts"
-import {
-  ruleTypeSettings,
-  sourceTypeSettings,
-} from "@/options/constants.ts"
+import { ruleTypeSettings, sourceTypeSettings } from "@/options/constants.ts"
 import LabelListItemActions from "../ItemActions"
 import LabelListItemSettings from "../ItemSettings"
 import { LabelListItemProps } from "./types.ts"
@@ -25,14 +22,23 @@ function LabelListItem({
         <Table.Tr
           ref={provided.innerRef}
           {...provided.draggableProps}
-          onClick={() => {
-            onSelect(isSelected)
+          onMouseDown={(e) => {
+            if (e.shiftKey) {
+              e.preventDefault()
+            }
+          }}
+          onClick={(e) => {
+            onSelect(index, e.ctrlKey || e.metaKey, e.shiftKey)
           }}
         >
           <Table.Td>
             <Checkbox
               checked={isSelected}
-              onChange={(e) => onSelect(e.currentTarget.checked)}
+              onClick={(e) => {
+                e.stopPropagation()
+                onSelect(index, e.ctrlKey || e.metaKey, e.shiftKey)
+              }}
+              onChange={() => {}}
             />
           </Table.Td>
           <Table.Td>
