@@ -1,0 +1,12 @@
+Popup should have the following functionality:
+- It should check if the current tab matches with label (reuse contentScript EnvLabel class, take into attention that this code should be bundled into 2 parts twice: popup and content script - update vite configuration to make it bundle correctly)
+  - If the current tab url is empty or it's chrome pages (chrome://extensions/, or chrome-extension://...) - it should show the current implementation (just compact list of labels with switch input)
+  - if the current tab url doesn't match label it should allow to add it to any labels rule by the form: 
+    - Label select input - each select option should be stylized in Badge component as it represented in label list compact (label name in mantine Badge component with color that set for label badge)
+    - Group of rule inputs: rule source ('hostname' value by default, rule type ('matches' value by default', rule value - with the current tab hostname))
+    - Add button - after pressing it should add rule to the label and save it, and show the case when current tab url matches with label, because it will be matched after adding rule.
+  - If the current tab url matches with label it should show: 
+    - This label (in the same style like it presented in labels list compact), 
+    - Switch input to allow enable/disable the label quickly, 
+    - Icon button with IconReplaceFilled to switch through positions (options/constants positions) - only if it's not 'frame' label shape.
+- The popup always should have layout with Logo and switcher on the top and Manage Labels button on the bottom - like it's in the current implementation

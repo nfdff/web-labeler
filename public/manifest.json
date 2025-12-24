@@ -29,7 +29,8 @@
   ],
   "permissions": [
     "storage",
-    "alarms"
+    "alarms",
+    "activeTab"
   ],
   "optional_host_permissions": [
     "*://*/*"

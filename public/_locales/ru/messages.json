@@ -58,6 +58,50 @@
     "message": "Управление метками",
     "description": "Кнопка управления метками"
   },
+  "popup_noLabels": {
+    "message": "Нет доступных меток. Создайте метки в настройках.",
+    "description": "Сообщение когда нет меток"
+  },
+  "popup_addRuleTitle": {
+    "message": "Добавить этот сайт к метке",
+    "description": "Заголовок формы добавления правила"
+  },
+  "popup_selectLabel": {
+    "message": "Выберите метку",
+    "description": "Метка выпадающего списка меток"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Выберите метку...",
+    "description": "Заполнитель выпадающего списка меток"
+  },
+  "popup_ruleSource": {
+    "message": "Источник",
+    "description": "Метка поля источника правила"
+  },
+  "popup_ruleType": {
+    "message": "Тип",
+    "description": "Метка поля типа правила"
+  },
+  "popup_ruleValue": {
+    "message": "Значение",
+    "description": "Метка поля значения правила"
+  },
+  "popup_addRule": {
+    "message": "Добавить правило",
+    "description": "Кнопка добавления правила"
+  },
+  "popup_matchedLabel": {
+    "message": "Текущая метка",
+    "description": "Заголовок секции совпавшей метки"
+  },
+  "popup_cyclePosition": {
+    "message": "Изменить позицию",
+    "description": "Aria-метка кнопки смены позиции"
+  },
+  "popup_currentPosition": {
+    "message": "Позиция",
+    "description": "Метка текущей позиции"
+  },
 
   "label_name": {
     "message": "Название",

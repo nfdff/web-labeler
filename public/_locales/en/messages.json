@@ -58,6 +58,50 @@
     "message": "Manage Labels",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "No labels available. Create labels in settings.",
+    "description": "Message when no labels exist"
+  },
+  "popup_addRuleTitle": {
+    "message": "Add this site to a label",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel": {
+    "message": "Select label",
+    "description": "Select label dropdown label"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Choose a label...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_ruleSource": {
+    "message": "Source",
+    "description": "Rule source field label"
+  },
+  "popup_ruleType": {
+    "message": "Type",
+    "description": "Rule type field label"
+  },
+  "popup_ruleValue": {
+    "message": "Value",
+    "description": "Rule value field label"
+  },
+  "popup_addRule": {
+    "message": "Add Rule",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Current label",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Change position",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Position",
+    "description": "Current position label"
+  },
 
   "label_name": {
     "message": "Name",
