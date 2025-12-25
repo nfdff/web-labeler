@@ -8,5 +8,17 @@ Popup should have the following functionality:
   - If the current tab url matches with label it should show: 
     - This label (in the same style like it presented in labels list compact), 
     - Switch input to allow enable/disable the label quickly, 
-    - Icon button with IconReplaceFilled to switch through positions (options/constants positions) - only if it's not 'frame' label shape.
+    - Icon button with IconReplace to switch through positions (options/constants positions) - only if it's not 'frame' label shape.
 - The popup always should have layout with Logo and switcher on the top and Manage Labels button on the bottom - like it's in the current implementation
+
+
+Update1:
+- if the current tab url doesn't match label it should show the short info about it and allow to add it to any labels rule by the button 'add to Label' - by click on the button it shold show the form (that already implemented)
+- Let's add a bit more space between header, body, and footer of the popup, even maybe let's add some divider before the footer.
+
+Update2:
+- Add tooltip for position switcher to clarify what it does for user. Set bigger radius for the icon button.
+- Popup Add Rule form should have max height for select input (it shouldn't be higher than popup)
+- For the case when current url is matched to label let's also show information about a rule that matched it with icon button to delete rule - use confirmation modal (like it used in label list).
+- Let's make popup a bit wider
+- Let's rename the button label "Manager Labels" to "Manage All Labels"

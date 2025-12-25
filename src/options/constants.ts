@@ -6,12 +6,12 @@ export const ruleTypes = [
   "endsWith",
   "matches",
   "regexp",
-] as const;
+] as const
 
-export type RuleType = (typeof ruleTypes)[number];
+export type RuleType = (typeof ruleTypes)[number]
 
 export interface RuleTypeSettings {
-  labelKey: MessageKey;
+  labelKey: MessageKey
 }
 
 export const ruleTypeSettings = {
@@ -30,13 +30,13 @@ export const ruleTypeSettings = {
   regexp: {
     labelKey: "ruleType_regexp",
   },
-} as const satisfies Record<RuleType, RuleTypeSettings>;
+} as const satisfies Record<RuleType, RuleTypeSettings>
 
-export const sourceTypes = ["hostname", "fullUrl"] as const;
-export type SourceType = (typeof sourceTypes)[number];
+export const sourceTypes = ["hostname", "fullUrl"] as const
+export type SourceType = (typeof sourceTypes)[number]
 
 export interface SourceTypeSettings {
-  labelKey: MessageKey;
+  labelKey: MessageKey
 }
 
 export const sourceTypeSettings = {
@@ -46,20 +46,20 @@ export const sourceTypeSettings = {
   fullUrl: {
     labelKey: "sourceType_fullUrl",
   },
-} as const satisfies Record<SourceType, SourceTypeSettings>;
+} as const satisfies Record<SourceType, SourceTypeSettings>
 
-export const shapes = ["triangle", "ribbon", "banner", "frame"] as const;
+export const shapes = ["triangle", "ribbon", "banner", "frame"] as const
 
-export type Shape = (typeof shapes)[number];
+export type Shape = (typeof shapes)[number]
 
 export const positions = [
   "left-top",
   "right-top",
-  "left-bottom",
   "right-bottom",
-] as const;
+  "left-bottom",
+] as const
 
-export type Position = (typeof positions)[number];
+export type Position = (typeof positions)[number]
 
 export const colorSwatches = [
   "#fa5252",
@@ -70,10 +70,10 @@ export const colorSwatches = [
   "#fd7e14",
   "#000000",
   "#ffffff",
-] as const;
+] as const
 
-export const borders = ["none", "solid", "dashed", "dotted"] as const;
-export type Border = (typeof borders)[number];
+export const borders = ["none", "solid", "dashed", "dotted"] as const
+export type Border = (typeof borders)[number]
 
-export const iconStyles = ["none", "badge"] as const;
-export type IconStyle = (typeof iconStyles)[number];
+export const iconStyles = ["none", "badge"] as const
+export type IconStyle = (typeof iconStyles)[number]

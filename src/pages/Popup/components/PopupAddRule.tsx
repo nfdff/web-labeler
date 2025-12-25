@@ -1,190 +1,164 @@
-import { useState } from "react";
+import { useState } from "react"
 import {
+  ActionIcon,
   Badge,
   Button,
+  Combobox,
   Group,
-  Select,
+  InputBase,
   Stack,
   Text,
-  TextInput,
-} from "@mantine/core";
-import { IconPlus } from "@tabler/icons-react";
-import { useOptionsContext, useTranslation } from "@/contexts";
-import {
-  ruleTypes,
-  sourceTypes,
-  ruleTypeSettings,
-  sourceTypeSettings,
-  RuleType,
-} from "@/options/constants";
-import { Label, Rule } from "@/options/types";
+  useCombobox,
+} from "@mantine/core"
+import { IconPlus, IconX } from "@tabler/icons-react"
+import { useOptionsContext, useTranslation } from "@/contexts"
+import { Label, Rule } from "@/options/types"
+import RuleForm from "./RuleForm"
 
 interface PopupAddRuleProps {
-  currentUrl: string;
+  currentUrl: string
 }
 
 function PopupAddRule({ currentUrl }: PopupAddRuleProps) {
-  const { options, dispatch } = useOptionsContext();
-  const { t } = useTranslation();
+  const { options, dispatch } = useOptionsContext()
+  const { t } = useTranslation()
 
-  // Extract hostname from URL for default value
-  const defaultHostname = (() => {
-    try {
-      const urlWithProtocol = currentUrl.startsWith("http")
-        ? currentUrl
-        : `https://${currentUrl}`;
-      const url = new URL(urlWithProtocol);
-      return url.hostname;
-    } catch {
-      return "";
-    }
-  })();
+  const [showForm, setShowForm] = useState<boolean>(false)
+  const [selectedLabelId, setSelectedLabelId] = useState<string>("")
+  const combobox = useCombobox()
 
-  const [selectedLabelId, setSelectedLabelId] = useState<string>("");
-  const [ruleSource, setRuleSource] =
-    useState<"hostname" | "fullUrl">("hostname");
-  const [ruleType, setRuleType] = useState<RuleType>("matches");
-  const [ruleValue, setRuleValue] = useState<string>(defaultHostname);
-
-  // Check if no labels exist
   if (options.labels.length === 0) {
     return (
       <Text size="xs" c="dimmed" ta="center">
         {t("popup_noLabels")}
       </Text>
-    );
+    )
   }
 
-  // Label select options
-  const labelOptions = options.labels.map((label) => ({
-    value: label.id,
-    label: label.name || t("common_noname"),
-  }));
-
-  // Source select options
-  const sourceOptions = sourceTypes.map((source) => ({
-    value: source,
-    label: t(sourceTypeSettings[source].labelKey),
-  }));
-
-  // Type select options
-  const typeOptions = ruleTypes.map((type) => ({
-    value: type,
-    label: t(ruleTypeSettings[type].labelKey),
-  }));
-
-  // Custom render function for Select options with Badge
-  const renderLabelOption = ({
-    option,
-  }: {
-    option: { value: string; label: string };
-  }) => {
-    const label = options.labels.find((l) => l.id === option.value);
-    if (!label) {
-      return <Text>{option.label}</Text>;
-    }
-
+  if (!showForm) {
     return (
-      <Badge
-        size="sm"
-        p={10}
-        style={{
-          backgroundColor: label.bgColor,
-          color: label.textColor,
-        }}
-      >
-        {label.name || t("common_noname")}
-      </Badge>
-    );
-  };
+      <Stack gap={8}>
+        <Text size="xs" c="dimmed" ta="center">
+          {t("popup_noMatchInfo")}
+        </Text>
+        <Button
+          size="xs"
+          fullWidth
+          variant="light"
+          leftSection={<IconPlus size={14} />}
+          onClick={() => setShowForm(true)}
+        >
+          {t("popup_addToLabel")}
+        </Button>
+      </Stack>
+    )
+  }
 
-  const handleAdd = () => {
-    if (!selectedLabelId || !ruleValue.trim()) {
-      return;
+  const handleSaveRule = (newRule: Rule) => {
+    if (!selectedLabelId) {
+      return
     }
 
-    const label = options.labels.find((l) => l.id === selectedLabelId);
+    const label = options.labels.find((l) => l.id === selectedLabelId)
     if (!label) {
-      return;
+      return
     }
-
-    const newRule: Rule = {
-      type: ruleType,
-      value: ruleValue.trim(),
-      source: ruleSource,
-    };
 
     const updatedLabel: Label = {
       ...label,
       rules: [...label.rules, newRule],
-    };
+    }
 
     dispatch({
       type: "updateLabel",
       payload: { label: updatedLabel },
-    });
+    })
 
     // Parent component will automatically re-render and show matched view
     // because options context changed, triggering useEffect that re-matches
-  };
+  }
 
   return (
     <Stack gap={8}>
-      <Text size="xs" fw={500} c="dimmed">
-        {t("popup_addRuleTitle")}
-      </Text>
-
-      <Select
-        size="xs"
-        label={t("popup_selectLabel")}
-        placeholder={t("popup_selectLabel_placeholder")}
-        data={labelOptions}
-        value={selectedLabelId}
-        onChange={(value) => setSelectedLabelId(value || "")}
-        renderOption={renderLabelOption}
-        allowDeselect={false}
-      />
-
-      <Group gap={6} grow>
-        <Select
+      <Group justify="space-between" align="center">
+        <Text size="xs" fw={500} c="dimmed">
+          {t("popup_addRuleTitle")}
+        </Text>
+        <ActionIcon
           size="xs"
-          label={t("popup_ruleSource")}
-          data={sourceOptions}
-          value={ruleSource}
-          onChange={(value) =>
-            setRuleSource((value as "hostname" | "fullUrl") || "hostname")
-          }
-          allowDeselect={false}
-        />
-        <Select
-          size="xs"
-          label={t("popup_ruleType")}
-          data={typeOptions}
-          value={ruleType}
-          onChange={(value) => setRuleType((value as RuleType) || "matches")}
-          allowDeselect={false}
-        />
+          variant="subtle"
+          onClick={() => setShowForm(false)}
+          aria-label={t("common_cancel")}
+        >
+          <IconX size={14} />
+        </ActionIcon>
       </Group>
 
-      <TextInput
-        size="xs"
-        label={t("popup_ruleValue")}
-        value={ruleValue}
-        onChange={(e) => setRuleValue(e.currentTarget.value)}
-        placeholder={defaultHostname}
-      />
-
-      <Button
-        size="xs"
-        fullWidth
-        leftSection={<IconPlus size={14} />}
-        onClick={handleAdd}
-        disabled={!selectedLabelId || !ruleValue.trim()}
+      <Combobox
+        store={combobox}
+        onOptionSubmit={(value) => {
+          setSelectedLabelId(value)
+          combobox.closeDropdown()
+        }}
+        transitionProps={{ transition: "pop", duration: 200 }}
       >
-        {t("popup_addRule")}
-      </Button>
+        <Combobox.Target>
+          <InputBase
+            component="button"
+            type="button"
+            pointer
+            size="xs"
+            label={t("popup_selectLabel")}
+            onClick={() => combobox.toggleDropdown()}
+            rightSection={<Combobox.Chevron />}
+          >
+            {selectedLabelId ? (
+              <Badge
+                size="sm"
+                p={8}
+                style={{
+                  backgroundColor:
+                    options.labels.find((l) => l.id === selectedLabelId)
+                      ?.bgColor || "#gray",
+                  color:
+                    options.labels.find((l) => l.id === selectedLabelId)
+                      ?.textColor || "#000",
+                }}
+              >
+                {options.labels.find((l) => l.id === selectedLabelId)?.name ||
+                  t("common_noname")}
+              </Badge>
+            ) : (
+              <Text size="xs" c="dimmed">
+                {t("popup_selectLabel_placeholder")}
+              </Text>
+            )}
+          </InputBase>
+        </Combobox.Target>
+
+        <Combobox.Dropdown>
+          <Combobox.Options style={{ maxHeight: 150, overflowY: "auto" }}>
+            {options.labels.map((label) => (
+              <Combobox.Option key={label.id} value={label.id}>
+                <Badge
+                  size="sm"
+                  p={10}
+                  style={{
+                    backgroundColor: label.bgColor,
+                    color: label.textColor,
+                  }}
+                >
+                  {label.name || t("common_noname")}
+                </Badge>
+              </Combobox.Option>
+            ))}
+          </Combobox.Options>
+        </Combobox.Dropdown>
+      </Combobox>
+
+      <RuleForm currentUrl={currentUrl} onSave={handleSaveRule} />
     </Stack>
-  );
+  )
 }
 
-export default PopupAddRule;
+export default PopupAddRule

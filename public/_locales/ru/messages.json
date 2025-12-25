@@ -55,12 +55,20 @@
     "description": "Переключатель выключен во всплывающем окне"
   },
   "popup_manageLabels": {
-    "message": "Управление метками",
+    "message": "Управление всеми метками",
     "description": "Кнопка управления метками"
   },
   "popup_noLabels": {
     "message": "Нет доступных меток. Создайте метки в настройках.",
     "description": "Сообщение когда нет меток"
+  },
+  "popup_noMatchInfo": {
+    "message": "Этот сайт пока не соответствует ни одной метке",
+    "description": "Сообщение когда URL не соответствует ни одной метке"
+  },
+  "popup_addToLabel": {
+    "message": "Добавить к метке",
+    "description": "Кнопка добавления к метке"
   },
   "popup_addRuleTitle": {
     "message": "Добавить этот сайт к метке",
@@ -91,7 +99,7 @@
     "description": "Кнопка добавления правила"
   },
   "popup_matchedLabel": {
-    "message": "Текущая метка",
+    "message": "Совпавшая метка",
     "description": "Заголовок секции совпавшей метки"
   },
   "popup_cyclePosition": {
@@ -101,6 +109,26 @@
   "popup_currentPosition": {
     "message": "Позиция",
     "description": "Метка текущей позиции"
+  },
+  "popup_editRule": {
+    "message": "Редактировать правило",
+    "description": "Подсказка кнопки редактирования правила"
+  },
+  "popup_editRuleTitle": {
+    "message": "Редактирование правила",
+    "description": "Заголовок модального окна редактирования правила"
+  },
+  "popup_deleteRule": {
+    "message": "Удалить правило",
+    "description": "Подсказка кнопки удаления правила"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Удаление правила",
+    "description": "Заголовок модального окна удаления правила"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Вы уверены, что хотите удалить это правило?",
+    "description": "Сообщение подтверждения удаления правила"
   },
 
   "label_name": {

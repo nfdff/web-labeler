@@ -55,12 +55,20 @@
     "description": "Popup switch Off label"
   },
   "popup_manageLabels": {
-    "message": "Manage Labels",
+    "message": "Manage All Labels",
     "description": "Manage labels button"
   },
   "popup_noLabels": {
     "message": "No labels available. Create labels in settings.",
     "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "This site doesn't match any label yet",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Add to Label",
+    "description": "Add to label button"
   },
   "popup_addRuleTitle": {
     "message": "Add this site to a label",
@@ -91,7 +99,7 @@
     "description": "Add rule button"
   },
   "popup_matchedLabel": {
-    "message": "Current label",
+    "message": "Matched Label",
     "description": "Matched label section title"
   },
   "popup_cyclePosition": {
@@ -101,6 +109,26 @@
   "popup_currentPosition": {
     "message": "Position",
     "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Edit rule",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Edit Rule",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Delete rule",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Delete Rule",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Are you sure you want to delete this rule?",
+    "description": "Delete rule confirmation message"
   },
 
   "label_name": {
