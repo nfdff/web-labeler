@@ -3,6 +3,7 @@ import { IconGripVertical, IconTag } from "@tabler/icons-react"
 import { Draggable } from "@hello-pangea/dnd"
 import { useTranslation } from "@/contexts"
 import { ruleTypeSettings, sourceTypeSettings } from "@/options/constants.ts"
+import LabelBadge from "../../Badge"
 import LabelListItemActions from "../ItemActions"
 import LabelListItemSettings from "../ItemSettings"
 import { LabelListItemProps } from "./types.ts"
@@ -47,14 +48,7 @@ function LabelListItem({
             </div>
           </Table.Td>
           <Table.Td>
-            <Badge
-              size="md"
-              p={12}
-              color={label.bgColor}
-              style={{ "--badge-color": label.textColor }}
-            >
-              {label.name || t("common_noname")}
-            </Badge>
+            <LabelBadge label={label} />
           </Table.Td>
           <Table.Td>
             <HoverCard shadow="md">

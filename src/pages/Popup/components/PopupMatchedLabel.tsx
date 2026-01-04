@@ -1,26 +1,16 @@
 import { useState } from "react"
-import {
-  ActionIcon,
-  Badge,
-  Combobox,
-  Group,
-  InputBase,
-  Stack,
-  Switch,
-  Text,
-  Tooltip,
-  useCombobox,
-} from "@mantine/core"
+import { ActionIcon, Group, Stack, Switch, Text, Tooltip } from "@mantine/core"
 import { modals } from "@mantine/modals"
-import { IconEdit, IconReplace, IconTrash, IconX } from "@tabler/icons-react"
+import { IconEdit, IconReplace, IconTrash } from "@tabler/icons-react"
 import ConfirmationModal from "@/components/ConfirmationModal"
+import { LabelBadge } from "@/components/Label"
+import { LabelSelector } from "@/components/Label"
 import { useOptionsContext, useTranslation } from "@/contexts"
-import {
-  positions,
-  ruleTypeSettings,
-  sourceTypeSettings,
-} from "@/options/constants"
+import { useLabelOperations } from "@/hooks/useLabelOperations"
+import { positions } from "@/options/constants"
 import { Label, Rule } from "@/options/types"
+import { formatRuleInfo } from "@/utils/ruleFormatters"
+import FormHeader from "./FormHeader"
 import RuleForm from "./RuleForm"
 
 interface PopupMatchedLabelProps {
@@ -36,10 +26,11 @@ function PopupMatchedLabel({
 }: PopupMatchedLabelProps) {
   const { options, dispatch } = useOptionsContext()
   const { t } = useTranslation()
+  const { updateRuleInLabel, moveRuleBetweenLabels, deleteRuleFromLabel } =
+    useLabelOperations()
 
   const [isEditing, setIsEditing] = useState(false)
   const [selectedLabelId, setSelectedLabelId] = useState(label.id)
-  const combobox = useCombobox()
 
   const handleToggleActive = () => {
     dispatch({
@@ -65,41 +56,12 @@ function PopupMatchedLabel({
   }
 
   const handleSaveEdit = (updatedRule: Rule) => {
-    // Find the target label (may be different from current if user changed it)
-    const targetLabel = options.labels.find((l) => l.id === selectedLabelId)
-    if (!targetLabel) return
-
     // If changing to a different label
     if (selectedLabelId !== label.id) {
-      // Remove rule from current label
-      const currentLabelUpdated: Label = {
-        ...label,
-        rules: label.rules.filter((r) => r !== matchedRule),
-      }
-      dispatch({
-        type: "updateLabel",
-        payload: { label: currentLabelUpdated },
-      })
-
-      // Add rule to target label
-      const targetLabelUpdated: Label = {
-        ...targetLabel,
-        rules: [...targetLabel.rules, updatedRule],
-      }
-      dispatch({
-        type: "updateLabel",
-        payload: { label: targetLabelUpdated },
-      })
+      moveRuleBetweenLabels(label.id, selectedLabelId, matchedRule, updatedRule)
     } else {
       // Update rule in same label
-      const updatedLabel: Label = {
-        ...label,
-        rules: label.rules.map((r) => (r === matchedRule ? updatedRule : r)),
-      }
-      dispatch({
-        type: "updateLabel",
-        payload: { label: updatedLabel },
-      })
+      updateRuleInLabel(label.id, matchedRule, updatedRule)
     }
 
     setIsEditing(false)
@@ -117,14 +79,7 @@ function PopupMatchedLabel({
           variant="compact"
           message={t("popup_deleteRuleConfirm")}
           onConfirm={() => {
-            const updatedLabel: Label = {
-              ...label,
-              rules: label.rules.filter((r) => r !== matchedRule),
-            }
-            dispatch({
-              type: "updateLabel",
-              payload: { label: updatedLabel },
-            })
+            deleteRuleFromLabel(label.id, matchedRule)
             modals.closeAll()
           }}
           onClose={() => modals.closeAll()}
@@ -136,91 +91,21 @@ function PopupMatchedLabel({
   const showPositionSwitcher = label.shape !== "frame"
 
   // Format rule info for display
-  const ruleSourceLabel = t(
-    sourceTypeSettings[matchedRule.source || "hostname"].labelKey
-  )
-  const ruleTypeLabel = t(ruleTypeSettings[matchedRule.type].labelKey)
-  const ruleInfo = `${ruleSourceLabel} ${ruleTypeLabel} "${matchedRule.value}"`
+  const ruleInfo = formatRuleInfo(matchedRule, t)
 
   // Show edit form
   if (isEditing) {
     return (
       <Stack gap={8}>
-        <Group justify="space-between" align="center">
-          <Text size="xs" fw={500} c="dimmed">
-            {t("popup_editRuleTitle")}
-          </Text>
-          <ActionIcon
-            size="xs"
-            variant="subtle"
-            onClick={() => setIsEditing(false)}
-            aria-label={t("common_cancel")}
-          >
-            <IconX size={14} />
-          </ActionIcon>
-        </Group>
+        <FormHeader
+          title={t("popup_editRuleTitle")}
+          onClose={() => setIsEditing(false)}
+        />
 
-        <Combobox
-          store={combobox}
-          onOptionSubmit={(value) => {
-            setSelectedLabelId(value)
-            combobox.closeDropdown()
-          }}
-          transitionProps={{ transition: "pop", duration: 200 }}
-        >
-          <Combobox.Target>
-            <InputBase
-              component="button"
-              type="button"
-              pointer
-              size="xs"
-              label={t("popup_selectLabel")}
-              onClick={() => combobox.toggleDropdown()}
-              rightSection={<Combobox.Chevron />}
-            >
-              {selectedLabelId ? (
-                <Badge
-                  size="sm"
-                  p={8}
-                  style={{
-                    backgroundColor:
-                      options.labels.find((l) => l.id === selectedLabelId)?.bgColor ||
-                      "#gray",
-                    color:
-                      options.labels.find((l) => l.id === selectedLabelId)?.textColor ||
-                      "#000",
-                  }}
-                >
-                  {options.labels.find((l) => l.id === selectedLabelId)?.name ||
-                    t("common_noname")}
-                </Badge>
-              ) : (
-                <Text size="xs" c="dimmed">
-                  {t("popup_selectLabel_placeholder")}
-                </Text>
-              )}
-            </InputBase>
-          </Combobox.Target>
-
-          <Combobox.Dropdown>
-            <Combobox.Options style={{ maxHeight: 150, overflowY: "auto" }}>
-              {options.labels.map((l) => (
-                <Combobox.Option key={l.id} value={l.id}>
-                  <Badge
-                    size="sm"
-                    p={10}
-                    style={{
-                      backgroundColor: l.bgColor,
-                      color: l.textColor,
-                    }}
-                  >
-                    {l.name || t("common_noname")}
-                  </Badge>
-                </Combobox.Option>
-              ))}
-            </Combobox.Options>
-          </Combobox.Dropdown>
-        </Combobox>
+        <LabelSelector
+          selectedLabelId={selectedLabelId}
+          onSelect={setSelectedLabelId}
+        />
 
         <RuleForm
           currentUrl={currentUrl}
@@ -239,16 +124,7 @@ function PopupMatchedLabel({
       </Text>
 
       <Group wrap="nowrap" gap={6} justify="space-between">
-        <Badge
-          size="sm"
-          p={8}
-          style={{
-            backgroundColor: label.bgColor,
-            color: label.textColor,
-          }}
-        >
-          {label.name || t("common_noname")}
-        </Badge>
+        <LabelBadge label={label} size="sm" p={8} />
 
         <Group gap={6} wrap="nowrap">
           {showPositionSwitcher && (
