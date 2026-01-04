@@ -18,7 +18,12 @@ interface RuleFormProps {
   onCancel?: () => void
 }
 
-function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) {
+function RuleForm({
+  currentUrl,
+  initialRule,
+  onSave,
+  onCancel,
+}: RuleFormProps) {
   const { t } = useTranslation()
 
   // Extract hostname from URL for default value
@@ -37,7 +42,9 @@ function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) 
   const [ruleSource, setRuleSource] = useState<"hostname" | "fullUrl">(
     initialRule?.source || "hostname"
   )
-  const [ruleType, setRuleType] = useState<RuleType>(initialRule?.type || "matches")
+  const [ruleType, setRuleType] = useState<RuleType>(
+    initialRule?.type || "matches"
+  )
   const [ruleValue, setRuleValue] = useState<string>(
     initialRule?.value || defaultHostname
   )
@@ -75,7 +82,6 @@ function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) 
       <Group gap={6} grow>
         <Select
           size="xs"
-          label={t("popup_ruleSource")}
           data={sourceOptions}
           value={ruleSource}
           onChange={(value) =>
@@ -85,7 +91,6 @@ function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) 
         />
         <Select
           size="xs"
-          label={t("popup_ruleType")}
           data={typeOptions}
           value={ruleType}
           onChange={(value) => setRuleType((value as RuleType) || "matches")}
@@ -95,7 +100,6 @@ function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) 
 
       <TextInput
         size="xs"
-        label={t("popup_ruleValue")}
         value={ruleValue}
         onChange={(e) => setRuleValue(e.currentTarget.value)}
         placeholder={defaultHostname}
@@ -109,7 +113,9 @@ function RuleForm({ currentUrl, initialRule, onSave, onCancel }: RuleFormProps) 
         )}
         <Button
           size="xs"
-          leftSection={isEditing ? <IconCheck size={14} /> : <IconPlus size={14} />}
+          leftSection={
+            isEditing ? <IconCheck size={14} /> : <IconPlus size={14} />
+          }
           onClick={handleSave}
           disabled={!ruleValue.trim()}
         >

@@ -1,6 +1,6 @@
 import { useMemo } from "react"
 import { Combobox, InputBase, Text, useCombobox } from "@mantine/core"
-import { useTranslation, useOptionsContext } from "@/contexts"
+import { useOptionsContext, useTranslation } from "@/contexts"
 import { getLabelById } from "@/utils/labelHelpers"
 import LabelBadge from "../Badge"
 import { LabelSelectorComboboxProps } from "./types.ts"
@@ -23,8 +23,6 @@ function LabelSelector({
   )
 
   const labels = options.labels
-
-  const defaultLabel = label || t("popup_selectLabel")
   const defaultPlaceholder = placeholder || t("popup_selectLabel_placeholder")
 
   return (
@@ -42,7 +40,7 @@ function LabelSelector({
           type="button"
           pointer
           size={size}
-          label={defaultLabel}
+          label={label}
           onClick={() => combobox.toggleDropdown()}
           rightSection={<Combobox.Chevron />}
         >

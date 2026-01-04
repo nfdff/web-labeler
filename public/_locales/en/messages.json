@@ -74,25 +74,9 @@
     "message": "Add this site to a label",
     "description": "Add rule form title"
   },
-  "popup_selectLabel": {
-    "message": "Select label",
-    "description": "Select label dropdown label"
-  },
   "popup_selectLabel_placeholder": {
     "message": "Choose a label...",
     "description": "Select label dropdown placeholder"
-  },
-  "popup_ruleSource": {
-    "message": "Source",
-    "description": "Rule source field label"
-  },
-  "popup_ruleType": {
-    "message": "Type",
-    "description": "Rule type field label"
-  },
-  "popup_ruleValue": {
-    "message": "Value",
-    "description": "Rule value field label"
   },
   "popup_addRule": {
     "message": "Add Rule",

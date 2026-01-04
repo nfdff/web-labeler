@@ -1,10 +1,23 @@
-export type SupportedLocale = "en" | "ru" | "de" | "es" | "fr" | "hi" | "it" | "ja" | "ko" | "pt_BR" | "pt_PT" | "uk" | "zh_CN";
+export type SupportedLocale =
+  | "en"
+  | "ru"
+  | "de"
+  | "es"
+  | "fr"
+  | "hi"
+  | "it"
+  | "ja"
+  | "ko"
+  | "pt_BR"
+  | "pt_PT"
+  | "uk"
+  | "zh_CN"
 
 export interface LanguageConfig {
-  code: SupportedLocale;
-  name: string;
-  nativeName: string;
-  flag: string;
+  code: SupportedLocale
+  name: string
+  nativeName: string
+  flag: string
 }
 
 export type MessageKey =
@@ -30,11 +43,7 @@ export type MessageKey =
   | "popup_noMatchInfo"
   | "popup_addToLabel"
   | "popup_addRuleTitle"
-  | "popup_selectLabel"
   | "popup_selectLabel_placeholder"
-  | "popup_ruleSource"
-  | "popup_ruleType"
-  | "popup_ruleValue"
   | "popup_addRule"
   | "popup_matchedLabel"
   | "popup_cyclePosition"
@@ -238,9 +247,9 @@ export type MessageKey =
   // Language selector
   | "language_select"
   | "language_useBrowser"
-  | "languageSelector_ariaLabel";
+  | "languageSelector_ariaLabel"
 
 export type TranslationFunction = (
   key: MessageKey,
-  substitutions?: string | string[],
-) => string;
+  substitutions?: string | string[]
+) => string

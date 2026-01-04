@@ -8,9 +8,6 @@ interface FormHeaderProps {
   closeAriaLabel?: string
 }
 
-/**
- * Reusable form header with title and close button
- */
 function FormHeader({ title, onClose, closeAriaLabel }: FormHeaderProps) {
   const { t } = useTranslation()
 

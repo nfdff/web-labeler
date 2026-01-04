@@ -90,10 +90,8 @@ function PopupMatchedLabel({
 
   const showPositionSwitcher = label.shape !== "frame"
 
-  // Format rule info for display
   const ruleInfo = formatRuleInfo(matchedRule, t)
 
-  // Show edit form
   if (isEditing) {
     return (
       <Stack gap={8}>
@@ -116,7 +114,6 @@ function PopupMatchedLabel({
     )
   }
 
-  // Show matched label view
   return (
     <Stack gap={8}>
       <Text size="xs" fw={500} c="dimmed">
@@ -128,11 +125,15 @@ function PopupMatchedLabel({
 
         <Group gap={6} wrap="nowrap">
           {showPositionSwitcher && (
-            <Tooltip label={t("popup_cyclePosition")} withArrow>
+            <Tooltip
+              openDelay={1000}
+              label={<Text size="xs">{t("popup_cyclePosition")}</Text>}
+              withArrow
+            >
               <ActionIcon
                 variant="default"
                 size="sm"
-                radius="md"
+                radius="xl"
                 onClick={handleCyclePosition}
                 aria-label={t("popup_cyclePosition")}
               >
@@ -151,28 +152,36 @@ function PopupMatchedLabel({
       </Group>
 
       <Group wrap="nowrap" gap={6} justify="space-between" align="center">
-        <Text size="xs" c="dimmed" style={{ flex: 1 }}>
+        <Text size="xs" c="dimmed" style={{ flex: 1, wordWrap: "break-word" }}>
           {ruleInfo}
         </Text>
         <Group gap={4} wrap="nowrap">
-          <Tooltip label={t("popup_editRule")} withArrow>
+          <Tooltip
+            openDelay={1000}
+            label={<Text size="xs">{t("popup_editRule")}</Text>}
+            withArrow
+          >
             <ActionIcon
               variant="light"
               color="blue"
               size="sm"
-              radius="md"
+              radius="xl"
               onClick={() => setIsEditing(true)}
               aria-label={t("popup_editRule")}
             >
               <IconEdit size={14} />
             </ActionIcon>
           </Tooltip>
-          <Tooltip label={t("popup_deleteRule")} withArrow>
+          <Tooltip
+            openDelay={1000}
+            label={<Text size="xs">{t("popup_deleteRule")}</Text>}
+            withArrow
+          >
             <ActionIcon
               variant="light"
               color="red"
               size="sm"
-              radius="md"
+              radius="xl"
               onClick={handleDeleteRule}
               aria-label={t("popup_deleteRule")}
             >

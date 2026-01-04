@@ -89,7 +89,7 @@ function Popup() {
           </Group>
           <Group wrap="nowrap" gap={6}>
             <Switch
-              size="xs"
+              size="sm"
               onLabel={t("popup_switchOn")}
               offLabel={t("popup_switchOff")}
               checked={options.isActive}
