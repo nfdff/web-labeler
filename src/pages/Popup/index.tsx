@@ -6,6 +6,7 @@ import {
   Group,
   Image,
   Loader,
+  ScrollArea,
   Stack,
   Switch,
   Title,
@@ -59,7 +60,11 @@ function Popup() {
 
     // View 1: Chrome URLs or empty - show compact list
     if (isChromeUrl(currentUrl)) {
-      return <LabelListCompact />
+      return (
+        <ScrollArea.Autosize mah={250} type="auto" offsetScrollbars="present">
+          <LabelListCompact />
+        </ScrollArea.Autosize>
+      )
     }
 
     // View 3: URL matches a label
