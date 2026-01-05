@@ -54,8 +54,13 @@ function PopupAddRule({ currentUrl }: PopupAddRuleProps) {
 
     addRuleToLabel(selectedLabelId, newRule)
 
-    // Parent component will automatically re-render and show matched view
-    // because options context changed, triggering useEffect that re-matches
+    // Close form to provide feedback that rule was added
+    // If rule matches current tab, parent will show matched view
+    // If rule doesn't match, user sees initial "Add to Label" button
+    setShowForm(false)
+
+    // Reset selected label for next add operation
+    setSelectedLabelId("")
   }
 
   return (
