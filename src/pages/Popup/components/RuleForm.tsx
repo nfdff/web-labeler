@@ -14,6 +14,7 @@ import { Rule } from "@/options/types"
 interface RuleFormProps {
   currentUrl: string
   initialRule?: Rule
+  selectedLabelId?: string
   onSave: (rule: Rule) => void
   onCancel?: () => void
 }
@@ -21,6 +22,7 @@ interface RuleFormProps {
 function RuleForm({
   currentUrl,
   initialRule,
+  selectedLabelId,
   onSave,
   onCancel,
 }: RuleFormProps) {
@@ -139,7 +141,10 @@ function RuleForm({
             isEditing ? <IconCheck size={14} /> : <IconPlus size={14} />
           }
           onClick={handleSave}
-          disabled={!ruleValue.trim()}
+          disabled={
+            !ruleValue.trim() ||
+            (!isEditing && selectedLabelId !== undefined && !selectedLabelId)
+          }
         >
           {isEditing ? t("common_save") : t("popup_addRule")}
         </Button>

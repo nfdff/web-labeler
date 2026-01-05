@@ -70,7 +70,11 @@ function PopupAddRule({ currentUrl }: PopupAddRuleProps) {
         onSelect={setSelectedLabelId}
       />
 
-      <RuleForm currentUrl={currentUrl} onSave={handleSaveRule} />
+      <RuleForm
+        currentUrl={currentUrl}
+        selectedLabelId={selectedLabelId}
+        onSave={handleSaveRule}
+      />
     </Stack>
   )
 }
