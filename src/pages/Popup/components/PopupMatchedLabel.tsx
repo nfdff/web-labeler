@@ -12,6 +12,7 @@ import { Label, Rule } from "@/options/types"
 import { formatRuleInfo } from "@/utils/ruleFormatters"
 import FormHeader from "./FormHeader"
 import RuleForm from "./RuleForm"
+import styles from "./PopupMatchedLabel.module.scss"
 
 interface PopupMatchedLabelProps {
   label: Label
@@ -152,7 +153,7 @@ function PopupMatchedLabel({
       </Group>
 
       <Group wrap="nowrap" gap={6} justify="space-between" align="center">
-        <Text size="xs" c="dimmed" style={{ flex: 1, wordWrap: "break-word" }}>
+        <Text size="xs" c="dimmed" className={styles.ruleInfo}>
           {ruleInfo}
         </Text>
         <Group gap={4} wrap="nowrap">

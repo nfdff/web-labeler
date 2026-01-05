@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { ClipboardEvent, useState } from "react"
 import { Button, Group, Select, Stack, TextInput } from "@mantine/core"
 import { IconCheck, IconPlus } from "@tabler/icons-react"
 import { useTranslation } from "@/contexts"
@@ -61,6 +61,27 @@ function RuleForm({
     label: t(ruleTypeSettings[type].labelKey),
   }))
 
+  const handlePaste = (event: ClipboardEvent<HTMLInputElement>) => {
+    const paste = event.clipboardData.getData("text")
+    const withoutProtocol = paste.replace(/^https?:\/\//, "") // remove http/https
+
+    // Detect if there's a meaningful path (not just "/" or empty)
+    // Matches: "domain/path" or "/path" (but not "domain/" or "/")
+    const hasPath = /^(\/\S+|[^/]*\/.+)/.test(withoutProtocol)
+
+    if (hasPath) {
+      // Keep full URL and auto-switch to fullUrl source
+      setRuleValue(withoutProtocol)
+      setRuleSource("fullUrl")
+    } else {
+      // Keep domain only, leave source unchanged
+      const cleaned = withoutProtocol.replace(/\/.*$/, "")
+      setRuleValue(cleaned)
+    }
+
+    event.preventDefault()
+  }
+
   const handleSave = () => {
     if (!ruleValue.trim()) {
       return
@@ -102,6 +123,7 @@ function RuleForm({
         size="xs"
         value={ruleValue}
         onChange={(e) => setRuleValue(e.currentTarget.value)}
+        onPaste={handlePaste}
         placeholder={defaultHostname}
       />
 

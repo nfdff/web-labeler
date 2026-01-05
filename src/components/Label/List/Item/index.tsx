@@ -6,6 +6,7 @@ import { ruleTypeSettings, sourceTypeSettings } from "@/options/constants.ts"
 import LabelBadge from "../../Badge"
 import LabelListItemActions from "../ItemActions"
 import LabelListItemSettings from "../ItemSettings"
+import styles from "./styles.module.scss"
 import { LabelListItemProps } from "./types.ts"
 
 function LabelListItem({
@@ -66,7 +67,9 @@ function LabelListItem({
                           sourceTypeSettings[rule.source || "hostname"].labelKey
                         )}{" "}
                         {t(ruleTypeSettings[rule.type].labelKey)}:{" "}
-                        <strong>{rule.value}</strong>
+                        <strong className={styles.ruleValue}>
+                          {rule.value}
+                        </strong>
                       </List.Item>
                     ))}
                   </List>
