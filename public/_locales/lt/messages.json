@@ -341,7 +341,7 @@
     "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
   },
   "labelList_deleteConfirm_single": {
-    "message": "Ar tikrai norite ištrinti žymą „$1"?",
+    "message": "Ar tikrai norite ištrinti žymą \"$1\"?",
     "description": "Delete single label confirmation, $1=label name"
   },
   "labelList_combine": {
@@ -670,7 +670,7 @@
     "description": "Invalid item error, $1=index"
   },
   "validation_missingField": {
-    "message": "Trūksta privalomo lauko „$1" indekse $2",
+    "message": "Trūksta privalomo lauko \"$1\" indekse $2",
     "description": "Missing field error, $1=field name, $2=index"
   },
   "validation_invalidLabels": {
