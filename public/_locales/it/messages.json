@@ -55,6 +55,62 @@
     "message": "Gestisci etichette",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "Nessuna etichetta disponibile. Crea etichette nelle impostazioni.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Questo sito non corrisponde ancora a nessuna etichetta",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Aggiungi all'etichetta",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Aggiungi questo sito a un'etichetta",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Scegli un'etichetta...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Aggiungi regola",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Etichetta corrispondente",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Cambia posizione",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Posizione",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Modifica regola",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Modifica regola",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Elimina regola",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Elimina regola",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Sei sicuro di voler eliminare questa regola?",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "Nome",
     "description": "Label name field"

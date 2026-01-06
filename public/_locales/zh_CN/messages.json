@@ -55,6 +55,62 @@
     "message": "管理标签",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "没有可用的标签。请在设置中创建标签。",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "此网站尚未匹配任何标签",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "添加到标签",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "将此网站添加到标签",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "选择标签...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "添加规则",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "匹配的标签",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "更改位置",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "位置",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "编辑规则",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "编辑规则",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "删除规则",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "删除规则",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "您确定要删除此规则吗？",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "名称",
     "description": "Label name field"

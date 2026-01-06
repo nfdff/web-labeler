@@ -2,7 +2,12 @@ import { MantineProvider } from "@mantine/core"
 import "@mantine/core/styles.css"
 import "@mantine/dropzone/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import { OptionsProvider, TranslationProvider, useOptionsContext, useTranslation } from "./contexts"
+import {
+  OptionsProvider,
+  TranslationProvider,
+  useOptionsContext,
+  useTranslation,
+} from "./contexts"
 import OptionsPage from "./pages/OptionsPage"
 import Popup from "./pages/Popup"
 import "./style.scss"
@@ -25,15 +30,15 @@ import "./style.scss"
 // ☑️ 8.5 Split appearance and rules label settings into 2 different dialogs
 // ☑️ 9. Support regexp or special symbols like *
 // ☑️ 10. Dark mode
-// 11. Tooltip features:
-// 11.1 UI control for switching between label positions
-// 11.2 Quick add active tab url to specific label rule
+// ☑️ 11. Popup features:
+// ☑️ 11.1 UI control for switching between label positions
+// ☑️ 11.2 Quick add active tab url to specific label rule
 // ☑️ 12. Appearance customization:
 // ☑️ 12.1 Label and font size customization
 // ☑️ 12.2 Mouse over transparency
 // ☑️ 12.3 Multiline name field
 // 13. Rules:
-// 13.1 Apply label by cookie key/value
+// 13.1 Apply label by cookie key/value?
 
 function PageContent() {
   const { isReady } = useTranslation()

@@ -55,6 +55,62 @@
     "message": "Labels verwalten",
     "description": "Schaltfläche Labels verwalten"
   },
+  "popup_noLabels": {
+    "message": "Keine Labels verfügbar. Erstellen Sie Labels in den Einstellungen.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Diese Website stimmt noch mit keinem Label überein",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Zu Label hinzufügen",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Diese Website zu einem Label hinzufügen",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Label auswählen...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Regel hinzufügen",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Übereinstimmendes Label",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Position ändern",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Position",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Regel bearbeiten",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Regel bearbeiten",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Regel löschen",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Regel löschen",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Sind Sie sicher, dass Sie diese Regel löschen möchten?",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "Name",
     "description": "Label-Namensfeld"

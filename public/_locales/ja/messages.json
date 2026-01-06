@@ -58,6 +58,62 @@
     "message": "ラベルを管理",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "利用可能なラベルがありません。設定でラベルを作成してください。",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "このサイトはまだどのラベルとも一致していません",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "ラベルに追加",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "このサイトをラベルに追加",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "ラベルを選択...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "ルールを追加",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "一致したラベル",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "位置を変更",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "位置",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "ルールを編集",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "ルールを編集",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "ルールを削除",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "ルールを削除",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "このルールを削除してもよろしいですか？",
+    "description": "Delete rule confirmation message"
+  },
 
   "label_name": {
     "message": "名前",

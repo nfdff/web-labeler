@@ -55,6 +55,62 @@
     "message": "Керувати мітками",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "Немає доступних міток. Створіть мітки в налаштуваннях.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Цей сайт поки не відповідає жодній мітці",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Додати до мітки",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Додати цей сайт до мітки",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Виберіть мітку...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Додати правило",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Відповідна мітка",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Змінити позицію",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Позиція",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Редагувати правило",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Редагування правила",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Видалити правило",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Видалення правила",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Ви впевнені, що хочете видалити це правило?",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "Назва",
     "description": "Label name field"

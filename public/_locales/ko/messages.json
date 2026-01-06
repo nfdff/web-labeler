@@ -55,6 +55,62 @@
     "message": "레이블 관리",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "사용 가능한 라벨이 없습니다. 설정에서 라벨을 만드세요.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "이 사이트는 아직 어떤 라벨과도 일치하지 않습니다",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "라벨에 추가",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "이 사이트를 라벨에 추가",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "라벨 선택...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "규칙 추가",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "일치하는 라벨",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "위치 변경",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "위치",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "규칙 편집",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "규칙 편집",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "규칙 삭제",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "규칙 삭제",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "이 규칙을 삭제하시겠습니까?",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "이름",
     "description": "Label name field"

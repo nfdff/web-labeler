@@ -55,6 +55,62 @@
     "message": "लेबल प्रबंधित करें",
     "description": "Manage labels button"
   },
+  "popup_noLabels": {
+    "message": "कोई लेबल उपलब्ध नहीं है। सेटिंग में लेबल बनाएं।",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "यह साइट अभी तक किसी लेबल से मेल नहीं खाती",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "लेबल में जोड़ें",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "इस साइट को लेबल में जोड़ें",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "लेबल चुनें...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "नियम जोड़ें",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "मिलान किया गया लेबल",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "स्थिति बदलें",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "स्थिति",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "नियम संपादित करें",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "नियम संपादित करें",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "नियम हटाएं",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "नियम हटाएं",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "क्या आप वाकई इस नियम को हटाना चाहते हैं?",
+    "description": "Delete rule confirmation message"
+  },
   "label_name": {
     "message": "नाम",
     "description": "Label name field"
