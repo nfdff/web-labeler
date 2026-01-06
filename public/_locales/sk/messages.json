@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Označujte svoje projekty jednoducho a vyhnite sa zámene produkčného prostredia s testovacím alebo vývojovým",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Uložiť",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Potvrdiť",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Zrušiť",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Odstrániť",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[bez názvu]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Zapnuté",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Vypnuté",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "ZAPNUTÉ",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "VYPNUTÉ",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Spravovať všetky označenia",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Žiadne označenia k dispozícii. Vytvorte označenia v nastaveniach.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Táto stránka ešte nezodpovedá žiadnemu označeniu",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Pridať k označeniu",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Pridať túto stránku k označeniu",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Vyberte označenie...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Pridať pravidlo",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Zodpovedajúce označenie",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Zmeniť pozíciu",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Pozícia",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Upraviť pravidlo",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Upraviť pravidlo",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Odstrániť pravidlo",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Odstrániť pravidlo",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Naozaj chcete odstrániť toto pravidlo?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Názov",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Názov",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Tvar",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Farba pozadia",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Farba pozadia",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Farba textu",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Farba textu",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Priehľadnosť",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Priehľadnosť pri nabehnutí myšou",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Mierka",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Veľkosť písma",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Okraj",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Farba okraja",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Farba okraja",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Šírka okraja",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Nastavenia",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Náhľad",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Okno",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Vaša karta",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "trojuholník",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "stuha",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "rám",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "žiadny",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "plný",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "čiarkovaný",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "bodkovaný",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Štýl favikony",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Režim len ikony",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Skryť odznak na stránke a zobraziť len ikonu",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Režim len ikony",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Odznak na stránke je skrytý. Zobrazená je len favikonka s odznáčkom.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Žiadny",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Použiť štýl odznaku",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Menej",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Viac",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Pridať pravidlo",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp vzor (napr. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL alebo časť (bez protokolu)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Doména alebo časť (bez protokolu)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Hodnota pravidla nemôže byť prázdna",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Neplatný vzor regulárneho výrazu",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Obsahuje",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Začína na",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Končí na",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Presne zodpovedá",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Zodpovedá RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Doména",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Celá URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Pridať označenie",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Nové označenie",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Odstrániť označenia",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Odstrániť označenie",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Naozaj chcete odstrániť $1 vybran$2 označen$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Naozaj chcete odstrániť označenie \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Spojiť",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Spojiť vybraté označenia do",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Názov označenia",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Pravidlá",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Nastavenia",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Akcie",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "žiadne označenia",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Presuňte položky na zmenu poradia. Označenia sa kontrolujú zhora nadol; zobrazuje sa prvá zhoda",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Odznak",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Odznak (Režim len ikony)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikona",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Pravidlá",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Označenie sa zobrazí, keď zodpovedá ktorékoľvek pravidlo (logika ALEBO medzi riadkami)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Experimentálne",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Táto funkcia je experimentálna a nemusí fungovať podľa očakávania. Ak narazíte na problémy alebo máte návrhy, dajte to prosím vedieť vývojárovi.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "A ak sa vám to páči — povedzte mu to tiež, môže mu to vylepšiť deň 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Vyberte cieľové označenie",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Všetky pravidlá z vybraných označení budú presunuté do cieľového označenia. Ostatné vybraté označenia budú odstránené.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Naozaj chcete pokračovať?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Ste si istí?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Umiestniť označenie na pozíciu $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Exportovať vybraté",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Exportovať označenia",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Importovať označenia",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importovať označenia",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Zo súboru",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Z URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Z iného rozšírenia",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Zo súboru",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Z URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Z iného rozšírenia",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Presuňte súbor sem alebo kliknite na výber",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Použite exportovaný konfiguračný súbor vo formáte JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Nepodarilo sa prečítať súbor",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL na JSON súbor obsahujúci konfigurácie označení",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://priklad.sk/oznacenia.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Vymazať pole",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Auto-synchronizácia",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Automaticky aktualizovať označenia z URL v stanovenej frekvencii",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Posledná synchronizácia: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Synchronizovať teraz",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Uložiť nastavenia",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL na JSON súbor",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "Zistená $1 URL. Bude transformovaná na priamy odkaz na stiahnutie.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Zistený $1 priamy odkaz na stiahnutie.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Vyžaduje sa povolenie",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Synchronizácia zlyhala",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Táto funkcia vám pomôže migrovať existujúce označenia z iných rozšírení.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Rešpektujeme prácu vývojárov iných rozšírení a poskytujeme túto možnosť čisto pre pohodlie používateľov, ktorí chcú vyskúšať WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importovať z",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Spojiť označenia so zhodnými vlastnosťami",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Označenia s rovnakým názvom, farbou, veľkosťou písma a pozíciou budú zlúčené do jedného označenia so spojenými pravidlami. Označenia môžete spojiť aj manuálne po importe.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Presuňte súbor sem alebo kliknite na výber",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Použite exportovaný súbor označení z rozšírenia Environment Marker vo formáte JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Nepodarilo sa importovať označenia",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Importovať označenia",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importovať označenia zo súboru",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importovať označenia z URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importovať označenia z Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Z importovaného zdroja:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Zo súboru:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Z URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Zo súboru:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Zo súboru ($1 označení zlúčených do $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 $2 bude pridaných",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 existujúc$2 $3 bude aktualizovaných",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "označenie",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "označení",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Neplatná URL alebo prebieha synchronizácia",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Povolenie zamietnuté",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Súbor neobsahuje platné pole",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Súbor je prázdny",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Neplatná položka na indexe $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Chýbajúce povinné pole \"$1\" na indexe $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Súbor neobsahuje platné označenia",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL nevracia platné pole označení",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Chyba komunikácie so skriptom na pozadí",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Nepodarilo sa načítať dáta",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Chyba validácie",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "neznáma chyba",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Vypnuté",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Každých 15 minút",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Každých 30 minút",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Každú hodinu",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Každých 6 hodín",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Raz denne",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Auto-synchronizácia",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Synchronizačná URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Posledná: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Chyba",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Chyba synchronizácie",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Synchronizovať teraz",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "práve teraz",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "pred $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "pred $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "pred $1 hodinou",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "pred $1 hodinami",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "pred $1 dňom",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "pred $1 dňami",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Toto rozšírenie vám pomohlo?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Ohodnoťte ho v Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Kontaktovať vývojára",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Ohodnotiť",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Prepnúť farebnú schému",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Vybrať jazyk",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Použiť jazyk prehliadača",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Vybrať jazyk",
+    "description": "Language selector aria label"
+  }
+}

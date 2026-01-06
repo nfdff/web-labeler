@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Beri label pada proyek Anda dengan mudah dan hindari kebingungan antara lingkungan produksi, pengujian, atau pengembangan",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Simpan",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Konfirmasi",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Batal",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Hapus",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[tanpa nama]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Aktif",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Nonaktif",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "AKTIF",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "NONAKTIF",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Kelola Semua Label",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Tidak ada label tersedia. Buat label di pengaturan.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Situs ini belum cocok dengan label manapun",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Tambahkan ke Label",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Tambahkan situs ini ke label",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Pilih label...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Tambah Aturan",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Label yang Cocok",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Ubah posisi",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Posisi",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Edit aturan",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Edit Aturan",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Hapus aturan",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Hapus Aturan",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Apakah Anda yakin ingin menghapus aturan ini?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Nama",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nama",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Bentuk",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Warna latar",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Warna latar",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Warna teks",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Warna teks",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Transparansi",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Transparansi Saat Diarahkan",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Skala",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Ukuran Font",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Bingkai",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Warna bingkai",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Warna bingkai",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Lebar Bingkai",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Pengaturan",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Pratinjau",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Jendela",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Tab Anda",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "segitiga",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "pita",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "spanduk",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "bingkai",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "tidak ada",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "padat",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "garis putus",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "titik-titik",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Gaya Favicon",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Mode Ikon Saja",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Sembunyikan lencana di halaman dan tampilkan hanya ikon",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Mode Ikon Saja",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Lencana di halaman disembunyikan. Hanya favicon berlencana yang ditampilkan.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Tidak Ada",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Gunakan gaya lencana",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Lebih Sedikit",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Lebih Banyak",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Tambah Aturan",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Pola regexp (mis., /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL atau bagian (tanpa protokol)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domain atau bagian (tanpa protokol)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Nilai aturan tidak boleh kosong",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Pola ekspresi reguler tidak valid",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Mengandung",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Dimulai Dengan",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Diakhiri Dengan",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Cocok",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Cocok RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domain",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "URL Lengkap",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Tambah Label",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Label Baru",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Hapus Label",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Hapus Label",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Apakah Anda yakin ingin menghapus $1 label$2 yang dipilih?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Apakah Anda yakin ingin menghapus label \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Gabungkan",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Gabungkan Label yang Dipilih Ke",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Nama Label",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Aturan",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Pengaturan",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Tindakan",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "tidak ada label",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Seret item untuk mengurutkan ulang. Label diperiksa dari atas ke bawah; kecocokan pertama akan ditampilkan",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Lencana",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Lencana (Mode Ikon Saja)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Aturan",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Label ditampilkan ketika salah satu aturan cocok (logika OR antar baris)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Eksperimental",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Fitur ini bersifat eksperimental dan mungkin tidak bekerja seperti yang diharapkan. Jika Anda mengalami masalah atau memiliki saran, mohon beri tahu pengembang.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Dan jika Anda benar-benar menikmati menggunakannya — tolong beri tahu dia juga, itu mungkin akan membuat harinya menyenangkan 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Pilih label tujuan",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Semua aturan dari label yang dipilih akan dipindahkan ke label tujuan. Label lain yang dipilih akan dihapus.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Apakah Anda yakin ingin melanjutkan?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Apakah Anda yakin?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Tempatkan label ke posisi $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Ekspor yang Dipilih",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Ekspor Label",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Impor Label",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Impor Label",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Dari file",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Dari URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Dari Ekstensi Lain",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Dari File",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Dari URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Dari Ekstensi Lain",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Seret file ke sini atau klik untuk memilih",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Gunakan file konfigurasi yang diekspor dalam format JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Gagal membaca file",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL ke file JSON yang berisi konfigurasi label",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Hapus input",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Sinkronisasi Otomatis",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Perbarui label secara otomatis dari URL dengan frekuensi yang ditentukan",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Terakhir disinkronkan: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sinkronkan Sekarang",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Simpan Pengaturan",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL ke file JSON",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "URL $1 terdeteksi. Akan diubah menjadi tautan unduhan langsung.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Tautan unduhan langsung $1 terdeteksi.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Izin Diperlukan",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Gagal menyinkronkan",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Fitur ini membantu Anda memigrasikan label yang ada dari ekstensi lain.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Kami menghargai karya pengembang ekstensi lain dan menyediakan opsi ini murni sebagai kemudahan bagi pengguna yang ingin mencoba WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Impor Dari",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Gabungkan label dengan properti yang cocok",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Label dengan nama, warna, ukuran font, dan posisi yang sama akan digabungkan menjadi satu label dengan aturan gabungan. Anda juga dapat menggabungkan label secara manual setelah impor.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Seret file ke sini atau klik untuk memilih",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Gunakan file label yang diekspor dari ekstensi Environment Marker dalam format JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Gagal mengimpor label",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Impor label",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Impor label dari file",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Impor label dari URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Impor label dari Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Dari sumber yang diimpor:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Dari file:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Dari URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Dari file:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Dari file ($1 label digabungkan menjadi $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 $2 baru akan ditambahkan",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 $2 yang ada akan diperbarui",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "label",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "label",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "URL tidak valid atau sinkronisasi sedang berlangsung",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Izin ditolak",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "File tidak berisi array yang valid",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "File kosong",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Item tidak valid pada indeks $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Field wajib \"$1\" hilang pada indeks $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "File tidak berisi label yang valid",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL tidak mengembalikan array label yang valid",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Kesalahan komunikasi dengan skrip latar belakang",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Gagal mengambil data",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Kesalahan validasi",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "kesalahan tidak diketahui",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Dinonaktifkan",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Setiap 15 menit",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Setiap 30 menit",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Setiap jam",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Setiap 6 jam",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Sekali sehari",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Sinkronisasi Otomatis",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL Sinkronisasi",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Terakhir: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Kesalahan",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Kesalahan Sinkronisasi",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sinkronkan sekarang",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "baru saja",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 menit yang lalu",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 menit yang lalu",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 jam yang lalu",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 jam yang lalu",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 hari yang lalu",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 hari yang lalu",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Apakah ekstensi ini bermanfaat?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Beri Nilai di Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Hubungi Pengembang",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Beri Nilai",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Alihkan skema warna",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Pilih Bahasa",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Gunakan Bahasa Peramban",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Pilih bahasa",
+    "description": "Language selector aria label"
+  }
+}

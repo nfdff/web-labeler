@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Projelerinizi kolayca etiketleyin ve üretim ortamını test veya geliştirme ortamlarıyla karıştırmaktan kaçının",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Kaydet",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Onayla",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "İptal",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Sil",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[isimsiz]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Açık",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Kapalı",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "AÇIK",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "KAPALI",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Tüm Etiketleri Yönet",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Kullanılabilir etiket yok. Ayarlardan etiket oluşturun.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Bu site henüz hiçbir etiketle eşleşmiyor",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Etikete Ekle",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Bu siteyi bir etikete ekle",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Bir etiket seçin...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Kural Ekle",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Eşleşen Etiket",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Konumu değiştir",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Konum",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Kuralı düzenle",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Kuralı Düzenle",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Kuralı sil",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Kuralı Sil",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Bu kuralı silmek istediğinizden emin misiniz?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "İsim",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "İsim",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Şekil",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Arka plan rengi",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Arka plan rengi",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Yazı rengi",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Yazı rengi",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opaklık",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Üzerine Gelindiğinde Opaklık",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Ölçek",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Yazı Boyutu",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Kenarlık",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Kenarlık rengi",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Kenarlık rengi",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Kenarlık Genişliği",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Ayarlar",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Önizleme",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Pencere",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Sekmeniz",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "üçgen",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "kurdele",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "afiş",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "çerçeve",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "yok",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "düz",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "kesikli",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "noktalı",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Favicon Stili",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Yalnızca İkon Modu",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Sayfa üzerindeki rozeti gizle ve yalnızca ikonu göster",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Yalnızca İkon Modu",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Sayfa üzerindeki rozet gizli. Yalnızca rozetli favicon gösteriliyor.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Yok",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Rozet stilini kullan",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Daha Az",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Daha Fazla",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Kural Ekle",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Düzenli ifade deseni (örn. /makale/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL veya parçası (protokol olmadan)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Alan adı veya parçası (protokol olmadan)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Kural değeri boş olamaz",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Geçersiz düzenli ifade deseni",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "İçerir",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "İle Başlar",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "İle Biter",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Eşleşir",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Düzenli İfade ile Eşleşir",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Alan Adı",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Tam URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Etiket Ekle",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Yeni Etiket",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Etiketleri Sil",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Etiketi Sil",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Seçilen $1 etiket$2 silmek istediğinizden emin misiniz?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "\"$1\" etiketini silmek istediğinizden emin misiniz?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Birleştir",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Seçilen Etiketleri Şuna Birleştir",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Etiket Adı",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Kurallar",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Ayarlar",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "İşlemler",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "etiket yok",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Yeniden sıralamak için öğeleri sürükleyin. Etiketler yukarıdan aşağıya kontrol edilir; ilk eşleşen gösterilir",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Rozet",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Rozet (Yalnızca İkon Modu)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "İkon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Kurallar",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Herhangi bir kural eşleştiğinde etiket gösterilir (satırlar arası VEYA mantığı)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Deneysel",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Bu özellik deneyseldir ve beklendiği gibi çalışmayabilir. Herhangi bir sorunla karşılaşırsanız veya önerileriniz varsa, lütfen geliştiriciye bildirin.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Ve eğer gerçekten kullanmaktan keyif alıyorsanız - lütfen ona da söyleyin, bu onun gününü güzelleştirebilir 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Hedef etiket seçin",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Seçilen etiketlerdeki tüm kurallar hedef etikete taşınacaktır. Diğer seçilen etiketler silinecektir.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Devam etmek istediğinizden emin misiniz?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Emin misiniz?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Etiketi $1 konumuna yerleştir",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Seçilenleri Dışa Aktar",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Etiketleri Dışa Aktar",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Etiketleri İçe Aktar",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Etiketleri İçe Aktar",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Dosyadan",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "URL'den",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Başka Bir Eklentiden",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Dosyadan",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "URL'den",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Başka Bir Eklentiden",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Dosyayı buraya sürükleyin veya seçmek için tıklayın",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "JSON formatında dışa aktarılmış yapılandırma dosyasını kullanın",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Dosya okunamadı",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "Etiket yapılandırmalarını içeren JSON dosyasının URL'si",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://ornek.com/etiketler.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Girdiyi temizle",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Otomatik Senkronizasyon",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Belirtilen sıklıkta etiketleri URL'den otomatik olarak güncelle",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Son senkronizasyon: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Şimdi Senkronize Et",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Ayarları Kaydet",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "JSON dosyasının URL'si",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL'si algılandı. Doğrudan indirme bağlantısına dönüştürülecek.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 doğrudan indirme bağlantısı algılandı.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "İzin Gerekli",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Senkronizasyon başarısız oldu",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Bu özellik, mevcut etiketlerinizi diğer eklentilerden taşımanıza yardımcı olur.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Diğer eklenti geliştiricilerinin çalışmalarına saygı duyuyoruz ve bu seçeneği yalnızca WebLabeler'ı denemek isteyen kullanıcılar için bir kolaylık olarak sunuyoruz.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Şuradan İçe Aktar",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Eşleşen özelliklere sahip etiketleri birleştir",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Aynı ad, renk, yazı boyutu ve konuma sahip etiketler, birleştirilmiş kurallarla tek bir etikette birleştirilecektir. İçe aktarma sonrasında etiketleri manuel olarak da birleştirebilirsiniz.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Dosyayı buraya sürükleyin veya seçmek için tıklayın",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Environment Marker eklentisinden dışa aktarılan etiketler dosyasını JSON formatında kullanın",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Etiketler içe aktarılamadı",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Etiketleri içe aktar",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Dosyadan etiketleri içe aktar",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "URL'den etiketleri içe aktar",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Environment Marker'dan etiketleri içe aktar",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "İçe aktarılan kaynaktan:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Dosyadan:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "URL'den:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Dosyadan:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Dosyadan ($1 etiket $2'ye birleştirildi):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 yeni $2 eklenecek",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 mevcut $2 güncellenecek",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "etiket",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "etiket",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Geçersiz URL veya senkronizasyon devam ediyor",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "İzin reddedildi",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Dosya geçerli bir dizi içermiyor",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Dosya boş",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "$1 dizininde geçersiz öğe",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "$2 dizininde gerekli \"$1\" alanı eksik",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Dosya geçerli etiketler içermiyor",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL geçerli etiketler dizisi döndürmüyor",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Arka plan betiği ile iletişim hatası",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Veri alınamadı",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Doğrulama hatası",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "bilinmeyen hata",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Devre Dışı",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Her 15 dakikada",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Her 30 dakikada",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Saatte bir",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Her 6 saatte",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Günde bir kez",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Otomatik Senkronizasyon",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Senkronizasyon URL'si",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Son: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Hata",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Senkronizasyon Hatası",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Şimdi senkronize et",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "şimdi",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 dakika önce",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 dakika önce",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 saat önce",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 saat önce",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 gün önce",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 gün önce",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Bu eklentiyi faydalı buldunuz mu?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Chrome Web Mağazası'nda Değerlendirin",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Geliştiriciyle İletişime Geçin",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Değerlendir",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Renk şemasını değiştir",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Dil Seçin",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Tarayıcı Dilini Kullan",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Dil seçin",
+    "description": "Language selector aria label"
+  }
+}

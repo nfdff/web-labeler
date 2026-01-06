@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Märgista oma projekte lihtsalt ja väldi tootmis-, test- ja arenduskeskkondade segamini ajamist",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Salvesta",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Kinnita",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Tühista",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Kustuta",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[nimetu]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Sees",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Väljas",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "SEES",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "VÄLJAS",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Halda kõiki märgiseid",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Märgised puuduvad. Loo märgised seadetes.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "See veebileht ei vasta ühegi märgisega veel",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Lisa märgisele",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Lisa see veebileht märgisele",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Vali märgis...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Lisa reegel",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Sobiv märgis",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Muuda asukohta",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Asukoht",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Muuda reeglit",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Muuda reeglit",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Kustuta reegel",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Kustuta reegel",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Kas oled kindel, et soovid selle reegli kustutada?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Nimi",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nimi",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Kuju",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Taustvärvus",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Taustvärvus",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Tekstivärvus",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Tekstivärvus",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Läbipaistvus",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Läbipaistvus hiirega",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Mõõtkava",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Kirja suurus",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Raam",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Raami värvus",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Raami värvus",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Raami laius",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Seaded",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Eelvaade",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Aken",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Sinu vahekaart",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "kolmnurk",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "lint",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "bänner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "raam",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "puudub",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "pidev",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "kriipsutatud",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "punktiiriga",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Favikooni stiil",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Ainult ikoon",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Peida lehekülje märgis ja näita ainult ikooni",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Ainult ikoon",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Lehekülje märgis on peidetud. Näidatakse ainult märgistatud favikooni.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Puudub",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Kasuta märgise stiili",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Vähem",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Rohkem",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Lisa reegel",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regulaaravaldis (nt /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL või osa (ilma protokollita)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domeen või osa (ilma protokollita)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Reegli väärtus ei tohi olla tühi",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Vigane regulaaravaldise muster",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Sisaldab",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Algab",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Lõpeb",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Vastab",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Vastab regulaaravaldisele",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domeen",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Täielik URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Lisa märgis",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Uus märgis",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Kustuta märgised",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Kustuta märgis",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Kas oled kindel, et soovid kustutada $1 valitud märgise$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Kas oled kindel, et soovid kustutada märgise \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Ühenda",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Ühenda valitud märgised üheks",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Märgise nimi",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Reeglid",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Seaded",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Toimingud",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "märgised puuduvad",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Lohista üksusi järjestuse muutmiseks. Märgiseid kontrollitakse ülalt alla; kuvatakse esimene sobiv",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Märgis",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Märgis (ainult ikoon)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikoon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Reeglid",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Märgis kuvatakse, kui keegi üks reegel sobib (VÕI-loogika ridade vahel)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Katsetuslik",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "See funktsioon on katsetuslik ja ei pruugi töötada ootuspäraselt. Kui tekib probleeme või sul on ettepanekuid, anna arendajale teada.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Ja kui sulle meeldib seda kasutada — anna temale ka sellest teada, see võib tema päeva rõõmsamaks teha 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Vali sihtmärgis",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Kõik reeglid valitud märgistelt teisaldatakse sihtmärgisele. Teised valitud märgised kustutatakse.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Kas oled kindel, et soovid jätkata?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Kas oled kindel?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Paiguta märgis asukohta $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Ekspordi valitud",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Ekspordi märgised",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Impordi märgised",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Impordi märgised",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Failist",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "URL-ist",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Teisest laiendusest",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Failist",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "URL-ist",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Teisest laiendusest",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Lohista fail siia või klõpsa valimiseks",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Kasuta eksporditud konfiguratsioonifaili JSON-vormingus",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Faili lugemine ebaõnnestus",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL JSON-failile, mis sisaldab märgiste konfiguratsioone",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://naide.ee/margised.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Tühista sisend",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Automaatne sünkroonimine",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Värskenda märgiseid URL-ist automaatselt määratud sagedusega",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Viimati sünkroonitud: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sünkrooni kohe",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Salvesta seaded",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL JSON-failile",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL tuvastatud. Teisendatakse otseallalaadimise lingiks.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 otseallalaadimise link tuvastatud.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Nõutav luba",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Sünkroonimine ebaõnnestus",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "See funktsioon aitab sul teiste laienduste olemasolevaid märgiseid üle kanda.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Austame teiste laienduste arendajate tööd ja pakume seda võimalust ainult mugavuseks kasutajatele, kes soovivad WebLabelerит proovida.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Impordi allikast",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Ühenda märgised sobivate omadustega",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Märgised sama nime, värvi, kirja suuruse ja asukohaga liidetakse üheks märgiseks koos reeglitega. Võid märgiseid ka pärast importimist käsitsi ühendada.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Lohista fail siia või klõpsa valimiseks",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Kasuta eksporditud märgiste faili Environment Marker laiendusest JSON-vormingus",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Märgiste importimine ebaõnnestus",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Impordi märgised",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Impordi märgised failist",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Impordi märgised URL-ist",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Impordi märgised Environment Markerist",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Imporditud allikast:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Failist:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "URL-ist:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Failist:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Failist ($1 märgist ühendatud $2 märgiseks):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 uut $2 lisatakse",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 olemasolevat $2 uuendatakse",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "märgis",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "märgist",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Vigane URL või sünkroonimine käimas",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Luba keeldutud",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Fail ei sisalda kehtivat massiivi",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Fail on tühi",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Vigane kirje indeksil $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Nõutav väli \"$1\" puudub indeksil $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Fail ei sisalda kehtivaid märgiseid",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL ei tagasta kehtivat märgiste massiivi",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Taustskeemiga suhtlemisel tekkis viga",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Andmete tõmbamine ebaõnnestus",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Valideerimise viga",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "tundmatu viga",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Välja lülitatud",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Iga 15 minuti järel",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Iga 30 minuti järel",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Iga tund",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Iga 6 tunni järel",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Kord päevas",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Automaatne sünkroonimine",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sünkroonimise URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Viimati: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Viga",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Sünkroonimise viga",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sünkrooni kohe",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "just nüüd",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min tagasi",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 min tagasi",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 tund tagasi",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 tundi tagasi",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 päev tagasi",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 päeva tagasi",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Kas see laiendus on abiks?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Hinda seda Chrome'i veebipoest",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Võta ühendust arendajaga",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Hinda",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Vaheta värviskeem",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Vali keel",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Kasuta brauseri keelt",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Vali keel",
+    "description": "Language selector aria label"
+  }
+}

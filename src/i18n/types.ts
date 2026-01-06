@@ -12,6 +12,19 @@ export type SupportedLocale =
   | "pt_PT"
   | "uk"
   | "zh_CN"
+  | "cs"      // Czech
+  | "et"      // Estonian
+  | "fi"      // Finnish
+  | "fil"     // Filipino
+  | "hu"      // Hungarian
+  | "id"      // Indonesian
+  | "lt"      // Lithuanian
+  | "lv"      // Latvian
+  | "ro"      // Romanian
+  | "sk"      // Slovak
+  | "sr"      // Serbian
+  | "sv"      // Swedish
+  | "tr"      // Turkish
 
 export interface LanguageConfig {
   code: SupportedLocale

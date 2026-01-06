@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Märk dina projekt enkelt och undvik att förväxla produktionsmiljö med test- eller utvecklingsmiljöer",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Spara",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Bekräfta",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Avbryt",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Ta bort",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[namnlös]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "På",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Av",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "PÅ",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "AV",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Hantera alla märken",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Inga märken tillgängliga. Skapa märken i inställningarna.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Den här webbplatsen matchar inte något märke än",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Lägg till märke",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Lägg till den här webbplatsen till ett märke",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Välj ett märke...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Lägg till regel",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Matchat märke",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Ändra position",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Position",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Redigera regel",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Redigera regel",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Ta bort regel",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Ta bort regel",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Är du säker på att du vill ta bort den här regeln?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Namn",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Namn",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Form",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Bakgrundsfärg",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Bakgrundsfärg",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Textfärg",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Textfärg",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacitet",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Opacitet vid hover",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Skala",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Textstorlek",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Kantlinje",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Kantfärg",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Kantfärg",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Kantbredd",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Inställningar",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Förhandsvisning",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Fönster",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Din flik",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "triangel",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "band",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "ram",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "ingen",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "heldragen",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "streckad",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "prickad",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Favicon-stil",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Endast ikon-läge",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Dölj märket på sidan och visa endast ikonen",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Endast ikon-läge",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Märket på sidan är dolt. Endast den märkta favicon-ikonen visas.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Ingen",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Använd märkestil",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Mindre",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Mer",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Lägg till regel",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp-mönster (t.ex. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL eller del (utan protokoll)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domän eller del (utan protokoll)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Regelvärdet kan inte vara tomt",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Ogiltigt reguljärt uttrycksmönster",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Innehåller",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Börjar med",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Slutar med",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Matchar",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Matchar RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domän",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Fullständig URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Lägg till märke",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Nytt märke",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Ta bort märken",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Ta bort märke",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Är du säker på att du vill ta bort $1 vald$2 märke$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Är du säker på att du vill ta bort märket \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Kombinera",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Kombinera valda märken till",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Märkesnamn",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Regler",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Inställningar",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Åtgärder",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "inga märken",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Dra objekt för att ändra ordning. Märken kontrolleras uppifrån och ner; den första matchningen visas",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Märke",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Märke (endast ikon-läge)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Regler",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Märket visas när någon enskild regel matchar (ELLER-logik mellan rader)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Experimentell",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Den här funktionen är experimentell och kanske inte fungerar som förväntat. Om du stöter på problem eller har förslag, vänligen meddela utvecklaren.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Och om du faktiskt tycker om att använda den — berätta gärna det också för honom, det kan göra hans dag!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Välj målmärke",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Alla regler från de valda märkena kommer att flyttas till målmärket. De andra valda märkena kommer att tas bort.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Är du säker på att du vill fortsätta?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Är du säker?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Placera märke på $1 position",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Exportera valda",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Exportera märken",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Importera märken",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importera märken",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Från fil",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Från URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Från annat tillägg",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Från fil",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Från URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Från annat tillägg",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Dra fil hit eller klicka för att välja",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Använd exporterad konfigurationsfil i JSON-format",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Kunde inte läsa filen",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL till en JSON-fil som innehåller märkeskonfigurationer",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Rensa inmatning",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Auto-synk",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Uppdatera automatiskt märken från URL med angiven frekvens",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Senast synkroniserad: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Synkronisera nu",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Spara inställningar",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL till JSON-fil",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1-URL upptäckt. Kommer att omvandlas till direkt nedladdningslänk.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Direkt nedladdningslänk för $1 upptäckt.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Behörighet krävs",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Synkronisering misslyckades",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Den här funktionen hjälper dig att migrera dina befintliga märken från andra tillägg.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Vi respekterar andra tilläggsutecklares arbete och erbjuder detta alternativ enbart som en bekvämlighet för användare som vill prova WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importera från",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Kombinera märken med matchande egenskaper",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Märken med samma namn, färg, textstorlek och position kommer att slås samman till ett märke med kombinerade regler. Du kan också kombinera märken manuellt efter import.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Dra fil hit eller klicka för att välja",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Använd exporterad märkesfil från Environment Marker-tillägget i JSON-format",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Kunde inte importera märken",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Importera märken",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importera märken från fil",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importera märken från URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importera märken från Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Från den importerade källan:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Från filen:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Från URL:en:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Från filen:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Från filen ($1 märken kombinerade till $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 ny$2 $3 kommer att läggas till",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 befintlig$2 $3 kommer att uppdateras",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "märke",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "märken",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Ogiltig URL eller synkronisering pågår",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Behörighet nekad",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Filen innehåller inte en giltig array",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Filen är tom",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Ogiltigt objekt vid index $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Obligatoriskt fält \"$1\" saknas vid index $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Filen innehåller inte giltiga märken",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL:en returnerar inte en giltig array av märken",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Kommunikationsfel med bakgrundsskript",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Kunde inte hämta data",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Valideringsfel",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "okänt fel",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Inaktiverad",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Var 15:e minut",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Var 30:e minut",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Varje timme",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Var 6:e timme",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "En gång om dagen",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Auto-synk",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Synk-URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Senast: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Fel",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Synkroniseringsfel",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Synkronisera nu",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "just nu",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min sedan",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 min sedan",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 timme sedan",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 timmar sedan",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 dag sedan",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 dagar sedan",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Tycker du att det här tillägget är hjälpsamt?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Betygsätt det på Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Kontakta utvecklaren",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Betygsätt",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Växla färgschema",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Välj språk",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Använd webbläsarspråk",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Välj språk",
+    "description": "Language selector aria label"
+  }
+}

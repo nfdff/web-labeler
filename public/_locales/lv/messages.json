@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Ērti marķējiet savus projektus un izvairieties no jucekļa starp ražošanas, testa vai izstrādes vidēm",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Saglabāt",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Apstiprināt",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Atcelt",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Dzēst",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[bez nosaukuma]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Ieslēgts",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Izslēgts",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "IESLĒGTS",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "IZSLĒGTS",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Pārvaldīt Visas Etiķetes",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Nav pieejamu etiķešu. Izveidojiet etiķetes iestatījumos.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Šī vietne vēl neatbilst nevienai etiķetei",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Pievienot Etiķetei",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Pievienot šo vietni etiķetei",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Izvēlieties etiķeti...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Pievienot Likumu",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Atbilstošā Etiķete",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Mainīt pozīciju",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Pozīcija",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Rediģēt likumu",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Rediģēt Likumu",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Dzēst likumu",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Dzēst Likumu",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Vai tiešām vēlaties dzēst šo likumu?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Nosaukums",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nosaukums",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Forma",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Fona krāsa",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Fona krāsa",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Teksta krāsa",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Teksta krāsa",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Necaurredzamība",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Necaurredzamība Virzot Peli",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Mērogs",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Fonta Izmērs",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Apmale",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Apmales krāsa",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Apmales krāsa",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Apmales Platums",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Iestatījumi",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Priekšskatījums",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Logs",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Jūsu Cilne",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "trīsstūris",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "lente",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "baneris",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "rāmis",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "nav",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "vienlaidus",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "svītraina",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "punktēta",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Favikona Stils",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Tikai Ikonu Režīms",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Paslēpt žetonu lapā un rādīt tikai ikonu",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Tikai Ikonu Režīms",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Žetons lapā ir paslēpts. Redzams tikai marķētais favikons.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Nav",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Izmantot žetona stilu",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Mazāk",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Vairāk",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Pievienot Likumu",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regulārās izteiksmes modelis (piem., /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL vai daļa (bez protokola)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domēns vai daļa (bez protokola)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Likuma vērtība nevar būt tukša",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Nederīgs regulārās izteiksmes modelis",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Satur",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Sākas Ar",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Beidzas Ar",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Atbilst",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Atbilst RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domēns",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Pilns URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Pievienot Etiķeti",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Jauna Etiķete",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Dzēst Etiķetes",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Dzēst Etiķeti",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Vai tiešām vēlaties dzēst $1 atlasīt$2 etiķet$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Vai tiešām vēlaties dzēst etiķeti \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Apvienot",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Apvienot Atlasītās Etiķetes",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Etiķetes Nosaukums",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Likumi",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Iestatījumi",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Darbības",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "nav etiķešu",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Velciet vienumus, lai pārkārtotu. Etiķetes tiek pārbaudītas no augšas uz leju; tiek rādīta pirmā atbilstība",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Žetons",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Žetons (Tikai Ikonu Režīms)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikona",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Likumi",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Etiķete tiek rādīta, ja atbilst jebkurš viens likums (VAI loģika starp rindām)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Eksperimentāls",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Šī funkcija ir eksperimentāla un var nedarboties, kā paredzēts. Ja saskaraties ar problēmām vai jums ir ieteikumi, lūdzu, informējiet izstrādātāju.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Un, ja jums tas patiešām patīk — lūdzu, pastāstiet arī viņam, tas varētu uzlabot viņa dienu 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Izvēlieties mērķa etiķeti",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Visi likumi no atlasītajām etiķetēm tiks pārvietoti uz mērķa etiķeti. Pārējās atlasītās etiķetes tiks dzēstas.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Vai tiešām vēlaties turpināt?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Vai esat pārliecināts?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Novietot etiķeti $1 pozīcijā",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Eksportēt Atlasītās",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Eksportēt Etiķetes",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Importēt Etiķetes",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importēt Etiķetes",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "No faila",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "No URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "No Cita Paplašinājuma",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "No Faila",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "No URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "No Cita Paplašinājuma",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Velciet failu šeit vai noklikšķiniet, lai atlasītu",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Izmantojiet eksportēto konfigurācijas failu JSON formātā",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Neizdevās nolasīt failu",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL uz JSON failu, kas satur etiķešu konfigurācijas",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Notīrīt ievadi",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Automātiskā Sinhronizācija",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Automātiski atjaunināt etiķetes no URL norādītajā biežumā",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Pēdējā sinhronizācija: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sinhronizēt Tagad",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Saglabāt Iestatījumus",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL uz JSON failu",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL atklāts. Tiks pārveidots par tiešu lejupielādes saiti.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 tieša lejupielādes saite atklāta.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Nepieciešama Atļauja",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Neizdevās sinhronizēt",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Šī funkcija palīdz jums migrēt esošās etiķetes no citiem paplašinājumiem.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Mēs cienām citu paplašinājumu izstrādātāju darbu un piedāvājam šo opciju tikai kā ērtību lietotājiem, kuri vēlas izmēģināt WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importēt No",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Apvienot etiķetes ar atbilstošām īpašībām",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Etiķetes ar vienādu nosaukumu, krāsu, fonta izmēru un pozīciju tiks sapludinātas vienā etiķetē ar apvienotiem likumiem. Varat arī apvienot etiķetes manuāli pēc importēšanas.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Velciet failu šeit vai noklikšķiniet, lai atlasītu",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Izmantojiet eksportēto etiķešu failu no Environment Marker paplašinājuma JSON formātā",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Neizdevās importēt etiķetes",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Importēt etiķetes",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importēt etiķetes no faila",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importēt etiķetes no URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importēt etiķetes no Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "No importētā avota:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "No faila:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "No URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "No faila:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "No faila ($1 etiķetes apvienotas $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 jaun$2 $2 tiks pievienot$2",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 esošā$2 $2 tiks atjaunināt$2",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "etiķete",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "etiķetes",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Nederīgs URL vai notiek sinhronizācija",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Atļauja liegta",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Fails nesatur derīgu masīvu",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Fails ir tukšs",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Nederīgs vienums indeksā $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Trūkst obligātā lauka \"$1\" indeksā $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Fails nesatur derīgas etiķetes",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL neatgriež derīgu etiķešu masīvu",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Komunikācijas kļūda ar fona skriptu",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Neizdevās iegūt datus",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Validācijas kļūda",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "nezināma kļūda",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Atspējots",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Katras 15 minūtes",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Katras 30 minūtes",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Katru stundu",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Katras 6 stundas",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Reizi dienā",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Automātiskā Sinhronizācija",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sinhronizācijas URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Pēdējā: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Kļūda",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Sinhronizācijas Kļūda",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sinhronizēt tagad",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "tikko",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "pirms $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "pirms $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "pirms $1 stundas",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "pirms $1 stundām",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "pirms $1 dienas",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "pirms $1 dienām",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Vai šis paplašinājums ir noderīgs?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Novērtējiet To Chrome Tīmekļa Veikalā",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Sazināties ar Izstrādātāju",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Novērtēt",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Pārslēgt krāsu shēmu",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Izvēlieties Valodu",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Izmantot Pārlūka Valodu",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Izvēlieties valodu",
+    "description": "Language selector aria label"
+  }
+}

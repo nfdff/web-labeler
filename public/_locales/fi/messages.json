@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Merkitse projektisi helposti ja vältä tuotannon sekoittaminen testi- tai kehitysympäristöihin",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Tallenna",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Vahvista",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Peruuta",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Poista",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[nimetön]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Päällä",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Pois",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "PÄÄLLÄ",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "POIS",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Hallinnoi kaikkia merkintöjä",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Ei merkintöjä saatavilla. Luo merkintöjä asetuksista.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Tämä sivusto ei vastaa vielä mitään merkintää",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Lisää merkintään",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Lisää tämä sivusto merkintään",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Valitse merkintä...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Lisää sääntö",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Vastaava merkintä",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Vaihda sijaintia",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Sijainti",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Muokkaa sääntöä",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Muokkaa sääntöä",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Poista sääntö",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Poista sääntö",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Haluatko varmasti poistaa tämän säännön?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Nimi",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nimi",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Muoto",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Taustaväri",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Taustaväri",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Tekstin väri",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Tekstin väri",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Läpinäkyvyys",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Läpinäkyvyys osoitettaessa",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Koko",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Fonttikoko",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Reunus",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Reunuksen väri",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Reunuksen väri",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Reunuksen leveys",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Asetukset",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Esikatselu",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Ikkuna",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Välilehti",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "kolmio",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "nauha",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banneri",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "kehys",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "ei reunusta",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "yhtenäinen",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "katkoviiva",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "pisteviiva",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Faviconin tyyli",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Vain kuvake -tila",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Piilota sivulla oleva merkki ja näytä vain kuvake",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Vain kuvake -tila",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Sivulla oleva merkki on piilotettu. Vain merkattu favicon näytetään.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Ei mitään",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Käytä merkkityyliä",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Vähemmän",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Lisää",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Lisää sääntö",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp-kuvio (esim. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL-osoite tai osa (ilman protokollaa)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Verkkotunnus tai osa (ilman protokollaa)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Säännön arvo ei voi olla tyhjä",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Virheellinen säännöllinen lauseke",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Sisältää",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Alkaa",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Päättyy",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Vastaa",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Vastaa RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Verkkotunnus",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Koko URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Lisää merkintä",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Uusi merkintä",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Poista merkinnät",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Poista merkintä",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Haluatko varmasti poistaa $1 valittu$2 merkintä$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Haluatko varmasti poistaa merkinnän \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Yhdistä",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Yhdistä valitut merkinnät",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Merkinnän nimi",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Säännöt",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Asetukset",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Toiminnot",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "ei merkintöjä",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Vedä kohteita järjestääksesi. Merkintöjä tarkistetaan ylhäältä alas; ensimmäinen osuma näytetään",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Merkki",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Merkki (Vain kuvake -tila)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Kuvake",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Säännöt",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Merkintä näytetään kun mikä tahansa yksittäinen sääntö täsmää (TAI-logiikka rivien välillä)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Kokeellinen",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Tämä ominaisuus on kokeellinen eikä välttämättä toimi odotetulla tavalla. Jos kohtaat ongelmia tai sinulla on ehdotuksia, ilmoita kehittäjälle.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Ja jos nautit sen käytöstä — kerro siitä myös hänelle, se saattaa piristää hänen päiväänsä 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Valitse kohdemerkintä",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Kaikki säännöt valituista merkinnöistä siirretään kohdemerkintään. Muut valitut merkinnät poistetaan.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Haluatko varmasti jatkaa?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Oletko varma?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Aseta merkintä sijaintiin $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Vie valitut",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Vie merkinnät",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Tuo merkintöjä",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Tuo merkintöjä",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Tiedostosta",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "URL-osoitteesta",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Toisesta laajennuksesta",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Tiedostosta",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "URL-osoitteesta",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Toisesta laajennuksesta",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Vedä tiedosto tähän tai napsauta valitaksesi",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Käytä vietyä asetustiedostoa JSON-muodossa",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Tiedoston lukeminen epäonnistui",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL-osoite JSON-tiedostoon, joka sisältää merkintäasetukset",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://esimerkki.com/merkinnat.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Tyhjennä syöte",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Automaattinen synkronointi",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Päivitä merkinnät automaattisesti URL-osoitteesta määritetyllä tiheydellä",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Viimeksi synkronoitu: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Synkronoi nyt",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Tallenna asetukset",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL JSON-tiedostoon",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL havaittu. Muunnetaan suoraksi latauslinkiksi.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 suora latauslinkki havaittu.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Lupa vaaditaan",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Synkronointi epäonnistui",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Tämä ominaisuus auttaa sinua siirtämään olemassa olevat merkinnät muista laajennuksista.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Kunnioitamme muiden laajennuskehittäjien työtä ja tarjoamme tämän vaihtoehdon puhtaasti käyttäjien mukavuudeksi, jotka haluavat kokeilla WebLabeleria.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Tuo kohteesta",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Yhdistä merkinnät vastaavilla ominaisuuksilla",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Merkinnät, joilla on sama nimi, väri, fonttikoko ja sijainti, yhdistetään yhdeksi merkinnäksi yhdistetyillä säännöillä. Voit myös yhdistää merkintöjä manuaalisesti tuonnin jälkeen.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Vedä tiedosto tähän tai napsauta valitaksesi",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Käytä vietyä merkintätiedostoa Environment Marker -laajennuksesta JSON-muodossa",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Merkintöjen tuonti epäonnistui",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Tuo merkintöjä",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Tuo merkintöjä tiedostosta",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Tuo merkintöjä URL-osoitteesta",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Tuo merkintöjä Environment Markerista",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Tuodusta lähteestä:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Tiedostosta:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "URL-osoitteesta:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Tiedostosta:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Tiedostosta ($1 merkintää yhdistetty $2:ksi):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 uusi $2 lisätään",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 olemassa oleva $2 päivitetään",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "merkintä",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "merkintää",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Virheellinen URL tai synkronointi käynnissä",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Lupa evätty",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Tiedosto ei sisällä kelvollista taulukkoa",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Tiedosto on tyhjä",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Virheellinen kohde indeksissä $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Pakollinen kenttä \"$1\" puuttuu indeksissä $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Tiedosto ei sisällä kelvollisia merkintöjä",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL-osoite ei palauta kelvollista merkintätaulukkoa",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Yhteysvirhe taustaskriptin kanssa",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Tietojen noutaminen epäonnistui",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Validointivirhe",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "tuntematon virhe",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Pois käytöstä",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "15 minuutin välein",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "30 minuutin välein",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Tunnin välein",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "6 tunnin välein",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Kerran päivässä",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Automaattinen synkronointi",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Synkronoi URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Viimeksi: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Virhe",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Synkronointivirhe",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Synkronoi nyt",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "juuri nyt",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min sitten",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 min sitten",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 tunti sitten",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 tuntia sitten",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 päivä sitten",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 päivää sitten",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Pidätkö tästä laajennuksesta?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Arvostele Chrome-verkkokaupassa",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Ota yhteyttä kehittäjään",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Arvostele",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Vaihda väriteemaa",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Valitse kieli",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Käytä selaimen kieltä",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Valitse kieli",
+    "description": "Language selector aria label"
+  }
+}

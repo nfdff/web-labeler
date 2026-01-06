@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Označite svoje projekte lako i izbegnite mešanje produkcije sa test ili razvojnim okruženjima",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Sačuvaj",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Potvrdi",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Otkaži",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Obriši",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[bez imena]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Uključeno",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Isključeno",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "UKLJUČENO",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "ISKLJUČENO",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Upravljaj svim oznakama",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Nema dostupnih oznaka. Kreirajte oznake u podešavanjima.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Ovaj sajt još ne odgovara nijednoj oznaci",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Dodaj u oznaku",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Dodaj ovaj sajt u oznaku",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Izaberite oznaku...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Dodaj pravilo",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Odgovarajuća oznaka",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Promeni poziciju",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Pozicija",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Izmeni pravilo",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Izmeni pravilo",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Obriši pravilo",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Obriši pravilo",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Da li ste sigurni da želite da obrišete ovo pravilo?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Ime",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Ime",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Oblik",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Boja pozadine",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Boja pozadine",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Boja teksta",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Boja teksta",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Providnost",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Providnost pri prelasku mišem",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Veličina",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Veličina fonta",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Ivica",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Boja ivice",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Boja ivice",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Širina ivice",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Podešavanja",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Pregled",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Prozor",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Vaš tab",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "trougao",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "traka",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "baner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "okvir",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "bez ivice",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "puna",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "isprekidana",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "tačkasta",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Stilizovanje ikonice",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Režim samo ikonice",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Sakrij oznaku na stranici i prikaži samo ikonicu",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Režim samo ikonice",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Oznaka na stranici je sakrivena. Prikazuje se samo ikonica sa oznakom.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Bez stila",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Koristi stil oznake",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Manje",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Više",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Dodaj pravilo",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp pattern (npr. /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL ili deo (bez protokola)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domen ili deo (bez protokola)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Vrednost pravila ne može biti prazna",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Nevažeći regularni izraz",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Sadrži",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Počinje sa",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Završava se sa",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Odgovara",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Odgovara RegExp-u",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domen",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Pun URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Dodaj oznaku",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Nova oznaka",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Obriši oznake",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Obriši oznaku",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Da li ste sigurni da želite da obrišete $1 odabran$2 oznaku$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Da li ste sigurni da želite da obrišete oznaku \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Kombinuj",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Kombinuj odabrane oznake u",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Ime oznake",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Pravila",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Podešavanja",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Akcije",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "nema oznaka",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Prevucite stavke da biste ih preuredili. Oznake se proveravaju odozgo nadole; prikazuje se prvo poklapanje",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Oznaka",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Oznaka (režim samo ikonice)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Ikonica",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Pravila",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Oznaka se prikazuje kada bilo koje pojedinačno pravilo odgovara (ILI logika između redova)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Eksperimentalno",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Ova funkcija je eksperimentalna i možda neće raditi kako se očekuje. Ako naiđete na probleme ili imate predloge, obavestite programera.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "A ako zaista uživate u korišćenju - javite mu i to, moglo bi mu ulepšati dan 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Izaberite ciljnu oznaku",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Sva pravila iz odabranih oznaka biće premeštena u ciljnu oznaku. Ostale odabrane oznake biće obrisane.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Da li ste sigurni da želite da nastavite?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Da li ste sigurni?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Postavi oznaku na $1 poziciju",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Izvezi odabrane",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Izvezi oznake",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Uvezi oznake",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Uvezi oznake",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Iz fajla",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Sa URL-a",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Iz druge ekstenzije",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Iz fajla",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Sa URL-a",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Iz druge ekstenzije",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Prevucite fajl ovde ili kliknite da izaberete",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Koristite izvezeni konfiguracioni fajl u JSON formatu",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Neuspelo učitavanje fajla",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL do JSON fajla koji sadrži konfiguracije oznaka",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Obriši unos",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Automatska sinhronizacija",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Automatski ažuriraj oznake sa URL-a na zadatoj učestalosti",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Poslednja sinhronizacija: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sinhronizuj sada",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Sačuvaj podešavanja",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL do JSON fajla",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL detektovan. Biće transformisan u direktan link za preuzimanje.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 direktan link za preuzimanje detektovan.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Potrebna dozvola",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Sinhronizacija neuspela",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Ova funkcija vam pomaže da migrirate postojeće oznake iz drugih ekstenzija.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Poštujemo rad drugih programera ekstenzija i pružamo ovu opciju isključivo kao pogodnost za korisnike koji žele da isprobaju WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Uvezi iz",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Kombinuj oznake sa odgovarajućim svojstvima",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Oznake sa istim imenom, bojom, veličinom fonta i pozicijom biće spojene u jednu oznaku sa kombinovanim pravilima. Takođe možete kombinovati oznake ručno nakon uvoza.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Prevucite fajl ovde ili kliknite da izaberete",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Koristite izvezeni fajl oznaka iz Environment Marker ekstenzije u JSON formatu",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Neuspeo uvoz oznaka",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Uvezi oznake",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Uvezi oznake iz fajla",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Uvezi oznake sa URL-a",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Uvezi oznake iz Environment Marker-a",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Iz uvezenog izvora:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Iz fajla:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Sa URL-a:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Iz fajla:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Iz fajla ($1 oznaka kombinovano u $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 nov$2 oznaku$2 će biti dodat$2",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 postojeć$2 oznaku$2 će biti ažurirat$2",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "oznaka",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "oznake",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Nevažeći URL ili sinhronizacija u toku",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Dozvola odbijena",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Fajl ne sadrži važeći niz",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Fajl je prazan",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Nevažeća stavka na indeksu $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Nedostaje obavezno polje \"$1\" na indeksu $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Fajl ne sadrži važeće oznake",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL ne vraća važeći niz oznaka",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Greška u komunikaciji sa pozadinskim skriptom",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Neuspelo preuzimanje podataka",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Greška validacije",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "nepoznata greška",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Onemogućeno",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Svakih 15 minuta",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Svakih 30 minuta",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Svakog sata",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Svakih 6 sati",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Jednom dnevno",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Automatska sinhronizacija",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL za sinhronizaciju",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Poslednja: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Greška",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Greška sinhronizacije",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sinhronizuj sada",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "upravo sada",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "pre $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "pre $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "pre $1 sat",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "pre $1 sati",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "pre $1 dan",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "pre $1 dana",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Da li vam je ova ekstenzija korisna?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Ocenite je na Chrome Web Store-u",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Kontaktirajte programera",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Ocenite",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Promena teme boja",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Izaberite jezik",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Koristi jezik pretraživača",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Izaberite jezik",
+    "description": "Language selector aria label"
+  }
+}

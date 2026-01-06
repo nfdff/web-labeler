@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Lagyan ng label ang iyong mga proyekto nang madali at iwasan ang pagkalito sa pagitan ng production, test, o development environments",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "I-save",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Kumpirmahin",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Kanselahin",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Burahin",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[walang pangalan]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Bukas",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Sarado",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "BUKAS",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "SARADO",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Pamahalaan ang Lahat ng Label",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Walang available na label. Gumawa ng mga label sa settings.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Ang site na ito ay hindi tumutugma sa anumang label",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Idagdag sa Label",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Idagdag ang site na ito sa isang label",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Pumili ng label...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Magdagdag ng Patakaran",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Tumugmang Label",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Baguhin ang posisyon",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Posisyon",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "I-edit ang patakaran",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "I-edit ang Patakaran",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Burahin ang patakaran",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Burahin ang Patakaran",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Sigurado ka bang gusto mong burahin ang patakarang ito?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Pangalan",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Pangalan",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Hugis",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Kulay ng background",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Kulay ng background",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Kulay ng teksto",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Kulay ng teksto",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacity",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Opacity Kapag Naka-Hover",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Sukat",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Laki ng Font",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Border",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Kulay ng border",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Kulay ng border",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Lapad ng Border",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Mga Setting",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Preview",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Window",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Ang Iyong Tab",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "tatsulok",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "ribbon",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "frame",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "wala",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "solid",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "dashed",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "dotted",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Pag-eestilo ng Favicon",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Icon-Only Mode",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Itago ang badge sa page at ipakita lang ang icon",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Icon-Only Mode",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Ang badge sa page ay nakatago. Ang badged favicon lang ang ipinakikita.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Wala",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Gumamit ng badge style",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Mas Kaunti",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Higit Pa",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Magdagdag ng Patakaran",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Regexp pattern (hal., /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL o bahagi (walang protocol)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domain o bahagi (walang protocol)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Ang halaga ng patakaran ay hindi maaaring walang laman",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Hindi wastong regular expression pattern",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Naglalaman",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Nagsisimula Sa",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Nagtatapos Sa",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Tumutugma",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Tumutugma sa RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domain",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Buong URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Magdagdag ng Label",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Bagong Label",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Burahin ang mga Label",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Burahin ang Label",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Sigurado ka bang gusto mong burahin ang $1 napiling label$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Sigurado ka bang gusto mong burahin ang label na \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Pagsamahin",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Pagsamahin ang mga Napiling Label Sa",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Pangalan ng Label",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Mga Patakaran",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Mga Setting",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Mga Aksyon",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "walang mga label",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "I-drag ang mga item para ayusin ang pagkakasunod-sunod. Sinusuri ang mga label mula taas pababa; ang unang tumugma ay ipapakita",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Badge",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Badge (Icon-Only Mode)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Icon",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Mga Patakaran",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Ipapakita ang label kapag ang kahit anong patakaran ay tumugma (OR logic sa pagitan ng mga row)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Experimental",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Ang feature na ito ay experimental at maaaring hindi gumana nang inaasahan. Kung mayroon kang nakatagpo na mga isyu o may mungkahi, pakilagay sa alam ng developer.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "At kung tunay mong nagustuhan ang paggamit nito — pakisabi rin sa kanya, baka mapasaya mo ang kanyang araw 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Pumili ng target na label",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Lahat ng mga patakaran mula sa mga napiling label ay ililipat sa target na label. Ang ibang napiling label ay buburahin.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Sigurado ka bang gusto mong magpatuloy?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Sigurado ka ba?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Ilagay ang label sa $1 na posisyon",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "I-export ang mga Napili",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "I-export ang mga Label",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Mag-import ng mga Label",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Mag-import ng mga Label",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Mula sa file",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Mula sa URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Mula sa Ibang Extension",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Mula sa File",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Mula sa URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Mula sa Ibang Extension",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "I-drag ang file dito o mag-click para pumili",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Gumamit ng exported configuration file sa JSON format",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Nabigo ang pagbasa ng file",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL sa isang JSON file na naglalaman ng mga label configuration",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Burahin ang input",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Auto-Sync",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Awtomatikong i-update ang mga label mula sa URL sa tinukoy na dalas",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Huling na-sync: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "I-sync Ngayon",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "I-save ang mga Setting",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL sa JSON file",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "$1 URL ay natukoy. Iko-convert sa direct download link.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "$1 direct download link ay natukoy.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Kailangan ng Pahintulot",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Nabigo ang pag-sync",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Ang feature na ito ay tumutulong sa iyo na ilipat ang iyong mga umiiral na label mula sa ibang mga extension.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Siniseryoso namin ang trabaho ng ibang mga extension developer at nagbibigay ng opsyong ito bilang kaginhawahan para sa mga user na gustong subukan ang WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Mag-import Mula Sa",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Pagsamahin ang mga label na may magkatugmang properties",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Ang mga label na may parehong pangalan, kulay, laki ng font, at posisyon ay pagsasamahin sa isang label na may pinagsanib na mga patakaran. Maaari mo ring pagsamahin ang mga label manu-mano pagkatapos ng pag-import.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "I-drag ang file dito o mag-click para pumili",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Gumamit ng exported labels file mula sa Environment Marker extension sa JSON format",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Nabigo ang pag-import ng mga label",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Mag-import ng mga label",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Mag-import ng mga label mula sa file",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Mag-import ng mga label mula sa URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Mag-import ng mga label mula sa Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Mula sa naka-import na source:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Mula sa file:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Mula sa URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Mula sa file:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Mula sa file ($1 na label ay pinagsama sa $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 bagong $2 ay idadagdag",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 umiiral na $2 ay ia-update",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "label",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "mga label",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Hindi wastong URL o kasalukuyang nag-sync",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Tinanggihan ang pahintulot",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Ang file ay walang wastong array",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Ang file ay walang laman",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Hindi wastong item sa index $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Nawawalang kinakailangang field na \"$1\" sa index $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Ang file ay walang wastong mga label",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "Ang URL ay hindi nagbabalik ng wastong array ng mga label",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Error sa komunikasyon sa background script",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Nabigo ang pagkuha ng data",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Error sa validation",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "hindi kilalang error",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Naka-disable",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Bawat 15 minuto",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Bawat 30 minuto",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Bawat oras",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Bawat 6 na oras",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Minsan sa isang araw",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Auto-Sync",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sync URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Huli: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Error",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Error sa Pag-sync",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "I-sync ngayon",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "kanina lang",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "$1 min ang nakalipas",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "$1 mins ang nakalipas",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "$1 oras ang nakalipas",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "$1 oras ang nakalipas",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "$1 araw ang nakalipas",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "$1 araw ang nakalipas",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Nakatulong ba ang extension na ito?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "I-rate Ito Sa Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Makipag-ugnayan sa Developer",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "I-rate",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Baguhin ang color scheme",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Pumili ng Wika",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Gumamit ng Wika ng Browser",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Pumili ng wika",
+    "description": "Language selector aria label"
+  }
+}

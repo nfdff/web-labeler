@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Etichetează-ți proiectele cu ușurință și evită confuzia dintre mediile de producție, testare și dezvoltare",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Salvează",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Confirmă",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Anulează",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Șterge",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[fără nume]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Pornit",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Oprit",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "PORNIT",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "OPRIT",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Gestionează Toate Etichetele",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Nu există etichete disponibile. Creează etichete în setări.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Acest site nu corespunde încă niciunei etichete",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Adaugă la Etichetă",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Adaugă acest site la o etichetă",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Alege o etichetă...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Adaugă Regulă",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Etichetă Potrivită",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Schimbă poziția",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Poziție",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Editează regula",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Editează Regula",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Șterge regula",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Șterge Regula",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Ești sigur că vrei să ștergi această regulă?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Nume",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Nume",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Formă",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Culoare fundal",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Culoare fundal",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Culoare text",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Culoare text",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Opacitate",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Opacitate la Hover",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Scală",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Dimensiune Font",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Bordură",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Culoare bordură",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Culoare bordură",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Lățime Bordură",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Setări",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Previzualizare",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Fereastră",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Fila Ta",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "triunghi",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "panglică",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "banner",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "cadru",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "fără",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "solid",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "liniuțe",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "punctat",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Stilizare Favicon",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Mod Doar Pictogramă",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Ascunde insigna de pe pagină și afișează doar pictograma",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Mod Doar Pictogramă",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Insigna de pe pagină este ascunsă. Se afișează doar favicon-ul cu insignă.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Fără",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Folosește stil insignă",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Mai puțin",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Mai mult",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Adaugă Regulă",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Pattern RegExp (ex: /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL sau parte (fără protocol)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domeniu sau parte (fără protocol)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Valoarea regulii nu poate fi goală",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Pattern de expresie regulată invalid",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Conține",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Începe Cu",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Se Termină Cu",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Corespunde",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Corespunde RegExp",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domeniu",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "URL Complet",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Adaugă Etichetă",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Etichetă Nouă",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Șterge Etichetele",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Șterge Eticheta",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Ești sigur că vrei să ștergi $1 etichet$2 selectat$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Ești sigur că vrei să ștergi eticheta \"$1\"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Combină",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Combină Etichetele Selectate În",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Nume Etichetă",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Reguli",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Setări",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Acțiuni",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "nicio etichetă",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Trage elementele pentru a le reordona. Etichetele sunt verificate de sus în jos; prima potrivire este afișată",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Insignă",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Insignă (Mod Doar Pictogramă)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Pictogramă",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Reguli",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Eticheta este afișată când oricare regulă corespunde (logică SAU între rânduri)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Experimental",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Această funcționalitate este experimentală și poate să nu funcționeze conform așteptărilor. Dacă întâmpini probleme sau ai sugestii, te rugăm să anunți dezvoltatorul.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "Și dacă te bucuri să o folosești — spune-i și lui, ar putea să îi facă ziua mai frumoasă 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Selectează eticheta țintă",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Toate regulile din etichetele selectate vor fi mutate în eticheta țintă. Celelalte etichete selectate vor fi șterse.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Ești sigur că vrei să continui?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Ești sigur?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Plasează eticheta în poziția $1",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Exportă Selecția",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Exportă Etichete",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Importă Etichete",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importă Etichete",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Din fișier",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Din URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Din Altă Extensie",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Din Fișier",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Din URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Din Altă Extensie",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Trage fișierul aici sau dă click pentru a selecta",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Folosește fișier de configurare exportat în format JSON",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Eroare la citirea fișierului",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL către un fișier JSON care conține configurări de etichete",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Șterge câmpul",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Sincronizare Automată",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Actualizează automat etichetele din URL la frecvența specificată",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Ultima sincronizare: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sincronizează Acum",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Salvează Setările",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL către fișier JSON",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "URL $1 detectat. Va fi transformat în link de descărcare directă.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Link de descărcare directă $1 detectat.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Permisiune Necesară",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Sincronizare eșuată",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Această funcționalitate te ajută să migrezi etichetele existente din alte extensii.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Respectăm munca altor dezvoltatori de extensii și oferim această opțiune pur ca o comoditate pentru utilizatorii care doresc să încerce WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importă Din",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Combină etichetele cu proprietăți potrivite",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Etichetele cu același nume, culoare, dimensiune font și poziție vor fi unite într-o singură etichetă cu reguli combinate. Poți combina etichetele manual și după import.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Trage fișierul aici sau dă click pentru a selecta",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Folosește fișier de etichete exportat din extensia Environment Marker în format JSON",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Eroare la importarea etichetelor",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Importă etichete",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importă etichete din fișier",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importă etichete din URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importă etichete din Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Din sursa importată:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Din fișier:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Din URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Din fișier:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Din fișier ($1 etichete combinate în $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 $2 nou$2 va fi adăugat$2",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 $2 existent$2 va fi actualizat$2",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "etichetă",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "etichete",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "URL invalid sau sincronizare în curs",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Permisiune refuzată",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Fișierul nu conține un array valid",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Fișierul este gol",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Element invalid la indexul $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Câmp obligatoriu \"$1\" lipsă la indexul $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Fișierul nu conține etichete valide",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL-ul nu returnează un array valid de etichete",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Eroare de comunicare cu scriptul de fundal",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Eroare la preluarea datelor",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Eroare de validare",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "eroare necunoscută",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Dezactivat",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "La fiecare 15 minute",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "La fiecare 30 de minute",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "La fiecare oră",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "La fiecare 6 ore",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "O dată pe zi",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Sincronizare Automată",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "URL Sincronizare",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Ultima: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Eroare",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Eroare de Sincronizare",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sincronizează acum",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "chiar acum",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "acum $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "acum $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "acum $1 oră",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "acum $1 ore",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "acum $1 zi",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "acum $1 zile",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Găsești această extensie utilă?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Evaluează-o pe Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Contactează Dezvoltatorul",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Evaluează",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Comută schema de culori",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Selectează Limba",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Folosește Limba Browserului",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Selectează limba",
+    "description": "Language selector aria label"
+  }
+}

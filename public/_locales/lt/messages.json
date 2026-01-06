@@ -1,0 +1,815 @@
+{
+  "appName": {
+    "message": "WebLabeler",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "Lengvai pažymėkite savo projektus ir išvenkite painiavos tarp gamybinės, testavimo ar kūrimo aplinkų",
+    "description": "Extension description"
+  },
+
+  "common_save": {
+    "message": "Išsaugoti",
+    "description": "Save button"
+  },
+  "common_confirm": {
+    "message": "Patvirtinti",
+    "description": "Confirm button"
+  },
+  "common_cancel": {
+    "message": "Atšaukti",
+    "description": "Cancel button"
+  },
+  "common_delete": {
+    "message": "Ištrinti",
+    "description": "Delete button"
+  },
+  "common_noname": {
+    "message": "[be pavadinimo]",
+    "description": "Placeholder for unnamed items"
+  },
+
+  "optionsPage_title": {
+    "message": "WebLabeler",
+    "description": "Options page title"
+  },
+  "optionsPage_switchOn": {
+    "message": "Įjungta",
+    "description": "Toggle switch On label"
+  },
+  "optionsPage_switchOff": {
+    "message": "Išjungta",
+    "description": "Toggle switch Off label"
+  },
+
+  "popup_title": {
+    "message": "WebLabeler",
+    "description": "Popup title"
+  },
+  "popup_switchOn": {
+    "message": "ĮJUNGTA",
+    "description": "Popup switch On label"
+  },
+  "popup_switchOff": {
+    "message": "IŠJUNGTA",
+    "description": "Popup switch Off label"
+  },
+  "popup_manageLabels": {
+    "message": "Tvarkyti visas žymas",
+    "description": "Manage labels button"
+  },
+  "popup_noLabels": {
+    "message": "Žymų nėra. Sukurkite žymas nustatymuose.",
+    "description": "Message when no labels exist"
+  },
+  "popup_noMatchInfo": {
+    "message": "Ši svetainė dar neatitinka jokios žymos",
+    "description": "Message when URL doesn't match any label"
+  },
+  "popup_addToLabel": {
+    "message": "Pridėti prie žymos",
+    "description": "Add to label button"
+  },
+  "popup_addRuleTitle": {
+    "message": "Pridėti šią svetainę prie žymos",
+    "description": "Add rule form title"
+  },
+  "popup_selectLabel_placeholder": {
+    "message": "Pasirinkite žymą...",
+    "description": "Select label dropdown placeholder"
+  },
+  "popup_addRule": {
+    "message": "Pridėti taisyklę",
+    "description": "Add rule button"
+  },
+  "popup_matchedLabel": {
+    "message": "Atitinkanti žyma",
+    "description": "Matched label section title"
+  },
+  "popup_cyclePosition": {
+    "message": "Keisti poziciją",
+    "description": "Cycle position button aria label"
+  },
+  "popup_currentPosition": {
+    "message": "Pozicija",
+    "description": "Current position label"
+  },
+  "popup_editRule": {
+    "message": "Redaguoti taisyklę",
+    "description": "Edit rule button tooltip"
+  },
+  "popup_editRuleTitle": {
+    "message": "Redaguoti taisyklę",
+    "description": "Edit rule modal title"
+  },
+  "popup_deleteRule": {
+    "message": "Ištrinti taisyklę",
+    "description": "Delete rule button tooltip"
+  },
+  "popup_deleteRuleTitle": {
+    "message": "Ištrinti taisyklę",
+    "description": "Delete rule modal title"
+  },
+  "popup_deleteRuleConfirm": {
+    "message": "Ar tikrai norite ištrinti šią taisyklę?",
+    "description": "Delete rule confirmation message"
+  },
+
+  "label_name": {
+    "message": "Pavadinimas",
+    "description": "Label name field"
+  },
+  "label_name_placeholder": {
+    "message": "Pavadinimas",
+    "description": "Label name placeholder"
+  },
+  "label_shape": {
+    "message": "Forma",
+    "description": "Shape selector"
+  },
+  "label_backgroundColor": {
+    "message": "Fono spalva",
+    "description": "Background color field"
+  },
+  "label_backgroundColor_placeholder": {
+    "message": "Fono spalva",
+    "description": "Background color placeholder"
+  },
+  "label_textColor": {
+    "message": "Teksto spalva",
+    "description": "Text color field"
+  },
+  "label_textColor_placeholder": {
+    "message": "Teksto spalva",
+    "description": "Text color placeholder"
+  },
+  "label_opacity": {
+    "message": "Nepermatomumas",
+    "description": "Opacity slider"
+  },
+  "label_hoveredOpacity": {
+    "message": "Nepermatomumas užvedus pelę",
+    "description": "Hovered opacity slider"
+  },
+  "label_scale": {
+    "message": "Mastas",
+    "description": "Scale slider"
+  },
+  "label_fontSize": {
+    "message": "Šrifto dydis",
+    "description": "Font size slider"
+  },
+  "label_border": {
+    "message": "Rėmelis",
+    "description": "Border selector"
+  },
+  "label_borderColor": {
+    "message": "Rėmelio spalva",
+    "description": "Border color field"
+  },
+  "label_borderColor_placeholder": {
+    "message": "Rėmelio spalva",
+    "description": "Border color placeholder"
+  },
+  "label_borderWidth": {
+    "message": "Rėmelio plotis",
+    "description": "Border width field"
+  },
+  "label_settings": {
+    "message": "Nustatymai",
+    "description": "Settings fieldset legend"
+  },
+  "label_preview": {
+    "message": "Peržiūra",
+    "description": "Preview fieldset legend"
+  },
+  "label_preview_window": {
+    "message": "Langas",
+    "description": "Preview window label"
+  },
+  "label_preview_yourTab": {
+    "message": "Jūsų kortelė",
+    "description": "Preview tab title"
+  },
+
+  "label_shape_triangle": {
+    "message": "trikampis",
+    "description": "Triangle shape"
+  },
+  "label_shape_ribbon": {
+    "message": "juostelė",
+    "description": "Ribbon shape"
+  },
+  "label_shape_banner": {
+    "message": "vėliavėlė",
+    "description": "Banner shape"
+  },
+  "label_shape_frame": {
+    "message": "rėmas",
+    "description": "Frame shape"
+  },
+
+  "label_border_none": {
+    "message": "nėra",
+    "description": "No border"
+  },
+  "label_border_solid": {
+    "message": "ištisinis",
+    "description": "Solid border"
+  },
+  "label_border_dashed": {
+    "message": "brūkšninis",
+    "description": "Dashed border"
+  },
+  "label_border_dotted": {
+    "message": "taškinis",
+    "description": "Dotted border"
+  },
+
+  "label_faviconStyling": {
+    "message": "Piktogramos stilius",
+    "description": "Favicon style label"
+  },
+  "label_iconOnlyMode": {
+    "message": "Tik piktogramos režimas",
+    "description": "Icon-only mode toggle"
+  },
+  "label_iconOnlyMode_description": {
+    "message": "Paslėpti ženklelį puslapyje ir rodyti tik piktogramą",
+    "description": "Icon-only mode description"
+  },
+  "label_iconOnlyMode_alert_title": {
+    "message": "Tik piktogramos režimas",
+    "description": "Icon-only alert title"
+  },
+  "label_iconOnlyMode_alert_message": {
+    "message": "Ženklelis puslapyje paslėptas. Rodoma tik pažymėta piktograma.",
+    "description": "Icon-only alert message"
+  },
+
+  "label_iconStyle_none": {
+    "message": "Nėra",
+    "description": "Icon style option - none"
+  },
+  "label_iconStyle_badge": {
+    "message": "Naudoti ženklelio stilių",
+    "description": "Icon style option - badge"
+  },
+
+  "label_collapseButton_less": {
+    "message": "Mažiau",
+    "description": "Collapse button - show less"
+  },
+  "label_collapseButton_more": {
+    "message": "Daugiau",
+    "description": "Collapse button - show more"
+  },
+
+  "rules_addRule": {
+    "message": "Pridėti taisyklę",
+    "description": "Add rule button"
+  },
+  "rules_placeholder_regexp": {
+    "message": "Reguliarioji išraiška (pvz., /article/.*)",
+    "description": "Regexp input placeholder"
+  },
+  "rules_placeholder_fullUrl": {
+    "message": "URL arba jo dalis (be protokolo)",
+    "description": "Full URL input placeholder"
+  },
+  "rules_placeholder_hostname": {
+    "message": "Domenas arba jo dalis (be protokolo)",
+    "description": "Domain input placeholder"
+  },
+  "rules_validation_empty": {
+    "message": "Taisyklės reikšmė negali būti tuščia",
+    "description": "Empty rule validation error"
+  },
+  "rules_validation_invalidRegexp": {
+    "message": "Netinkama reguliarioji išraiška",
+    "description": "Invalid regexp validation error"
+  },
+
+  "ruleType_contains": {
+    "message": "Turi",
+    "description": "Rule type - contains"
+  },
+  "ruleType_startsWith": {
+    "message": "Prasideda",
+    "description": "Rule type - starts with"
+  },
+  "ruleType_endsWith": {
+    "message": "Baigiasi",
+    "description": "Rule type - ends with"
+  },
+  "ruleType_matches": {
+    "message": "Atitinka",
+    "description": "Rule type - matches"
+  },
+  "ruleType_regexp": {
+    "message": "Atitinka reguliariąją išraišką",
+    "description": "Rule type - regexp"
+  },
+
+  "sourceType_hostname": {
+    "message": "Domenas",
+    "description": "Source type - hostname"
+  },
+  "sourceType_fullUrl": {
+    "message": "Pilnas URL",
+    "description": "Source type - full URL"
+  },
+
+  "labelList_addLabel": {
+    "message": "Pridėti žymą",
+    "description": "Add label button"
+  },
+  "labelList_newLabel": {
+    "message": "Nauja žyma",
+    "description": "New label modal title"
+  },
+  "labelList_deleteLabels": {
+    "message": "Ištrinti žymas",
+    "description": "Delete labels modal title"
+  },
+  "labelList_deleteLabel": {
+    "message": "Ištrinti žymą",
+    "description": "Delete single label modal title"
+  },
+  "labelList_deleteConfirm_multiple": {
+    "message": "Ar tikrai norite ištrinti $1 pasirinktą(-as) žymą(-as)$2?",
+    "description": "Delete multiple labels confirmation, $1=count, $2=s or empty"
+  },
+  "labelList_deleteConfirm_single": {
+    "message": "Ar tikrai norite ištrinti žymą „$1"?",
+    "description": "Delete single label confirmation, $1=label name"
+  },
+  "labelList_combine": {
+    "message": "Sujungti",
+    "description": "Combine button"
+  },
+  "labelList_combineTitle": {
+    "message": "Sujungti pasirinktas žymas į",
+    "description": "Combine modal title"
+  },
+
+  "labelList_header_name": {
+    "message": "Žymos pavadinimas",
+    "description": "Table header - name"
+  },
+  "labelList_header_rules": {
+    "message": "Taisyklės",
+    "description": "Table header - rules"
+  },
+  "labelList_header_settings": {
+    "message": "Nustatymai",
+    "description": "Table header - settings"
+  },
+  "labelList_header_actions": {
+    "message": "Veiksmai",
+    "description": "Table header - actions"
+  },
+  "labelList_empty": {
+    "message": "žymų nėra",
+    "description": "Empty state message"
+  },
+  "labelList_tooltip_reorder": {
+    "message": "Vilkite elementus, kad pakeistumėte eilės tvarką. Žymos tikrinamos iš viršaus į apačią; rodoma pirmoji atitinkanti",
+    "description": "Reorder tooltip"
+  },
+
+  "labelSettings_badge": {
+    "message": "Ženklelis",
+    "description": "Badge button/modal title"
+  },
+  "labelSettings_badge_iconOnly": {
+    "message": "Ženklelis (tik piktogramos režimas)",
+    "description": "Badge modal title in icon-only mode"
+  },
+  "labelSettings_icon": {
+    "message": "Piktograma",
+    "description": "Icon button/modal title"
+  },
+  "labelSettings_rules": {
+    "message": "Taisyklės",
+    "description": "Rules button/modal title"
+  },
+  "labelSettings_rules_tooltip": {
+    "message": "Žyma rodoma, kai atitinka bet kuri taisyklė (OR logika tarp eilučių)",
+    "description": "Rules tooltip"
+  },
+
+  "labelSettings_experimental": {
+    "message": "Eksperimentinė",
+    "description": "Experimental feature badge"
+  },
+  "labelSettings_experimental_message": {
+    "message": "Ši funkcija yra eksperimentinė ir gali neveikti taip, kaip tikėtasi. Jei susiduriate su problemomis arba turite pasiūlymų, praneškite kūrėjui.",
+    "description": "Experimental feature message"
+  },
+  "labelSettings_experimental_enjoy": {
+    "message": "O jei iš tikrųjų mėgaujatės ja — taip pat pasakykite jam, tai galėtų pagerinti jo dieną 😊🙏!",
+    "description": "Experimental feature enjoy message"
+  },
+
+  "combineModal_selectTarget": {
+    "message": "Pasirinkite tikslinę žymą",
+    "description": "Select target label placeholder"
+  },
+  "combineModal_explanation": {
+    "message": "Visos pasirinktų žymų taisyklės bus perkeltos į tikslinę žymą. Kitos pasirinktos žymos bus ištrintos.",
+    "description": "Combine explanation"
+  },
+  "combineModal_confirmQuestion": {
+    "message": "Ar tikrai norite tęsti?",
+    "description": "Combine confirmation question"
+  },
+
+  "confirmationModal_defaultMessage": {
+    "message": "Ar tikrai?",
+    "description": "Default confirmation message"
+  },
+
+  "positionControl_tooltip": {
+    "message": "Patalpinti žymą į $1 poziciją",
+    "description": "Position control tooltip, $1=position name"
+  },
+
+  "export_selected": {
+    "message": "Eksportuoti pasirinktas",
+    "description": "Export selected button"
+  },
+  "export_all": {
+    "message": "Eksportuoti žymas",
+    "description": "Export all button"
+  },
+
+  "import_title": {
+    "message": "Importuoti žymas",
+    "description": "Import modal title"
+  },
+  "import_button": {
+    "message": "Importuoti žymas",
+    "description": "Import button"
+  },
+  "import_fromFile": {
+    "message": "Iš failo",
+    "description": "Import from file menu item"
+  },
+  "import_fromUrl": {
+    "message": "Iš URL",
+    "description": "Import from URL menu item"
+  },
+  "import_fromExtension": {
+    "message": "Iš kito plėtinio",
+    "description": "Import from extension menu item"
+  },
+
+  "importTab_fromFile": {
+    "message": "Iš failo",
+    "description": "From file tab"
+  },
+  "importTab_fromUrl": {
+    "message": "Iš URL",
+    "description": "From URL tab"
+  },
+  "importTab_fromExtension": {
+    "message": "Iš kito plėtinio",
+    "description": "From extension tab"
+  },
+
+  "importFromFile_dropzone": {
+    "message": "Vilkite failą čia arba spustelėkite, kad pasirinktumėte",
+    "description": "File dropzone text"
+  },
+  "importFromFile_dropzone_description": {
+    "message": "Naudokite eksportuotą konfigūracijos failą JSON formatu",
+    "description": "File dropzone description"
+  },
+  "importFromFile_error_title": {
+    "message": "Nepavyko perskaityti failo",
+    "description": "File read error title"
+  },
+
+  "importFromUrl_label": {
+    "message": "URL",
+    "description": "URL input label"
+  },
+  "importFromUrl_description": {
+    "message": "URL į JSON failą, kuriame yra žymų konfigūracijos",
+    "description": "URL input description"
+  },
+  "importFromUrl_placeholder": {
+    "message": "https://example.com/labels.json",
+    "description": "URL input placeholder"
+  },
+  "importFromUrl_clearInput": {
+    "message": "Išvalyti įvestį",
+    "description": "Clear input aria label"
+  },
+  "importFromUrl_autoSync": {
+    "message": "Automatinis sinchronizavimas",
+    "description": "Auto-sync label"
+  },
+  "importFromUrl_autoSync_description": {
+    "message": "Automatiškai atnaujinti žymas iš URL nurodytu dažnumu",
+    "description": "Auto-sync description"
+  },
+  "importFromUrl_lastSynced": {
+    "message": "Paskutinis sinchronizavimas: $1",
+    "description": "Last synced text, $1=timestamp"
+  },
+  "importFromUrl_syncNow": {
+    "message": "Sinchronizuoti dabar",
+    "description": "Sync now button"
+  },
+  "importFromUrl_saveSettings": {
+    "message": "Išsaugoti nustatymus",
+    "description": "Save settings button"
+  },
+
+  "importFromUrl_cloudService_generic": {
+    "message": "URL į JSON failą",
+    "description": "Generic cloud service tooltip"
+  },
+  "importFromUrl_cloudService_detected": {
+    "message": "Aptiktas $1 URL. Bus paverstas tiesioginiu atsisiuntimo nuoroda.",
+    "description": "Cloud service detected tooltip, $1=service name"
+  },
+  "importFromUrl_cloudService_direct": {
+    "message": "Aptikta $1 tiesioginė atsisiuntimo nuoroda.",
+    "description": "Direct download link tooltip, $1=service name"
+  },
+
+  "importFromUrl_permissionRequired": {
+    "message": "Reikalingas leidimas",
+    "description": "Permission required alert title"
+  },
+  "importFromUrl_syncFailed": {
+    "message": "Nepavyko sinchronizuoti",
+    "description": "Sync failed alert title"
+  },
+
+  "cloudService_googleDrive": {
+    "message": "Google Drive",
+    "description": "Google Drive name"
+  },
+  "cloudService_oneDrive": {
+    "message": "OneDrive",
+    "description": "OneDrive name"
+  },
+  "cloudService_dropbox": {
+    "message": "Dropbox",
+    "description": "Dropbox name"
+  },
+
+  "importFromExtension_alert_title": {
+    "message": "Ši funkcija padeda perkelti esamas žymas iš kitų plėtinių.",
+    "description": "Import from extension alert title"
+  },
+  "importFromExtension_alert_message": {
+    "message": "Mes gerbiame kitų plėtinių kūrėjų darbą ir siūlome šią parinktį tik dėl patogumų naudotojams, norintiems išbandyti WebLabeler.",
+    "description": "Import from extension alert message"
+  },
+  "importFromExtension_selectLabel": {
+    "message": "Importuoti iš",
+    "description": "Import from select label"
+  },
+  "importFromExtension_combineMode": {
+    "message": "Sujungti žymas su atitinkančiomis savybėmis",
+    "description": "Combine mode switch label"
+  },
+  "importFromExtension_combineMode_description": {
+    "message": "Žymos su tuo pačiu pavadinimu, spalva, šrifto dydžiu ir pozicija bus sujungtos į vieną žymą su sujungtomis taisyklėmis. Taip pat galite sujungti žymas rankiniu būdu po importavimo.",
+    "description": "Combine mode description"
+  },
+  "importFromExtension_dropzone": {
+    "message": "Vilkite failą čia arba spustelėkite, kad pasirinktumėte",
+    "description": "Extension import dropzone text"
+  },
+  "importFromExtension_dropzone_description": {
+    "message": "Naudokite eksportuotą žymų failą iš Environment Marker plėtinio JSON formatu",
+    "description": "Extension import dropzone description"
+  },
+  "importFromExtension_error_title": {
+    "message": "Nepavyko importuoti žymų",
+    "description": "Import failed error title"
+  },
+
+  "importLabels_title_default": {
+    "message": "Importuoti žymas",
+    "description": "Default import title"
+  },
+  "importLabels_title_fromFile": {
+    "message": "Importuoti žymas iš failo",
+    "description": "Import from file title"
+  },
+  "importLabels_title_fromUrl": {
+    "message": "Importuoti žymas iš URL",
+    "description": "Import from URL title"
+  },
+  "importLabels_title_fromExtension": {
+    "message": "Importuoti žymas iš Environment Marker",
+    "description": "Import from extension title"
+  },
+  "importLabels_prefix_default": {
+    "message": "Iš importuoto šaltinio:",
+    "description": "Default import message prefix"
+  },
+  "importLabels_prefix_file": {
+    "message": "Iš failo:",
+    "description": "Import from file prefix"
+  },
+  "importLabels_prefix_url": {
+    "message": "Iš URL:",
+    "description": "Import from URL prefix"
+  },
+  "importLabels_prefix_extension": {
+    "message": "Iš failo:",
+    "description": "Import from extension prefix"
+  },
+  "importLabels_prefix_extension_combined": {
+    "message": "Iš failo ($1 žymos sujungtos į $2):",
+    "description": "Import with combine stats, $1=original count, $2=combined count"
+  },
+  "importLabels_message_new": {
+    "message": "$1 nauja(-os) $2 bus pridėta(-os)",
+    "description": "New labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_message_updated": {
+    "message": "$1 esama(-os) $2 bus atnaujinta(-os)",
+    "description": "Updated labels message, $1=count, $2=label/labels"
+  },
+  "importLabels_label_singular": {
+    "message": "žyma",
+    "description": "Label singular"
+  },
+  "importLabels_label_plural": {
+    "message": "žymos",
+    "description": "Label plural"
+  },
+
+  "validation_invalidUrl": {
+    "message": "Netinkamas URL arba vyksta sinchronizavimas",
+    "description": "Invalid URL error"
+  },
+  "validation_permissionDenied": {
+    "message": "Leidimas atmestas",
+    "description": "Permission denied error"
+  },
+  "validation_invalidArray": {
+    "message": "Failas neturi tinkamo masyvo",
+    "description": "Invalid array error"
+  },
+  "validation_emptyFile": {
+    "message": "Failas tuščias",
+    "description": "Empty file error"
+  },
+  "validation_invalidItem": {
+    "message": "Netinkamas elementas indekse $1",
+    "description": "Invalid item error, $1=index"
+  },
+  "validation_missingField": {
+    "message": "Trūksta privalomo lauko „$1" indekse $2",
+    "description": "Missing field error, $1=field name, $2=index"
+  },
+  "validation_invalidLabels": {
+    "message": "Failas neturi tinkamų žymų",
+    "description": "Invalid labels error"
+  },
+  "validation_invalidLabelsUrl": {
+    "message": "URL negrąžina tinkamo žymų masyvo",
+    "description": "Invalid labels from URL error"
+  },
+  "validation_communicationError": {
+    "message": "Komunikacijos klaida su foniniu scenarijumi",
+    "description": "Background script communication error"
+  },
+  "validation_fetchFailed": {
+    "message": "Nepavyko gauti duomenų",
+    "description": "Fetch failed error"
+  },
+  "validation_error": {
+    "message": "Validavimo klaida",
+    "description": "Generic validation error"
+  },
+  "validation_unknownError": {
+    "message": "nežinoma klaida",
+    "description": "Unknown error fallback"
+  },
+
+  "updateFrequency_disabled": {
+    "message": "Išjungta",
+    "description": "Update frequency - disabled"
+  },
+  "updateFrequency_15min": {
+    "message": "Kas 15 minučių",
+    "description": "Update frequency - 15 minutes"
+  },
+  "updateFrequency_30min": {
+    "message": "Kas 30 minučių",
+    "description": "Update frequency - 30 minutes"
+  },
+  "updateFrequency_1hour": {
+    "message": "Kas valandą",
+    "description": "Update frequency - 1 hour"
+  },
+  "updateFrequency_6hours": {
+    "message": "Kas 6 valandas",
+    "description": "Update frequency - 6 hours"
+  },
+  "updateFrequency_24hours": {
+    "message": "Kartą per dieną",
+    "description": "Update frequency - 24 hours"
+  },
+
+  "autoSync_label": {
+    "message": "Automatinis sinchronizavimas",
+    "description": "Auto-sync label"
+  },
+  "autoSync_syncUrl": {
+    "message": "Sinchronizavimo URL",
+    "description": "Sync URL hover card title"
+  },
+  "autoSync_lastPrefix": {
+    "message": "Paskutinis: ",
+    "description": "Last sync prefix"
+  },
+  "autoSync_error": {
+    "message": "Klaida",
+    "description": "Error badge"
+  },
+  "autoSync_syncError": {
+    "message": "Sinchronizavimo klaida",
+    "description": "Sync error hover card title"
+  },
+  "autoSync_syncNow": {
+    "message": "Sinchronizuoti dabar",
+    "description": "Sync now tooltip"
+  },
+
+  "relativeTime_justNow": {
+    "message": "ką tik",
+    "description": "Relative time - just now"
+  },
+  "relativeTime_minutesAgo": {
+    "message": "prieš $1 min",
+    "description": "Relative time - minutes ago, $1=count"
+  },
+  "relativeTime_minutesAgo_plural": {
+    "message": "prieš $1 min",
+    "description": "Relative time - minutes ago plural, $1=count"
+  },
+  "relativeTime_hoursAgo": {
+    "message": "prieš $1 valandą",
+    "description": "Relative time - hours ago, $1=count"
+  },
+  "relativeTime_hoursAgo_plural": {
+    "message": "prieš $1 valandas(-ų)",
+    "description": "Relative time - hours ago plural, $1=count"
+  },
+  "relativeTime_daysAgo": {
+    "message": "prieš $1 dieną",
+    "description": "Relative time - days ago, $1=count"
+  },
+  "relativeTime_daysAgo_plural": {
+    "message": "prieš $1 dienas(-ų)",
+    "description": "Relative time - days ago plural, $1=count"
+  },
+
+  "footer_helpful": {
+    "message": "Šis plėtinys naudingas?",
+    "description": "Footer helpful text"
+  },
+  "footer_rate": {
+    "message": "Įvertinkite jį Chrome Web Store",
+    "description": "Footer rate button"
+  },
+
+  "featureBadge_contactDeveloper": {
+    "message": "Susisiekti su kūrėju",
+    "description": "Contact developer button"
+  },
+  "featureBadge_rate": {
+    "message": "Įvertinti",
+    "description": "Rate button"
+  },
+
+  "themeSwitcher_ariaLabel": {
+    "message": "Perjungti spalvų schemą",
+    "description": "Theme switcher aria label"
+  },
+
+  "language_select": {
+    "message": "Pasirinkti kalbą",
+    "description": "Language selector menu label"
+  },
+  "language_useBrowser": {
+    "message": "Naudoti naršyklės kalbą",
+    "description": "Use browser language option"
+  },
+  "languageSelector_ariaLabel": {
+    "message": "Pasirinkti kalbą",
+    "description": "Language selector aria label"
+  }
+}
