@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 export function getOriginPattern(url: string): string {
   try {
     const urlObj = new URL(url);
@@ -15,7 +17,7 @@ export async function requestUrlPermission(url: string): Promise<boolean> {
 
   try {
     // Check if we already have permission
-    const hasPermission = await chrome.permissions.contains({
+    const hasPermission = await browser.permissions.contains({
       origins: [originPattern],
     });
 
@@ -24,7 +26,7 @@ export async function requestUrlPermission(url: string): Promise<boolean> {
     }
 
     // Request permission
-    return await chrome.permissions.request({
+    return await browser.permissions.request({
       origins: [originPattern],
     });
   } catch (error) {

@@ -1,7 +1,7 @@
+import browser from "webextension-polyfill"
+import type { Storage } from "webextension-polyfill"
 import { Label, Options } from "@/options/types"
 import { matchLabel as matchLabelUtil } from "@/utils/labelMatching"
-
-import StorageChange = chrome.storage.StorageChange
 
 type subscriberCb = (label: Label | null) => void
 
@@ -12,11 +12,11 @@ export default class EnvLabel {
   ) {}
 
   public async init() {
-    chrome.storage.sync.onChanged.addListener(
+    browser.storage.sync.onChanged.addListener(
       this.handleStorageChange.bind(this)
     )
 
-    const { options } = (await chrome.storage.sync.get("options")) as {
+    const { options } = (await browser.storage.sync.get("options")) as {
       options: Options
     }
 
@@ -24,8 +24,8 @@ export default class EnvLabel {
     this.notifySubscribers()
   }
 
-  private handleStorageChange(changes: { [key: string]: StorageChange }) {
-    this.label = this.matchLabel(changes.options.newValue)
+  private handleStorageChange(changes: { [key: string]: Storage.StorageChange }) {
+    this.label = this.matchLabel(changes.options.newValue as Options)
     this.notifySubscribers()
   }
 

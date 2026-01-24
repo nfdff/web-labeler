@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --config vite.content.config.ts",
-    "build-watch": "tsc -b && vite build --watch & vite build --config vite.content.config.ts --watch",
+    "build": "tsc -b && vite build && vite build --config vite.content.config.ts && vite build --config vite.sw.config.ts",
+    "build:chrome": "VITE_BROWSER=chrome npm run build && cp manifests/manifest.chrome.json dist/manifest.json",
+    "build:firefox": "VITE_BROWSER=firefox npm run build && cp manifests/manifest.firefox.json dist/manifest.json",
+    "build-watch": "tsc -b && vite build --watch & vite build --config vite.content.config.ts --watch & vite build --config vite.sw.config.ts --watch",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "preview": "vite preview",
@@ -39,6 +41,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/uuid": "^10.0.0",
+    "@types/webextension-polyfill": "^0.12.4",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^5.1.2",
@@ -51,6 +54,7 @@
     "sass": "^1.77.8",
     "typescript": "^5.2.2",
     "vite": "7.1.11",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "webextension-polyfill": "^0.12.0"
   }
 }

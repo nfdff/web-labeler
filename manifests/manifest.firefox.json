@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "version": "1.6",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "web-labeler@anthropic.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "16": "/icon/icon-16.png",
+    "32": "/icon/icon-32.png",
+    "48": "/icon/icon-48.png",
+    "128": "/icon/icon-128.png"
+  },
+  "options_page": "/index.html",
+  "action": {
+    "default_popup": "/index.html#popup"
+  },
+  "content_scripts": [
+    {
+      "js": ["assets/contentScript.js"],
+      "css": ["assets/contentScript.css"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "permissions": ["storage", "alarms", "activeTab"],
+  "optional_permissions": ["*://*/*"],
+  "background": {
+    "scripts": ["assets/service-worker.js"]
+  }
+}

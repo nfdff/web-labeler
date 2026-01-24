@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill"
 import { useState } from "react"
 import {
   ActionIcon,
@@ -130,7 +131,7 @@ function LanguageSelector() {
           className={styles.option}
         >
           <Text size="sm" c="dimmed" className={styles.browserOption}>
-            {chrome.i18n.getMessage("language_useBrowser")}
+            {browser.i18n.getMessage("language_useBrowser")}
           </Text>
         </Combobox.Option>
       </Combobox.Dropdown>

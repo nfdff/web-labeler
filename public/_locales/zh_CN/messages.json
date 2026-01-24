@@ -748,7 +748,7 @@
     "description": "Footer helpful text"
   },
   "footer_rate": {
-    "message": "在 Chrome 网上应用店评分",
+    "message": "为此扩展程序评分",
     "description": "Footer rate button"
   },
   "featureBadge_contactDeveloper": {

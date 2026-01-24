@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill";
 import React, { useCallback, useEffect, useReducer, useState } from "react";
 
 interface resetAction<State> {
@@ -16,7 +17,7 @@ export function usePersistentReducer<State, Action>(
 
   const initializeStorage = useCallback(async () => {
     try {
-      const storage = await chrome.storage.sync.get(storageKey);
+      const storage = await browser.storage.sync.get(storageKey);
 
       dispatch({
         type: "initialize",
@@ -43,7 +44,7 @@ export function usePersistentReducer<State, Action>(
 
   useEffect(() => {
     if (isInitialized) {
-      chrome.storage.sync.set({ [storageKey]: state });
+      browser.storage.sync.set({ [storageKey]: state });
     }
   }, [state, isInitialized, storageKey]);
 

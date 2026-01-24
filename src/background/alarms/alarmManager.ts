@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill";
 import { logger } from "@/utils/logger";
 import { ALARM_NAME } from "../config";
 import { getOptions } from "../storage/storageManager";
@@ -9,11 +10,11 @@ export async function updateAlarm(
 ): Promise<void> {
   try {
     // Clear existing alarm
-    await chrome.alarms.clear(ALARM_NAME);
+    await browser.alarms.clear(ALARM_NAME);
 
     if (enabled && updateFrequency > 0) {
       // Create new alarm with the specified frequency
-      await chrome.alarms.create(ALARM_NAME, {
+      await browser.alarms.create(ALARM_NAME, {
         periodInMinutes: updateFrequency,
       });
     }
@@ -28,15 +29,15 @@ export async function initializeAlarm(): Promise<void> {
 
     if (options?.urlSync?.enabled && options.urlSync.updateFrequency > 0) {
       // Check if alarm already exists before recreating
-      const existingAlarm = await chrome.alarms.get(ALARM_NAME);
+      const existingAlarm = await browser.alarms.get(ALARM_NAME);
       if (!existingAlarm) {
-        await chrome.alarms.create(ALARM_NAME, {
+        await browser.alarms.create(ALARM_NAME, {
           periodInMinutes: options.urlSync.updateFrequency,
         });
       }
     } else {
       // Ensure alarm is cleared if disabled
-      await chrome.alarms.clear(ALARM_NAME);
+      await browser.alarms.clear(ALARM_NAME);
     }
   } catch (error) {
     logger.error("Error initializing alarm:", error);
@@ -72,7 +73,7 @@ export async function checkAndRunMissedSync(): Promise<void> {
 }
 
 export function setupAlarmListener(): void {
-  chrome.alarms.onAlarm.addListener(async (alarm) => {
+  browser.alarms.onAlarm.addListener(async (alarm) => {
     if (alarm.name === ALARM_NAME) {
       await syncLabelsFromUrl();
     }

@@ -12,12 +12,13 @@ import {
   Title,
 } from "@mantine/core"
 import { IconSettings } from "@tabler/icons-react"
+import browser from "webextension-polyfill"
 import { LabelListCompact } from "@/components/Label/List"
 import { useOptionsContext } from "@/contexts"
 import { useTranslation } from "@/contexts"
 import {
   type LabelMatch,
-  isChromeUrl,
+  isBrowserUrl,
   matchLabelWithRule,
 } from "@/utils/labelMatching"
 import PopupAddRule from "./components/PopupAddRule"
@@ -32,12 +33,12 @@ function Popup() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    browser.tabs.query({ active: true, currentWindow: true }).then((tabs) => {
       const url = tabs[0]?.url || ""
       setCurrentUrl(url)
 
       // Match label if URL is not a chrome URL
-      if (!isChromeUrl(url)) {
+      if (!isBrowserUrl(url)) {
         const matched = matchLabelWithRule(options, url, false, false)
         setLabelMatch(matched)
       } else {
@@ -59,7 +60,7 @@ function Popup() {
     }
 
     // View 1: Chrome URLs or empty - show compact list
-    if (isChromeUrl(currentUrl)) {
+    if (isBrowserUrl(currentUrl)) {
       return (
         <ScrollArea.Autosize mah={250} type="auto" offsetScrollbars="present">
           <LabelListCompact />
@@ -115,7 +116,7 @@ function Popup() {
           variant="default"
           leftSection={<IconSettings size={14} />}
           onClick={() => {
-            chrome.runtime.openOptionsPage()
+            browser.runtime.openOptionsPage()
           }}
         >
           {t("popup_manageLabels")}

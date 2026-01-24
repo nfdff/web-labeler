@@ -7,15 +7,20 @@ export interface LabelMatch {
 }
 
 /**
- * Check if a URL is a Chrome internal URL or empty
+ * Check if a URL is a Chrome or Firefox internal URL or empty
  * @param url The URL to check
- * @returns true if the URL is empty, chrome://, or chrome-extension://
+ * @returns true if the URL is empty
  */
-export function isChromeUrl(url: string): boolean {
+export function isBrowserUrl(url: string): boolean {
   if (!url || url.trim() === "") {
     return true
   }
-  return url.startsWith("chrome://") || url.startsWith("chrome-extension://")
+  return (
+    url.startsWith("chrome://") ||
+    url.startsWith("chrome-extension://") ||
+    url.startsWith("moz-extension://") ||
+    url.startsWith("about:")
+  )
 }
 
 /**

@@ -1,35 +1,33 @@
-import type { ExtensionMessage, MessageResponse } from "../types";
-import { fetchJsonFromUrl } from "../sync/fetcher";
-import { logger } from "@/utils/logger";
+import browser from "webextension-polyfill"
+import { logger } from "@/utils/logger"
+import { fetchJsonFromUrl } from "../sync/fetcher"
+import type { ExtensionMessage, MessageResponse } from "../types"
 
 async function handleFetchJsonFromUrl(
-  url: string,
-  sendResponse: (response: MessageResponse<"FETCH_JSON_FROM_URL">) => void,
-): Promise<void> {
+  url: string
+): Promise<MessageResponse<"FETCH_JSON_FROM_URL">> {
   try {
-    const result = await fetchJsonFromUrl(url);
-
-    sendResponse(result);
+    return await fetchJsonFromUrl(url)
   } catch (error) {
-    const errorResponse: MessageResponse<"FETCH_JSON_FROM_URL"> = {
+    return {
       data: null,
       error: error instanceof Error ? error.message : "Unknown error",
-    };
-    sendResponse(errorResponse);
+    }
   }
 }
 
 export function setupMessageListener(): void {
-  chrome.runtime.onMessage.addListener(
-    (message: ExtensionMessage, _sender, sendResponse) => {
-      if (message.type === "FETCH_JSON_FROM_URL") {
-        // Handle async response
-        handleFetchJsonFromUrl(message.url, sendResponse);
-        return true; // Keep message channel open for async response
+  browser.runtime.onMessage.addListener(
+    async (
+      message: unknown
+    ): Promise<MessageResponse<"FETCH_JSON_FROM_URL"> | undefined> => {
+      const msg = message as ExtensionMessage
+      if (msg.type === "FETCH_JSON_FROM_URL") {
+        return await handleFetchJsonFromUrl(msg.url)
       }
 
-      logger.warn("Unhandled message type:", message.type);
-      return false;
-    },
-  );
+      logger.warn("Unhandled message type:", msg.type)
+      return undefined
+    }
+  )
 }
