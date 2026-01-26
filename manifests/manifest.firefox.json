@@ -6,8 +6,11 @@
   "version": "1.6",
   "browser_specific_settings": {
     "gecko": {
-      "id": "web-labeler@anthropic.com",
-      "strict_min_version": "109.0"
+      "id": "web-labeler@nfdff",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "icons": {
