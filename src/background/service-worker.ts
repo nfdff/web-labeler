@@ -8,6 +8,7 @@
  * - messages/: Message handling from UI components
  */
 
+import browser from "webextension-polyfill";
 import { logger } from "@/utils/logger";
 import { STORAGE_KEY } from "./config";
 import {
@@ -24,7 +25,7 @@ import type { Options } from "@/options/types";
 // Extension Lifecycle Listeners
 // ============================================================================
 
-chrome.runtime.onStartup.addListener(async () => {
+browser.runtime.onStartup.addListener(async () => {
   try {
     await initializeAlarm();
     await checkAndRunMissedSync();
@@ -33,7 +34,7 @@ chrome.runtime.onStartup.addListener(async () => {
   }
 });
 
-chrome.runtime.onInstalled.addListener(async () => {
+browser.runtime.onInstalled.addListener(async () => {
   try {
     await initializeAlarm();
     await checkAndRunMissedSync();
@@ -46,7 +47,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 // Storage Change Listener
 // ============================================================================
 
-chrome.storage.onChanged.addListener(async (changes, areaName) => {
+browser.storage.onChanged.addListener(async (changes, areaName) => {
   if (areaName === "sync" && changes[STORAGE_KEY]) {
     const oldOptions = changes[STORAGE_KEY].oldValue as Options | undefined;
     const newOptions = changes[STORAGE_KEY].newValue as Options | undefined;

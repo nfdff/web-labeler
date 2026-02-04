@@ -1,11 +1,15 @@
-import { Button, Divider, Group, Stack, Text } from "@mantine/core";
-import { IconHeartFilled } from "@tabler/icons-react";
-import { URLS } from "@/utils/constants.ts";
-import classes from "./styles.module.scss";
-import { useTranslation } from "@/contexts";
+import { Button, Divider, Group, Stack, Text } from "@mantine/core"
+import { IconHeartFilled } from "@tabler/icons-react"
+import { useTranslation } from "@/contexts"
+import { URLS } from "@/utils/constants.ts"
+import classes from "./styles.module.scss"
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+
+  if (!URLS.WRITE_REVIEW) {
+    return null
+  }
 
   return (
     <Stack gap="sm" mt="xl">
@@ -27,7 +31,7 @@ const Index = () => {
         </Button>
       </Group>
     </Stack>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

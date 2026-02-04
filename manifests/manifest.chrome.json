@@ -16,25 +16,13 @@
   },
   "content_scripts": [
     {
-      "js": [
-        "assets/contentScript.js"
-      ],
-      "css": [
-        "assets/contentScript.css"
-      ],
-      "matches": [
-        "*://*/*"
-      ]
+      "js": ["assets/contentScript.js"],
+      "css": ["assets/contentScript.css"],
+      "matches": ["*://*/*"]
     }
   ],
-  "permissions": [
-    "storage",
-    "alarms",
-    "activeTab"
-  ],
-  "optional_host_permissions": [
-    "*://*/*"
-  ],
+  "permissions": ["storage", "alarms", "activeTab"],
+  "optional_host_permissions": ["*://*/*"],
   "background": {
     "service_worker": "assets/service-worker.js"
   }

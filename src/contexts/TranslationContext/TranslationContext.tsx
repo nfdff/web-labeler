@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill"
 import {
   ReactNode,
   createContext,
@@ -33,7 +34,7 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   const { options, isInitialized } = useOptionsContext()
   const userLocale = options.locale
 
-  const browserLocale = chrome.i18n
+  const browserLocale = browser.i18n
     .getUILanguage()
     .split("-")[0] as SupportedLocale
   const effectiveLocale = userLocale || browserLocale || DEFAULT_LOCALE
@@ -96,7 +97,7 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   const t = useCallback<TranslationFunction>(
     (key: MessageKey, substitutions?: string | string[]) => {
       if (!userLocale) {
-        return chrome.i18n.getMessage(key, substitutions)
+        return browser.i18n.getMessage(key, substitutions)
       }
 
       if (messages && messages[key]) {
@@ -114,9 +115,9 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
         return message
       }
 
-      const chromeMessage = chrome.i18n.getMessage(key, substitutions)
-      if (chromeMessage) {
-        return chromeMessage
+      const browserMessage = browser.i18n.getMessage(key, substitutions)
+      if (browserMessage) {
+        return browserMessage
       }
 
       console.warn(`Translation missing for key: ${key}`)

@@ -2,6 +2,7 @@ import react from "@vitejs/plugin-react"
 import path from "path"
 import { defineConfig } from "vite"
 
+// Content script must be a self-contained bundle (no external imports)
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -11,19 +12,14 @@ export default defineConfig({
   },
   build: {
     emptyOutDir: false,
+    cssCodeSplit: false,
     rollupOptions: {
-      input: {
-        contentScript: "./src/contentScript/index.ts",
-        "service-worker": "./src/background/service-worker.ts",
-      },
+      input: "./src/contentScript/index.ts",
       output: {
-        manualChunks: undefined,
-        //TODO: replace non-hashed-filenames with creating manifest.json
-        // https://rollupjs.org/plugin-development/#build-hooks
-        entryFileNames: () => {
-          return "assets/[name].js"
-        },
-        assetFileNames: "assets/[name][extname]",
+        // Single input allows inlineDynamicImports
+        inlineDynamicImports: true,
+        entryFileNames: `assets/contentScript.js`,
+        assetFileNames: "assets/contentScript[extname]",
       },
     },
   },

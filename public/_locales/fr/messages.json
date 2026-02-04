@@ -748,7 +748,7 @@
     "description": "Footer helpful text"
   },
   "footer_rate": {
-    "message": "Notez-la sur le Chrome Web Store",
+    "message": "Notez cette extension",
     "description": "Footer rate button"
   },
   "featureBadge_contactDeveloper": {

@@ -748,7 +748,7 @@
     "description": "Footer helpful text"
   },
   "footer_rate": {
-    "message": "Chrome 웹 스토어에서 평가하기",
+    "message": "이 확장 프로그램 평가하기",
     "description": "Footer rate button"
   },
   "featureBadge_contactDeveloper": {

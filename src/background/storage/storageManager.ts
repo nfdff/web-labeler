@@ -1,10 +1,11 @@
+import browser from "webextension-polyfill";
 import { Options } from "@/options/types";
 import { STORAGE_KEY } from "../config";
 import { logger } from "@/utils/logger";
 
 export async function getOptions(): Promise<Options | undefined> {
   try {
-    const storage = await chrome.storage.sync.get(STORAGE_KEY);
+    const storage = await browser.storage.sync.get(STORAGE_KEY);
     return storage[STORAGE_KEY] as Options | undefined;
   } catch (error) {
     logger.error("Error reading from storage:", error);
@@ -14,7 +15,7 @@ export async function getOptions(): Promise<Options | undefined> {
 
 export async function setOptions(options: Options): Promise<void> {
   try {
-    await chrome.storage.sync.set({ [STORAGE_KEY]: options });
+    await browser.storage.sync.set({ [STORAGE_KEY]: options });
   } catch (error) {
     logger.error("Error writing to storage:", error);
     throw error;
