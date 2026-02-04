@@ -633,11 +633,11 @@
     "description": "Import with combine stats, $1=original count, $2=combined count"
   },
   "importLabels_message_new": {
-    "message": "$1 $2 nou$2 va fi adăugat$2",
+    "message": "$1 $2 noi vor fi adăugate",
     "description": "New labels message, $1=count, $2=label/labels"
   },
   "importLabels_message_updated": {
-    "message": "$1 $2 existent$2 va fi actualizat$2",
+    "message": "$1 $2 existente vor fi actualizate",
     "description": "Updated labels message, $1=count, $2=label/labels"
   },
   "importLabels_label_singular": {

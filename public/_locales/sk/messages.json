@@ -637,7 +637,7 @@
     "description": "New labels message, $1=count, $2=label/labels"
   },
   "importLabels_message_updated": {
-    "message": "$1 existujúc$2 $3 bude aktualizovaných",
+    "message": "$1 existujúcich $2 bude aktualizovaných",
     "description": "Updated labels message, $1=count, $2=label/labels"
   },
   "importLabels_label_singular": {
